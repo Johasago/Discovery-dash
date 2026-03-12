@@ -1,13 +1,16 @@
+import os
 import requests
 import pandas as pd
 from requests.auth import HTTPBasicAuth
-from datetime import timezone
+from datetime import timezone, datetime
 
-# --- CONFIGURATION ---
-JIRA_URL = "https://simplybusiness.atlassian.net"
-JIRA_EMAIL = "joanna.taylor@simplybusiness.co.uk"
-JIRA_API_TOKEN = "ATATT3xFfGF0stJIUszwILdikpF8MQGbDGvel6LyjK5pkILVQNygMJT3nBLWXAMFr8F7kcbqXgwQK56T3gqaRKLoQMDg7tDMHnTGZsDxsexnBpB29CbUjcMmbmc4zuQYuGQqDTl-__RWJxaLzqieL5BJmntJO5dG1iuTDFgy1ULS1AII3fqafyg=A0BB8917"
+# --- CONFIGURATION (Now securely pulling from environment variables) ---
+JIRA_URL = os.environ.get("JIRA_URL")
+JIRA_EMAIL = os.environ.get("JIRA_EMAIL")
+JIRA_API_TOKEN = os.environ.get("JIRA_API_TOKEN")
 
+if not all([JIRA_URL, JIRA_EMAIL, JIRA_API_TOKEN]):
+    raise ValueError("Missing Jira credentials! Check your environment variables or GitHub Secrets.")
 # 1. Put the exact JQL you copied from Jira inside these parentheses
 COPIED_JQL = 'project = "PLD" AND status in ("Ready for Test/Build", "In Build (Done)", "Won\'t Do") AND updated >= -90d' 
 
