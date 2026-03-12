@@ -1,0 +1,46 @@
+name: Nightly Jira Data Extraction
+
+on:
+  schedule:
+    # Runs at 02:00 UTC every day
+    - cron: '0 2 * * *'
+  workflow_dispatch: 
+    # This allows you to click a "Run Workflow" button manually in GitHub anytime!
+
+jobs:
+  extract_data:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Install Dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run Active WIP Extraction
+        env:
+          JIRA_URL: ${{ secrets.JIRA_URL }}
+          JIRA_EMAIL: ${{ secrets.JIRA_EMAIL }}
+          JIRA_API_TOKEN: ${{ secrets.JIRA_API_TOKEN }}
+        run: python jira_extract.py
+
+      - name: Run Historical Lead Time Extraction
+        env:
+          JIRA_URL: ${{ secrets.JIRA_URL }}
+          JIRA_EMAIL: ${{ secrets.JIRA_EMAIL }}
+          JIRA_API_TOKEN: ${{ secrets.JIRA_API_TOKEN }}
+        run: python lead_time_extract.py
+
+      - name: Commit and Push Updated CSVs
+        run: |
+          git config --global user.name "GitHub Actions Bot"
+          git config --global user.email "actions@github.com"
+          git add jira_discovery_data.csv jira_lead_time_data.csv
+          git commit -m "Automated data sync: Updated Jira CSVs" || echo "No changes to commit"
+          git push
