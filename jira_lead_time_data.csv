@@ -1,0 +1,16 @@
+Ticket ID,Summary,Date Completed,Lead Time (Days),Problem to Address,Value Stream
+PLD-105,Chopin Dev Tools environment status,2026-02-20,10.0,I need a better developer experience,Vivace
+PLD-103,Env Up script,2026-02-24,14.9,I need a better developer experience,Vivace
+PLD-101,LLM Mapping from Carrier to SB,2026-03-09,25.3,quoting,Mind The Gap
+PLD-97,Supported Trades UI (Hiscox Business),2026-02-26,28.2,quoting,Mind The Gap
+PLD-79,Can we streamline rater testing with integration deployment scripts,2026-02-09,75.1,I need a better developer experience,Unassigned
+PLD-77,run everything in docker?,2026-01-22,57.1,I need a better developer experience,Unassigned
+PLD-64,How can we evolve our architecture to natively support multi-product customer journeys?,2026-02-27,175.1,I need the journey framework to support developing straightforward and personalised journeys,Unassigned
+PLD-39,Can we provide a consistent way to communicate with customers across multiple channels?,2025-11-04,104.8,I want to be able to provide omnichannel experiences,Unassigned
+PLD-37,"Test data model for connected, consolidated comms",2026-02-27,220.0,I want to be able to provide omnichannel experiences,Unassigned
+PLD-29,Customer communications are orchestrated through a centralised service,2026-02-27,220.0,I want to be able to provide omnichannel experiences,Unassigned
+PLD-28,Can we improve customer experience through a unified view of interactions with SB?,2026-02-04,201.0,I want to be able to provide omnichannel experiences,Unassigned
+PLD-27,Can we reduce the cost of communication changes by providing self-serve toolset?,2025-11-04,108.8,I want to be able to provide omnichannel experiences,Unassigned
+PLD-26,"Can we determine the ""journey"" next best step at run time for every step by splitting out the decision making from Journey DSL?",2025-09-17,61.0,I need the journey framework to support developing straightforward and personalised journeys,Unassigned
+PLD-5,Omnichannel: Consolidated Comms Architecture,2025-11-10,166.6,Unassigned,Unassigned
+PLD-3,Platform Investment Case: Rater DSL is AI Friendly,2026-02-04,264.0,Unassigned,Unassigned

@@ -1,0 +1,71 @@
+Ticket ID,Summary,Current Status,Date Entered Status,Days in Current Status,Capability,Team
+PLD-116,Fully Independent Ephemeral Environments,To Do Ideas,2026-03-09,2,I need a better developer experience,Vivace
+PLD-115,Visualize Rater's DSL tables via Quid UI,Idea Backlog,2026-03-03,9,quoting,Mind The Gap
+PLD-114,Reactified product application performance,Design/Solution Validation,2026-03-10,2,I need the journey framework to support developing straightforward and personalised journeys,Unassigned
+PLD-113,Streamlined rater local testing,Idea Design & Solutioning,2026-03-09,2,I need a better developer experience,Vivace
+PLD-112,Should we and How can we shift left Contract Validation?,Assessing Viability & Value,2026-02-27,13,"I need a better developer experience, frontend vision",Unassigned
+PLD-111,Synchronous Quoting won't scale with external carriers.,Idea Backlog,2026-02-23,16,quoting,Mind The Gap
+PLD-110,Async quoteset generation,To Do Ideas,2026-02-28,12,quoting,Mind The Gap
+PLD-109,Add Design to MultiQuote in US journeys,Ready for WSJF,2026-03-11,1,quoting,Mind The Gap
+PLD-108,Smoke test harness for Rater,Idea Backlog,2026-02-12,27,I need a better developer experience,Vivace
+PLD-107,add version checks to start_with_local_rater,Assessing Viability & Value,2026-03-09,2,I need a better developer experience,Vivace
+PLD-100,Simulation Runner/Testing,Idea Backlog,2026-02-17,22,quoting,Unassigned
+PLD-99,Governance & Publishing Workflow,Design/Solution Validation,2026-03-11,0,quoting,Mind The Gap
+PLD-98,Filter Rules (Hiscox Business),Idea Backlog,2026-02-17,22,quoting,Mind The Gap
+PLD-96,Quid test harness,Idea Backlog,2026-01-26,44,I need a better developer experience,Vivace
+PLD-95,quid+risk_profiler co-dependency problem (i.e. merge the projects),Idea Backlog,2026-01-26,44,I need a better developer experience,Vivace
+PLD-94,can we use feature flagging for non-insurer-build work,Idea Backlog,2026-01-26,44,I need a better developer experience,Vivace
+PLD-93,DevContainers for consistent app environment locally,Idea Backlog,2026-02-16,23,I need a better developer experience,Vivace
+PLD-92,Inflight questions/sections reordering,Idea Backlog,2026-02-18,22,I need the journey framework to support developing straightforward and personalised journeys,Unassigned
+PLD-91,Providing just in time questions / sections to FE product application,Design/Solution Validation,2026-03-10,2,I need the journey framework to support developing straightforward and personalised journeys,Unassigned
+PLD-90,Interrupt product application,Idea Backlog,2026-02-18,22,I need the journey framework to support developing straightforward and personalised journeys,Unassigned
+PLD-89,Securely resuming product application,Idea Backlog,2026-02-18,22,I need the journey framework to support developing straightforward and personalised journeys,Unassigned
+PLD-88,Consistent questions / sections ordering / wording for each individual customer,Design/Solution Validation,2026-03-10,2,I need the journey framework to support developing straightforward and personalised journeys,Unassigned
+PLD-85,How can we harden Quote Retrieval mechanism for Cross-Sell,Idea Backlog,2025-12-16,86,quoting,Unassigned
+PLD-82,"for coco testing, use dockerised chopin master to generate policy to be renewed",Idea Backlog,2026-01-26,44,I need a better developer experience,Vivace
+PLD-81,use dotenv in coco,Idea Backlog,2025-12-11,91,I need a better developer experience,Unassigned
+PLD-78,knowledgebase/wiki/shared doc/chatbot for local dev troubleshooting,Idea Backlog,2026-01-26,44,I need a better developer experience,Vivace
+PLD-75,foo,Idea Backlog,2025-11-11,121,Unassigned,Unassigned
+PLD-73,Journey State and Data Contract capability,Idea Backlog,2026-02-18,22,I need the journey framework to support developing straightforward and personalised journeys,Unassigned
+PLD-66,Federated Personalisation Decisioning with Centralised State (SO),Idea Backlog,2026-02-18,22,I need the journey framework to support developing straightforward and personalised journeys,Unassigned
+PLD-63,"How can we gain a complete, end-to-end view of the multi-product customer journey?",Idea Backlog,2025-09-04,189,Unassigned,Unassigned
+PLD-62,How can we make our multi-product journeys more efficient to run and maintain?,Idea Backlog,2025-09-04,189,Unassigned,Unassigned
+PLD-61,How can we accelerate our time-to-market for new multi-product offerings?,Idea Backlog,2025-09-04,189,Unassigned,Unassigned
+PLD-60,How can we simplify the multi-product checkout to stop losing customers?,Idea Backlog,2025-09-04,189,Unassigned,Unassigned
+PLD-59,Can we have an unique sales opportunity id for the same customer until the sale is finalised,Idea Backlog,2025-08-26,198,I need the journey framework to support developing straightforward and personalised journeys,Unassigned
+PLD-58,Can a customer come back and resume the journey from where they left off?,Idea Backlog,2025-08-26,198,I need the journey framework to support developing straightforward and personalised journeys,Unassigned
+PLD-57,"Can we create a single, seamless customer journey for customers purchasing multiple products?",Idea Backlog,2025-09-17,176,I need the journey framework to support developing straightforward and personalised journeys,Unassigned
+PLD-55,Seamless switching between verticals,Idea Backlog,2025-08-19,205,I need the journey framework to support developing straightforward and personalised journeys,Unassigned
+PLD-54,Tailor the first question based on a data model,Idea Backlog,2025-08-19,205,I need the journey framework to support developing straightforward and personalised journeys,Unassigned
+PLD-52,Personalise copy on page rendering,Idea Backlog,2025-08-19,205,I need the journey framework to support developing straightforward and personalised journeys,Unassigned
+PLD-49,can we inject an interstitial page in between questionnaire questions by adding additional content (interstitial) in Q2Q at realtime,Idea Backlog,2025-08-04,220,I need the journey framework to support developing straightforward and personalised journeys,Unassigned
+PLD-48,can we inject an interstitial page in between questionnaire questions by breaking Q2Q in half (in realtime) insert a page and resume Q2Q,Idea Backlog,2025-08-04,220,I need the journey framework to support developing straightforward and personalised journeys,Unassigned
+PLD-47,Can we achieve consisency of sessionization between Amplitude and Looker?,Idea Backlog,2025-08-01,223,I can't track dynamic journeys,Unassigned
+PLD-46,Tracking across multiple journeys?,Idea Backlog,2026-02-18,22,I can't track dynamic journeys,Unassigned
+PLD-45,How can analysts interpret customer paths through dynamic and multi-product opportunities?,Idea Backlog,2025-08-01,223,I can't track dynamic journeys,Unassigned
+PLD-44,What data can we provide to a decision making service for the next step?,Idea Backlog,2025-08-01,223,I can't track dynamic journeys,Unassigned
+PLD-42,Can we centralise customer personalisation logic and decision,Idea Backlog,2025-07-25,229,I need the journey framework to support developing straightforward and personalised journeys,Unassigned
+PLD-41,Can we divert the journey with an interstitial page using customer's realtime interactions and recent events?,Idea Backlog,2025-09-17,176,I need the journey framework to support developing straightforward and personalised journeys,Unassigned
+PLD-40,Journey Orchestration,Idea Backlog,2025-07-23,232,I need the journey framework to support developing straightforward and personalised journeys,Unassigned
+PLD-38,How can we manage changes in the mapped data required by templates?,Idea Backlog,2025-07-22,233,I want to be able to provide omnichannel experiences,Unassigned
+PLD-36,How do we link communications to UPID and sales opportunities?,Idea Backlog,2025-07-22,233,I want to be able to provide omnichannel experiences,Unassigned
+PLD-35,How do we track and link to messaging on paid media channels?,Idea Backlog,2025-07-22,233,I want to be able to provide omnichannel experiences,Unassigned
+PLD-34,How can we support template changes without engineering support?,Idea Backlog,2025-07-22,233,I want to be able to provide omnichannel experiences,Unassigned
+PLD-33,"What real time data is available from our communication vendors (Salesforce, Twilio)?",Idea Backlog,2025-07-22,233,I want to be able to provide omnichannel experiences,Unassigned
+PLD-32,Does the PoC demonstrate the potential for connected reporting and a unified view of customer interactions for the chosen use case?,Idea Backlog,2025-07-22,233,I want to be able to provide omnichannel experiences,Unassigned
+PLD-31,How can we integrate necessary data sources to drive these communications?,Idea Backlog,2025-07-22,233,I want to be able to provide omnichannel experiences,Unassigned
+PLD-30,Can non-technical teams define communication rules and triggers?,Idea Backlog,2025-07-22,233,I want to be able to provide omnichannel experiences,Unassigned
+PLD-23,Pushing Q2Q journey onto CTM,Idea Backlog,2025-08-18,206,frontend vision,Team A+
+PLD-22,Add React to pages QCP to Purchase,Idea Backlog,2025-07-14,240,frontend vision,Unassigned
+PLD-21,Migrating legacy customer account,Idea Backlog,2025-07-14,240,Unassigned,Unassigned
+PLD-18,External APIs,Idea Backlog,2025-07-14,240,Unassigned,Unassigned
+PLD-17,Platform Investment Case: Flexible Policy Structure,Idea Backlog,2025-07-14,240,Unassigned,Unassigned
+PLD-15,Use S3 Kafka connectors for record verification,Idea Backlog,2025-07-14,240,Unassigned,Unassigned
+PLD-14,Platform Investment Case Template,Idea Backlog,2025-07-14,240,Unassigned,Unassigned
+PLD-13,Journey Framework 2.0,Idea Backlog,2025-07-14,240,Unassigned,Unassigned
+PLD-11,Reduce Rater CI time,Idea Backlog,2025-12-11,91,I need a better developer experience,Unassigned
+PLD-10,Risk Fields builder and question bank,Idea Backlog,2025-07-14,240,Unassigned,Unassigned
+PLD-9,Platform Investment Case: Coverage diagnosis,Idea Backlog,2025-08-18,206,frontend vision,Unassigned
+PLD-8,Platform Investment Case: Reactify post-quote pages,Idea Backlog,2025-08-18,206,frontend vision,Unassigned
+PLD-7,Webhook,Idea Backlog,2025-07-14,240,Unassigned,Unassigned
+PLD-4,Sales Opportunity Data Framework,Idea Backlog,2025-07-14,240,I can't track dynamic journeys,Unassigned
