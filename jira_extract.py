@@ -35,6 +35,11 @@ def fetch_jira_issues():
 
     # Back to requests.get!
     response = requests.get(url, headers=headers, params=query, auth=auth)
+
+    if response.status_code != 200:
+            print(f"🚨 JIRA API ERROR: {response.status_code}")
+            print(response.text)
+            exit(1)  # This forces the GitHub Action to fail and show a Red X
     
     if response.status_code != 200:
         print(f"Error {response.status_code}: {response.text}")
