@@ -2,100 +2,127 @@ import streamlit as st
 import pandas as pd
 import plotly.express as px
 
-# --- 1. PAGE SETUP ---
-st.set_page_config(page_title="Discovery Process Dashboard", layout="wide")
-st.title("🎯 Discovery Process Dashboard")
-st.markdown("Monitoring flow and spotting bottlenecks in our Discovery pipeline.")
+# --- PAGE CONFIGURATION ---
+st.set_page_config(page_title="Discovery Dashboard", layout="wide")
+st.title("📊 Discovery Dashboard")
 
-# --- 2. LOAD DATA ---
-@st.cache_data
+# --- 1. DATA LOADING & CLEANING ---
+@st.cache_data(ttl=600) # Caches data for 10 minutes to keep the app fast
 def load_data():
+    # Load Active WIP
     try:
-        df = pd.read_csv("jira_discovery_data.csv")
-        return df
+        df_wip = pd.read_csv("jira_discovery_data.csv")
+        df_wip['Date Entered Status'] = pd.to_datetime(df_wip['Date Entered Status'])
     except FileNotFoundError:
-        st.error("Data file not found. Have Pair 1 run the extraction script!")
-        return pd.DataFrame() 
+        df_wip = pd.DataFrame()
 
-df = load_data()
+    # Load Historical Lead Time
+    try:
+        df_lead = pd.read_csv("jira_lead_time_data.csv")
+        df_lead['Date Completed'] = pd.to_datetime(df_lead['Date Completed'])
+    except FileNotFoundError:
+        df_lead = pd.DataFrame()
 
-if not df.empty:
-    # --- 3. PAIR 3's LOGIC (Column-Specific Thresholds) ---
-    # Update these keys to perfectly match your actual Jira statuses
-    COLUMN_THRESHOLDS = {
-        "Under Consideration": {"warn": 10, "breach": 14},
-        "Research": {"warn": 4, "breach": 7},
-        "Solutioning": {"warn": 5, "breach": 8},
-        "Ready for Test": {"warn": 2, "breach": 3},
-        "Done": {"warn": 999, "breach": 999} # Keeps done items green
-    }
+    return df_wip, df_lead
 
-    # Fallback limits just in case a new status appears in Jira unexpectedly
-    DEFAULT_WARN = 7
-    DEFAULT_BREACH = 14
+df_wip, df_lead = load_data()
 
-    def determine_health(row):
-        """Looks at both the status and the age to determine color."""
-        status = row['Current Status']
-        days = row['Days in Current Status']
-        
-        # Get the specific limits for this status, or use defaults
-        limits = COLUMN_THRESHOLDS.get(status, {"warn": DEFAULT_WARN, "breach": DEFAULT_BREACH})
-        
-        if days >= limits["breach"]:
-            return "Breached (Red)"
-        elif days >= limits["warn"]:
-            return "Warning (Yellow)"
-        else:
-            return "Healthy (Green)"
+# Stop the app completely if no CSVs are found
+if df_wip.empty and df_lead.empty:
+    st.warning("⚠️ No data found. Please run the Python extraction scripts first.")
+    st.stop()
 
-    # Apply the logic across the dataframe rows (axis=1 is critical here)
-    df['Health'] = df.apply(determine_health, axis=1)
+# Safety net: Ensure missing custom fields are labeled "Unassigned" instead of crashing
+for df in [df_wip, df_lead]:
+    if not df.empty:
+        for col in ['Problem to Address', 'Team', 'Roadmap']:
+            if col in df.columns:
+                df[col] = df[col].fillna('Unassigned')
+
+# --- 2. SIDEBAR FILTERS ---
+st.sidebar.header("Filter Data")
+
+# Helper function to grab unique dropdown options safely across both files
+def get_unique_options(col_name):
+    opts = set()
+    if not df_wip.empty and col_name in df_wip.columns:
+        opts.update(df_wip[col_name].dropna().unique())
+    if not df_lead.empty and col_name in df_lead.columns:
+        opts.update(df_lead[col_name].dropna().unique())
+    return ["All"] + sorted(list(opts))
+
+selected_problem = st.sidebar.selectbox("Problem to Address", get_unique_options("Problem to Address"))
+selected_team = st.sidebar.selectbox("Team", get_unique_options("Team"))
+selected_roadmap = st.sidebar.selectbox("Roadmap", get_unique_options("Roadmap"))
+
+# --- 3. FILTERING LOGIC (The Fix for the Vanishing Charts!) ---
+def apply_filters(df):
+    if df.empty: return df
+    filtered = df.copy()
     
-    # Add the breach limit to the dataframe so it shows up when hovering
-    df['Max Days Allowed'] = df['Current Status'].apply(
-        lambda x: COLUMN_THRESHOLDS.get(x, {"breach": DEFAULT_BREACH})["breach"]
+    if selected_problem != "All" and "Problem to Address" in filtered.columns:
+        filtered = filtered[filtered["Problem to Address"] == selected_problem]
+        
+    if selected_team != "All" and "Team" in filtered.columns:
+        filtered = filtered[filtered["Team"] == selected_team]
+        
+    if selected_roadmap != "All" and "Roadmap" in filtered.columns:
+        filtered = filtered[filtered["Roadmap"] == selected_roadmap]
+        
+    return filtered
+
+wip_filtered = apply_filters(df_wip)
+lead_filtered = apply_filters(df_lead)
+
+
+# --- 4. ACTIVE WIP DASHBOARD ---
+st.header("🔄 Active Work In Progress")
+
+if not wip_filtered.empty:
+    st.metric("Total Active Tickets", len(wip_filtered))
+    
+    col1, col2 = st.columns(2)
+    
+    with col1:
+        st.subheader("Tickets by Status")
+        status_counts = wip_filtered['Current Status'].value_counts().reset_index()
+        status_counts.columns = ['Status', 'Count']
+        fig_status = px.bar(status_counts, x='Status', y='Count', text_auto=True, color='Status')
+        st.plotly_chart(fig_status, use_container_width=True)
+        
+    with col2:
+        st.subheader("Days in Current Status")
+        fig_days = px.histogram(wip_filtered, x='Days in Current Status', nbins=20, color='Current Status')
+        st.plotly_chart(fig_days, use_container_width=True)
+
+    with st.expander("View Raw Active WIP Data"):
+        st.dataframe(wip_filtered)
+else:
+    st.info("No active tickets match the current filters.")
+
+st.divider()
+
+# --- 5. HISTORICAL LEAD TIME DASHBOARD ---
+st.header("📈 Historical Lead Time")
+
+if not lead_filtered.empty:
+    # Math for the 85th Percentile
+    p85 = round(lead_filtered['Lead Time (Days)'].quantile(0.85))
+    st.metric("85th Percentile Lead Time", f"{p85} Days")
+    
+    st.subheader("Lead Time Trend")
+    fig_lead = px.scatter(
+        lead_filtered, 
+        x='Date Completed', 
+        y='Lead Time (Days)', 
+        color='Team',
+        hover_data=['Ticket ID', 'Summary', 'Problem to Address']
     )
-    
-    # Custom color mapping for Plotly
-    color_map = {"Healthy (Green)": "#2ecc71", "Warning (Yellow)": "#f1c40f", "Breached (Red)": "#e74c3c"}
+    # Draw the red target line on the chart
+    fig_lead.add_hline(y=p85, line_dash="dash", line_color="red", annotation_text=f"85th Percentile ({p85}d)")
+    st.plotly_chart(fig_lead, use_container_width=True)
 
-    # --- 4. GLOBAL FILTERS (Control Bar) ---
-    st.markdown("### Global Filters")
-    
-    # Create the 4 columns
-    col_f1, col_f2, col_f3, col_f4 = st.columns(4)
-    
-    with col_f1:
-        status_filter = st.multiselect("Filter by Status:", options=df['Current Status'].unique(), default=df['Current Status'].unique())
-    
-    with col_f2:
-        # 1. Defining problem_filter here!
-        problem_options = ["All"] + sorted(list(df['Problem to Address'].dropna().unique()))
-        problem_filter = st.selectbox("Filter by Problem to Address:", options=problem_options)
-        
-    with col_f3:
-        # 2. Defining team_filter here!
-        team_options = ["All"] + sorted(list(df['Team'].dropna().unique()))
-        team_filter = st.selectbox("Filter by Team:", options=team_options)
-
-    with col_f4:
-        # 3. Defining roadmap_filter here!
-        roadmap_options = ["All"] + sorted(list(df['Roadmap'].dropna().unique()))
-        roadmap_filter = st.selectbox("Filter by Roadmap:", options=roadmap_options)
-
-    # --- APPLY FILTERS LOGIC (Top Chart) ---
-    # Apply Status
-    filtered_df = df[df['Current Status'].isin(status_filter)]
-    
-    # Apply Problem
-    if problem_filter != "All":
-        filtered_df = filtered_df[filtered_df['Problem to Address'] == problem_filter]
-        
-    # Apply Team
-    if team_filter != "All":
-        filtered_df = filtered_df[filtered_df['Team'] == team_filter]
-        
-    # Apply Roadmap
-    if roadmap_filter != "All":
-        filtered_df = filtered_df[filtered_df['Roadmap'] == roadmap_filter]
+    with st.expander("View Raw Completed Lead Time Data"):
+        st.dataframe(lead_filtered)
+else:
+    st.info("No completed tickets match the current filters.")
