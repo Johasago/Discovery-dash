@@ -28,31 +28,30 @@ def fetch_completed_issues():
     next_page_token = None 
 
     print("Fetching completed items...", flush=True)
-    
     while True:
         if len(all_issues) >= 1000:
             print("🛑 Circuit breaker tripped! Hit 1000 tickets.", flush=True)
             break
 
-        query = {
+        # 🚨 THE FIX: Convert to a payload dictionary with a list for fields
+        payload = {
             'jql': JQL_QUERY, 
             'maxResults': max_results,
             'expand': 'changelog', 
-            # ALIGNED IDs with the other script!
-            'fields': 'summary,status,created,customfield_13923,customfield_10012,customfield_12924'
+            'fields': ['summary', 'status', 'created', 'customfield_13923', 'customfield_10012', 'customfield_12924']
         }
         
         if next_page_token:
-            query['nextPageToken'] = next_page_token
+            payload['nextPageToken'] = next_page_token
 
-        response = requests.get(url, headers=headers, params=query, auth=auth)
+        # 🚨 THE FIX: Use requests.post() and json=payload
+        response = requests.post(url, headers=headers, json=payload, auth=auth)
         
-        # THE ERROR TRAP
         if response.status_code != 200:
             print(f"🚨 JIRA API ERROR: {response.status_code}", flush=True)
             print(response.text, flush=True)
             exit(1)
-            
+        
         data = response.json()
         batch = data.get('issues', [])
         

@@ -20,15 +20,16 @@ def fetch_jira_issues():
     auth = HTTPBasicAuth(JIRA_EMAIL, JIRA_API_TOKEN)
     headers = {"Accept": "application/json"}
     
-    query = {
+    # 🚨 THE FIX: Convert 'fields' to a Python list instead of a string
+    payload = {
         'jql': JQL_QUERY,
         'maxResults': 100, 
         'expand': 'changelog', 
-        # Aligned these IDs so they perfectly match the extraction loop below
-        'fields': 'summary,status,created,customfield_13923,customfield_10012,customfield_12924'
+        'fields': ['summary', 'status', 'created', 'customfield_13923', 'customfield_10012', 'customfield_12924']
     }
 
-    response = requests.get(url, headers=headers, params=query, auth=auth)
+    # 🚨 THE FIX: Use requests.post() and pass the payload as json=
+    response = requests.post(url, headers=headers, json=payload, auth=auth)
 
     if response.status_code != 200:
         print(f"🚨 JIRA API ERROR: {response.status_code}", flush=True)
@@ -36,9 +37,10 @@ def fetch_jira_issues():
         exit(1) 
 
     jira_data = response.json()
-    print(f"🎯 JIRA SAYS IT FOUND: {jira_data.get('total', 'UNKNOWN')} tickets!", flush=True)
+    issues = jira_data.get('issues', [])
+    print(f"🎯 JIRA SAYS IT FOUND: {len(issues)} tickets!", flush=True)
     
-    return jira_data.get('issues', [])
+    return issues
 
 def extract_field_value(raw_data, target_key='value'):
     if not raw_data: return 'Unassigned'
