@@ -43,4 +43,5 @@ jobs:
           git config --global user.email "actions@github.com"
           git add jira_discovery_data.csv jira_lead_time_data.csv
           git commit -m "Automated data sync: Updated Jira CSVs" || echo "No changes to commit"
+          git pull --rebase origin main  # <-- THE MAGIC TRAFFIC CONTROLLER
           git push
