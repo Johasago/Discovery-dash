@@ -1,6 +1,7 @@
 import os
 import requests
 import pandas as pd
+import numpy as np   # <-- ADD THIS NEW IMPORT
 from requests.auth import HTTPBasicAuth
 from datetime import timezone, datetime
 
@@ -107,11 +108,23 @@ def process_lead_time(issues):
                     elif item['toString'] in END_STATUSES:
                         end_date = pd.to_datetime(history['created'], utc=True)
 
+        # 4. Safety Net & Lead Time Calculation
         if end_date is not None:
             if start_date is None:
                 start_date = created_date 
                 
-            lead_time_days = round((end_date - start_date).total_seconds() / 86400, 1)
+            # --- THE WEEKEND ERASER ---
+            # Convert the complex timestamps into plain dates
+            start_date_only = start_date.date()
+            end_date_only = end_date.date()
+            
+            # This automatically calculates the difference while ignoring Saturdays and Sundays!
+            business_days = np.busday_count(start_date_only, end_date_only)
+            
+            # If a ticket starts and finishes on the exact same day, busday_count returns 0. 
+            # We record it as 0.5 days so it still registers as a lightning-fast win on the chart!
+            lead_time_days = 0.5 if business_days == 0 else float(business_days)
+            # --------------------------
             
             if lead_time_days >= 0:
                 data.append({

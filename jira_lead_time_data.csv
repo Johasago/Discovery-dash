@@ -1,37 +1,37 @@
 Ticket ID,Summary,Date Completed,Lead Time (Days),Problem to Address,Team,Roadmap
-PLD-109,Add Design to MultiQuote in US journeys,2026-03-16,16.0,Quoting,Mind The Gap,Insurance Product Management
-PLD-107,add version checks to start_with_local_rater,2026-03-16,7.0,I want a better developer experience,Vivace,Developer Experience
-PLD-105,Chopin Dev Tools environment status,2026-02-20,10.0,I want a better developer experience,Vivace,Developer Experience
-PLD-103,Env Up script,2026-02-24,14.9,I want a better developer experience,Vivace,Developer Experience
-PLD-101,LLM Mapping from Carrier to SB,2026-03-09,25.3,Quoting,Mind The Gap,Insurance Product Management
-PLD-97,Supported Trades UI (Hiscox Business),2026-02-26,28.2,Quoting,Mind The Gap,Insurance Product Management
-PLD-79,Can we streamline rater testing with integration deployment scripts,2026-02-09,75.1,I want a better developer experience,Unassigned,Developer Experience
-PLD-77,run everything in docker?,2026-01-22,57.1,I want a better developer experience,Unassigned,Developer Experience
-PLD-64,How can we evolve our architecture to natively support multi-product customer journeys?,2026-02-27,175.1,I need the journey framework to support developing straightforward and personalised journeys,Unassigned,Journey 2.0
-PLD-62,How can we make our multi-product journeys more efficient to run and maintain?,2026-03-13,190.3,Unassigned,Unassigned,Sales Opportunity Framework
-PLD-61,How can we accelerate our time-to-market for new multi-product offerings?,2026-03-13,190.3,Unassigned,Unassigned,Sales Opportunity Framework
-PLD-60,How can we simplify the multi-product checkout to stop losing customers?,2026-03-13,190.3,Unassigned,Unassigned,Sales Opportunity Framework
-PLD-39,Can we provide a consistent way to communicate with customers across multiple channels?,2025-11-04,104.8,Omnichannel,Unassigned,Unassigned
-PLD-38,How can we manage changes in the mapped data required by templates?,2026-03-13,234.2,Omnichannel,Unassigned,Unassigned
-PLD-37,"Test data model for connected, consolidated comms",2026-02-27,220.0,Omnichannel,Unassigned,Unassigned
-PLD-36,How do we link communications to UPID and sales opportunities?,2026-03-13,234.3,Omnichannel,Unassigned,Unassigned
-PLD-35,How do we track and link to messaging on paid media channels?,2026-03-13,234.3,Omnichannel,Unassigned,Unassigned
-PLD-34,How can we support template changes without engineering support?,2026-03-13,234.3,Omnichannel,Unassigned,Unassigned
-PLD-33,"What real time data is available from our communication vendors (Salesforce, Twilio)?",2026-03-13,234.3,Omnichannel,Unassigned,Unassigned
-PLD-32,Does the PoC demonstrate the potential for connected reporting and a unified view of customer interactions for the chosen use case?,2026-03-13,234.3,Omnichannel,Unassigned,Unassigned
-PLD-31,How can we integrate necessary data sources to drive these communications?,2026-03-13,234.3,Omnichannel,Unassigned,Unassigned
-PLD-30,Can non-technical teams define communication rules and triggers?,2026-03-13,234.3,Omnichannel,Unassigned,Unassigned
-PLD-29,Customer communications are orchestrated through a centralised service,2026-02-27,220.0,Omnichannel,Unassigned,Unassigned
-PLD-28,Can we improve customer experience through a unified view of interactions with SB?,2026-02-04,201.0,Omnichannel,Unassigned,Unassigned
-PLD-27,Can we reduce the cost of communication changes by providing self-serve toolset?,2025-11-04,108.8,Omnichannel,Unassigned,Unassigned
-PLD-26,"Can we determine the ""journey"" next best step at run time for every step by splitting out the decision making from Journey DSL?",2025-09-17,61.0,I need the journey framework to support developing straightforward and personalised journeys,Unassigned,Journey 2.0
-PLD-15,Use S3 Kafka connectors for record verification,2026-03-13,267.2,Unassigned,Unassigned,Unassigned
-PLD-21,Migrating legacy customer account,2026-03-13,289.3,Unassigned,Unassigned,Unassigned
-PLD-5,Omnichannel: Consolidated Comms Architecture,2025-11-10,166.6,Unassigned,Unassigned,Unassigned
-PLD-10,Risk Fields builder and question bank,2026-03-13,289.9,Unassigned,Unassigned,Unassigned
-PLD-17,Platform Investment Case: Flexible Policy Structure,2026-03-13,295.3,Unassigned,Unassigned,Unassigned
-PLD-7,Webhook,2026-03-13,297.2,Unassigned,Unassigned,Unassigned
-PLD-13,Journey Framework 2.0,2026-03-13,297.3,Unassigned,Unassigned,Unassigned
-PLD-18,External APIs,2026-03-13,298.4,Unassigned,Unassigned,Unassigned
-PLD-3,Platform Investment Case: Rater DSL is AI Friendly,2026-02-04,264.0,Unassigned,Unassigned,Unassigned
-PLD-14,Platform Investment Case Template,2026-03-13,315.3,Unassigned,Unassigned,Unassigned
+PLD-109,Add Design to MultiQuote in US journeys,2026-03-16,10.0,Quoting,Mind The Gap,Insurance Product Management
+PLD-107,add version checks to start_with_local_rater,2026-03-16,5.0,I want a better developer experience,Vivace,Developer Experience
+PLD-105,Chopin Dev Tools environment status,2026-02-20,8.0,I want a better developer experience,Vivace,Developer Experience
+PLD-103,Env Up script,2026-02-24,11.0,I want a better developer experience,Vivace,Developer Experience
+PLD-101,LLM Mapping from Carrier to SB,2026-03-09,17.0,Quoting,Mind The Gap,Insurance Product Management
+PLD-97,Supported Trades UI (Hiscox Business),2026-02-26,20.0,Quoting,Mind The Gap,Insurance Product Management
+PLD-79,Can we streamline rater testing with integration deployment scripts,2026-02-09,53.0,I want a better developer experience,Unassigned,Developer Experience
+PLD-77,run everything in docker?,2026-01-22,41.0,I want a better developer experience,Unassigned,Developer Experience
+PLD-64,How can we evolve our architecture to natively support multi-product customer journeys?,2026-02-27,125.0,I need the journey framework to support developing straightforward and personalised journeys,Unassigned,Journey 2.0
+PLD-62,How can we make our multi-product journeys more efficient to run and maintain?,2026-03-13,136.0,Unassigned,Unassigned,Sales Opportunity Framework
+PLD-61,How can we accelerate our time-to-market for new multi-product offerings?,2026-03-13,136.0,Unassigned,Unassigned,Sales Opportunity Framework
+PLD-60,How can we simplify the multi-product checkout to stop losing customers?,2026-03-13,136.0,Unassigned,Unassigned,Sales Opportunity Framework
+PLD-39,Can we provide a consistent way to communicate with customers across multiple channels?,2025-11-04,75.0,Omnichannel,Unassigned,Unassigned
+PLD-38,How can we manage changes in the mapped data required by templates?,2026-03-13,168.0,Omnichannel,Unassigned,Unassigned
+PLD-37,"Test data model for connected, consolidated comms",2026-02-27,158.0,Omnichannel,Unassigned,Unassigned
+PLD-36,How do we link communications to UPID and sales opportunities?,2026-03-13,168.0,Omnichannel,Unassigned,Unassigned
+PLD-35,How do we track and link to messaging on paid media channels?,2026-03-13,168.0,Omnichannel,Unassigned,Unassigned
+PLD-34,How can we support template changes without engineering support?,2026-03-13,168.0,Omnichannel,Unassigned,Unassigned
+PLD-33,"What real time data is available from our communication vendors (Salesforce, Twilio)?",2026-03-13,168.0,Omnichannel,Unassigned,Unassigned
+PLD-32,Does the PoC demonstrate the potential for connected reporting and a unified view of customer interactions for the chosen use case?,2026-03-13,168.0,Omnichannel,Unassigned,Unassigned
+PLD-31,How can we integrate necessary data sources to drive these communications?,2026-03-13,168.0,Omnichannel,Unassigned,Unassigned
+PLD-30,Can non-technical teams define communication rules and triggers?,2026-03-13,168.0,Omnichannel,Unassigned,Unassigned
+PLD-29,Customer communications are orchestrated through a centralised service,2026-02-27,158.0,Omnichannel,Unassigned,Unassigned
+PLD-28,Can we improve customer experience through a unified view of interactions with SB?,2026-02-04,143.0,Omnichannel,Unassigned,Unassigned
+PLD-27,Can we reduce the cost of communication changes by providing self-serve toolset?,2025-11-04,77.0,Omnichannel,Unassigned,Unassigned
+PLD-26,"Can we determine the ""journey"" next best step at run time for every step by splitting out the decision making from Journey DSL?",2025-09-17,43.0,I need the journey framework to support developing straightforward and personalised journeys,Unassigned,Journey 2.0
+PLD-15,Use S3 Kafka connectors for record verification,2026-03-13,191.0,Unassigned,Unassigned,Unassigned
+PLD-21,Migrating legacy customer account,2026-03-13,207.0,Unassigned,Unassigned,Unassigned
+PLD-5,Omnichannel: Consolidated Comms Architecture,2025-11-10,119.0,Unassigned,Unassigned,Unassigned
+PLD-10,Risk Fields builder and question bank,2026-03-13,208.0,Unassigned,Unassigned,Unassigned
+PLD-17,Platform Investment Case: Flexible Policy Structure,2026-03-13,211.0,Unassigned,Unassigned,Unassigned
+PLD-7,Webhook,2026-03-13,213.0,Unassigned,Unassigned,Unassigned
+PLD-13,Journey Framework 2.0,2026-03-13,213.0,Unassigned,Unassigned,Unassigned
+PLD-18,External APIs,2026-03-13,214.0,Unassigned,Unassigned,Unassigned
+PLD-3,Platform Investment Case: Rater DSL is AI Friendly,2026-02-04,188.0,Unassigned,Unassigned,Unassigned
+PLD-14,Platform Investment Case Template,2026-03-13,225.0,Unassigned,Unassigned,Unassigned
