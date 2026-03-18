@@ -30,7 +30,7 @@ def fetch_jira_issues():
         'expand': 'changelog', 
         # ADD 'created' to the list below:
         # Add both custom field IDs to the fields list
-        'fields': 'summary,status,created, customfield_13924, customfield_10001'
+        'fields': 'summary,status,created, customfield_13923, customfield_10001, customfield_13924'
     }
 
     # Back to requests.get!
