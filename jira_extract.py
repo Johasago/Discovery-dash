@@ -30,7 +30,7 @@ def fetch_jira_issues():
         'expand': 'changelog', 
         # ADD 'created' to the list below:
         # Add both custom field IDs to the fields list
-        'fields': 'summary,status,created, customfield_13923, customfield_10001'
+        'fields': 'summary,status,created, customfield_13924, customfield_10001'
     }
 
     # Back to requests.get!
@@ -71,7 +71,7 @@ def process_issues_to_dataframe(issues):
         
         # 2. Custom Fields (Safely extract Team and Value Stream)
         # ⚠️ Make sure these IDs match your actual Jira custom field IDs!
-        cap_raw = extract_field_value(issue['fields'].get('customfield_13923'))
+        cap_raw = extract_field_value(issue['fields'].get('customfield_13924'))
         vs_raw = extract_field_value(issue['fields'].get('customfield_10001'), 'name')
 
         cap_val = cap_raw.get('value', 'Unassigned') if isinstance(cap_raw, dict) else str(cap_raw) if cap_raw else 'Unassigned'
