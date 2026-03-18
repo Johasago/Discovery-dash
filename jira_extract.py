@@ -20,36 +20,15 @@ def fetch_jira_issues():
     auth = HTTPBasicAuth(JIRA_EMAIL, JIRA_API_TOKEN)
     headers = {"Accept": "application/json"}
     
-    # 🚨 THE FIX: Convert 'fields' to a Python list instead of a string
-    payload = {
+    query = {
         'jql': JQL_QUERY,
         'maxResults': 100, 
         'expand': 'changelog', 
-        'fields': ['summary', 'status', 'created', 'customfield_13923', 'customfield_10012', 'customfield_12924']
+        # Aligned these IDs so they perfectly match the extraction loop below
+        'fields': 'summary,status,created,customfield_13923,customfield_10012,customfield_12924'
     }
 
-# ================ THE TRUTH SERUM ================
-    print("================ DIAGNOSTICS ================", flush=True)
-    
-    # 1. Who does Jira think we are?
-    whoami = requests.get(f"{JIRA_URL}/rest/api/3/myself", auth=auth, headers=headers)
-    print(f"🕵️ AUTH EMAIL (Secret): {JIRA_EMAIL}", flush=True)
-    print(f"🕵️ JIRA SEES USER: {whoami.json().get('emailAddress', 'UNKNOWN (Auth Failed!)')}", flush=True)
-    print(f"🕵️ TARGET SITE: {JIRA_URL}", flush=True)
-    print(f"🕵️ EXACT JQL: {JQL_QUERY}", flush=True)
-    
-    # 2. The Naked Search Test (Removing the 'fields' array to see if Jira's API is bugged)
-    naked_payload = {'jql': JQL_QUERY, 'maxResults': 5}
-    naked_response = requests.post(url, headers=headers, json=naked_payload, auth=auth)
-    naked_data = naked_response.json()
-    
-    # Atlassian's POST endpoint usually returns 'total' on naked searches!
-    naked_total = naked_data.get('total', len(naked_data.get('issues', [])))
-    print(f"🕵️ NAKED SEARCH FOUND: {naked_total} tickets!", flush=True)
-    print("=============================================", flush=True)
-    # =================================================
-    # 🚨 THE FIX: Use requests.post() and pass the payload as json=
-    response = requests.post(url, headers=headers, json=payload, auth=auth)
+    response = requests.get(url, headers=headers, params=query, auth=auth)
 
     if response.status_code != 200:
         print(f"🚨 JIRA API ERROR: {response.status_code}", flush=True)
@@ -57,10 +36,9 @@ def fetch_jira_issues():
         exit(1) 
 
     jira_data = response.json()
-    issues = jira_data.get('issues', [])
-    print(f"🎯 JIRA SAYS IT FOUND: {len(issues)} tickets!", flush=True)
+    print(f"🎯 JIRA SAYS IT FOUND: {jira_data.get('total', 'UNKNOWN')} tickets!", flush=True)
     
-    return issues
+    return jira_data.get('issues', [])
 
 def extract_field_value(raw_data, target_key='value'):
     if not raw_data: return 'Unassigned'
