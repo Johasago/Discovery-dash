@@ -114,7 +114,7 @@ def process_issues_to_dataframe(issues):
             "Current Status": current_status,
             "Date Entered Status": status_start_date.strftime('%Y-%m-%d'),
             "Days in Current Status": days_in_status,
-            "Problem to Address": problem_raw,
+            "Problem to Address": problem_val,
             "Team": vs_val,
             "Roadmap": roadmap_val
         })
