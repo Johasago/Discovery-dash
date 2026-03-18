@@ -40,6 +40,10 @@ def fetch_jira_issues():
             print(f"🚨 JIRA API ERROR: {response.status_code}")
             print(response.text)
             exit(1)  # This forces the GitHub Action to fail and show a Red X
+
+    # THE NEW TRUTH TELLER:
+    jira_data = response.json()
+    print(f"🎯 JIRA SAYS IT FOUND: {jira_data.get('total', 'UNKNOWN')} tickets!")
     
     if response.status_code != 200:
         print(f"Error {response.status_code}: {response.text}")
