@@ -213,3 +213,43 @@ if not df.empty:
             st.plotly_chart(fig_lt, use_container_width=True)
     else:
         st.warning("Lead Time data not found. Make sure Pair 1 has successfully run `lead_time_extract.py`!")
+
+    # ==========================================
+    # --- 9. THROUGHPUT (Velocity/Pace) ---
+    # ==========================================
+    st.markdown("---")
+    st.header("📊 Throughput (Items Completed Over Time)")
+    st.markdown("Measuring our delivery pace. How many Discovery items are we finishing per month?")
+
+    if not df_lt.empty:
+        # We use the filtered dataframe so your dropdowns still control this chart!
+        df_throughput = filtered_df_lt.copy()
+        
+        if not df_throughput.empty:
+            # 1. Ensure 'Date Completed' is treated as a date
+            df_throughput['Date Completed'] = pd.to_datetime(df_throughput['Date Completed'])
+            
+            # 2. Group by Month (You can change 'M' to 'W' if you prefer Weekly!)
+            df_throughput['Month'] = df_throughput['Date Completed'].dt.to_period('M').astype(str)
+            
+            # 3. Count how many tickets finished in each month
+            throughput_counts = df_throughput.groupby('Month').size().reset_index(name='Items Completed')
+            
+            # 4. Build the Bar Chart using Plotly Express
+            fig_tp = px.bar(
+                throughput_counts,
+                x="Month",
+                y="Items Completed",
+                text="Items Completed",
+                title="Historical Throughput (Completed Items)",
+                color_discrete_sequence=["#2ecc71"] # A nice 'Done' green
+            )
+            
+            # 5. Clean up the formatting
+            fig_tp.update_traces(textposition='outside', marker_line_color='rgb(8,48,107)', marker_line_width=1.5)
+            fig_tp.update_layout(yaxis_title="Count of Completed Items", xaxis_title="Month Completed", height=450)
+            
+            # 6. Render the chart
+            st.plotly_chart(fig_tp, use_container_width=True)
+        else:
+            st.info("No completed items match the current filter selection.")
