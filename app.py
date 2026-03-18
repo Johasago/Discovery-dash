@@ -63,23 +63,37 @@ if not df.empty:
     # --- 4. GLOBAL FILTERS (Control Bar) ---
     st.markdown("### Global Filters")
     
-    # Create 3 columns for our dropdowns
-    col_f1, col_f2, col_f3 = st.columns(3)
+    # Create 4 columns for our dropdowns now!
+    col_f1, col_f2, col_f3, col_f4 = st.columns(4)
     
     with col_f1:
         status_filter = st.multiselect("Filter by Status:", options=df['Current Status'].unique(), default=df['Current Status'].unique())
     
     with col_f2:
-        # Looking for 'Problem to Address' instead of 'Team'
-        problem_options = ["All"] + sorted(list(df['Capability'].dropna().unique()))
-        problem_filter = st.selectbox("Filter by Capability:", options=problem_options)
+        problem_options = ["All"] + sorted(list(df['Problem to Address'].dropna().unique()))
+        problem_filter = st.selectbox("Filter by Problem to Address:", options=problem_options)
         
     with col_f3:
-        vs_options = ["All"] + sorted(list(df['Team'].dropna().unique()))
-        vs_filter = st.selectbox("Filter by Team:", options=vs_options)
+        vs_options = ["All"] + sorted(list(df['Value Stream'].dropna().unique()))
+        vs_filter = st.selectbox("Filter by Value Stream:", options=vs_options)
+
+    with col_f4:
+        # Our brand new Roadmap filter!
+        roadmap_options = ["All"] + sorted(list(df['Roadmap'].dropna().unique()))
+        roadmap_filter = st.selectbox("Filter by Roadmap:", options=roadmap_options)
 
     # --- APPLY FILTERS LOGIC (Top Chart) ---
     filtered_df = df[df['Current Status'].isin(status_filter)]
+    
+    if problem_filter != "All":
+        filtered_df = filtered_df[filtered_df['Problem to Address'] == problem_filter]
+        
+    if vs_filter != "All":
+        filtered_df = filtered_df[filtered_df['Value Stream'] == vs_filter]
+        
+    # Apply the new Roadmap filter to the active WIP chart
+    if roadmap_filter != "All":
+        filtered_df = filtered_df[filtered_df['Roadmap'] == roadmap_filter]
     
     if problem_filter != "All":
         filtered_df = filtered_df[filtered_df['Capability'] == problem_filter]
@@ -148,15 +162,18 @@ if not df.empty:
     df_lt = load_lead_time_data()
 
     if not df_lt.empty:
-        # --- APPLY FILTERS LOGIC (Bottom Chart) ---
+        # --- APPLY FILTERS LOGIC (Bottom Charts) ---
         filtered_df_lt = df_lt.copy()
         
-        # Apply the exact same dropdown filters to the historical data
         if problem_filter != "All" and 'Problem to Address' in filtered_df_lt.columns:
             filtered_df_lt = filtered_df_lt[filtered_df_lt['Problem to Address'] == problem_filter]
             
         if vs_filter != "All" and 'Value Stream' in filtered_df_lt.columns:
             filtered_df_lt = filtered_df_lt[filtered_df_lt['Value Stream'] == vs_filter]
+
+        # Add the new Roadmap filter for historical data!
+        if roadmap_filter != "All" and 'Roadmap' in filtered_df_lt.columns:
+            filtered_df_lt = filtered_df_lt[filtered_df_lt['Roadmap'] == roadmap_filter]
 
         # Now, calculate the math using the FILTERED dataframe
         if not filtered_df_lt.empty:

@@ -71,11 +71,17 @@ def process_issues_to_dataframe(issues):
         
         # 2. Custom Fields (Safely extract Team and Value Stream)
         # ⚠️ Make sure these IDs match your actual Jira custom field IDs!
-        cap_raw = extract_field_value(issue['fields'].get('customfield_13924'))
-        vs_raw = extract_field_value(issue['fields'].get('customfield_10001'), 'name')
+        # Extract the fields
+        problem_raw = extract_field_value(issue['fields'].get('customfield_13923'), 'name')
+        vs_raw = extract_field_value(issue['fields'].get('customfield_10012'))
+        
+        # Add the Roadmap extraction! (Defaults to pulling 'value')
+        roadmap_raw = extract_field_value(issue['fields'].get('customfield_12924'))
 
-        cap_val = cap_raw.get('value', 'Unassigned') if isinstance(cap_raw, dict) else str(cap_raw) if cap_raw else 'Unassigned'
+        problem_val = cap_raw.get('value', 'Unassigned') if isinstance(problem_raw, dict) else str(problem_raw) if problem_raw else 'Unassigned'
         vs_val = vs_raw.get('name', 'Unassigned') if isinstance(vs_raw, dict) else str(vs_raw) if vs_raw else 'Unassigned'
+        roadmap_val = roadmap_raw.get('name', 'Unassigned') if isinstance(roadmap_raw, dict) else str(roadmap_raw) if roadmap_raw else 'Unassigned'
+
 
         # 3. Date Logic (Fallback to created date)
         status_start_date_str = issue['fields'].get('created')
@@ -108,8 +114,9 @@ def process_issues_to_dataframe(issues):
             "Current Status": current_status,
             "Date Entered Status": status_start_date.strftime('%Y-%m-%d'),
             "Days in Current Status": days_in_status,
-            "Capability": cap_val,
-            "Team": vs_val
+            "Problem to Address": problem_raw,
+            "Team": vs_val,
+            "Roadmap": roadmap_val
         })
 
     return pd.DataFrame(data)

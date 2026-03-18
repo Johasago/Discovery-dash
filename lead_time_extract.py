@@ -45,7 +45,7 @@ def fetch_completed_issues():
             'jql': JQL_QUERY, 
             'maxResults': max_results,
             'expand': 'changelog', 
-            'fields': 'summary,status,created, customfield_13923, customfield_10001'
+            'fields': 'summary,status,created, customfield_13923, customfield_10001, customfield_13924'
 
         }
         
@@ -102,11 +102,15 @@ def process_lead_time(issues):
         
         # 2. Extract Custom Fields safely
         # ⚠️ Make sure these IDs match your actual Jira custom field IDs!
-        cap_raw = extract_field_value(issue['fields'].get('customfield_13923'))
+        problem_raw = extract_field_value(issue['fields'].get('customfield_13923'))
         vs_raw = extract_field_value(issue['fields'].get('customfield_10001'), 'name')
+        roadmap_raw = extract_field_value(issue['fields'].get('customfield_13924'))
 
-        cap_val = cap_raw.get('value', 'Unassigned') if isinstance(cap_raw, dict) else str(cap_raw) if cap_raw else 'Unassigned'
+
+        problem_val = problem_raw.get('value', 'Unassigned') if isinstance(problem_raw, dict) else str(problem_raw) if problem_raw else 'Unassigned'
         vs_val = vs_raw.get('value', 'Unassigned') if isinstance(vs_raw, dict) else str(vs_raw) if vs_raw else 'Unassigned'
+        roadmap_val = roadmap_raw.get('value', 'Unassigned') if isinstance(roadmap_raw, dict) else str(roadmap_raw) if roadmap_raw else 'Unassigned'
+
 
         # 3. Date Logic
         created_date = pd.to_datetime(issue['fields']['created'], utc=True)
@@ -138,8 +142,9 @@ def process_lead_time(issues):
                     "Summary": summary,
                     "Date Completed": end_date.strftime('%Y-%m-%d'),
                     "Lead Time (Days)": lead_time_days,
-                    "Capability": cap_val,           # <-- NEW
-                    "Value Stream": vs_val      # <-- NEW
+                    "Problem to Address": problem_val,           # <-- NEW
+                    "Value Stream": vs_val,      # <-- NEW
+                    "Roadmap": roadmap_val
                 })
 
     return pd.DataFrame(data)
