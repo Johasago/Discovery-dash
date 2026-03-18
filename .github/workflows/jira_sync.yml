@@ -2,10 +2,13 @@ name: Nightly Jira Data Extraction
 
 on:
   schedule:
-    # Runs at 02:00 UTC every day
     - cron: '0 2 * * *'
   workflow_dispatch: 
-    # This allows you to click a "Run Workflow" button manually in GitHub anytime!
+
+# --- ADD THIS VIP PASS RIGHT HERE ---
+permissions:
+  contents: write
+# ------------------------------------
 
 jobs:
   extract_data:
@@ -35,6 +38,8 @@ jobs:
           JIRA_URL: ${{ secrets.JIRA_URL }}
           JIRA_EMAIL: ${{ secrets.JIRA_EMAIL }}
           JIRA_API_TOKEN: ${{ secrets.JIRA_API_TOKEN }}
+        # ⚠️ Make sure this filename perfectly matches the file in your repo!
+        # (You typed 'lead_time_extraction.py' earlier, but the YAML says 'lead_time_extract.py')
         run: python lead_time_extract.py
 
       - name: Commit and Push Updated CSVs
@@ -43,5 +48,5 @@ jobs:
           git config --global user.email "actions@github.com"
           git add jira_discovery_data.csv jira_lead_time_data.csv
           git commit -m "Automated data sync: Updated Jira CSVs" || echo "No changes to commit"
-          git pull --rebase origin main  # <-- THE MAGIC TRAFFIC CONTROLLER
+          git pull --rebase origin main  
           git push
