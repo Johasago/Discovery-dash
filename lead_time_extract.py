@@ -38,7 +38,7 @@ def fetch_completed_issues():
             'jql': JQL_QUERY, 
             'maxResults': max_results,
             'expand': 'changelog', 
-            'fields': ['summary', 'status', 'created', 'customfield_13923', 'customfield_10012', 'customfield_12924']
+            'fields': ['summary', 'status', 'created', 'customfield_13923', 'customfield_10001', 'customfield_13924']
         }
         
         if next_page_token:
@@ -83,10 +83,14 @@ def process_lead_time(issues):
         key = issue['key']
         summary = issue['fields']['summary']
         
-        # The helper function returns safe strings. No more dictionary `.get()` logic needed!
-        problem_val = extract_field_value(issue['fields'].get('customfield_13923'), 'name')
-        vs_val = extract_field_value(issue['fields'].get('customfield_10012'))
-        roadmap_val = extract_field_value(issue['fields'].get('customfield_12924'))
+        # 'Problem to Address' needs 'value'
+        problem_val = extract_field_value(issue['fields'].get('customfield_13923'), 'value')
+        
+        # 'Team' needs 'name'
+        vs_val = extract_field_value(issue['fields'].get('customfield_10001'), 'name')
+        
+        # 'Roadmap' usually uses 'value' (Change to 'name' if it outputs a dictionary too!)
+        roadmap_val = extract_field_value(issue['fields'].get('customfield_13924'), 'value')
 
         created_date = pd.to_datetime(issue['fields']['created'], utc=True)
         start_date = None

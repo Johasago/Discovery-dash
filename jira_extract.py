@@ -25,7 +25,7 @@ def fetch_jira_issues():
         'maxResults': 100, 
         'expand': 'changelog', 
         # Aligned these IDs so they perfectly match the extraction loop below
-        'fields': 'summary,status,created,customfield_13923,customfield_10012,customfield_12924'
+        'fields': 'summary,status,created,customfield_13923,customfield_10001,customfield_13924'
     }
 
     response = requests.get(url, headers=headers, params=query, auth=auth)
@@ -57,10 +57,14 @@ def process_issues_to_dataframe(issues):
         summary = issue['fields']['summary']
         current_status = issue['fields']['status']['name']
         
-        # The helper function already returns safe strings, no messy dict logic needed!
-        problem_val = extract_field_value(issue['fields'].get('customfield_13923'), 'name')
-        vs_val = extract_field_value(issue['fields'].get('customfield_10012'))
-        roadmap_val = extract_field_value(issue['fields'].get('customfield_12924'))
+        # 'Problem to Address' needs 'value'
+        problem_val = extract_field_value(issue['fields'].get('customfield_13923'), 'value')
+        
+        # 'Team' needs 'name'
+        vs_val = extract_field_value(issue['fields'].get('customfield_10001'), 'name')
+        
+        # 'Roadmap' usually uses 'value' (Change to 'name' if it outputs a dictionary too!)
+        roadmap_val = extract_field_value(issue['fields'].get('customfield_13924'), 'value')
 
         status_start_date_str = issue['fields'].get('created')
         changelog = issue.get('changelog', {}).get('histories', [])
