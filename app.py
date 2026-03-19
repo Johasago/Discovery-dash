@@ -4,6 +4,27 @@ import plotly.express as px
 
 # --- PAGE CONFIGURATION ---
 st.set_page_config(page_title="Discovery Dashboard", layout="wide")
+
+# --- 🔒 PASSWORD PROTECTION GATE ---
+if "authenticated" not in st.session_state:
+    st.session_state.authenticated = False
+
+if not st.session_state.authenticated:
+    st.title("🔒 Restricted Access")
+    pwd = st.text_input("Please enter the password to view the dashboard:", type="password")
+    
+    if st.button("Login"):
+        # We use st.secrets in the cloud, but provide a default for your local laptop testing!
+        if pwd == st.secrets.get("dashboard_password", "hackathon2024"):
+            st.session_state.authenticated = True
+            st.rerun() # Refreshes the page to show the dashboard
+        else:
+            st.error("Incorrect password. Please try again.")
+            
+    st.stop() # 🛑 This completely stops the rest of the app from running!
+# -----------------------------------
+
+# (The rest of your code stays exactly the same from here down...)
 st.title("📊 Discovery Dashboard")
 
 # --- 1. DATA LOADING & CLEANING ---
