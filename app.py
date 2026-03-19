@@ -1,6 +1,8 @@
 import streamlit as st
 import pandas as pd
 import plotly.express as px
+import os
+from datetime import datetime
 
 # --- PAGE CONFIGURATION ---
 st.set_page_config(page_title="Discovery Dashboard", layout="wide")
@@ -59,6 +61,16 @@ for df in [df_wip, df_lead]:
 # --- 2. SIDEBAR FILTERS ---
 st.sidebar.header("Filter Data")
 
+# --- NEW: LAST UPDATED TIMESTAMP ---
+try:
+    # Check exactly when the CSV file was last modified by your Python script
+    mtime = os.path.getmtime("jira_discovery_data.csv")
+    last_updated = datetime.fromtimestamp(mtime).strftime('%B %d, %Y at %I:%M %p')
+    st.sidebar.caption(f"🕒 **Last Data Refresh:** \n{last_updated}")
+except FileNotFoundError:
+    st.sidebar.caption("🕒 **Last Data Refresh:** Unknown")
+# -----------------------------------
+
 def get_unique_options(col_name):
     opts = set()
     if not df_wip.empty and col_name in df_wip.columns:
@@ -72,21 +84,46 @@ selected_team = st.sidebar.selectbox("Team", get_unique_options("Team"))
 selected_roadmap = st.sidebar.selectbox("Roadmap", get_unique_options("Roadmap"))
 
 # --- 3. FILTERING LOGIC ---
-def apply_filters(df):
-    if df.empty: return df
-    filtered = df.copy()
-    
-    if selected_problem != "All" and "Problem to Address" in filtered.columns:
-        filtered = filtered[filtered["Problem to Address"] == selected_problem]
-    if selected_team != "All" and "Team" in filtered.columns:
-        filtered = filtered[filtered["Team"] == selected_team]
-    if selected_roadmap != "All" and "Roadmap" in filtered.columns:
-        filtered = filtered[filtered["Roadmap"] == selected_roadmap]
-        
-    return filtered
-
+# ... (your existing filter code is here)
 wip_filtered = apply_filters(df_wip)
 lead_filtered = apply_filters(df_lead)
+
+
+# ==========================================
+# --- NEW: SMART EXECUTIVE SUMMARY ---
+# ==========================================
+if not lead_filtered.empty and not wip_filtered.empty:
+    st.subheader("💡 Executive Summary")
+    
+    # 1. Calculate the 85th Percentile Danger Zone
+    p85 = round(lead_filtered['Lead Time (Days)'].quantile(0.85))
+    stalled_tickets = len(wip_filtered[wip_filtered['Days in Current Status'] > p85])
+    
+    # 2. Calculate Throughput Trend (Using the latest date in your data as the anchor)
+    latest_date = lead_filtered['Date Completed'].max()
+    last_30_days = latest_date - pd.Timedelta(days=30)
+    prev_30_days = latest_date - pd.Timedelta(days=60)
+    
+    completed_last_30 = len(lead_filtered[lead_filtered['Date Completed'] >= last_30_days])
+    completed_prev_30 = len(lead_filtered[(lead_filtered['Date Completed'] >= prev_30_days) & (lead_filtered['Date Completed'] < last_30_days)])
+    
+    # 3. Draft the dynamic messages
+    if completed_last_30 > completed_prev_30:
+        trend_msg = f"🚀 **Great news:** Delivery is accelerating. The team completed **{completed_last_30}** tickets in the last 30 days, up from {completed_prev_30} the previous month."
+    elif completed_last_30 < completed_prev_30:
+        trend_msg = f"⚠️ **Attention:** Throughput is down. The team completed **{completed_last_30}** tickets in the last 30 days, compared to {completed_prev_30} the previous month."
+    else:
+        trend_msg = f"⚖️ **Steady:** Delivery is stable. The team completed **{completed_last_30}** tickets in the last 30 days, perfectly matching the previous month's pace."
+        
+    if stalled_tickets > 0:
+        wip_msg = f"🚨 **Action Needed:** There are **{stalled_tickets}** active tickets currently sitting in the Danger Zone (older than your {p85}-day 85th percentile). Check the Aging WIP chart below to swarm them."
+    else:
+        wip_msg = f"✅ **Healthy Flow:** None of your active tickets have crossed into the {p85}-day Danger Zone. Keep it up!"
+        
+    # 4. Display the summary in a nice blue callout box
+    st.info(f"{trend_msg}\n\n{wip_msg}")
+    st.divider()
+# ==========================================
 
 
 # --- 4. ACTIVE WIP DASHBOARD ---
@@ -94,8 +131,8 @@ st.header("🔄 Active Work In Progress")
 
 if not wip_filtered.empty:
     st.metric("Total Active Tickets", len(wip_filtered))
-    col1, col2 = st.columns(2)
     
+    col1, col2 = st.columns(2)
     with col1:
         st.subheader("Tickets by Status")
         status_counts = wip_filtered['Current Status'].value_counts().reset_index()
@@ -107,6 +144,39 @@ if not wip_filtered.empty:
         st.subheader("Days in Current Status")
         fig_days = px.histogram(wip_filtered, x='Days in Current Status', nbins=20, color='Current Status')
         st.plotly_chart(fig_days, use_container_width=True)
+
+    # ==========================================
+    # --- NEW: AGING WIP CHART (DANGER ZONE) ---
+    # ==========================================
+    st.subheader("⚠️ Aging WIP (The Danger Zone)")
+    
+    # We use px.strip to spread the dots out so they don't overlap perfectly
+    fig_aging = px.strip(
+        wip_filtered, 
+        x='Current Status', 
+        y='Days in Current Status', 
+        color='Team',
+        hover_data=['Ticket ID', 'Summary']
+    )
+    
+    # Make the dots a bit larger and easier to see
+    fig_aging.update_traces(marker=dict(size=12, opacity=0.8, line=dict(width=1, color='DarkSlateGrey')))
+    
+    # Grab the historical 85th percentile to draw the Danger Line
+    if not df_lead.empty:
+        danger_line = round(df_lead['Lead Time (Days)'].quantile(0.85))
+        fig_aging.add_hline(
+            y=danger_line, 
+            line_dash="dash", 
+            line_color="red", 
+            annotation_text=f"Historical 85th Percentile ({danger_line}d)"
+        )
+        
+    st.plotly_chart(fig_aging, use_container_width=True)
+    # ==========================================
+
+    with st.expander("View Raw Active WIP Data"):
+        st.dataframe(wip_filtered)
 else:
     st.info("No active tickets match the current filters.")
 
