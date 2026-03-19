@@ -84,6 +84,20 @@ selected_team = st.sidebar.selectbox("Team", get_unique_options("Team"))
 selected_roadmap = st.sidebar.selectbox("Roadmap", get_unique_options("Roadmap"))
 
 # --- 3. FILTERING LOGIC ---
+def apply_filters(df):
+    if df.empty: return df
+    filtered = df.copy()
+    
+    if selected_problem != "All" and "Problem to Address" in filtered.columns:
+        filtered = filtered[filtered["Problem to Address"] == selected_problem]
+    if selected_team != "All" and "Team" in filtered.columns:
+        filtered = filtered[filtered["Team"] == selected_team]
+    if selected_roadmap != "All" and "Roadmap" in filtered.columns:
+        filtered = filtered[filtered["Roadmap"] == selected_roadmap]
+        
+    return filtered
+
+# --- 3. FILTERING LOGIC ---
 # ... (your existing filter code is here)
 wip_filtered = apply_filters(df_wip)
 lead_filtered = apply_filters(df_lead)
@@ -124,7 +138,6 @@ if not lead_filtered.empty and not wip_filtered.empty:
     st.info(f"{trend_msg}\n\n{wip_msg}")
     st.divider()
 # ==========================================
-
 
 # --- 4. ACTIVE WIP DASHBOARD ---
 st.header("🔄 Active Work In Progress")
