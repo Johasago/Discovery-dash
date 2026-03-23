@@ -84,6 +84,19 @@ selected_problem = st.sidebar.selectbox("Problem to Address", get_unique_options
 selected_team = st.sidebar.selectbox("Team", get_unique_options("Team"))
 selected_roadmap = st.sidebar.selectbox("Roadmap", get_unique_options("Roadmap"))
 
+# --- SIDEBAR: PERIOD COMPARISON DATES ---
+st.sidebar.divider()
+st.sidebar.header("⚖️ Compare Periods")
+
+# Default to comparing the last 30 days vs the 30 days before that
+today = datetime.today().date()
+p1_default = (today - pd.Timedelta(days=30), today)
+p2_default = (today - pd.Timedelta(days=60), today - pd.Timedelta(days=31))
+
+# Streamlit allows users to select a start and end date in a single click!
+period1 = st.sidebar.date_input("Primary Period (P1)", value=p1_default)
+period2 = st.sidebar.date_input("Comparison Period (P2)", value=p2_default)
+
 # --- 3. FILTERING LOGIC ---
 def apply_filters(df):
     if df.empty: return df
@@ -104,30 +117,64 @@ if selected_team != "All" and not cfd_filtered.empty:
     cfd_filtered = cfd_filtered[cfd_filtered['Team'] == selected_team]
 
 
-# --- SMART EXECUTIVE SUMMARY ---
-if not lead_filtered.empty and not wip_filtered.empty:
-    st.subheader("💡 Executive Summary")
-    p85 = round(lead_filtered['Lead Time (Days)'].quantile(0.85))
-    stalled_tickets = len(wip_filtered[wip_filtered['Days in Current Status'] > p85])
+# ==========================================
+# --- NEW: DYNAMIC PERIOD COMPARISON ---
+# ==========================================
+if not lead_filtered.empty:
+    st.subheader("⚖️ Period-over-Period Performance")
+    st.caption("Compare your Primary Period (P1) against your Comparison Period (P2) using the sidebar controls.")
     
-    latest_date = lead_filtered['Date Completed'].max()
-    last_30_days = latest_date - pd.Timedelta(days=30)
-    prev_30_days = latest_date - pd.Timedelta(days=60)
-    
-    completed_last_30 = len(lead_filtered[lead_filtered['Date Completed'] >= last_30_days])
-    completed_prev_30 = len(lead_filtered[(lead_filtered['Date Completed'] >= prev_30_days) & (lead_filtered['Date Completed'] < last_30_days)])
-    
-    if completed_last_30 > completed_prev_30:
-        trend_msg = f"🚀 **Great news:** Delivery is accelerating. The team completed **{completed_last_30}** tickets in the last 30 days, up from {completed_prev_30} the previous month."
-    elif completed_last_30 < completed_prev_30:
-        trend_msg = f"⚠️ **Attention:** Throughput is down. The team completed **{completed_last_30}** tickets in the last 30 days, compared to {completed_prev_30} the previous month."
-    else:
-        trend_msg = f"⚖️ **Steady:** Delivery is stable. The team completed **{completed_last_30}** tickets in the last 30 days, matching the previous month's pace."
+    # 1. Safety Catch: Streamlit date_input returns a tuple of 1 if the user hasn't clicked their end date yet!
+    def get_dates(date_input, default_dates):
+        if isinstance(date_input, tuple) and len(date_input) == 2:
+            return pd.to_datetime(date_input[0]), pd.to_datetime(date_input[1])
+        return pd.to_datetime(default_dates[0]), pd.to_datetime(default_dates[1])
         
-    wip_msg = f"🚨 **Action Needed:** **{stalled_tickets}** active tickets are sitting in the Danger Zone (> {p85} days)." if stalled_tickets > 0 else f"✅ **Healthy Flow:** No active tickets are currently in the Danger Zone."
-        
-    st.info(f"{trend_msg}\n\n{wip_msg}")
+    p1_start, p1_end = get_dates(period1, p1_default)
+    p2_start, p2_end = get_dates(period2, p2_default)
+    
+    # 2. Filter the data into two distinct buckets based on when the ticket finished
+    p1_df = lead_filtered[(lead_filtered['Date Completed'] >= p1_start) & (lead_filtered['Date Completed'] <= p1_end)]
+    p2_df = lead_filtered[(lead_filtered['Date Completed'] >= p2_start) & (lead_filtered['Date Completed'] <= p2_end)]
+    
+    # 3. Calculate the metrics for both periods
+    p1_throughput = len(p1_df)
+    p2_throughput = len(p2_df)
+    
+    p1_avg = p1_df['Lead Time (Days)'].mean() if not p1_df.empty else 0
+    p2_avg = p2_df['Lead Time (Days)'].mean() if not p2_df.empty else 0
+    
+    p1_85th = p1_df['Lead Time (Days)'].quantile(0.85) if not p1_df.empty else 0
+    p2_85th = p2_df['Lead Time (Days)'].quantile(0.85) if not p2_df.empty else 0
+    
+    # 4. Draw the UI Cards
+    c1, c2, c3 = st.columns(3)
+    
+    # Throughput (Higher is better, normal delta)
+    c1.metric(
+        label="🚀 Throughput (Tickets)", 
+        value=p1_throughput, 
+        delta=int(p1_throughput - p2_throughput)
+    )
+    
+    # Average Lead Time (Lower is better, so we INVERSE the delta color!)
+    c2.metric(
+        label="📊 Avg Lead Time", 
+        value=f"{p1_avg:.1f}d", 
+        delta=f"{p1_avg - p2_avg:.1f}d",
+        delta_color="inverse" 
+    )
+    
+    # 85th Percentile (Lower is better, so we INVERSE the delta color!)
+    c3.metric(
+        label="🔥 85th Percentile", 
+        value=f"{p1_85th:.1f}d", 
+        delta=f"{p1_85th - p2_85th:.1f}d",
+        delta_color="inverse"
+    )
+    
     st.divider()
+# ==========================================
 
 # --- 4. ACTIVE WIP DASHBOARD ---
 st.header("🔄 Active Work In Progress")
