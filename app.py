@@ -194,37 +194,49 @@ if not lead_filtered.empty:
 
         st.divider()
 
+       # ==========================================
+        # --- NEW: ROLLING COEFFICIENT OF VARIATION (CV) ---
         # ==========================================
-        # --- NEW: ROLLING VARIATION LINE CHART ---
-        # ==========================================
-        st.subheader("📉 Rolling Variation (Standard Deviation over Time)")
-        st.caption("This 14-day rolling line tracks your predictability. A downward trend means the team is eliminating bottlenecks and becoming highly consistent!")
+        st.subheader("📉 Predictability Trend (Coefficient of Variation)")
+        st.caption("Tracks relative variation as a percentage of your average lead time. A downward trend means you are becoming highly predictable!")
         
-        # Calculate the 14-Day Rolling Standard Deviation
+        # 1. Prep the data chronologically
         var_trend_df = lead_filtered.sort_values('Date Completed').copy()
         var_trend_df = var_trend_df.set_index('Date Completed')
         
-        # min_periods=2 is crucial here because SD requires at least 2 data points!
-        var_trend_df['Rolling Variation (14D)'] = var_trend_df['Lead Time (Days)'].rolling('14D', min_periods=2).std()
+        # 2. Calculate both the Rolling Mean and Rolling SD (min 2 data points)
+        rolling_mean = var_trend_df['Lead Time (Days)'].rolling('14D', min_periods=2).mean()
+        rolling_std = var_trend_df['Lead Time (Days)'].rolling('14D', min_periods=2).std()
+        
+        # 3. Calculate the Coefficient of Variation (CV) as a Percentage
+        var_trend_df['Rolling CV (%)'] = (rolling_std / rolling_mean) * 100
+        
         var_trend_df = var_trend_df.reset_index()
 
-        # Drop any blank days where we didn't have enough data to calculate SD
-        var_trend_clean = var_trend_df.dropna(subset=['Rolling Variation (14D)'])
+        # 4. Clean up blank days
+        var_trend_clean = var_trend_df.dropna(subset=['Rolling CV (%)'])
 
+        # 5. Draw the chart
         if not var_trend_clean.empty:
-            fig_rolling_var = px.line(
+            fig_rolling_cv = px.line(
                 var_trend_clean, 
                 x='Date Completed', 
-                y='Rolling Variation (14D)',
+                y='Rolling CV (%)',
                 markers=True,
-                line_shape='spline' # Keeps the curve smooth!
+                line_shape='spline',
+                hover_data=['Ticket ID']
             )
             
-            fig_rolling_var.update_traces(line=dict(color='orange', width=3))
-            fig_rolling_var.update_layout(yaxis_title="Variation Spread (Days)", xaxis_title="Date")
-            st.plotly_chart(fig_rolling_var, use_container_width=True)
+            # Make it look great
+            fig_rolling_cv.update_traces(line=dict(color='purple', width=3))
+            fig_rolling_cv.update_layout(
+                yaxis_title="Coefficient of Variation (%)", 
+                xaxis_title="Date",
+                yaxis_ticksuffix="%" # Adds a % sign to the axis labels
+            )
+            st.plotly_chart(fig_rolling_cv, use_container_width=True)
         else:
-            st.info("Not enough data to calculate a 14-day rolling variation yet.")
+            st.info("Not enough data to calculate a 14-day rolling Coefficient of Variation yet.")
         # ==========================================
 
     with tab3:
