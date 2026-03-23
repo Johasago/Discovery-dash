@@ -194,51 +194,49 @@ if not lead_filtered.empty:
 
         st.divider()
 
-       # ==========================================
-        # --- NEW: ROLLING COEFFICIENT OF VARIATION (CV) ---
+      # ==========================================
+        # --- NEW: MONTHLY COEFFICIENT OF VARIATION (CV) ---
         # ==========================================
-        st.subheader("📉 Predictability Trend (Coefficient of Variation)")
-        st.caption("Tracks relative variation as a percentage of your average lead time. A downward trend means you are becoming highly predictable!")
+        st.subheader("📉 Monthly Predictability (Coefficient of Variation)")
+        st.caption("Tracks relative variation as a percentage of your average lead time per month. A lower percentage means the team is becoming more predictable!")
         
-        # 1. Prep the data chronologically
-        var_trend_df = lead_filtered.sort_values('Date Completed').copy()
-        var_trend_df = var_trend_df.set_index('Date Completed')
+        # 1. Create a "Month" column for grouping
+        cv_monthly_df = lead_filtered.copy()
+        cv_monthly_df['Completion Month'] = cv_monthly_df['Date Completed'].dt.to_period('M')
         
-        # 2. Calculate both the Rolling Mean and Rolling SD (min 2 data points)
-        rolling_mean = var_trend_df['Lead Time (Days)'].rolling('14D', min_periods=2).mean()
-        rolling_std = var_trend_df['Lead Time (Days)'].rolling('14D', min_periods=2).std()
+        # 2. Group by month and calculate the Mean and Standard Deviation
+        monthly_stats = cv_monthly_df.groupby('Completion Month')['Lead Time (Days)'].agg(['mean', 'std']).reset_index()
         
-        # 3. Calculate the Coefficient of Variation (CV) as a Percentage
-        var_trend_df['Rolling CV (%)'] = (rolling_std / rolling_mean) * 100
+        # 3. Calculate the Coefficient of Variation (%)
+        monthly_stats['CV (%)'] = (monthly_stats['std'] / monthly_stats['mean']) * 100
         
-        var_trend_df = var_trend_df.reset_index()
-
-        # 4. Clean up blank days
-        var_trend_clean = var_trend_df.dropna(subset=['Rolling CV (%)'])
-
-        # 5. Draw the chart
-        if not var_trend_clean.empty:
-            fig_rolling_cv = px.line(
-                var_trend_clean, 
-                x='Date Completed', 
-                y='Rolling CV (%)',
-                markers=True,
-                line_shape='spline',
-                hover_data=['Ticket ID']
+        # 4. Clean up the dates so Plotly can read them perfectly
+        monthly_stats['Month'] = monthly_stats['Completion Month'].dt.to_timestamp()
+        
+        # Drop any months that only had 1 ticket (Standard Deviation requires at least 2)
+        monthly_stats = monthly_stats.dropna(subset=['CV (%)'])
+        
+        if not monthly_stats.empty:
+            # Draw a beautiful Bar Chart
+            fig_monthly_cv = px.bar(
+                monthly_stats, 
+                x='Month', 
+                y='CV (%)',
+                text_auto='.1f', # Automatically prints the exact percentage on top of each bar!
             )
             
-            # Make it look great
-            fig_rolling_cv.update_traces(line=dict(color='purple', width=3))
-            fig_rolling_cv.update_layout(
-                yaxis_title="Coefficient of Variation (%)", 
-                xaxis_title="Date",
-                yaxis_ticksuffix="%" # Adds a % sign to the axis labels
+            fig_monthly_cv.update_traces(marker_color='purple')
+            fig_monthly_cv.update_layout(
+                xaxis_title="Month Completed",
+                yaxis_title="Coefficient of Variation (%)",
+                xaxis_tickformat='%b %Y', # Formats the axis labels cleanly (e.g., "Jan 2026")
+                yaxis_ticksuffix="%" # Adds a % sign to the Y-axis
             )
-            st.plotly_chart(fig_rolling_cv, use_container_width=True)
+            st.plotly_chart(fig_monthly_cv, use_container_width=True)
         else:
-            st.info("Not enough data to calculate a 14-day rolling Coefficient of Variation yet.")
+            st.info("Not enough data to calculate monthly Coefficient of Variation yet (requires at least 2 tickets completed in a single month).")
         # ==========================================
-
+        
     with tab3:
         throughput_df = lead_filtered.copy()
         throughput_df['Completion Week'] = throughput_df['Date Completed'].dt.to_period('W').apply(lambda r: r.start_time)
