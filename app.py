@@ -181,13 +181,41 @@ if not lead_filtered.empty:
         fig_lead.add_hline(y=p85, line_dash="dash", line_color="red", annotation_text=f"85th Percentile ({p85}d)")
         st.plotly_chart(fig_lead, use_container_width=True)
 
+        # TAB 2: Predictability
     with tab2:
+        # 1. The existing Control Chart
         fig_control = px.scatter(lead_filtered, x='Date Completed', y='Lead Time (Days)', color='Team', hover_data=['Ticket ID', 'Summary'])
         fig_control.add_hline(y=mean_lead, line_width=2, line_color="green", annotation_text=f"Average: {mean_lead:.1f}d")
         fig_control.add_hline(y=mean_lead + std_lead, line_dash="dash", line_color="orange", annotation_text=f"+1 SD ({round(mean_lead + std_lead, 1)}d)")
         if (mean_lead + (2 * std_lead)) < lead_filtered['Lead Time (Days)'].max() * 1.5:
             fig_control.add_hline(y=mean_lead + (2 * std_lead), line_dash="dot", line_color="red")
         st.plotly_chart(fig_control, use_container_width=True)
+
+        st.divider()
+
+        # ==========================================
+        # --- NEW: VARIATION OVER TIME CHART ---
+        # ==========================================
+        st.subheader("📉 Variation Over Time")
+        st.caption("Are our delivery times getting more consistent? Shorter boxes mean higher predictability.")
+        
+        # Group the data by Week
+        var_df = lead_filtered.copy()
+        var_df['Completion Week'] = var_df['Date Completed'].dt.to_period('W').apply(lambda r: r.start_time)
+        
+        # Create a Box Plot to show the spread (variation) for each week
+        fig_var = px.box(
+            var_df, 
+            x='Completion Week', 
+            y='Lead Time (Days)', 
+            color='Team',
+            points="all", # This overlays the actual ticket dots next to the box!
+            hover_data=['Ticket ID']
+        )
+        
+        fig_var.update_layout(xaxis_title="Week Completed", yaxis_title="Lead Time Spread (Days)")
+        st.plotly_chart(fig_var, use_container_width=True)
+        # ==========================================
 
     with tab3:
         throughput_df = lead_filtered.copy()
