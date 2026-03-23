@@ -1,6 +1,6 @@
 Ticket ID,Summary,Date Completed,Lead Time (Days),Problem to Address,Team,Roadmap
 PLD-109,Add Design to MultiQuote in US journeys,2026-03-16,10.0,Quoting,Mind The Gap,Insurance Product Management
-PLD-107,add version checks to start_with_local_rater,2026-03-16,5.0,I want a better developer experience,Vivace,Developer Experience
+PLD-107,add version checks to start_with_local_rater,2026-03-23,10.0,I want a better developer experience,Vivace,Developer Experience
 PLD-105,Chopin Dev Tools environment status,2026-02-20,8.0,I want a better developer experience,Vivace,Developer Experience
 PLD-103,Env Up script,2026-02-24,11.0,I want a better developer experience,Vivace,Developer Experience
 PLD-101,LLM Mapping from Carrier to SB,2026-03-09,17.0,Quoting,Mind The Gap,Insurance Product Management
