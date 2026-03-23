@@ -195,7 +195,7 @@ if not lead_filtered.empty:
         st.divider()
 
       # ==========================================
-        # --- NEW: MONTHLY COEFFICIENT OF VARIATION (CV) ---
+        # --- NEW: MONTHLY COEFFICIENT OF VARIATION (CV) WITH TREND LINE ---
         # ==========================================
         st.subheader("📉 Monthly Predictability (Coefficient of Variation)")
         st.caption("Tracks relative variation as a percentage of your average lead time per month. A lower percentage means the team is becoming more predictable!")
@@ -217,26 +217,39 @@ if not lead_filtered.empty:
         monthly_stats = monthly_stats.dropna(subset=['CV (%)'])
         
         if not monthly_stats.empty:
-            # Draw a beautiful Bar Chart
+            # 5. Draw the Base Bar Chart
             fig_monthly_cv = px.bar(
                 monthly_stats, 
                 x='Month', 
                 y='CV (%)',
-                text_auto='.1f', # Automatically prints the exact percentage on top of each bar!
+                text_auto='.1f', # Prints the exact percentage on the bars
             )
             
-            fig_monthly_cv.update_traces(marker_color='purple')
+            fig_monthly_cv.update_traces(marker_color='#636EFA', textposition='outside')
+            
+            # 6. OVERLAY THE TREND LINE
+            fig_monthly_cv.add_scatter(
+                x=monthly_stats['Month'], 
+                y=monthly_stats['CV (%)'],
+                mode='lines+markers',
+                name='CV Trend',
+                line=dict(color='#FF7F0E', width=3, shape='spline'), # Smooth orange line
+                marker=dict(size=8)
+            )
+            
+            # 7. Final Polish
             fig_monthly_cv.update_layout(
                 xaxis_title="Month Completed",
                 yaxis_title="Coefficient of Variation (%)",
-                xaxis_tickformat='%b %Y', # Formats the axis labels cleanly (e.g., "Jan 2026")
-                yaxis_ticksuffix="%" # Adds a % sign to the Y-axis
+                xaxis_tickformat='%b %Y', 
+                yaxis_ticksuffix="%",
+                showlegend=False # Hides the unnecessary legend since it's obvious what the line is
             )
             st.plotly_chart(fig_monthly_cv, use_container_width=True)
         else:
             st.info("Not enough data to calculate monthly Coefficient of Variation yet (requires at least 2 tickets completed in a single month).")
         # ==========================================
-        
+
     with tab3:
         throughput_df = lead_filtered.copy()
         throughput_df['Completion Week'] = throughput_df['Date Completed'].dt.to_period('W').apply(lambda r: r.start_time)
