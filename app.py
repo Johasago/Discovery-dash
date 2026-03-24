@@ -231,7 +231,7 @@ if view_mode == "🔄 Current Active WIP":
                         
                         # Create the full Jira URL for each ticket
                         # 🚨 UPDATE THIS URL TO MATCH YOUR COMPANY'S JIRA DOMAIN:
-                        jira_base_url = "https://yourcompany.atlassian.net/browse/"
+                        jira_base_url = "https://simplybusiness.atlassian.net/browse/"
                         display_df['Jira Link'] = jira_base_url + display_df['Ticket ID']
                         
                         # Select only the columns we want to show
