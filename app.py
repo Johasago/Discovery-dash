@@ -227,12 +227,30 @@ if view_mode == "🔄 Current Active WIP":
                     
                     # 2. Draw a clean, interactive table of the exact tickets
                     with st.expander("🔍 View Bottlenecked Tickets", expanded=True):
-                        # Clean up the dataframe so it only shows what the team needs to see
-                        display_df = danger_tickets[['Ticket ID', 'Summary', 'Current Status', 'Days in Current Status', 'Roadmap']]
-                        # Sort it so the oldest, most dangerous tickets are at the top!
+                        display_df = danger_tickets.copy()
+                        
+                        # Create the full Jira URL for each ticket
+                        # 🚨 UPDATE THIS URL TO MATCH YOUR COMPANY'S JIRA DOMAIN:
+                        jira_base_url = "https://yourcompany.atlassian.net/browse/"
+                        display_df['Jira Link'] = jira_base_url + display_df['Ticket ID']
+                        
+                        # Select only the columns we want to show
+                        display_df = display_df[['Jira Link', 'Summary', 'Current Status', 'Days in Current Status', 'Roadmap']]
                         display_df = display_df.sort_values(by='Days in Current Status', ascending=False)
                         
-                        st.dataframe(display_df, hide_index=True, use_container_width=True)
+                        # 3. Use Streamlit's column_config to format the hyperlink beautifully
+                        st.dataframe(
+                            display_df, 
+                            hide_index=True, 
+                            use_container_width=True,
+                            column_config={
+                                "Jira Link": st.column_config.LinkColumn(
+                                    "Ticket ID", # The column header
+                                    # This Regex hides the URL and only shows the ticket number!
+                                    display_text=f"{jira_base_url}(.*)" 
+                                )
+                            }
+                        )
                 else:
                     st.success(f"✅ **Flow is healthy:** Zero active tickets have crossed your {danger_line}-day danger line.")
             # --------------------------------------
