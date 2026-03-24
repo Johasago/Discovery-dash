@@ -206,7 +206,7 @@ DP-972,Embedding Insurance Advisor onto white label applications - Tivly,Assessi
 DP-970,Short Journey experiment leveraging Coterie existing journey (all of BOP),Idea Backlog,41,2026-02-11 16:23:49.879,US IP Offering
 DP-969,"Rewrite, simplify, and move Email & SMS Consent in application journey",Idea Backlog,60,2026-01-23 14:39:00.138,US Buy
 DP-968,Add motor trade risk capture,Idea Backlog,61,2026-01-22 17:21:27.103,UK IP Offering
-DP-967,Dynamic Sum Insured Cover Caps for Tennant Type,Idea Backlog,25,2026-02-26 17:38:18.065,UK IP Offering
+DP-967,Dynamic Sum Insured Cover Caps for Tennant Type,Idea Backlog,26,2026-02-26 17:38:18.065,UK IP Offering
 DP-964,Create a basic journey for motor trade risk capture,Idea Backlog,61,2026-01-22 15:03:45.372,UK IP Offering
 DP-963,Add ‘we’ll email you’ to motor trade SMS messages,Idea Backlog,61,2026-01-22 15:02:07.678,UK IP Offering
 DP-962,Call motor trade customers at same time as their RFQ submitted,Idea Backlog,61,2026-01-22 14:53:59.314,UK IP Offering
@@ -593,7 +593,7 @@ DP-363,Day 2 Agent Assist Connect Books,Idea Backlog,211,2025-08-25 14:47:35.474
 DP-362,SSO - Agentero Agent Partner Launch,Idea Backlog,211,2025-08-25 14:46:48.572,US Partners
 DP-359,[Post IVANS] Enable non HBW BOP for Agents,Idea Backlog,148,2025-10-27 12:57:07.994,US Partners
 DP-358,[Post IVANS] Enable WC for Agents,Idea Backlog,200,2025-09-04 18:36:31.525,US Partners
-DP-357,[Tivly] Pre-pop SMS journey links,Design/Solution Validation,201,2025-09-03 17:44:04.463,US Partners
+DP-357,[Tivly] Pre-pop SMS journey links,Design/Solution Validation,202,2025-09-03 17:44:04.463,US Partners
 DP-355,[Nantucket Lighthouse] Enable ACORD Forms in Agent Portal ,Idea Backlog,211,2025-08-25 14:32:29.769,US Partners
 DP-354,Full capability COI Chat Bot (Agent)--dependent on chat service build,Idea Backlog,158,2025-10-16 18:08:47.673,US Partners
 DP-336,Transactional Account Prompts: Remind Customers to update contact details,Idea Backlog,215,2025-08-21 10:54:56.059,UK Support & Growth
