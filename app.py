@@ -69,6 +69,9 @@ for df in [df_wip, df_lead, df_cfd]:
             }).fillna(df['Project Category']) # Keeps any other prefixes intact just in case
 
 # --- 2. SIDEBAR FILTERS ---
+st.sidebar.header("🧭 Navigation")
+view_mode = st.sidebar.radio("Select View:", ["🔄 Current Active WIP", "📈 Historical Trends"])
+st.sidebar.divider()
 st.sidebar.header("Filter Data")
 
 try:
@@ -197,45 +200,56 @@ if not lead_filtered.empty:
         st.error(f"**🔴 Delivery Warning:** The team delivered {abs(throughput_diff)} fewer tickets, and lead time increased by {abs(lead_time_diff):.1f} days. Check the Aging WIP chart below for immediate blockers.")
 
 # --- 4. ACTIVE WIP DASHBOARD ---
-st.header("🔄 Active Work In Progress")
-if not wip_filtered.empty:
-    col1, col2 = st.columns(2)
-    with col1:
-        status_counts = wip_filtered['Current Status'].value_counts().reset_index()
-        status_counts.columns = ['Status', 'Count']
-        fig_status = px.bar(status_counts, x='Status', y='Count', text_auto=True, color='Status', title="Tickets by Status")
-        st.plotly_chart(fig_status, use_container_width=True)
-        
-    with col2:
-        st.subheader("⚠️ Aging WIP (Danger Zone)")
-        # Changed color to Roadmap
-        fig_aging = px.strip(wip_filtered, x='Current Status', y='Days in Current Status', color='Roadmap', hover_data=['Ticket ID', 'Summary'])
-        fig_aging.update_traces(marker=dict(size=12, opacity=0.8, line=dict(width=1, color='DarkSlateGrey')))
-        if not df_lead.empty:
-            danger_line = round(df_lead['Lead Time (Days)'].quantile(0.85))
-            fig_aging.add_hline(y=danger_line, line_dash="dash", line_color="red", annotation_text=f"85th Percentile ({danger_line}d)")
-        st.plotly_chart(fig_aging, use_container_width=True)
-else:
-    st.info("No active tickets match the current filters.")
+if view_mode == "🔄 Current Active WIP":
+    st.header("🔄 Active Work In Progress")
+    
+    if not wip_filtered.empty:
+        col1, col2 = st.columns(2)
+        with col1:
+            status_counts = wip_filtered['Current Status'].value_counts().reset_index()
+            status_counts.columns = ['Status', 'Count']
+            fig_status = px.bar(status_counts, x='Status', y='Count', text_auto=True, color='Status', title="Tickets by Status")
+            st.plotly_chart(fig_status, use_container_width=True)
+            
+        with col2:
+            st.subheader("⚠️ Aging WIP (Danger Zone)")
+            
+            # --- 🤖 SMART NARRATIVE: AGING WIP ---
+            if not df_lead.empty:
+                danger_line = round(df_lead['Lead Time (Days)'].quantile(0.85))
+                at_risk = len(wip_filtered[wip_filtered['Days in Current Status'] > danger_line])
+                
+                if at_risk > 0:
+                    st.error(f"🚨 **Action Required:** You have **{at_risk} active tickets** sitting above your 85th percentile lead time ({danger_line} days). These are actively bottlenecked and should be discussed in standup immediately.")
+                else:
+                    st.success(f"✅ **Flow is healthy:** Zero active tickets have crossed your {danger_line}-day danger line.")
+            # --------------------------------------
 
-st.divider()
+            fig_aging = px.strip(wip_filtered, x='Current Status', y='Days in Current Status', color='Roadmap', hover_data=['Ticket ID', 'Summary'])
+            fig_aging.update_traces(marker=dict(size=12, opacity=0.8, line=dict(width=1, color='DarkSlateGrey')))
+            if not df_lead.empty:
+                fig_aging.add_hline(y=danger_line, line_dash="dash", line_color="red", annotation_text=f"85th Percentile ({danger_line}d)")
+            st.plotly_chart(fig_aging, use_container_width=True)
+    else:
+        st.info("No active tickets match the current filters.")
 
 # --- 5. HISTORICAL LEAD TIME DASHBOARD ---
-st.header("📈 Historical Lead Time & Predictability")
+elif view_mode == "📈 Historical Trends":
+    st.header("📈 Historical Lead Time & Predictability")
 
-if not lead_filtered.empty:
-    p85 = round(lead_filtered['Lead Time (Days)'].quantile(0.85))
-    mean_lead = lead_filtered['Lead Time (Days)'].mean()
-    std_lead = lead_filtered['Lead Time (Days)'].std()
-    std_lead = std_lead if pd.notna(std_lead) else 0
+    if not lead_filtered.empty:
+        p85 = round(lead_filtered['Lead Time (Days)'].quantile(0.85))
+        mean_lead = lead_filtered['Lead Time (Days)'].mean()
+        std_lead = lead_filtered['Lead Time (Days)'].std()
+        std_lead = std_lead if pd.notna(std_lead) else 0
 
-    tab1, tab2, tab3, tab4, tab5 = st.tabs([
-        "📈 Trend (85th %)", 
-        "🎯 Predictability", 
-        "🚀 Throughput", 
-        "🌊 Flow (CFD)",
-        "📊 Distribution"
-    ])
+        tab1, tab2, tab3, tab4, tab5 = st.tabs([
+            "📈 Trend (85th %)", 
+            "🎯 Predictability", 
+            "🚀 Throughput", 
+            "🌊 Flow (CFD)",
+            "📊 Distribution"
+        ])
 
     with tab1:
         st.subheader("📈 Lead Time Trend & Rolling Average")
@@ -274,6 +288,13 @@ if not lead_filtered.empty:
             fig_monthly_cv.update_traces(marker_color='#636EFA', textposition='outside')
             fig_monthly_cv.add_scatter(x=monthly_stats['Month'], y=monthly_stats['CV (%)'], mode='lines+markers', name='CV Trend', line=dict(color='#FF7F0E', width=3, shape='spline'), marker=dict(size=8))
             fig_monthly_cv.update_layout(xaxis_title="Month Completed", yaxis_title="Coefficient of Variation (%)", xaxis_tickformat='%b %Y', yaxis_ticksuffix="%", showlegend=False)
+            # --- 🤖 SMART NARRATIVE: PREDICTABILITY ---
+            cv_latest = monthly_stats.iloc[-1]['CV (%)']
+            if cv_latest < 50:
+                 st.success(f"**🟢 Highly Predictable:** Your most recent monthly variation is {cv_latest:.1f}%. A CV under 50% means the team's delivery rhythm is stable and ticket sizing is consistent.")
+            else:
+                 st.warning(f"**🟡 High Variation:** Your most recent monthly variation is {cv_latest:.1f}%. A CV over 50% indicates highly inconsistent delivery times or hidden process bottlenecks.")
+            # ------------------------------------------
             st.plotly_chart(fig_monthly_cv, use_container_width=True)
 
     with tab3:
@@ -293,6 +314,9 @@ if not lead_filtered.empty:
             cfd_counts = pivot_df.apply(lambda row: row.value_counts(), axis=1).fillna(0)
             cfd_counts = cfd_counts.reset_index().rename(columns={'index': 'Date'})
             cfd_melted = cfd_counts.melt(id_vars='Date', var_name='Status', value_name='Count')
+            # --- 🤖 SMART NARRATIVE: CFD ---
+            st.info("**💡 How to read this chart:** Look at the vertical distance between the color bands. If the 'In Progress' band is getting wider, work is arriving faster than it is being finished, which means a bottleneck is actively forming.")
+            # ------------------------------------------
             fig_cfd = px.area(cfd_melted, x='Date', y='Count', color='Status')
             st.plotly_chart(fig_cfd, use_container_width=True)
         else:
