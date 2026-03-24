@@ -1,11 +1,9 @@
 Ticket ID,Roadmap,Date,Status
-PLD-119,Unassigned,2026-03-23,Idea Backlog
-PLD-119,Unassigned,2026-03-23,Idea Backlog
 PLD-118,Developer Experience,2026-03-23,Idea Backlog
 PLD-118,Developer Experience,2026-03-23,Idea Backlog
-PLD-117,Unassigned,2026-03-23,Idea Backlog
-PLD-117,Unassigned,2026-03-23,Idea Backlog
-PLD-117,Unassigned,2026-03-23,Idea Backlog
+PLD-117,Frontend Architecture,2026-03-23,Idea Backlog
+PLD-117,Frontend Architecture,2026-03-23,Idea Backlog
+PLD-117,Frontend Architecture,2026-03-23,Idea Backlog
 PLD-116,Developer Experience,2026-03-09,Idea Backlog
 PLD-116,Developer Experience,2026-03-09,Idea Backlog
 PLD-116,Developer Experience,2026-03-09,Idea Backlog
@@ -189,10 +187,15 @@ PLD-8,Frontend Architecture,2025-05-21,Backlog
 PLD-8,Frontend Architecture,2025-05-21,Backlog
 PLD-4,Sales Opportunity Framework,2025-05-15,Backlog
 PLD-4,Sales Opportunity Framework,2025-05-15,Backlog
+DP-1193,UK IP Offering,2026-03-24,To Do Ideas
+DP-1193,UK IP Offering,2026-03-24,To Do Ideas
+DP-1193,UK IP Offering,2026-03-24,To Do Ideas
 DP-1192,UK Buy,2026-03-24,Idea Backlog
 DP-1192,UK Buy,2026-03-24,Idea Backlog
-DP-1191,UK Buy,2026-03-24,Idea Backlog
-DP-1191,UK Buy,2026-03-24,Idea Backlog
+DP-1191,UK Buy,2026-03-24,Assessing Viability & Value
+DP-1191,UK Buy,2026-03-24,Assessing Viability & Value
+DP-1191,UK Buy,2026-03-24,Assessing Viability & Value
+DP-1191,UK Buy,2026-03-24,Assessing Viability & Value
 DP-1190,UK IP Ecosystems Dev,2026-03-23,To Do
 DP-1189,US Research Brand & Experiments,2026-03-23,To Do
 DP-1188,US Research Brand & Experiments,2026-03-23,To Do
@@ -210,6 +213,8 @@ DP-1185,UK IP Offering,2026-03-20,Idea Backlog
 DP-1185,UK IP Offering,2026-03-20,Idea Backlog
 DP-1184,UK IP Offering,2026-03-20,Idea Backlog
 DP-1184,UK IP Offering,2026-03-20,Idea Backlog
+DP-1183,UK IP Offering,2026-03-20,Idea Backlog
+DP-1183,UK IP Offering,2026-03-20,Idea Backlog
 DP-1183,UK IP Offering,2026-03-20,Idea Backlog
 DP-1183,UK IP Offering,2026-03-20,Idea Backlog
 DP-1182,UK IP Offering,2026-03-20,Idea Backlog
@@ -238,6 +243,7 @@ DP-1172,UK IP Offering,2026-03-18,Assessing Viability & Value
 DP-1172,UK IP Offering,2026-03-18,Assessing Viability & Value
 DP-1172,UK IP Offering,2026-03-18,Assessing Viability & Value
 DP-1172,UK IP Offering,2026-03-18,Assessing Viability & Value
+DP-1172,UK IP Offering,2026-03-18,Assessing Viability & Value
 DP-1171,UK IP Ecosystems Dev,2026-03-17,To Do
 DP-1170,US Partners,2026-03-16,To Do
 DP-1169,US Partners,2026-03-16,To Do
@@ -260,6 +266,7 @@ DP-1163,UK Research,2026-03-16,Idea Backlog
 DP-1163,UK Research,2026-03-16,Idea Backlog
 DP-1163,UK Research,2026-03-16,Idea Backlog
 DP-1163,UK Research,2026-03-16,Idea Backlog
+DP-1163,UK Research,2026-03-16,Idea Backlog
 DP-1161,US IP Offering,2026-03-13,Idea Backlog
 DP-1161,US IP Offering,2026-03-13,Idea Backlog
 DP-1161,US IP Offering,2026-03-13,Idea Backlog
@@ -271,6 +278,8 @@ DP-1156,UK Research,2026-03-12,To Do
 DP-1155,Customer Experience,2026-03-11,To Do
 DP-1154,Customer Experience,2026-03-11,To Do
 DP-1153,US IP Offering,2026-03-11,To Do
+DP-1152,UK IP Offering,2026-03-11,To Do Ideas
+DP-1152,UK IP Offering,2026-03-11,To Do Ideas
 DP-1152,UK IP Offering,2026-03-11,To Do Ideas
 DP-1152,UK IP Offering,2026-03-11,To Do Ideas
 DP-1152,UK IP Offering,2026-03-11,To Do Ideas
@@ -298,10 +307,10 @@ DP-1143,US Research Ins Advisor,2026-03-09,Idea Backlog
 DP-1143,US Research Ins Advisor,2026-03-09,Idea Backlog
 DP-1143,US Research Ins Advisor,2026-03-09,Idea Backlog
 DP-1143,US Research Ins Advisor,2026-03-09,Idea Backlog
-DP-1142,UK Research,2026-03-09,Assessing Viability & Value
-DP-1142,UK Research,2026-03-09,Assessing Viability & Value
-DP-1142,UK Research,2026-03-09,Assessing Viability & Value
-DP-1142,UK Research,2026-03-09,Assessing Viability & Value
+DP-1142,UK Buy,2026-03-09,Assessing Viability & Value
+DP-1142,UK Buy,2026-03-09,Assessing Viability & Value
+DP-1142,UK Buy,2026-03-09,Assessing Viability & Value
+DP-1142,UK Buy,2026-03-09,Assessing Viability & Value
 DP-1141,US Research Brand & Experiments,2026-03-09,To Do
 DP-1140,US Research Brand & Experiments,2026-03-09,To Do
 DP-1139,UK Buy,2026-03-09,To Do
@@ -315,6 +324,8 @@ DP-1134,US Research Brand & Experiments,2026-03-05,Idea Backlog
 DP-1134,US Research Brand & Experiments,2026-03-05,Idea Backlog
 DP-1125,UK IP Ecosystems Dev,2026-03-05,Idea Backlog
 DP-1125,UK IP Ecosystems Dev,2026-03-05,Idea Backlog
+DP-1124,UK IP Offering,2026-03-05,Assessing Viability & Value
+DP-1124,UK IP Offering,2026-03-05,Assessing Viability & Value
 DP-1124,UK IP Offering,2026-03-05,Assessing Viability & Value
 DP-1124,UK IP Offering,2026-03-05,Assessing Viability & Value
 DP-1124,UK IP Offering,2026-03-05,Assessing Viability & Value
@@ -340,6 +351,7 @@ DP-1115,US Research Ins Advisor,2026-03-03,Idea Backlog
 DP-1114,US Buy,2026-03-03,Idea Backlog
 DP-1114,US Buy,2026-03-03,Idea Backlog
 DP-1114,US Buy,2026-03-03,Idea Backlog
+DP-1113,UK IP Offering,2026-03-03,Idea Backlog
 DP-1113,UK IP Offering,2026-03-03,Idea Backlog
 DP-1113,UK IP Offering,2026-03-03,Idea Backlog
 DP-1113,UK IP Offering,2026-03-03,Idea Backlog
@@ -457,6 +469,7 @@ DP-1059,US Buy,2026-02-13,Idea Backlog
 DP-1059,US Buy,2026-02-13,Idea Backlog
 DP-1059,US Buy,2026-02-13,Idea Backlog
 DP-1059,US Buy,2026-02-13,Idea Backlog
+DP-1057,UK IP Offering,2026-02-13,To Do Ideas
 DP-1057,UK IP Offering,2026-02-13,To Do Ideas
 DP-1057,UK IP Offering,2026-02-13,To Do Ideas
 DP-1057,UK IP Offering,2026-02-13,To Do Ideas
@@ -638,6 +651,7 @@ DP-933,US Buy,2026-01-12,To Do
 DP-931,UK Research,2026-01-12,Idea Backlog
 DP-931,UK Research,2026-01-12,Idea Backlog
 DP-931,UK Research,2026-01-12,Idea Backlog
+DP-930,UK Research,2026-01-12,Idea Backlog
 DP-930,UK Research,2026-01-12,Idea Backlog
 DP-930,UK Research,2026-01-12,Idea Backlog
 DP-930,UK Research,2026-01-12,Idea Backlog
