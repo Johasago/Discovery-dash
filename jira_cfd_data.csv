@@ -1,187 +1,1803 @@
-Ticket ID,Team,Date,Status
+Ticket ID,Roadmap,Date,Status
+PLD-119,Unassigned,2026-03-23,Idea Backlog
+PLD-119,Unassigned,2026-03-23,Idea Backlog
+PLD-118,Developer Experience,2026-03-23,Idea Backlog
+PLD-118,Developer Experience,2026-03-23,Idea Backlog
 PLD-117,Unassigned,2026-03-23,Idea Backlog
-PLD-117,Unassigned,2026-03-23,Assessing Viability & Value
 PLD-117,Unassigned,2026-03-23,Idea Backlog
-PLD-116,Vivace,2026-03-09,Idea Backlog
-PLD-116,Vivace,2026-03-09,To Do Ideas
-PLD-116,Vivace,2026-03-09,Idea Backlog
-PLD-115,Mind The Gap,2026-03-03,To Do
-PLD-114,Unassigned,2026-03-03,Idea Backlog
-PLD-114,Unassigned,2026-03-03,Idea Backlog
-PLD-114,Unassigned,2026-03-09,To Do Ideas
-PLD-114,Unassigned,2026-03-10,Design/Solution Validation
-PLD-114,Unassigned,2026-03-10,Assessing Viability & Value
-PLD-113,Vivace,2026-02-27,Idea Backlog
-PLD-113,Vivace,2026-02-27,Idea Backlog
-PLD-113,Vivace,2026-03-09,Idea Design & Solutioning
-PLD-113,Vivace,2026-03-09,Assessing Viability & Value
-PLD-113,Vivace,2026-03-09,To Do Ideas
-PLD-113,Vivace,2026-03-16,Design/Solution Validation
-PLD-112,Unassigned,2026-02-25,Idea Backlog
-PLD-112,Unassigned,2026-02-27,Assessing Viability & Value
-PLD-111,Mind The Gap,2026-02-23,To Do
-PLD-110,Mind The Gap,2026-02-23,Idea Backlog
-PLD-110,Mind The Gap,2026-02-28,To Do Ideas
-PLD-108,Vivace,2026-02-12,Idea Backlog
-PLD-108,Vivace,2026-02-12,Idea Backlog
-PLD-100,Unassigned,2026-01-29,Idea Backlog
-PLD-100,Unassigned,2026-02-02,Idea Design & Solutioning
-PLD-100,Unassigned,2026-02-17,Idea Backlog
-PLD-100,Unassigned,2026-03-16,Idea Design & Solutioning
-PLD-99,Mind The Gap,2026-01-29,Idea Backlog
-PLD-99,Mind The Gap,2026-02-02,Idea Design & Solutioning
-PLD-99,Mind The Gap,2026-02-17,Idea Backlog
-PLD-99,Mind The Gap,2026-03-02,Idea Design & Solutioning
-PLD-99,Mind The Gap,2026-03-11,Design/Solution Validation
-PLD-98,Mind The Gap,2026-01-29,Idea Backlog
-PLD-98,Mind The Gap,2026-02-02,Idea Design & Solutioning
-PLD-98,Mind The Gap,2026-02-17,Idea Backlog
-PLD-96,Vivace,2026-01-26,Idea Backlog
-PLD-96,Vivace,2026-01-26,Idea Backlog
-PLD-95,Vivace,2026-01-26,Idea Backlog
-PLD-95,Vivace,2026-01-26,Idea Backlog
-PLD-94,Vivace,2026-01-22,Idea Backlog
-PLD-94,Vivace,2026-01-22,Assessing Viability & Value
-PLD-94,Vivace,2026-01-22,Idea Backlog
-PLD-94,Vivace,2026-01-26,Idea Backlog
-PLD-93,Vivace,2026-01-22,Assessing Viability & Value
-PLD-93,Vivace,2026-01-22,Design/Solution Validation
-PLD-93,Vivace,2026-01-22,Assessing Viability & Value
-PLD-93,Vivace,2026-01-22,Idea Backlog
-PLD-93,Vivace,2026-01-26,Exploring Viability & Value
-PLD-93,Vivace,2026-01-26,Assessing Viability & Value
-PLD-93,Vivace,2026-01-26,Idea Design & Solutioning
-PLD-93,Vivace,2026-01-29,Assessing Viability & Value
-PLD-93,Vivace,2026-02-02,Idea Design & Solutioning
-PLD-93,Vivace,2026-02-03,Design/Solution Validation
-PLD-93,Vivace,2026-02-12,Idea Backlog
-PLD-93,Vivace,2026-02-16,Idea Backlog
-PLD-93,Vivace,2026-02-16,To Do Ideas
-PLD-92,Unassigned,2026-01-16,Idea Backlog
-PLD-92,Unassigned,2026-01-16,Idea Backlog
-PLD-92,Unassigned,2026-01-19,Assessing Viability & Value
-PLD-92,Unassigned,2026-01-19,Idea Backlog
-PLD-92,Unassigned,2026-01-19,Assessing Viability & Value
-PLD-92,Unassigned,2026-02-18,Idea Backlog
-PLD-91,Unassigned,2026-01-16,Idea Backlog
-PLD-91,Unassigned,2026-01-16,Idea Backlog
-PLD-91,Unassigned,2026-01-19,Idea Backlog
-PLD-91,Unassigned,2026-01-19,Assessing Viability & Value
-PLD-91,Unassigned,2026-01-19,Idea Backlog
-PLD-91,Unassigned,2026-01-19,Assessing Viability & Value
-PLD-91,Unassigned,2026-02-24,Idea Backlog
-PLD-91,Unassigned,2026-02-24,In Build
-PLD-91,Unassigned,2026-03-09,To Do Ideas
-PLD-91,Unassigned,2026-03-10,Design/Solution Validation
-PLD-91,Unassigned,2026-03-10,Idea Design & Solutioning
-PLD-90,Unassigned,2026-01-16,Idea Backlog
-PLD-90,Unassigned,2026-01-16,Assessing Viability & Value
-PLD-90,Unassigned,2026-01-16,Idea Backlog
-PLD-90,Unassigned,2026-01-19,Design/Solution Validation
-PLD-90,Unassigned,2026-01-29,Idea Design & Solutioning
-PLD-90,Unassigned,2026-02-18,Idea Backlog
-PLD-89,Unassigned,2026-01-16,Idea Backlog
-PLD-89,Unassigned,2026-01-16,Idea Backlog
-PLD-89,Unassigned,2026-01-19,Idea Backlog
-PLD-89,Unassigned,2026-01-19,Assessing Viability & Value
-PLD-89,Unassigned,2026-01-20,Assessing Viability & Value
-PLD-89,Unassigned,2026-02-18,Idea Backlog
-PLD-88,Unassigned,2026-01-16,Idea Backlog
-PLD-88,Unassigned,2026-01-16,Assessing Viability & Value
-PLD-88,Unassigned,2026-01-16,Idea Backlog
-PLD-88,Unassigned,2026-01-19,Design/Solution Validation
-PLD-88,Unassigned,2026-01-29,Idea Design & Solutioning
-PLD-88,Unassigned,2026-02-18,Idea Backlog
-PLD-88,Unassigned,2026-03-03,To Do Ideas
-PLD-88,Unassigned,2026-03-10,Design/Solution Validation
-PLD-88,Unassigned,2026-03-10,Idea Design & Solutioning
-PLD-85,Unassigned,2025-12-16,To Do
-PLD-82,Vivace,2025-12-08,Idea Backlog
-PLD-82,Vivace,2025-12-08,Exploring Viability & Value
-PLD-82,Vivace,2025-12-11,Idea Backlog
-PLD-82,Vivace,2026-01-22,Assessing Viability & Value
-PLD-82,Vivace,2026-01-26,Idea Backlog
-PLD-81,Unassigned,2025-12-05,Idea Backlog
-PLD-81,Unassigned,2025-12-05,Exploring Viability & Value
-PLD-81,Unassigned,2025-12-11,Idea Backlog
-PLD-78,Vivace,2025-11-26,Idea Backlog
-PLD-78,Vivace,2025-11-26,Exploring Viability & Value
-PLD-78,Vivace,2025-12-11,Idea Backlog
-PLD-78,Vivace,2026-01-22,Assessing Viability & Value
-PLD-78,Vivace,2026-01-26,Idea Backlog
-PLD-66,Unassigned,2025-09-17,Idea Backlog
-PLD-66,Unassigned,2025-09-17,Exploring Viability & Value
-PLD-66,Unassigned,2026-01-29,Idea Design & Solutioning
-PLD-66,Unassigned,2026-01-29,Design/Solution Validation
-PLD-66,Unassigned,2026-02-18,Idea Backlog
-PLD-63,Unassigned,2025-09-04,To Do
-PLD-59,Unassigned,2025-08-26,To Do
-PLD-58,Unassigned,2025-08-26,To Do
-PLD-57,Unassigned,2025-08-26,Assessing Viability & Value
-PLD-57,Unassigned,2025-08-28,Exploring Viability & Value
-PLD-57,Unassigned,2025-08-28,Assessing Viability & Value
-PLD-57,Unassigned,2025-09-17,Idea Backlog
-PLD-56,Unassigned,2025-08-19,Idea Backlog
-PLD-56,Unassigned,2025-08-20,Idea Design & Solutioning
-PLD-56,Unassigned,2026-02-05,In Build
-PLD-56,Unassigned,2026-02-24,In Build
-PLD-56,Unassigned,2026-02-24,Ready for WSJF
-PLD-56,Unassigned,2026-03-23,Idea Design & Solutioning
-PLD-55,Unassigned,2025-08-19,To Do
-PLD-54,Unassigned,2025-08-19,To Do
-PLD-52,Unassigned,2025-08-19,To Do
-PLD-49,Unassigned,2025-08-04,Idea Backlog
-PLD-49,Unassigned,2025-08-04,Idea Backlog
-PLD-48,Unassigned,2025-08-04,Idea Backlog
-PLD-48,Unassigned,2025-08-04,Idea Backlog
-PLD-47,Unassigned,2025-08-01,Idea Backlog
-PLD-47,Unassigned,2025-08-01,Idea Backlog
-PLD-46,Unassigned,2025-08-01,Idea Backlog
-PLD-46,Unassigned,2025-08-01,Idea Backlog
-PLD-46,Unassigned,2025-08-12,Exploring Viability & Value
-PLD-46,Unassigned,2025-09-22,Idea Design & Solutioning
-PLD-46,Unassigned,2025-10-06,Design/Solution Validation
-PLD-46,Unassigned,2025-10-24,Ready for WSJF
-PLD-46,Unassigned,2026-02-18,Idea Backlog
-PLD-45,Unassigned,2025-08-01,Idea Backlog
-PLD-45,Unassigned,2025-08-01,Idea Backlog
-PLD-44,Unassigned,2025-08-01,Idea Backlog
-PLD-44,Unassigned,2025-08-01,Idea Backlog
-PLD-42,Unassigned,2025-07-25,Idea Backlog
-PLD-42,Unassigned,2025-07-25,Idea Backlog
-PLD-41,Unassigned,2025-07-25,Idea Backlog
-PLD-41,Unassigned,2025-07-25,Idea Backlog
-PLD-41,Unassigned,2025-07-28,Idea Backlog
-PLD-41,Unassigned,2025-07-28,Assessing Viability & Value
-PLD-41,Unassigned,2025-07-29,Idea Backlog
-PLD-41,Unassigned,2025-07-29,Ready to Design
-PLD-41,Unassigned,2025-07-29,Idea Backlog
-PLD-41,Unassigned,2025-07-29,Idea Design & Solutioning
-PLD-41,Unassigned,2025-07-29,Assessing Viability & Value
-PLD-41,Unassigned,2025-08-12,Exploring Viability & Value
-PLD-41,Unassigned,2025-09-17,Idea Backlog
-PLD-40,Unassigned,2025-07-23,Idea Backlog
-PLD-40,Unassigned,2025-07-23,Idea Backlog
-PLD-23,Team A+,2025-05-27,Backlog
-PLD-23,Team A+,2025-07-14,Idea Backlog
-PLD-23,Team A+,2025-07-21,Assessing Viability & Value
-PLD-23,Team A+,2025-08-18,Idea Backlog
-PLD-22,Unassigned,2025-06-03,Backlog
-PLD-22,Unassigned,2025-07-14,Idea Backlog
-PLD-11,Unassigned,2025-05-14,Backlog
-PLD-11,Unassigned,2025-07-14,Idea Backlog
-PLD-11,Unassigned,2025-07-21,Ready for WSJF
-PLD-11,Unassigned,2025-07-21,Assessing Viability & Value
-PLD-11,Unassigned,2025-12-10,Exploring Viability & Value
-PLD-11,Unassigned,2025-12-11,Idea Backlog
-PLD-9,Unassigned,2025-05-27,Backlog
-PLD-9,Unassigned,2025-07-14,Idea Backlog
-PLD-9,Unassigned,2025-07-21,Assessing Viability & Value
-PLD-9,Unassigned,2025-08-18,Idea Backlog
-PLD-8,Unassigned,2025-05-21,Backlog
-PLD-8,Unassigned,2025-07-14,Idea Backlog
-PLD-8,Unassigned,2025-07-21,Assessing Viability & Value
-PLD-8,Unassigned,2025-08-18,Idea Backlog
-PLD-8,Unassigned,2025-08-18,Exploring Viability & Value
-PLD-4,Unassigned,2025-05-15,Backlog
-PLD-4,Unassigned,2025-07-14,Idea Backlog
+PLD-117,Unassigned,2026-03-23,Idea Backlog
+PLD-116,Developer Experience,2026-03-09,Idea Backlog
+PLD-116,Developer Experience,2026-03-09,Idea Backlog
+PLD-116,Developer Experience,2026-03-09,Idea Backlog
+PLD-115,Insurance Product Management,2026-03-03,To Do
+PLD-114,Journey 2.0,2026-03-03,Idea Backlog
+PLD-114,Journey 2.0,2026-03-03,Idea Backlog
+PLD-114,Journey 2.0,2026-03-03,Idea Backlog
+PLD-114,Journey 2.0,2026-03-03,Idea Backlog
+PLD-114,Journey 2.0,2026-03-03,Idea Backlog
+PLD-113,Developer Experience,2026-02-27,Idea Backlog
+PLD-113,Developer Experience,2026-02-27,Idea Backlog
+PLD-113,Developer Experience,2026-02-27,Idea Backlog
+PLD-113,Developer Experience,2026-02-27,Idea Backlog
+PLD-113,Developer Experience,2026-02-27,Idea Backlog
+PLD-113,Developer Experience,2026-02-27,Idea Backlog
+PLD-112,Frontend Architecture,2026-02-25,Idea Backlog
+PLD-112,Frontend Architecture,2026-02-25,Idea Backlog
+PLD-111,Insurance Product Management,2026-02-23,To Do
+PLD-110,Insurance Product Management,2026-02-23,Idea Backlog
+PLD-110,Insurance Product Management,2026-02-23,Idea Backlog
+PLD-108,Developer Experience,2026-02-12,Idea Backlog
+PLD-108,Developer Experience,2026-02-12,Idea Backlog
+PLD-100,Insurance Product Management,2026-01-29,Idea Backlog
+PLD-100,Insurance Product Management,2026-01-29,Idea Backlog
+PLD-100,Insurance Product Management,2026-01-29,Idea Backlog
+PLD-100,Insurance Product Management,2026-01-29,Idea Backlog
+PLD-99,Insurance Product Management,2026-01-29,Idea Backlog
+PLD-99,Insurance Product Management,2026-01-29,Idea Backlog
+PLD-99,Insurance Product Management,2026-01-29,Idea Backlog
+PLD-99,Insurance Product Management,2026-01-29,Idea Backlog
+PLD-99,Insurance Product Management,2026-01-29,Idea Backlog
+PLD-98,Insurance Product Management,2026-01-29,Idea Backlog
+PLD-98,Insurance Product Management,2026-01-29,Idea Backlog
+PLD-98,Insurance Product Management,2026-01-29,Idea Backlog
+PLD-96,Developer Experience,2026-01-26,Idea Backlog
+PLD-96,Developer Experience,2026-01-26,Idea Backlog
+PLD-95,Developer Experience,2026-01-26,Idea Backlog
+PLD-95,Developer Experience,2026-01-26,Idea Backlog
+PLD-94,Developer Experience,2026-01-22,Idea Backlog
+PLD-94,Developer Experience,2026-01-22,Idea Backlog
+PLD-94,Developer Experience,2026-01-22,Idea Backlog
+PLD-94,Developer Experience,2026-01-22,Idea Backlog
+PLD-93,Developer Experience,2026-01-22,Assessing Viability & Value
+PLD-93,Developer Experience,2026-01-22,Assessing Viability & Value
+PLD-93,Developer Experience,2026-01-22,Assessing Viability & Value
+PLD-93,Developer Experience,2026-01-22,Assessing Viability & Value
+PLD-93,Developer Experience,2026-01-22,Assessing Viability & Value
+PLD-93,Developer Experience,2026-01-22,Assessing Viability & Value
+PLD-93,Developer Experience,2026-01-22,Assessing Viability & Value
+PLD-93,Developer Experience,2026-01-22,Assessing Viability & Value
+PLD-93,Developer Experience,2026-01-22,Assessing Viability & Value
+PLD-93,Developer Experience,2026-01-22,Assessing Viability & Value
+PLD-93,Developer Experience,2026-01-22,Assessing Viability & Value
+PLD-93,Developer Experience,2026-01-22,Assessing Viability & Value
+PLD-93,Developer Experience,2026-01-22,Assessing Viability & Value
+PLD-92,Journey 2.0,2026-01-16,Idea Backlog
+PLD-92,Journey 2.0,2026-01-16,Idea Backlog
+PLD-92,Journey 2.0,2026-01-16,Idea Backlog
+PLD-92,Journey 2.0,2026-01-16,Idea Backlog
+PLD-92,Journey 2.0,2026-01-16,Idea Backlog
+PLD-92,Journey 2.0,2026-01-16,Idea Backlog
+PLD-91,Journey 2.0,2026-01-16,Idea Backlog
+PLD-91,Journey 2.0,2026-01-16,Idea Backlog
+PLD-91,Journey 2.0,2026-01-16,Idea Backlog
+PLD-91,Journey 2.0,2026-01-16,Idea Backlog
+PLD-91,Journey 2.0,2026-01-16,Idea Backlog
+PLD-91,Journey 2.0,2026-01-16,Idea Backlog
+PLD-91,Journey 2.0,2026-01-16,Idea Backlog
+PLD-91,Journey 2.0,2026-01-16,Idea Backlog
+PLD-91,Journey 2.0,2026-01-16,Idea Backlog
+PLD-91,Journey 2.0,2026-01-16,Idea Backlog
+PLD-91,Journey 2.0,2026-01-16,Idea Backlog
+PLD-90,Journey 2.0,2026-01-16,Idea Backlog
+PLD-90,Journey 2.0,2026-01-16,Idea Backlog
+PLD-90,Journey 2.0,2026-01-16,Idea Backlog
+PLD-90,Journey 2.0,2026-01-16,Idea Backlog
+PLD-90,Journey 2.0,2026-01-16,Idea Backlog
+PLD-90,Journey 2.0,2026-01-16,Idea Backlog
+PLD-89,Journey 2.0,2026-01-16,Idea Backlog
+PLD-89,Journey 2.0,2026-01-16,Idea Backlog
+PLD-89,Journey 2.0,2026-01-16,Idea Backlog
+PLD-89,Journey 2.0,2026-01-16,Idea Backlog
+PLD-89,Journey 2.0,2026-01-16,Idea Backlog
+PLD-89,Journey 2.0,2026-01-16,Idea Backlog
+PLD-88,Journey 2.0,2026-01-16,Idea Backlog
+PLD-88,Journey 2.0,2026-01-16,Idea Backlog
+PLD-88,Journey 2.0,2026-01-16,Idea Backlog
+PLD-88,Journey 2.0,2026-01-16,Idea Backlog
+PLD-88,Journey 2.0,2026-01-16,Idea Backlog
+PLD-88,Journey 2.0,2026-01-16,Idea Backlog
+PLD-88,Journey 2.0,2026-01-16,Idea Backlog
+PLD-88,Journey 2.0,2026-01-16,Idea Backlog
+PLD-88,Journey 2.0,2026-01-16,Idea Backlog
+PLD-85,Insurance Product Management,2025-12-16,To Do
+PLD-82,Developer Experience,2025-12-08,Idea Backlog
+PLD-82,Developer Experience,2025-12-08,Idea Backlog
+PLD-82,Developer Experience,2025-12-08,Idea Backlog
+PLD-82,Developer Experience,2025-12-08,Idea Backlog
+PLD-82,Developer Experience,2025-12-08,Idea Backlog
+PLD-81,Developer Experience,2025-12-05,Idea Backlog
+PLD-81,Developer Experience,2025-12-05,Idea Backlog
+PLD-81,Developer Experience,2025-12-05,Idea Backlog
+PLD-78,Developer Experience,2025-11-26,Idea Backlog
+PLD-78,Developer Experience,2025-11-26,Idea Backlog
+PLD-78,Developer Experience,2025-11-26,Idea Backlog
+PLD-78,Developer Experience,2025-11-26,Idea Backlog
+PLD-78,Developer Experience,2025-11-26,Idea Backlog
+PLD-66,Journey 2.0,2025-09-17,Idea Backlog
+PLD-66,Journey 2.0,2025-09-17,Idea Backlog
+PLD-66,Journey 2.0,2025-09-17,Idea Backlog
+PLD-66,Journey 2.0,2025-09-17,Idea Backlog
+PLD-66,Journey 2.0,2025-09-17,Idea Backlog
+PLD-63,Sales Opportunity Framework,2025-09-04,To Do
+PLD-59,Journey 2.0,2025-08-26,To Do
+PLD-58,Journey 2.0,2025-08-26,To Do
+PLD-57,Journey 2.0,2025-08-26,Assessing Viability & Value
+PLD-57,Journey 2.0,2025-08-26,Assessing Viability & Value
+PLD-57,Journey 2.0,2025-08-26,Assessing Viability & Value
+PLD-57,Journey 2.0,2025-08-26,Assessing Viability & Value
+PLD-56,Insurance Product Management,2025-08-19,Idea Backlog
+PLD-56,Insurance Product Management,2025-08-19,Idea Backlog
+PLD-56,Insurance Product Management,2025-08-19,Idea Backlog
+PLD-56,Insurance Product Management,2025-08-19,Idea Backlog
+PLD-56,Insurance Product Management,2025-08-19,Idea Backlog
+PLD-56,Insurance Product Management,2025-08-19,Idea Backlog
+PLD-55,Journey 2.0,2025-08-19,To Do
+PLD-54,Journey 2.0,2025-08-19,To Do
+PLD-52,Journey 2.0,2025-08-19,To Do
+PLD-49,Journey 2.0,2025-08-04,Idea Backlog
+PLD-49,Journey 2.0,2025-08-04,Idea Backlog
+PLD-48,Journey 2.0,2025-08-04,Idea Backlog
+PLD-48,Journey 2.0,2025-08-04,Idea Backlog
+PLD-47,Sales Opportunity Framework,2025-08-01,Idea Backlog
+PLD-47,Sales Opportunity Framework,2025-08-01,Idea Backlog
+PLD-46,Sales Opportunity Framework,2025-08-01,Idea Backlog
+PLD-46,Sales Opportunity Framework,2025-08-01,Idea Backlog
+PLD-46,Sales Opportunity Framework,2025-08-01,Idea Backlog
+PLD-46,Sales Opportunity Framework,2025-08-01,Idea Backlog
+PLD-46,Sales Opportunity Framework,2025-08-01,Idea Backlog
+PLD-46,Sales Opportunity Framework,2025-08-01,Idea Backlog
+PLD-46,Sales Opportunity Framework,2025-08-01,Idea Backlog
+PLD-45,Sales Opportunity Framework,2025-08-01,Idea Backlog
+PLD-45,Sales Opportunity Framework,2025-08-01,Idea Backlog
+PLD-44,Sales Opportunity Framework,2025-08-01,Idea Backlog
+PLD-44,Sales Opportunity Framework,2025-08-01,Idea Backlog
+PLD-42,Journey 2.0,2025-07-25,Idea Backlog
+PLD-42,Journey 2.0,2025-07-25,Idea Backlog
+PLD-41,Journey 2.0,2025-07-25,Idea Backlog
+PLD-41,Journey 2.0,2025-07-25,Idea Backlog
+PLD-41,Journey 2.0,2025-07-25,Idea Backlog
+PLD-41,Journey 2.0,2025-07-25,Idea Backlog
+PLD-41,Journey 2.0,2025-07-25,Idea Backlog
+PLD-41,Journey 2.0,2025-07-25,Idea Backlog
+PLD-41,Journey 2.0,2025-07-25,Idea Backlog
+PLD-41,Journey 2.0,2025-07-25,Idea Backlog
+PLD-41,Journey 2.0,2025-07-25,Idea Backlog
+PLD-41,Journey 2.0,2025-07-25,Idea Backlog
+PLD-41,Journey 2.0,2025-07-25,Idea Backlog
+PLD-40,Journey 2.0,2025-07-23,Idea Backlog
+PLD-40,Journey 2.0,2025-07-23,Idea Backlog
+PLD-23,Frontend Architecture,2025-05-27,Backlog
+PLD-23,Frontend Architecture,2025-05-27,Backlog
+PLD-23,Frontend Architecture,2025-05-27,Backlog
+PLD-23,Frontend Architecture,2025-05-27,Backlog
+PLD-22,Frontend Architecture,2025-06-03,Backlog
+PLD-22,Frontend Architecture,2025-06-03,Backlog
+PLD-11,Developer Experience,2025-05-14,Backlog
+PLD-11,Developer Experience,2025-05-14,Backlog
+PLD-11,Developer Experience,2025-05-14,Backlog
+PLD-11,Developer Experience,2025-05-14,Backlog
+PLD-11,Developer Experience,2025-05-14,Backlog
+PLD-11,Developer Experience,2025-05-14,Backlog
+PLD-9,Frontend Architecture,2025-05-27,Backlog
+PLD-9,Frontend Architecture,2025-05-27,Backlog
+PLD-9,Frontend Architecture,2025-05-27,Backlog
+PLD-9,Frontend Architecture,2025-05-27,Backlog
+PLD-8,Frontend Architecture,2025-05-21,Backlog
+PLD-8,Frontend Architecture,2025-05-21,Backlog
+PLD-8,Frontend Architecture,2025-05-21,Backlog
+PLD-8,Frontend Architecture,2025-05-21,Backlog
+PLD-8,Frontend Architecture,2025-05-21,Backlog
+PLD-4,Sales Opportunity Framework,2025-05-15,Backlog
+PLD-4,Sales Opportunity Framework,2025-05-15,Backlog
+DP-1192,UK Buy,2026-03-24,Idea Backlog
+DP-1192,UK Buy,2026-03-24,Idea Backlog
+DP-1191,UK Buy,2026-03-24,Idea Backlog
+DP-1191,UK Buy,2026-03-24,Idea Backlog
+DP-1190,UK IP Ecosystems Dev,2026-03-23,To Do
+DP-1189,US Research Brand & Experiments,2026-03-23,To Do
+DP-1188,US Research Brand & Experiments,2026-03-23,To Do
+DP-1187,UK Buy,2026-03-23,Idea Design & Solutioning
+DP-1187,UK Buy,2026-03-23,Idea Design & Solutioning
+DP-1187,UK Buy,2026-03-23,Idea Design & Solutioning
+DP-1187,UK Buy,2026-03-23,Idea Design & Solutioning
+DP-1187,UK Buy,2026-03-23,Idea Design & Solutioning
+DP-1187,UK Buy,2026-03-23,Idea Design & Solutioning
+DP-1187,UK Buy,2026-03-23,Idea Design & Solutioning
+DP-1187,UK Buy,2026-03-23,Idea Design & Solutioning
+DP-1186,US Research Ins Advisor,2026-03-20,Idea Backlog
+DP-1186,US Research Ins Advisor,2026-03-20,Idea Backlog
+DP-1185,UK IP Offering,2026-03-20,Idea Backlog
+DP-1185,UK IP Offering,2026-03-20,Idea Backlog
+DP-1184,UK IP Offering,2026-03-20,Idea Backlog
+DP-1184,UK IP Offering,2026-03-20,Idea Backlog
+DP-1183,UK IP Offering,2026-03-20,Idea Backlog
+DP-1183,UK IP Offering,2026-03-20,Idea Backlog
+DP-1182,UK IP Offering,2026-03-20,Idea Backlog
+DP-1182,UK IP Offering,2026-03-20,Idea Backlog
+DP-1181,UK IP Offering,2026-03-20,Idea Backlog
+DP-1181,UK IP Offering,2026-03-20,Idea Backlog
+DP-1180,UK IP Offering,2026-03-20,Idea Backlog
+DP-1180,UK IP Offering,2026-03-20,Idea Backlog
+DP-1179,UK IP Offering,2026-03-20,Idea Backlog
+DP-1179,UK IP Offering,2026-03-20,Idea Backlog
+DP-1178,US Research Brand & Experiments,2026-03-20,To Do
+DP-1176,US Partners,2026-03-19,To Do Ideas
+DP-1176,US Partners,2026-03-19,To Do Ideas
+DP-1176,US Partners,2026-03-19,To Do Ideas
+DP-1175,US Support & Growth,2026-03-18,Idea Backlog
+DP-1175,US Support & Growth,2026-03-18,Idea Backlog
+DP-1174,UK IP Offering,2026-03-18,Idea Backlog
+DP-1174,UK IP Offering,2026-03-18,Idea Backlog
+DP-1173,US IP Offering,2026-03-18,Idea Backlog
+DP-1173,US IP Offering,2026-03-18,Idea Backlog
+DP-1173,US IP Offering,2026-03-18,Idea Backlog
+DP-1173,US IP Offering,2026-03-18,Idea Backlog
+DP-1173,US IP Offering,2026-03-18,Idea Backlog
+DP-1172,UK IP Offering,2026-03-18,Assessing Viability & Value
+DP-1172,UK IP Offering,2026-03-18,Assessing Viability & Value
+DP-1172,UK IP Offering,2026-03-18,Assessing Viability & Value
+DP-1172,UK IP Offering,2026-03-18,Assessing Viability & Value
+DP-1172,UK IP Offering,2026-03-18,Assessing Viability & Value
+DP-1171,UK IP Ecosystems Dev,2026-03-17,To Do
+DP-1170,US Partners,2026-03-16,To Do
+DP-1169,US Partners,2026-03-16,To Do
+DP-1168,UK Research,2026-03-16,Idea Backlog
+DP-1168,UK Research,2026-03-16,Idea Backlog
+DP-1168,UK Research,2026-03-16,Idea Backlog
+DP-1168,UK Research,2026-03-16,Idea Backlog
+DP-1167,UK IP Ecosystems Dev,2026-03-16,To Do
+DP-1166,UK Research,2026-03-16,Idea Backlog
+DP-1166,UK Research,2026-03-16,Idea Backlog
+DP-1166,UK Research,2026-03-16,Idea Backlog
+DP-1166,UK Research,2026-03-16,Idea Backlog
+DP-1166,UK Research,2026-03-16,Idea Backlog
+DP-1165,UK Research,2026-03-16,Idea Backlog
+DP-1165,UK Research,2026-03-16,Idea Backlog
+DP-1164,UK Research,2026-03-16,Idea Backlog
+DP-1164,UK Research,2026-03-16,Idea Backlog
+DP-1164,UK Research,2026-03-16,Idea Backlog
+DP-1163,UK Research,2026-03-16,Idea Backlog
+DP-1163,UK Research,2026-03-16,Idea Backlog
+DP-1163,UK Research,2026-03-16,Idea Backlog
+DP-1163,UK Research,2026-03-16,Idea Backlog
+DP-1161,US IP Offering,2026-03-13,Idea Backlog
+DP-1161,US IP Offering,2026-03-13,Idea Backlog
+DP-1161,US IP Offering,2026-03-13,Idea Backlog
+DP-1161,US IP Offering,2026-03-13,Idea Backlog
+DP-1161,US IP Offering,2026-03-13,Idea Backlog
+DP-1158,US IP Offering,2026-03-12,To Do
+DP-1157,UK Buy,2026-03-12,To Do
+DP-1156,UK Research,2026-03-12,To Do
+DP-1155,Customer Experience,2026-03-11,To Do
+DP-1154,Customer Experience,2026-03-11,To Do
+DP-1153,US IP Offering,2026-03-11,To Do
+DP-1152,UK IP Offering,2026-03-11,To Do Ideas
+DP-1152,UK IP Offering,2026-03-11,To Do Ideas
+DP-1152,UK IP Offering,2026-03-11,To Do Ideas
+DP-1152,UK IP Offering,2026-03-11,To Do Ideas
+DP-1151,US Buy,2026-03-10,To Do Ideas
+DP-1151,US Buy,2026-03-10,To Do Ideas
+DP-1151,US Buy,2026-03-10,To Do Ideas
+DP-1150,US Buy,2026-03-10,To Do Ideas
+DP-1150,US Buy,2026-03-10,To Do Ideas
+DP-1150,US Buy,2026-03-10,To Do Ideas
+DP-1150,US Buy,2026-03-10,To Do Ideas
+DP-1149,UK IP Ecosystems Dev,2026-03-10,Idea Backlog
+DP-1149,UK IP Ecosystems Dev,2026-03-10,Idea Backlog
+DP-1148,UK IP Ecosystems Dev,2026-03-10,Idea Backlog
+DP-1148,UK IP Ecosystems Dev,2026-03-10,Idea Backlog
+DP-1146,US Research Ins Advisor,2026-03-09,Idea Backlog
+DP-1146,US Research Ins Advisor,2026-03-09,Idea Backlog
+DP-1145,US Partners,2026-03-09,Idea Design & Solutioning
+DP-1145,US Partners,2026-03-09,Idea Design & Solutioning
+DP-1145,US Partners,2026-03-09,Idea Design & Solutioning
+DP-1144,Customer Experience,2026-03-09,To Do
+DP-1143,US Research Ins Advisor,2026-03-09,Idea Backlog
+DP-1143,US Research Ins Advisor,2026-03-09,Idea Backlog
+DP-1143,US Research Ins Advisor,2026-03-09,Idea Backlog
+DP-1143,US Research Ins Advisor,2026-03-09,Idea Backlog
+DP-1143,US Research Ins Advisor,2026-03-09,Idea Backlog
+DP-1143,US Research Ins Advisor,2026-03-09,Idea Backlog
+DP-1142,UK Research,2026-03-09,Assessing Viability & Value
+DP-1142,UK Research,2026-03-09,Assessing Viability & Value
+DP-1142,UK Research,2026-03-09,Assessing Viability & Value
+DP-1142,UK Research,2026-03-09,Assessing Viability & Value
+DP-1141,US Research Brand & Experiments,2026-03-09,To Do
+DP-1140,US Research Brand & Experiments,2026-03-09,To Do
+DP-1139,UK Buy,2026-03-09,To Do
+DP-1138,US Research Ins Advisor,2026-03-06,Idea Backlog
+DP-1138,US Research Ins Advisor,2026-03-06,Idea Backlog
+DP-1138,US Research Ins Advisor,2026-03-06,Idea Backlog
+DP-1138,US Research Ins Advisor,2026-03-06,Idea Backlog
+DP-1136,US Buy,2026-03-06,Idea Backlog
+DP-1136,US Buy,2026-03-06,Idea Backlog
+DP-1134,US Research Brand & Experiments,2026-03-05,Idea Backlog
+DP-1134,US Research Brand & Experiments,2026-03-05,Idea Backlog
+DP-1125,UK IP Ecosystems Dev,2026-03-05,Idea Backlog
+DP-1125,UK IP Ecosystems Dev,2026-03-05,Idea Backlog
+DP-1124,UK IP Offering,2026-03-05,Assessing Viability & Value
+DP-1124,UK IP Offering,2026-03-05,Assessing Viability & Value
+DP-1124,UK IP Offering,2026-03-05,Assessing Viability & Value
+DP-1124,UK IP Offering,2026-03-05,Assessing Viability & Value
+DP-1123,US Research Ins Advisor,2026-03-04,Idea Backlog
+DP-1123,US Research Ins Advisor,2026-03-04,Idea Backlog
+DP-1122,Customer Experience,2026-03-04,To Do
+DP-1120,UK Support & Growth,2026-03-04,To Do
+DP-1119,UK Support & Growth,2026-03-04,To Do
+DP-1118,UK Support & Growth,2026-03-04,To Do
+DP-1117,UK Support & Growth,2026-03-04,Ready for Test/Build
+DP-1117,UK Support & Growth,2026-03-04,Ready for Test/Build
+DP-1117,UK Support & Growth,2026-03-04,Ready for Test/Build
+DP-1116,US Support & Growth,2026-03-03,Assessing Viability & Value
+DP-1116,US Support & Growth,2026-03-03,Assessing Viability & Value
+DP-1116,US Support & Growth,2026-03-03,Assessing Viability & Value
+DP-1116,US Support & Growth,2026-03-03,Assessing Viability & Value
+DP-1116,US Support & Growth,2026-03-03,Assessing Viability & Value
+DP-1116,US Support & Growth,2026-03-03,Assessing Viability & Value
+DP-1116,US Support & Growth,2026-03-03,Assessing Viability & Value
+DP-1115,US Research Ins Advisor,2026-03-03,Idea Backlog
+DP-1115,US Research Ins Advisor,2026-03-03,Idea Backlog
+DP-1114,US Buy,2026-03-03,Idea Backlog
+DP-1114,US Buy,2026-03-03,Idea Backlog
+DP-1114,US Buy,2026-03-03,Idea Backlog
+DP-1113,UK IP Offering,2026-03-03,Idea Backlog
+DP-1113,UK IP Offering,2026-03-03,Idea Backlog
+DP-1113,UK IP Offering,2026-03-03,Idea Backlog
+DP-1112,Customer Experience,2026-03-02,To Do
+DP-1111,UK IP Ecosystems Dev,2026-03-02,Ready for WSJF
+DP-1111,UK IP Ecosystems Dev,2026-03-02,Ready for WSJF
+DP-1111,UK IP Ecosystems Dev,2026-03-02,Ready for WSJF
+DP-1111,UK IP Ecosystems Dev,2026-03-02,Ready for WSJF
+DP-1111,UK IP Ecosystems Dev,2026-03-02,Ready for WSJF
+DP-1111,UK IP Ecosystems Dev,2026-03-02,Ready for WSJF
+DP-1111,UK IP Ecosystems Dev,2026-03-02,Ready for WSJF
+DP-1111,UK IP Ecosystems Dev,2026-03-02,Ready for WSJF
+DP-1110,UK IP Ecosystems Dev,2026-03-02,To Do
+DP-1109,US Research Ins Advisor,2026-03-02,Idea Backlog
+DP-1109,US Research Ins Advisor,2026-03-02,Idea Backlog
+DP-1108,UK Research,2026-03-02,To Do Ideas
+DP-1108,UK Research,2026-03-02,To Do Ideas
+DP-1108,UK Research,2026-03-02,To Do Ideas
+DP-1108,UK Research,2026-03-02,To Do Ideas
+DP-1108,UK Research,2026-03-02,To Do Ideas
+DP-1108,UK Research,2026-03-02,To Do Ideas
+DP-1108,UK Research,2026-03-02,To Do Ideas
+DP-1108,UK Research,2026-03-02,To Do Ideas
+DP-1108,UK Research,2026-03-02,To Do Ideas
+DP-1107,US Research Ins Advisor,2026-02-27,Idea Backlog
+DP-1107,US Research Ins Advisor,2026-02-27,Idea Backlog
+DP-1106,US Research Ins Advisor,2026-02-27,Idea Backlog
+DP-1106,US Research Ins Advisor,2026-02-27,Idea Backlog
+DP-1105,US Support & Growth,2026-02-27,Idea Backlog
+DP-1105,US Support & Growth,2026-02-27,Idea Backlog
+DP-1105,US Support & Growth,2026-02-27,Idea Backlog
+DP-1105,US Support & Growth,2026-02-27,Idea Backlog
+DP-1103,UK Research,2026-02-27,Design/Solution Validation
+DP-1103,UK Research,2026-02-27,Design/Solution Validation
+DP-1103,UK Research,2026-02-27,Design/Solution Validation
+DP-1103,UK Research,2026-02-27,Design/Solution Validation
+DP-1103,UK Research,2026-02-27,Design/Solution Validation
+DP-1103,UK Research,2026-02-27,Design/Solution Validation
+DP-1102,UK Buy,2026-02-27,To Do
+DP-1100,US Support & Growth,2026-02-26,Assessing Viability & Value
+DP-1100,US Support & Growth,2026-02-26,Assessing Viability & Value
+DP-1100,US Support & Growth,2026-02-26,Assessing Viability & Value
+DP-1099,US Partners,2026-02-26,To Do Ideas
+DP-1099,US Partners,2026-02-26,To Do Ideas
+DP-1099,US Partners,2026-02-26,To Do Ideas
+DP-1099,US Partners,2026-02-26,To Do Ideas
+DP-1099,US Partners,2026-02-26,To Do Ideas
+DP-1099,US Partners,2026-02-26,To Do Ideas
+DP-1098,UK Support & Growth,2026-02-25,Won't Do
+DP-1098,UK Support & Growth,2026-02-25,Won't Do
+DP-1098,UK Support & Growth,2026-02-25,Won't Do
+DP-1097,UK Support & Growth,2026-02-25,Idea Backlog
+DP-1097,UK Support & Growth,2026-02-25,Idea Backlog
+DP-1097,UK Support & Growth,2026-02-25,Idea Backlog
+DP-1097,UK Support & Growth,2026-02-25,Idea Backlog
+DP-1096,UK Support & Growth,2026-02-25,Idea Backlog
+DP-1096,UK Support & Growth,2026-02-25,Idea Backlog
+DP-1094,UK IP Offering,2026-02-25,Idea Backlog
+DP-1094,UK IP Offering,2026-02-25,Idea Backlog
+DP-1094,UK IP Offering,2026-02-25,Idea Backlog
+DP-1094,UK IP Offering,2026-02-25,Idea Backlog
+DP-1093,US Buy,2026-02-25,To Do
+DP-1092,US IP Offering,2026-02-25,To Do
+DP-1091,UK Research,2026-02-25,Idea Design & Solutioning
+DP-1091,UK Research,2026-02-25,Idea Design & Solutioning
+DP-1091,UK Research,2026-02-25,Idea Design & Solutioning
+DP-1090,UK IP Offering,2026-02-25,Idea Backlog
+DP-1090,UK IP Offering,2026-02-25,Idea Backlog
+DP-1090,UK IP Offering,2026-02-25,Idea Backlog
+DP-1090,UK IP Offering,2026-02-25,Idea Backlog
+DP-1089,UK IP Offering,2026-02-25,To Do
+DP-1087,UK Support & Growth,2026-02-24,Idea Backlog
+DP-1087,UK Support & Growth,2026-02-24,Idea Backlog
+DP-1087,UK Support & Growth,2026-02-24,Idea Backlog
+DP-1086,UK Support & Growth,2026-02-24,To Do
+DP-1084,UK Buy,2026-01-12,Backlog
+DP-1084,UK Buy,2026-01-12,Backlog
+DP-1084,UK Buy,2026-01-12,Backlog
+DP-1084,UK Buy,2026-01-12,Backlog
+DP-1083,UK IP Ecosystems Dev,2026-02-24,To Do
+DP-1082,UK Support & Growth,2026-02-23,To Do
+DP-1081,UK Support & Growth,2026-02-23,To Do
+DP-1080,US IP Offering,2026-02-23,Idea Backlog
+DP-1080,US IP Offering,2026-02-23,Idea Backlog
+DP-1080,US IP Offering,2026-02-23,Idea Backlog
+DP-1080,US IP Offering,2026-02-23,Idea Backlog
+DP-1079,UK Research,2026-02-23,Idea Backlog
+DP-1079,UK Research,2026-02-23,Idea Backlog
+DP-1079,UK Research,2026-02-23,Idea Backlog
+DP-1079,UK Research,2026-02-23,Idea Backlog
+DP-1079,UK Research,2026-02-23,Idea Backlog
+DP-1077,US IP Offering,2026-02-20,Idea Backlog
+DP-1077,US IP Offering,2026-02-20,Idea Backlog
+DP-1077,US IP Offering,2026-02-20,Idea Backlog
+DP-1077,US IP Offering,2026-02-20,Idea Backlog
+DP-1077,US IP Offering,2026-02-20,Idea Backlog
+DP-1077,US IP Offering,2026-02-20,Idea Backlog
+DP-1070,US IP Offering,2026-02-18,To Do
+DP-1064,US IP Offering,2026-02-17,Idea Backlog
+DP-1064,US IP Offering,2026-02-17,Idea Backlog
+DP-1064,US IP Offering,2026-02-17,Idea Backlog
+DP-1064,US IP Offering,2026-02-17,Idea Backlog
+DP-1064,US IP Offering,2026-02-17,Idea Backlog
+DP-1062,US Partners,2026-02-15,To Do Ideas
+DP-1062,US Partners,2026-02-15,To Do Ideas
+DP-1062,US Partners,2026-02-15,To Do Ideas
+DP-1061,US Partners,2026-02-15,To Do Ideas
+DP-1061,US Partners,2026-02-15,To Do Ideas
+DP-1061,US Partners,2026-02-15,To Do Ideas
+DP-1060,US Buy,2026-02-13,To Do
+DP-1059,US Buy,2026-02-13,Idea Backlog
+DP-1059,US Buy,2026-02-13,Idea Backlog
+DP-1059,US Buy,2026-02-13,Idea Backlog
+DP-1059,US Buy,2026-02-13,Idea Backlog
+DP-1059,US Buy,2026-02-13,Idea Backlog
+DP-1059,US Buy,2026-02-13,Idea Backlog
+DP-1059,US Buy,2026-02-13,Idea Backlog
+DP-1057,UK IP Offering,2026-02-13,To Do Ideas
+DP-1057,UK IP Offering,2026-02-13,To Do Ideas
+DP-1057,UK IP Offering,2026-02-13,To Do Ideas
+DP-1057,UK IP Offering,2026-02-13,To Do Ideas
+DP-1056,US Partners,2026-02-13,Idea Backlog
+DP-1056,US Partners,2026-02-13,Idea Backlog
+DP-1056,US Partners,2026-02-13,Idea Backlog
+DP-1056,US Partners,2026-02-13,Idea Backlog
+DP-1054,US Partners,2026-02-13,Idea Backlog
+DP-1054,US Partners,2026-02-13,Idea Backlog
+DP-1054,US Partners,2026-02-13,Idea Backlog
+DP-1053,UK IP Offering,2026-02-13,Idea Backlog
+DP-1053,UK IP Offering,2026-02-13,Idea Backlog
+DP-1052,UK Buy,2026-02-12,To Do
+DP-1051,US Partners,2026-02-12,To Do Ideas
+DP-1051,US Partners,2026-02-12,To Do Ideas
+DP-1051,US Partners,2026-02-12,To Do Ideas
+DP-1051,US Partners,2026-02-12,To Do Ideas
+DP-1049,US IP Offering,2026-02-12,To Do
+DP-1048,UK IP Ecosystems Dev,2026-02-12,To Do
+DP-1047,UK IP Ecosystems Dev,2026-02-12,To Do
+DP-1046,UK Support & Growth,2023-09-07,Backlog
+DP-1046,UK Support & Growth,2023-09-07,Backlog
+DP-1044,UK IP Offering,2026-02-11,Idea Backlog
+DP-1044,UK IP Offering,2026-02-11,Idea Backlog
+DP-1044,UK IP Offering,2026-02-11,Idea Backlog
+DP-1044,UK IP Offering,2026-02-11,Idea Backlog
+DP-1044,UK IP Offering,2026-02-11,Idea Backlog
+DP-1041,US IP Offering,2026-02-11,To Do
+DP-1039,UK IP Offering,2026-02-11,To Do
+DP-1037,UK IP Offering,2026-02-10,Idea Design & Solutioning
+DP-1037,UK IP Offering,2026-02-10,Idea Design & Solutioning
+DP-1037,UK IP Offering,2026-02-10,Idea Design & Solutioning
+DP-1037,UK IP Offering,2026-02-10,Idea Design & Solutioning
+DP-1037,UK IP Offering,2026-02-10,Idea Design & Solutioning
+DP-1035,UK IP Offering,2026-02-09,To Do
+DP-1034,UK IP Offering,2026-02-09,To Do
+DP-1033,Unassigned,2026-02-09,To Do
+DP-1032,UK IP Offering,2026-02-09,Idea Backlog
+DP-1032,UK IP Offering,2026-02-09,Idea Backlog
+DP-1032,UK IP Offering,2026-02-09,Idea Backlog
+DP-1032,UK IP Offering,2026-02-09,Idea Backlog
+DP-1030,Customer Experience,2026-02-09,To Do
+DP-1029,UK Buy,2026-02-09,To Do
+DP-1028,Customer Experience,2026-02-09,To Do
+DP-1027,Customer Experience,2026-02-09,To Do
+DP-1026,Customer Experience,2026-02-09,To Do
+DP-1025,Customer Experience,2026-02-09,To Do
+DP-1024,Customer Experience,2026-02-09,To Do
+DP-1023,UK Support & Growth,2026-02-09,To Do
+DP-1020,US IP Offering,2026-02-06,Assessing Viability & Value
+DP-1020,US IP Offering,2026-02-06,Assessing Viability & Value
+DP-1020,US IP Offering,2026-02-06,Assessing Viability & Value
+DP-1020,US IP Offering,2026-02-06,Assessing Viability & Value
+DP-1020,US IP Offering,2026-02-06,Assessing Viability & Value
+DP-1020,US IP Offering,2026-02-06,Assessing Viability & Value
+DP-1020,US IP Offering,2026-02-06,Assessing Viability & Value
+DP-1020,US IP Offering,2026-02-06,Assessing Viability & Value
+DP-1020,US IP Offering,2026-02-06,Assessing Viability & Value
+DP-1019,US IP Offering,2026-02-06,Idea Backlog
+DP-1019,US IP Offering,2026-02-06,Idea Backlog
+DP-1018,US IP Offering,2026-02-06,Idea Backlog
+DP-1018,US IP Offering,2026-02-06,Idea Backlog
+DP-1017,UK Support & Growth,2026-02-05,Idea Backlog
+DP-1017,UK Support & Growth,2026-02-05,Idea Backlog
+DP-1014,US Partners,2026-02-05,Ready for Test/Build
+DP-1014,US Partners,2026-02-05,Ready for Test/Build
+DP-1014,US Partners,2026-02-05,Ready for Test/Build
+DP-1013,UK IP Offering,2026-02-05,To Do
+DP-1011,US Support & Growth,2026-02-04,To Do
+DP-1010,US Support & Growth,2026-02-04,Idea Backlog
+DP-1010,US Support & Growth,2026-02-04,Idea Backlog
+DP-1010,US Support & Growth,2026-02-04,Idea Backlog
+DP-1010,US Support & Growth,2026-02-04,Idea Backlog
+DP-1008,UK Buy,2026-02-04,To Do
+DP-1007,UK IP Offering,2026-02-04,To Do
+DP-1005,US Partners,2026-02-03,Idea Backlog
+DP-1005,US Partners,2026-02-03,Idea Backlog
+DP-1005,US Partners,2026-02-03,Idea Backlog
+DP-1005,US Partners,2026-02-03,Idea Backlog
+DP-1004,US Partners,2026-02-03,Idea Backlog
+DP-1004,US Partners,2026-02-03,Idea Backlog
+DP-1004,US Partners,2026-02-03,Idea Backlog
+DP-1004,US Partners,2026-02-03,Idea Backlog
+DP-1003,US Partners,2026-02-03,To Do Ideas
+DP-1003,US Partners,2026-02-03,To Do Ideas
+DP-1003,US Partners,2026-02-03,To Do Ideas
+DP-1003,US Partners,2026-02-03,To Do Ideas
+DP-1001,US Research Brand & Experiments,2026-02-03,Idea Backlog
+DP-1001,US Research Brand & Experiments,2026-02-03,Idea Backlog
+DP-1001,US Research Brand & Experiments,2026-02-03,Idea Backlog
+DP-1001,US Research Brand & Experiments,2026-02-03,Idea Backlog
+DP-998,US Research Ins Advisor,2026-02-02,Idea Backlog
+DP-998,US Research Ins Advisor,2026-02-02,Idea Backlog
+DP-997,US Research Ins Advisor,2026-02-02,Idea Backlog
+DP-997,US Research Ins Advisor,2026-02-02,Idea Backlog
+DP-996,UK Buy,2026-02-02,To Do
+DP-995,UK Buy,2026-02-02,To Do
+DP-993,UK Buy,2026-02-02,Assessing Viability & Value
+DP-993,UK Buy,2026-02-02,Assessing Viability & Value
+DP-993,UK Buy,2026-02-02,Assessing Viability & Value
+DP-991,UK Buy,2026-02-02,Assessing Viability & Value
+DP-991,UK Buy,2026-02-02,Assessing Viability & Value
+DP-991,UK Buy,2026-02-02,Assessing Viability & Value
+DP-990,Customer Experience,2026-01-30,To Do
+DP-989,Customer Experience,2026-01-30,To Do
+DP-988,UK IP Offering,2026-01-30,To Do
+DP-985,UK IP Offering,2026-01-29,To Do
+DP-983,US Research Ins Advisor,2026-01-28,Idea Backlog
+DP-983,US Research Ins Advisor,2026-01-28,Idea Backlog
+DP-975,UK IP Ecosystems Dev,2026-01-26,To Do
+DP-972,US Partners,2026-01-26,Idea Backlog
+DP-972,US Partners,2026-01-26,Idea Backlog
+DP-970,US IP Offering,2026-01-23,Ready for Test/Build
+DP-970,US IP Offering,2026-01-23,Ready for Test/Build
+DP-970,US IP Offering,2026-01-23,Ready for Test/Build
+DP-970,US IP Offering,2026-01-23,Ready for Test/Build
+DP-970,US IP Offering,2026-01-23,Ready for Test/Build
+DP-970,US IP Offering,2026-01-23,Ready for Test/Build
+DP-970,US IP Offering,2026-01-23,Ready for Test/Build
+DP-970,US IP Offering,2026-01-23,Ready for Test/Build
+DP-970,US IP Offering,2026-01-23,Ready for Test/Build
+DP-969,US Buy,2026-01-23,To Do
+DP-968,UK IP Offering,2026-01-22,Idea Backlog
+DP-968,UK IP Offering,2026-01-22,Idea Backlog
+DP-967,UK IP Offering,2026-01-22,Idea Backlog
+DP-967,UK IP Offering,2026-01-22,Idea Backlog
+DP-967,UK IP Offering,2026-01-22,Idea Backlog
+DP-967,UK IP Offering,2026-01-22,Idea Backlog
+DP-967,UK IP Offering,2026-01-22,Idea Backlog
+DP-967,UK IP Offering,2026-01-22,Idea Backlog
+DP-964,UK IP Offering,2026-01-22,Idea Backlog
+DP-964,UK IP Offering,2026-01-22,Idea Backlog
+DP-963,UK IP Offering,2026-01-22,Idea Backlog
+DP-963,UK IP Offering,2026-01-22,Idea Backlog
+DP-962,UK IP Offering,2026-01-22,Idea Backlog
+DP-962,UK IP Offering,2026-01-22,Idea Backlog
+DP-961,UK IP Offering,2026-01-22,To Do
+DP-960,UK IP Offering,2026-01-22,To Do
+DP-958,UK IP Offering,2026-01-22,Idea Backlog
+DP-958,UK IP Offering,2026-01-22,Idea Backlog
+DP-957,UK Support & Growth,2026-01-22,Idea Backlog
+DP-957,UK Support & Growth,2026-01-22,Idea Backlog
+DP-956,UK Support & Growth,2026-01-22,Idea Backlog
+DP-956,UK Support & Growth,2026-01-22,Idea Backlog
+DP-955,UK Support & Growth,2026-01-22,Idea Backlog
+DP-955,UK Support & Growth,2026-01-22,Idea Backlog
+DP-954,UK IP Offering,2026-01-21,To Do
+DP-951,UK IP Offering,2026-01-21,Idea Backlog
+DP-951,UK IP Offering,2026-01-21,Idea Backlog
+DP-949,US Support & Growth,2026-01-20,To Do
+DP-948,US IP Offering,2026-01-19,To Do
+DP-947,US IP Offering,2026-01-19,Idea Backlog
+DP-947,US IP Offering,2026-01-19,Idea Backlog
+DP-946,US IP Offering,2026-01-19,Assessing Viability & Value
+DP-946,US IP Offering,2026-01-19,Assessing Viability & Value
+DP-946,US IP Offering,2026-01-19,Assessing Viability & Value
+DP-946,US IP Offering,2026-01-19,Assessing Viability & Value
+DP-946,US IP Offering,2026-01-19,Assessing Viability & Value
+DP-946,US IP Offering,2026-01-19,Assessing Viability & Value
+DP-946,US IP Offering,2026-01-19,Assessing Viability & Value
+DP-946,US IP Offering,2026-01-19,Assessing Viability & Value
+DP-946,US IP Offering,2026-01-19,Assessing Viability & Value
+DP-946,US IP Offering,2026-01-19,Assessing Viability & Value
+DP-946,US IP Offering,2026-01-19,Assessing Viability & Value
+DP-946,US IP Offering,2026-01-19,Assessing Viability & Value
+DP-943,UK Research,2026-01-16,Idea Backlog
+DP-943,UK Research,2026-01-16,Idea Backlog
+DP-943,UK Research,2026-01-16,Idea Backlog
+DP-940,US Buy,2026-01-15,To Do
+DP-938,US Partners,2026-01-14,Idea Backlog
+DP-938,US Partners,2026-01-14,Idea Backlog
+DP-938,US Partners,2026-01-14,Idea Backlog
+DP-937,US Partners,2026-01-14,Idea Backlog
+DP-937,US Partners,2026-01-14,Idea Backlog
+DP-935,US IP Offering,2026-01-13,Idea Backlog
+DP-935,US IP Offering,2026-01-13,Idea Backlog
+DP-933,US Buy,2026-01-12,To Do
+DP-931,UK Research,2026-01-12,Idea Backlog
+DP-931,UK Research,2026-01-12,Idea Backlog
+DP-931,UK Research,2026-01-12,Idea Backlog
+DP-930,UK Research,2026-01-12,Idea Backlog
+DP-930,UK Research,2026-01-12,Idea Backlog
+DP-930,UK Research,2026-01-12,Idea Backlog
+DP-929,UK Research,2026-01-12,Idea Backlog
+DP-929,UK Research,2026-01-12,Idea Backlog
+DP-929,UK Research,2026-01-12,Idea Backlog
+DP-928,UK Research,2026-01-12,Idea Backlog
+DP-928,UK Research,2026-01-12,Idea Backlog
+DP-928,UK Research,2026-01-12,Idea Backlog
+DP-928,UK Research,2026-01-12,Idea Backlog
+DP-926,UK Buy,2026-01-12,Idea Backlog
+DP-926,UK Buy,2026-01-12,Idea Backlog
+DP-926,UK Buy,2026-01-12,Idea Backlog
+DP-926,UK Buy,2026-01-12,Idea Backlog
+DP-926,UK Buy,2026-01-12,Idea Backlog
+DP-920,US Buy,2026-01-08,Idea Backlog
+DP-920,US Buy,2026-01-08,Idea Backlog
+DP-920,US Buy,2026-01-08,Idea Backlog
+DP-919,US Buy,2026-01-07,Idea Design & Solutioning
+DP-919,US Buy,2026-01-07,Idea Design & Solutioning
+DP-919,US Buy,2026-01-07,Idea Design & Solutioning
+DP-918,US Support & Growth,2026-01-07,To Do
+DP-917,UK Support & Growth,2026-01-07,Won't Do
+DP-917,UK Support & Growth,2026-01-07,Won't Do
+DP-917,UK Support & Growth,2026-01-07,Won't Do
+DP-916,UK Support & Growth,2026-01-07,Idea Backlog
+DP-916,UK Support & Growth,2026-01-07,Idea Backlog
+DP-916,UK Support & Growth,2026-01-07,Idea Backlog
+DP-915,UK Support & Growth,2026-01-07,Idea Backlog
+DP-915,UK Support & Growth,2026-01-07,Idea Backlog
+DP-915,UK Support & Growth,2026-01-07,Idea Backlog
+DP-915,UK Support & Growth,2026-01-07,Idea Backlog
+DP-915,UK Support & Growth,2026-01-07,Idea Backlog
+DP-915,UK Support & Growth,2026-01-07,Idea Backlog
+DP-911,US Partners,2026-01-06,Idea Design & Solutioning
+DP-911,US Partners,2026-01-06,Idea Design & Solutioning
+DP-911,US Partners,2026-01-06,Idea Design & Solutioning
+DP-911,US Partners,2026-01-06,Idea Design & Solutioning
+DP-911,US Partners,2026-01-06,Idea Design & Solutioning
+DP-910,US Partners,2026-01-06,Idea Design & Solutioning
+DP-910,US Partners,2026-01-06,Idea Design & Solutioning
+DP-910,US Partners,2026-01-06,Idea Design & Solutioning
+DP-910,US Partners,2026-01-06,Idea Design & Solutioning
+DP-908,UK IP Ecosystems Dev,2026-01-06,Idea Backlog
+DP-908,UK IP Ecosystems Dev,2026-01-06,Idea Backlog
+DP-907,UK Support & Growth,2026-01-05,To Do
+DP-905,UK Buy,2025-12-30,Idea Backlog
+DP-905,UK Buy,2025-12-30,Idea Backlog
+DP-905,UK Buy,2025-12-30,Idea Backlog
+DP-905,UK Buy,2025-12-30,Idea Backlog
+DP-904,US Research Brand & Experiments,2025-12-30,Idea Backlog
+DP-904,US Research Brand & Experiments,2025-12-30,Idea Backlog
+DP-904,US Research Brand & Experiments,2025-12-30,Idea Backlog
+DP-903,UK Research,2025-12-30,To Do
+DP-902,US Research Brand & Experiments,2025-12-29,Assessing Viability & Value
+DP-902,US Research Brand & Experiments,2025-12-29,Assessing Viability & Value
+DP-902,US Research Brand & Experiments,2025-12-29,Assessing Viability & Value
+DP-902,US Research Brand & Experiments,2025-12-29,Assessing Viability & Value
+DP-902,US Research Brand & Experiments,2025-12-29,Assessing Viability & Value
+DP-900,US Buy,2025-12-26,To Do
+DP-899,US Buy,2025-12-26,To Do
+DP-898,US Buy,2025-12-26,To Do
+DP-897,US Buy,2025-12-26,To Do
+DP-896,US Buy,2025-12-26,To Do
+DP-895,US Buy,2025-12-26,To Do
+DP-894,US Buy,2025-12-26,To Do
+DP-893,US Buy,2025-12-24,Idea Backlog
+DP-893,US Buy,2025-12-24,Idea Backlog
+DP-892,US Buy,2025-12-24,Idea Backlog
+DP-892,US Buy,2025-12-24,Idea Backlog
+DP-891,US Buy,2025-12-24,Idea Backlog
+DP-891,US Buy,2025-12-24,Idea Backlog
+DP-890,US Buy,2025-12-24,Idea Backlog
+DP-890,US Buy,2025-12-24,Idea Backlog
+DP-889,US Buy,2025-12-24,Idea Backlog
+DP-889,US Buy,2025-12-24,Idea Backlog
+DP-888,US Buy,2025-12-24,Idea Backlog
+DP-888,US Buy,2025-12-24,Idea Backlog
+DP-887,US Buy,2025-12-24,Idea Backlog
+DP-887,US Buy,2025-12-24,Idea Backlog
+DP-886,US Buy,2025-12-24,Idea Backlog
+DP-886,US Buy,2025-12-24,Idea Backlog
+DP-885,US Buy,2025-12-24,Idea Backlog
+DP-885,US Buy,2025-12-24,Idea Backlog
+DP-884,US Buy,2025-12-24,Idea Backlog
+DP-884,US Buy,2025-12-24,Idea Backlog
+DP-883,US Buy,2025-12-24,Idea Backlog
+DP-883,US Buy,2025-12-24,Idea Backlog
+DP-882,US Buy,2025-12-24,Idea Backlog
+DP-882,US Buy,2025-12-24,Idea Backlog
+DP-881,US Buy,2025-12-24,Idea Backlog
+DP-881,US Buy,2025-12-24,Idea Backlog
+DP-880,US Buy,2025-12-24,Idea Backlog
+DP-880,US Buy,2025-12-24,Idea Backlog
+DP-879,US Buy,2025-12-24,Idea Backlog
+DP-879,US Buy,2025-12-24,Idea Backlog
+DP-878,US Buy,2025-12-24,Idea Backlog
+DP-878,US Buy,2025-12-24,Idea Backlog
+DP-877,US Buy,2025-12-24,Idea Backlog
+DP-877,US Buy,2025-12-24,Idea Backlog
+DP-876,US Buy,2025-12-24,Idea Backlog
+DP-876,US Buy,2025-12-24,Idea Backlog
+DP-875,US Buy,2025-12-24,Idea Backlog
+DP-875,US Buy,2025-12-24,Idea Backlog
+DP-874,US Buy,2025-12-24,Idea Backlog
+DP-874,US Buy,2025-12-24,Idea Backlog
+DP-873,US Buy,2025-12-24,Idea Backlog
+DP-873,US Buy,2025-12-24,Idea Backlog
+DP-872,US Buy,2025-12-24,Idea Backlog
+DP-872,US Buy,2025-12-24,Idea Backlog
+DP-871,US Buy,2025-12-24,Idea Backlog
+DP-871,US Buy,2025-12-24,Idea Backlog
+DP-870,US Buy,2025-12-24,Idea Backlog
+DP-870,US Buy,2025-12-24,Idea Backlog
+DP-869,US Buy,2025-12-24,Idea Backlog
+DP-869,US Buy,2025-12-24,Idea Backlog
+DP-868,US Buy,2025-12-24,Idea Backlog
+DP-868,US Buy,2025-12-24,Idea Backlog
+DP-867,US Buy,2025-12-24,Idea Backlog
+DP-867,US Buy,2025-12-24,Idea Backlog
+DP-866,US Buy,2025-12-24,Idea Backlog
+DP-866,US Buy,2025-12-24,Idea Backlog
+DP-865,US Buy,2025-12-24,Idea Backlog
+DP-865,US Buy,2025-12-24,Idea Backlog
+DP-864,US Buy,2025-12-24,Idea Backlog
+DP-864,US Buy,2025-12-24,Idea Backlog
+DP-863,US Buy,2025-12-24,Idea Backlog
+DP-863,US Buy,2025-12-24,Idea Backlog
+DP-862,US Buy,2025-12-24,Idea Backlog
+DP-862,US Buy,2025-12-24,Idea Backlog
+DP-861,US Buy,2025-12-24,Idea Backlog
+DP-861,US Buy,2025-12-24,Idea Backlog
+DP-860,US Buy,2025-12-24,Idea Backlog
+DP-860,US Buy,2025-12-24,Idea Backlog
+DP-859,US Buy,2025-12-24,Idea Backlog
+DP-859,US Buy,2025-12-24,Idea Backlog
+DP-858,US Buy,2025-12-24,Idea Backlog
+DP-858,US Buy,2025-12-24,Idea Backlog
+DP-857,US Buy,2025-12-24,Idea Backlog
+DP-857,US Buy,2025-12-24,Idea Backlog
+DP-856,US Buy,2025-12-24,Idea Backlog
+DP-856,US Buy,2025-12-24,Idea Backlog
+DP-855,US Buy,2025-12-24,Idea Backlog
+DP-855,US Buy,2025-12-24,Idea Backlog
+DP-854,US Buy,2025-12-24,Idea Backlog
+DP-854,US Buy,2025-12-24,Idea Backlog
+DP-853,US Buy,2025-12-24,Idea Backlog
+DP-853,US Buy,2025-12-24,Idea Backlog
+DP-852,US Buy,2025-12-24,Idea Backlog
+DP-852,US Buy,2025-12-24,Idea Backlog
+DP-851,US Buy,2025-12-24,Idea Backlog
+DP-851,US Buy,2025-12-24,Idea Backlog
+DP-849,US Buy,2025-12-24,Idea Backlog
+DP-849,US Buy,2025-12-24,Idea Backlog
+DP-848,US Buy,2025-12-24,Idea Backlog
+DP-848,US Buy,2025-12-24,Idea Backlog
+DP-847,US Buy,2025-12-24,Idea Backlog
+DP-847,US Buy,2025-12-24,Idea Backlog
+DP-846,US Buy,2025-12-24,Idea Backlog
+DP-846,US Buy,2025-12-24,Idea Backlog
+DP-845,US Buy,2025-12-24,Idea Backlog
+DP-845,US Buy,2025-12-24,Idea Backlog
+DP-844,US Buy,2025-12-24,Idea Backlog
+DP-844,US Buy,2025-12-24,Idea Backlog
+DP-843,US Buy,2025-12-24,Idea Backlog
+DP-843,US Buy,2025-12-24,Idea Backlog
+DP-842,US Buy,2025-12-24,Idea Backlog
+DP-842,US Buy,2025-12-24,Idea Backlog
+DP-842,US Buy,2025-12-24,Idea Backlog
+DP-842,US Buy,2025-12-24,Idea Backlog
+DP-841,US Buy,2025-12-24,Idea Backlog
+DP-841,US Buy,2025-12-24,Idea Backlog
+DP-840,US Buy,2025-12-24,Idea Backlog
+DP-840,US Buy,2025-12-24,Idea Backlog
+DP-839,US Buy,2025-12-24,Idea Backlog
+DP-839,US Buy,2025-12-24,Idea Backlog
+DP-838,US Buy,2025-12-24,Idea Backlog
+DP-838,US Buy,2025-12-24,Idea Backlog
+DP-837,US Buy,2025-12-24,Idea Backlog
+DP-837,US Buy,2025-12-24,Idea Backlog
+DP-836,US Buy,2025-12-24,Idea Backlog
+DP-836,US Buy,2025-12-24,Idea Backlog
+DP-835,US Buy,2025-12-24,Idea Backlog
+DP-835,US Buy,2025-12-24,Idea Backlog
+DP-834,US Buy,2025-12-24,Idea Backlog
+DP-834,US Buy,2025-12-24,Idea Backlog
+DP-833,US Buy,2025-12-24,Idea Backlog
+DP-833,US Buy,2025-12-24,Idea Backlog
+DP-832,US Buy,2025-12-24,Idea Backlog
+DP-832,US Buy,2025-12-24,Idea Backlog
+DP-831,US Buy,2025-12-24,Idea Backlog
+DP-831,US Buy,2025-12-24,Idea Backlog
+DP-830,US Buy,2025-12-24,Idea Backlog
+DP-830,US Buy,2025-12-24,Idea Backlog
+DP-829,US Buy,2025-12-24,Idea Backlog
+DP-829,US Buy,2025-12-24,Idea Backlog
+DP-828,US Buy,2025-12-24,Idea Backlog
+DP-828,US Buy,2025-12-24,Idea Backlog
+DP-826,US Buy,2025-12-24,Idea Backlog
+DP-826,US Buy,2025-12-24,Idea Backlog
+DP-825,US Buy,2025-12-24,Idea Backlog
+DP-825,US Buy,2025-12-24,Idea Backlog
+DP-823,US Buy,2025-12-24,Idea Backlog
+DP-823,US Buy,2025-12-24,Idea Backlog
+DP-822,US Buy,2025-12-24,Idea Backlog
+DP-822,US Buy,2025-12-24,Idea Backlog
+DP-821,US Buy,2025-12-24,Idea Backlog
+DP-821,US Buy,2025-12-24,Idea Backlog
+DP-820,US Buy,2025-12-24,Idea Backlog
+DP-820,US Buy,2025-12-24,Idea Backlog
+DP-819,US Buy,2025-12-24,Idea Backlog
+DP-819,US Buy,2025-12-24,Idea Backlog
+DP-818,US Buy,2025-12-24,Idea Backlog
+DP-818,US Buy,2025-12-24,Idea Backlog
+DP-817,US Buy,2025-12-24,Idea Backlog
+DP-817,US Buy,2025-12-24,Idea Backlog
+DP-816,US Buy,2025-12-24,Idea Backlog
+DP-816,US Buy,2025-12-24,Idea Backlog
+DP-815,US Buy,2025-12-24,Idea Backlog
+DP-815,US Buy,2025-12-24,Idea Backlog
+DP-814,US Buy,2025-12-24,Idea Backlog
+DP-814,US Buy,2025-12-24,Idea Backlog
+DP-813,US Buy,2025-12-24,Idea Backlog
+DP-813,US Buy,2025-12-24,Idea Backlog
+DP-812,US Buy,2025-12-24,Idea Backlog
+DP-812,US Buy,2025-12-24,Idea Backlog
+DP-811,US Buy,2025-12-24,Idea Backlog
+DP-811,US Buy,2025-12-24,Idea Backlog
+DP-810,US Research Brand & Experiments,2025-12-24,Idea Backlog
+DP-810,US Research Brand & Experiments,2025-12-24,Idea Backlog
+DP-810,US Research Brand & Experiments,2025-12-24,Idea Backlog
+DP-810,US Research Brand & Experiments,2025-12-24,Idea Backlog
+DP-810,US Research Brand & Experiments,2025-12-24,Idea Backlog
+DP-810,US Research Brand & Experiments,2025-12-24,Idea Backlog
+DP-806,US IP Offering,2025-12-18,Idea Backlog
+DP-806,US IP Offering,2025-12-18,Idea Backlog
+DP-806,US IP Offering,2025-12-18,Idea Backlog
+DP-806,US IP Offering,2025-12-18,Idea Backlog
+DP-806,US IP Offering,2025-12-18,Idea Backlog
+DP-806,US IP Offering,2025-12-18,Idea Backlog
+DP-806,US IP Offering,2025-12-18,Idea Backlog
+DP-806,US IP Offering,2025-12-18,Idea Backlog
+DP-805,US IP Offering,2025-12-18,To Do
+DP-804,Customer Experience,2025-12-17,To Do
+DP-803,Customer Experience,2025-12-17,To Do
+DP-799,US Buy,2025-12-16,Idea Backlog
+DP-799,US Buy,2025-12-16,Idea Backlog
+DP-799,US Buy,2025-12-16,Idea Backlog
+DP-796,US Buy,2025-12-16,Idea Backlog
+DP-796,US Buy,2025-12-16,Idea Backlog
+DP-796,US Buy,2025-12-16,Idea Backlog
+DP-795,US Buy,2025-12-16,Assessing Viability & Value
+DP-795,US Buy,2025-12-16,Assessing Viability & Value
+DP-795,US Buy,2025-12-16,Assessing Viability & Value
+DP-795,US Buy,2025-12-16,Assessing Viability & Value
+DP-795,US Buy,2025-12-16,Assessing Viability & Value
+DP-795,US Buy,2025-12-16,Assessing Viability & Value
+DP-795,US Buy,2025-12-16,Assessing Viability & Value
+DP-793,US Buy,2025-12-16,Idea Backlog
+DP-793,US Buy,2025-12-16,Idea Backlog
+DP-793,US Buy,2025-12-16,Idea Backlog
+DP-793,US Buy,2025-12-16,Idea Backlog
+DP-793,US Buy,2025-12-16,Idea Backlog
+DP-789,UK Buy,2025-12-15,To Do
+DP-788,UK Buy,2025-12-15,To Do
+DP-785,US IP Offering,2025-12-11,Design/Solution Validation
+DP-785,US IP Offering,2025-12-11,Design/Solution Validation
+DP-785,US IP Offering,2025-12-11,Design/Solution Validation
+DP-785,US IP Offering,2025-12-11,Design/Solution Validation
+DP-785,US IP Offering,2025-12-11,Design/Solution Validation
+DP-785,US IP Offering,2025-12-11,Design/Solution Validation
+DP-785,US IP Offering,2025-12-11,Design/Solution Validation
+DP-785,US IP Offering,2025-12-11,Design/Solution Validation
+DP-785,US IP Offering,2025-12-11,Design/Solution Validation
+DP-785,US IP Offering,2025-12-11,Design/Solution Validation
+DP-784,UK IP Offering,2025-12-11,Idea Backlog
+DP-784,UK IP Offering,2025-12-11,Idea Backlog
+DP-783,UK IP Offering,2025-12-11,Idea Backlog
+DP-783,UK IP Offering,2025-12-11,Idea Backlog
+DP-783,UK IP Offering,2025-12-11,Idea Backlog
+DP-783,UK IP Offering,2025-12-11,Idea Backlog
+DP-782,UK IP Offering,2025-12-10,Idea Backlog
+DP-782,UK IP Offering,2025-12-10,Idea Backlog
+DP-782,UK IP Offering,2025-12-10,Idea Backlog
+DP-782,UK IP Offering,2025-12-10,Idea Backlog
+DP-781,UK IP Offering,2025-12-10,Idea Design & Solutioning
+DP-781,UK IP Offering,2025-12-10,Idea Design & Solutioning
+DP-781,UK IP Offering,2025-12-10,Idea Design & Solutioning
+DP-780,UK IP Offering,2025-12-10,Idea Backlog
+DP-780,UK IP Offering,2025-12-10,Idea Backlog
+DP-779,UK IP Offering,2025-12-10,Idea Backlog
+DP-779,UK IP Offering,2025-12-10,Idea Backlog
+DP-775,Customer Experience,2025-12-10,To Do
+DP-773,UK IP Offering,2025-12-09,To Do
+DP-772,UK IP Offering,2025-12-09,To Do
+DP-771,Customer Experience,2025-12-09,To Do
+DP-769,Customer Experience,2025-12-09,To Do
+DP-768,Customer Experience,2025-12-09,To Do
+DP-767,Customer Experience,2025-12-09,To Do
+DP-766,Customer Experience,2025-12-09,To Do
+DP-765,Customer Experience,2025-12-09,To Do
+DP-764,Customer Experience,2025-12-09,To Do
+DP-762,UK Support & Growth,2025-12-09,To Do
+DP-761,UK Support & Growth,2025-12-09,To Do
+DP-760,Customer Experience,2025-12-08,To Do
+DP-759,Customer Experience,2025-12-08,To Do
+DP-758,Customer Experience,2025-12-08,To Do
+DP-757,Customer Experience,2025-12-08,To Do
+DP-756,UK IP Ecosystems Dev,2025-12-08,To Do
+DP-755,Customer Experience,2025-12-08,To Do
+DP-754,Customer Experience,2025-12-08,To Do
+DP-753,Customer Experience,2025-12-08,To Do
+DP-752,UK Buy,2025-12-08,To Do
+DP-751,Customer Experience,2025-12-08,To Do
+DP-750,Customer Experience,2025-12-08,To Do
+DP-749,Customer Experience,2025-12-08,To Do
+DP-748,Customer Experience,2025-12-08,To Do
+DP-747,UK Buy,2025-12-05,Design/Solution Validation
+DP-747,UK Buy,2025-12-05,Design/Solution Validation
+DP-747,UK Buy,2025-12-05,Design/Solution Validation
+DP-747,UK Buy,2025-12-05,Design/Solution Validation
+DP-747,UK Buy,2025-12-05,Design/Solution Validation
+DP-747,UK Buy,2025-12-05,Design/Solution Validation
+DP-746,UK Support & Growth,2025-12-05,Design/Solution Validation
+DP-746,UK Support & Growth,2025-12-05,Design/Solution Validation
+DP-746,UK Support & Growth,2025-12-05,Design/Solution Validation
+DP-741,UK Support & Growth,2025-12-04,Idea Backlog
+DP-741,UK Support & Growth,2025-12-04,Idea Backlog
+DP-741,UK Support & Growth,2025-12-04,Idea Backlog
+DP-740,UK Support & Growth,2025-12-04,To Do
+DP-739,UK Support & Growth,2025-12-04,To Do
+DP-738,UK Support & Growth,2025-12-04,To Do
+DP-737,US Support & Growth,2025-12-03,To Do
+DP-735,UK Support & Growth,2025-12-03,Idea Backlog
+DP-735,UK Support & Growth,2025-12-03,Idea Backlog
+DP-735,UK Support & Growth,2025-12-03,Idea Backlog
+DP-734,Customer Experience,2025-12-02,Idea Backlog
+DP-734,Customer Experience,2025-12-02,Idea Backlog
+DP-732,US Research Brand & Experiments,2025-12-01,Design/Solution Validation
+DP-732,US Research Brand & Experiments,2025-12-01,Design/Solution Validation
+DP-732,US Research Brand & Experiments,2025-12-01,Design/Solution Validation
+DP-732,US Research Brand & Experiments,2025-12-01,Design/Solution Validation
+DP-732,US Research Brand & Experiments,2025-12-01,Design/Solution Validation
+DP-732,US Research Brand & Experiments,2025-12-01,Design/Solution Validation
+DP-732,US Research Brand & Experiments,2025-12-01,Design/Solution Validation
+DP-730,UK Support & Growth,2025-11-28,To Do
+DP-728,UK Support & Growth,2025-11-28,To Do
+DP-727,UK Support & Growth,2025-11-28,To Do
+DP-726,UK Support & Growth,2025-11-28,To Do
+DP-725,Customer Experience,2025-11-28,Idea Backlog
+DP-725,Customer Experience,2025-11-28,Idea Backlog
+DP-724,Customer Experience,2025-11-28,Idea Backlog
+DP-724,Customer Experience,2025-11-28,Idea Backlog
+DP-723,Customer Experience,2025-11-28,Idea Backlog
+DP-723,Customer Experience,2025-11-28,Idea Backlog
+DP-721,UK IP Offering,2025-11-26,Idea Backlog
+DP-721,UK IP Offering,2025-11-26,Idea Backlog
+DP-721,UK IP Offering,2025-11-26,Idea Backlog
+DP-720,UK IP Ecosystems Dev,2025-11-26,To Do
+DP-719,UK IP Ecosystems Dev,2025-11-26,To Do
+DP-718,UK Buy,2025-11-25,Idea Backlog
+DP-718,UK Buy,2025-11-25,Idea Backlog
+DP-718,UK Buy,2025-11-25,Idea Backlog
+DP-714,UK IP Offering,2025-11-21,To Do
+DP-713,UK IP Offering,2025-11-20,Design/Solution Validation
+DP-713,UK IP Offering,2025-11-20,Design/Solution Validation
+DP-713,UK IP Offering,2025-11-20,Design/Solution Validation
+DP-713,UK IP Offering,2025-11-20,Design/Solution Validation
+DP-713,UK IP Offering,2025-11-20,Design/Solution Validation
+DP-709,UK Buy,2025-11-19,To Do
+DP-708,UK IP Offering,2025-11-19,To Do
+DP-706,US Buy,2025-11-17,To Do
+DP-705,UK IP Offering,2025-11-14,Ready for WSJF
+DP-705,UK IP Offering,2025-11-14,Ready for WSJF
+DP-705,UK IP Offering,2025-11-14,Ready for WSJF
+DP-705,UK IP Offering,2025-11-14,Ready for WSJF
+DP-705,UK IP Offering,2025-11-14,Ready for WSJF
+DP-704,UK IP Offering,2025-11-13,To Do
+DP-701,US Partners,2025-11-12,To Do
+DP-700,UK IP Offering,2025-11-12,To Do
+DP-698,US Partners,2025-11-11,To Do
+DP-695,UK Support & Growth,2025-11-11,To Do
+DP-693,UK Support & Growth,2025-11-11,To Do
+DP-691,UK Support & Growth,2025-11-11,To Do
+DP-690,UK Support & Growth,2025-11-11,To Do
+DP-688,UK Support & Growth,2025-11-11,To Do
+DP-686,UK Support & Growth,2025-11-11,To Do
+DP-685,UK Support & Growth,2025-11-11,To Do
+DP-684,UK Support & Growth,2025-11-11,To Do
+DP-683,UK Support & Growth,2025-11-11,Idea Backlog
+DP-683,UK Support & Growth,2025-11-11,Idea Backlog
+DP-683,UK Support & Growth,2025-11-11,Idea Backlog
+DP-683,UK Support & Growth,2025-11-11,Idea Backlog
+DP-682,UK Support & Growth,2025-11-11,To Do
+DP-681,UK Support & Growth,2025-11-11,To Do
+DP-680,UK Support & Growth,2025-11-11,To Do
+DP-678,UK Support & Growth,2025-11-11,To Do
+DP-677,UK Support & Growth,2025-11-11,To Do
+DP-676,UK Support & Growth,2025-11-11,To Do
+DP-675,UK Support & Growth,2025-11-11,To Do
+DP-674,UK Support & Growth,2025-11-11,To Do
+DP-673,UK Support & Growth,2025-11-11,To Do
+DP-672,UK Support & Growth,2025-11-11,To Do
+DP-671,UK Support & Growth,2025-11-11,Idea Backlog
+DP-671,UK Support & Growth,2025-11-11,Idea Backlog
+DP-671,UK Support & Growth,2025-11-11,Idea Backlog
+DP-669,UK Support & Growth,2025-11-11,To Do
+DP-667,UK Support & Growth,2025-11-11,To Do
+DP-666,UK Support & Growth,2025-11-11,To Do
+DP-662,UK Support & Growth,2025-11-10,To Do
+DP-661,UK Support & Growth,2025-11-10,To Do
+DP-659,UK IP Offering,2025-11-06,To Do
+DP-658,UK IP Offering,2025-11-06,Idea Backlog
+DP-658,UK IP Offering,2025-11-06,Idea Backlog
+DP-657,UK IP Offering,2025-11-06,To Do
+DP-655,UK IP Ecosystems Dev,2025-11-06,Idea Design & Solutioning
+DP-655,UK IP Ecosystems Dev,2025-11-06,Idea Design & Solutioning
+DP-655,UK IP Ecosystems Dev,2025-11-06,Idea Design & Solutioning
+DP-655,UK IP Ecosystems Dev,2025-11-06,Idea Design & Solutioning
+DP-655,UK IP Ecosystems Dev,2025-11-06,Idea Design & Solutioning
+DP-655,UK IP Ecosystems Dev,2025-11-06,Idea Design & Solutioning
+DP-655,UK IP Ecosystems Dev,2025-11-06,Idea Design & Solutioning
+DP-653,US Buy,2025-11-04,To Do
+DP-650,UK IP Ecosystems Dev,2025-11-04,Idea Backlog
+DP-650,UK IP Ecosystems Dev,2025-11-04,Idea Backlog
+DP-649,US IP Offering,2025-11-04,To Do
+DP-647,UK IP Offering,2025-11-03,Idea Backlog
+DP-647,UK IP Offering,2025-11-03,Idea Backlog
+DP-647,UK IP Offering,2025-11-03,Idea Backlog
+DP-646,UK Support & Growth,2025-11-03,To Do
+DP-642,Customer Experience,2025-10-30,To Do
+DP-641,Customer Experience,2025-10-30,To Do
+DP-640,UK Research,2025-10-30,Idea Backlog
+DP-640,UK Research,2025-10-30,Idea Backlog
+DP-638,US IP Offering,2025-10-30,Idea Backlog
+DP-638,US IP Offering,2025-10-30,Idea Backlog
+DP-638,US IP Offering,2025-10-30,Idea Backlog
+DP-638,US IP Offering,2025-10-30,Idea Backlog
+DP-637,US IP Offering,2025-10-30,To Do
+DP-636,US IP Offering,2025-10-30,To Do
+DP-634,US IP Offering,2025-10-30,Idea Backlog
+DP-634,US IP Offering,2025-10-30,Idea Backlog
+DP-634,US IP Offering,2025-10-30,Idea Backlog
+DP-634,US IP Offering,2025-10-30,Idea Backlog
+DP-633,Customer Experience,2025-10-29,To Do
+DP-631,Customer Experience,2025-10-28,To Do
+DP-626,UK Support & Growth,2025-10-28,To Do
+DP-625,UK Support & Growth,2025-10-28,To Do
+DP-624,UK Support & Growth,2025-10-28,To Do
+DP-623,UK Support & Growth,2025-10-28,To Do
+DP-622,UK Support & Growth,2025-10-28,To Do
+DP-621,UK Support & Growth,2025-10-28,To Do
+DP-620,UK Support & Growth,2025-10-28,To Do
+DP-618,UK Support & Growth,2025-10-28,To Do
+DP-617,UK Support & Growth,2025-10-28,To Do
+DP-616,UK Support & Growth,2025-10-28,To Do
+DP-612,US IP Offering,2025-10-27,Idea Backlog
+DP-612,US IP Offering,2025-10-27,Idea Backlog
+DP-612,US IP Offering,2025-10-27,Idea Backlog
+DP-612,US IP Offering,2025-10-27,Idea Backlog
+DP-612,US IP Offering,2025-10-27,Idea Backlog
+DP-612,US IP Offering,2025-10-27,Idea Backlog
+DP-612,US IP Offering,2025-10-27,Idea Backlog
+DP-611,UK Support & Growth,2025-10-27,To Do
+DP-605,UK IP Offering,2025-10-24,To Do
+DP-602,US Support & Growth,2025-10-23,Idea Backlog
+DP-602,US Support & Growth,2025-10-23,Idea Backlog
+DP-602,US Support & Growth,2025-10-23,Idea Backlog
+DP-602,US Support & Growth,2025-10-23,Idea Backlog
+DP-601,US Partners,2025-10-23,Idea Backlog
+DP-601,US Partners,2025-10-23,Idea Backlog
+DP-601,US Partners,2025-10-23,Idea Backlog
+DP-601,US Partners,2025-10-23,Idea Backlog
+DP-600,US Partners,2025-10-23,Idea Backlog
+DP-600,US Partners,2025-10-23,Idea Backlog
+DP-600,US Partners,2025-10-23,Idea Backlog
+DP-600,US Partners,2025-10-23,Idea Backlog
+DP-597,UK IP Offering,2025-10-22,Idea Backlog
+DP-597,UK IP Offering,2025-10-22,Idea Backlog
+DP-597,UK IP Offering,2025-10-22,Idea Backlog
+DP-596,UK IP Offering,2025-10-22,Assessing Viability & Value
+DP-596,UK IP Offering,2025-10-22,Assessing Viability & Value
+DP-594,UK IP Offering,2025-10-22,To Do
+DP-593,US Research Ins Advisor,2025-10-21,Assessing Viability & Value
+DP-593,US Research Ins Advisor,2025-10-21,Assessing Viability & Value
+DP-593,US Research Ins Advisor,2025-10-21,Assessing Viability & Value
+DP-593,US Research Ins Advisor,2025-10-21,Assessing Viability & Value
+DP-593,US Research Ins Advisor,2025-10-21,Assessing Viability & Value
+DP-592,US Research Ins Advisor,2025-10-21,Idea Backlog
+DP-592,US Research Ins Advisor,2025-10-21,Idea Backlog
+DP-590,US Support & Growth,2025-10-21,To Do
+DP-587,US Buy,2025-10-20,Assessing Viability & Value
+DP-587,US Buy,2025-10-20,Assessing Viability & Value
+DP-587,US Buy,2025-10-20,Assessing Viability & Value
+DP-587,US Buy,2025-10-20,Assessing Viability & Value
+DP-586,US IP Offering,2025-10-20,To Do
+DP-585,UK Support & Growth,2025-10-20,To Do
+DP-580,UK Support & Growth,2025-10-17,To Do
+DP-577,UK Support & Growth,2025-10-16,To Do
+DP-576,UK Research,2025-10-15,Idea Backlog
+DP-576,UK Research,2025-10-15,Idea Backlog
+DP-576,UK Research,2025-10-15,Idea Backlog
+DP-576,UK Research,2025-10-15,Idea Backlog
+DP-576,UK Research,2025-10-15,Idea Backlog
+DP-572,US Support & Growth,2025-10-14,To Do
+DP-571,US Support & Growth,2025-10-14,To Do
+DP-570,UK IP Offering,2025-04-15,To Do
+DP-570,UK IP Offering,2025-04-15,To Do
+DP-570,UK IP Offering,2025-04-15,To Do
+DP-570,UK IP Offering,2025-04-15,To Do
+DP-569,UK IP Offering,2025-10-14,Idea Backlog
+DP-569,UK IP Offering,2025-10-14,Idea Backlog
+DP-569,UK IP Offering,2025-10-14,Idea Backlog
+DP-567,UK IP Offering,2025-10-14,To Do
+DP-566,UK IP Offering,2025-10-14,Idea Backlog
+DP-566,UK IP Offering,2025-10-14,Idea Backlog
+DP-566,UK IP Offering,2025-10-14,Idea Backlog
+DP-564,UK IP Ecosystems Dev,2025-10-13,Idea Backlog
+DP-564,UK IP Ecosystems Dev,2025-10-13,Idea Backlog
+DP-564,UK IP Ecosystems Dev,2025-10-13,Idea Backlog
+DP-563,UK IP Offering,2025-10-10,Assessing Viability & Value
+DP-563,UK IP Offering,2025-10-10,Assessing Viability & Value
+DP-563,UK IP Offering,2025-10-10,Assessing Viability & Value
+DP-563,UK IP Offering,2025-10-10,Assessing Viability & Value
+DP-561,UK Support & Growth,2025-10-10,To Do
+DP-558,US Research Ins Advisor,2025-10-09,Idea Backlog
+DP-558,US Research Ins Advisor,2025-10-09,Idea Backlog
+DP-554,UK Support & Growth,2025-10-09,To Do
+DP-553,UK Support & Growth,2025-10-09,To Do
+DP-552,UK IP Offering,2025-10-09,Assessing Viability & Value
+DP-552,UK IP Offering,2025-10-09,Assessing Viability & Value
+DP-552,UK IP Offering,2025-10-09,Assessing Viability & Value
+DP-547,UK IP Ecosystems Dev,2025-10-07,Assessing Viability & Value
+DP-547,UK IP Ecosystems Dev,2025-10-07,Assessing Viability & Value
+DP-547,UK IP Ecosystems Dev,2025-10-07,Assessing Viability & Value
+DP-547,UK IP Ecosystems Dev,2025-10-07,Assessing Viability & Value
+DP-546,UK IP Offering,2025-10-07,Idea Backlog
+DP-546,UK IP Offering,2025-10-07,Idea Backlog
+DP-546,UK IP Offering,2025-10-07,Idea Backlog
+DP-543,US Buy,2025-10-06,To Do
+DP-542,US Research Ins Advisor,2025-10-06,Idea Backlog
+DP-542,US Research Ins Advisor,2025-10-06,Idea Backlog
+DP-538,US Research Brand & Experiments,2025-10-02,To Do
+DP-536,US Support & Growth,2025-10-01,Idea Backlog
+DP-536,US Support & Growth,2025-10-01,Idea Backlog
+DP-536,US Support & Growth,2025-10-01,Idea Backlog
+DP-536,US Support & Growth,2025-10-01,Idea Backlog
+DP-534,UK IP Offering,2025-10-01,To Do
+DP-530,UK Support & Growth,2025-09-30,To Do
+DP-528,US Research Brand & Experiments,2025-09-29,To Do
+DP-527,UK Research,2025-09-29,Idea Backlog
+DP-527,UK Research,2025-09-29,Idea Backlog
+DP-526,UK Buy,2025-09-29,To Do
+DP-525,UK Buy,2025-09-26,To Do
+DP-524,UK Buy,2025-09-26,To Do
+DP-523,UK Buy,2025-09-26,To Do
+DP-522,US Research Brand & Experiments,2025-09-26,Idea Backlog
+DP-522,US Research Brand & Experiments,2025-09-26,Idea Backlog
+DP-522,US Research Brand & Experiments,2025-09-26,Idea Backlog
+DP-520,UK Buy,2025-09-25,Idea Backlog
+DP-520,UK Buy,2025-09-25,Idea Backlog
+DP-518,UK IP Offering,2025-09-24,To Do
+DP-517,US Research Brand & Experiments,2025-09-24,To Do
+DP-516,US Research Brand & Experiments,2025-09-24,To Do
+DP-515,US Research Brand & Experiments,2025-09-24,To Do
+DP-514,US Research Brand & Experiments,2025-09-24,To Do
+DP-512,US Research Brand & Experiments,2025-09-24,Idea Backlog
+DP-512,US Research Brand & Experiments,2025-09-24,Idea Backlog
+DP-512,US Research Brand & Experiments,2025-09-24,Idea Backlog
+DP-510,UK Support & Growth,2025-09-23,To Do
+DP-508,UK Buy,2025-09-23,To Do
+DP-507,UK Research,2025-09-23,To Do
+DP-506,UK Research,2025-09-23,To Do
+DP-505,UK Buy,2025-09-23,To Do
+DP-503,UK Research,2025-09-23,To Do
+DP-495,US Research Brand & Experiments,2025-09-19,To Do
+DP-493,US Research Ins Advisor,2025-09-18,Idea Backlog
+DP-493,US Research Ins Advisor,2025-09-18,Idea Backlog
+DP-493,US Research Ins Advisor,2025-09-18,Idea Backlog
+DP-493,US Research Ins Advisor,2025-09-18,Idea Backlog
+DP-487,US Research Ins Advisor,2025-09-17,Idea Backlog
+DP-487,US Research Ins Advisor,2025-09-17,Idea Backlog
+DP-486,US Research Ins Advisor,2025-09-17,Idea Design & Solutioning
+DP-486,US Research Ins Advisor,2025-09-17,Idea Design & Solutioning
+DP-486,US Research Ins Advisor,2025-09-17,Idea Design & Solutioning
+DP-486,US Research Ins Advisor,2025-09-17,Idea Design & Solutioning
+DP-486,US Research Ins Advisor,2025-09-17,Idea Design & Solutioning
+DP-486,US Research Ins Advisor,2025-09-17,Idea Design & Solutioning
+DP-484,US Research Ins Advisor,2025-09-17,Assessing Viability & Value
+DP-484,US Research Ins Advisor,2025-09-17,Assessing Viability & Value
+DP-484,US Research Ins Advisor,2025-09-17,Assessing Viability & Value
+DP-484,US Research Ins Advisor,2025-09-17,Assessing Viability & Value
+DP-484,US Research Ins Advisor,2025-09-17,Assessing Viability & Value
+DP-483,UK Research,2025-09-16,Assessing Viability & Value
+DP-483,UK Research,2025-09-16,Assessing Viability & Value
+DP-483,UK Research,2025-09-16,Assessing Viability & Value
+DP-483,UK Research,2025-09-16,Assessing Viability & Value
+DP-481,UK IP Ecosystems Dev,2025-09-16,To Do
+DP-479,UK IP Ecosystems Dev,2025-09-16,Idea Backlog
+DP-479,UK IP Ecosystems Dev,2025-09-16,Idea Backlog
+DP-477,UK IP Ecosystems Dev,2025-09-16,To Do
+DP-476,UK IP Ecosystems Dev,2025-09-16,Assessing Viability & Value
+DP-476,UK IP Ecosystems Dev,2025-09-16,Assessing Viability & Value
+DP-476,UK IP Ecosystems Dev,2025-09-16,Assessing Viability & Value
+DP-475,UK IP Ecosystems Dev,2025-09-16,To Do
+DP-474,UK IP Ecosystems Dev,2025-09-16,Idea Backlog
+DP-474,UK IP Ecosystems Dev,2025-09-16,Idea Backlog
+DP-474,UK IP Ecosystems Dev,2025-09-16,Idea Backlog
+DP-473,UK IP Ecosystems Dev,2025-09-16,Idea Backlog
+DP-473,UK IP Ecosystems Dev,2025-09-16,Idea Backlog
+DP-473,UK IP Ecosystems Dev,2025-09-16,Idea Backlog
+DP-473,UK IP Ecosystems Dev,2025-09-16,Idea Backlog
+DP-472,UK Buy,2025-09-16,To Do
+DP-471,UK Research,2025-09-16,To Do
+DP-470,UK Buy,2025-09-16,To Do
+DP-469,UK Buy,2025-09-16,To Do
+DP-467,UK Support & Growth,2025-09-15,Idea Backlog
+DP-467,UK Support & Growth,2025-09-15,Idea Backlog
+DP-467,UK Support & Growth,2025-09-15,Idea Backlog
+DP-465,UK Support & Growth,2025-09-10,To Do
+DP-464,UK Support & Growth,2025-09-10,To Do
+DP-463,UK Support & Growth,2025-09-10,To Do
+DP-458,UK IP Offering,2025-09-10,Idea Backlog
+DP-458,UK IP Offering,2025-09-10,Idea Backlog
+DP-458,UK IP Offering,2025-09-10,Idea Backlog
+DP-457,UK Support & Growth,2025-09-10,To Do
+DP-456,UK Support & Growth,2025-09-10,To Do
+DP-455,UK Support & Growth,2025-09-10,Assessing Viability & Value
+DP-455,UK Support & Growth,2025-09-10,Assessing Viability & Value
+DP-455,UK Support & Growth,2025-09-10,Assessing Viability & Value
+DP-455,UK Support & Growth,2025-09-10,Assessing Viability & Value
+DP-455,UK Support & Growth,2025-09-10,Assessing Viability & Value
+DP-455,UK Support & Growth,2025-09-10,Assessing Viability & Value
+DP-455,UK Support & Growth,2025-09-10,Assessing Viability & Value
+DP-454,UK Research,2025-09-10,To Do
+DP-452,UK Buy,2025-09-10,To Do
+DP-451,UK Buy,2025-09-10,To Do
+DP-449,UK Buy,2025-09-10,To Do
+DP-448,UK Buy,2025-09-10,To Do
+DP-446,US Partners,2025-09-09,To Do
+DP-445,UK Support & Growth,2025-09-09,Idea Backlog
+DP-445,UK Support & Growth,2025-09-09,Idea Backlog
+DP-445,UK Support & Growth,2025-09-09,Idea Backlog
+DP-445,UK Support & Growth,2025-09-09,Idea Backlog
+DP-445,UK Support & Growth,2025-09-09,Idea Backlog
+DP-441,US Buy,2025-09-08,To Do
+DP-438,UK IP Offering,2025-09-05,Idea Backlog
+DP-438,UK IP Offering,2025-09-05,Idea Backlog
+DP-438,UK IP Offering,2025-09-05,Idea Backlog
+DP-437,UK Research,2025-09-05,To Do
+DP-436,UK Research,2025-09-05,To Do
+DP-435,UK Research,2025-09-05,To Do
+DP-432,US Support & Growth,2025-09-04,To Do
+DP-430,UK IP Ecosystems Dev,2025-09-04,To Do
+DP-428,UK Buy,2025-09-04,To Do
+DP-427,UK Research,2025-09-04,To Do
+DP-426,UK Research,2025-09-04,Idea Backlog
+DP-426,UK Research,2025-09-04,Idea Backlog
+DP-425,US Support & Growth,2025-09-04,To Do
+DP-423,US Research Brand & Experiments,2025-09-04,To Do
+DP-420,US Research Ins Advisor,2025-09-04,Idea Design & Solutioning
+DP-420,US Research Ins Advisor,2025-09-04,Idea Design & Solutioning
+DP-420,US Research Ins Advisor,2025-09-04,Idea Design & Solutioning
+DP-420,US Research Ins Advisor,2025-09-04,Idea Design & Solutioning
+DP-420,US Research Ins Advisor,2025-09-04,Idea Design & Solutioning
+DP-420,US Research Ins Advisor,2025-09-04,Idea Design & Solutioning
+DP-418,US Research Ins Advisor,2025-09-03,Idea Backlog
+DP-418,US Research Ins Advisor,2025-09-03,Idea Backlog
+DP-416,US Support & Growth,2025-09-03,Idea Backlog
+DP-416,US Support & Growth,2025-09-03,Idea Backlog
+DP-416,US Support & Growth,2025-09-03,Idea Backlog
+DP-414,US Partners,2025-09-03,Idea Backlog
+DP-414,US Partners,2025-09-03,Idea Backlog
+DP-411,UK Support & Growth,2025-09-03,To Do
+DP-409,US Partners,2025-09-02,Idea Backlog
+DP-409,US Partners,2025-09-02,Idea Backlog
+DP-409,US Partners,2025-09-02,Idea Backlog
+DP-408,UK Research,2025-09-02,Idea Backlog
+DP-408,UK Research,2025-09-02,Idea Backlog
+DP-408,UK Research,2025-09-02,Idea Backlog
+DP-408,UK Research,2025-09-02,Idea Backlog
+DP-405,UK Support & Growth,2025-09-01,To Do
+DP-404,UK Support & Growth,2025-09-01,To Do
+DP-403,UK Support & Growth,2025-09-01,To Do
+DP-402,UK IP Offering,2025-09-01,Idea Backlog
+DP-402,UK IP Offering,2025-09-01,Idea Backlog
+DP-402,UK IP Offering,2025-09-01,Idea Backlog
+DP-402,UK IP Offering,2025-09-01,Idea Backlog
+DP-400,US Research Ins Advisor,2025-08-29,Idea Backlog
+DP-400,US Research Ins Advisor,2025-08-29,Idea Backlog
+DP-399,US Research Ins Advisor,2025-08-29,Idea Backlog
+DP-399,US Research Ins Advisor,2025-08-29,Idea Backlog
+DP-392,UK Buy,2025-08-29,Idea Backlog
+DP-392,UK Buy,2025-08-29,Idea Backlog
+DP-392,UK Buy,2025-08-29,Idea Backlog
+DP-390,US IP Offering,2025-08-28,Idea Backlog
+DP-390,US IP Offering,2025-08-28,Idea Backlog
+DP-390,US IP Offering,2025-08-28,Idea Backlog
+DP-390,US IP Offering,2025-08-28,Idea Backlog
+DP-390,US IP Offering,2025-08-28,Idea Backlog
+DP-390,US IP Offering,2025-08-28,Idea Backlog
+DP-390,US IP Offering,2025-08-28,Idea Backlog
+DP-389,US Research Brand & Experiments,2025-08-28,Assessing Viability & Value
+DP-389,US Research Brand & Experiments,2025-08-28,Assessing Viability & Value
+DP-389,US Research Brand & Experiments,2025-08-28,Assessing Viability & Value
+DP-389,US Research Brand & Experiments,2025-08-28,Assessing Viability & Value
+DP-389,US Research Brand & Experiments,2025-08-28,Assessing Viability & Value
+DP-386,UK Research,2025-08-28,To Do
+DP-385,US IP Offering,2025-08-28,To Do
+DP-384,UK Support & Growth,2025-08-28,Idea Backlog
+DP-384,UK Support & Growth,2025-08-28,Idea Backlog
+DP-384,UK Support & Growth,2025-08-28,Idea Backlog
+DP-384,UK Support & Growth,2025-08-28,Idea Backlog
+DP-384,UK Support & Growth,2025-08-28,Idea Backlog
+DP-384,UK Support & Growth,2025-08-28,Idea Backlog
+DP-384,UK Support & Growth,2025-08-28,Idea Backlog
+DP-381,US Research Ins Advisor,2025-08-27,Idea Backlog
+DP-381,US Research Ins Advisor,2025-08-27,Idea Backlog
+DP-370,US Buy,2025-08-26,To Do
+DP-368,US Partners,2025-08-25,Idea Backlog
+DP-368,US Partners,2025-08-25,Idea Backlog
+DP-367,US Partners,2025-08-25,Idea Backlog
+DP-367,US Partners,2025-08-25,Idea Backlog
+DP-366,US Partners,2025-08-25,Idea Backlog
+DP-366,US Partners,2025-08-25,Idea Backlog
+DP-366,US Partners,2025-08-25,Idea Backlog
+DP-366,US Partners,2025-08-25,Idea Backlog
+DP-366,US Partners,2025-08-25,Idea Backlog
+DP-365,US Partners,2025-08-25,Idea Backlog
+DP-365,US Partners,2025-08-25,Idea Backlog
+DP-363,US Partners,2025-08-25,Idea Backlog
+DP-363,US Partners,2025-08-25,Idea Backlog
+DP-362,US Partners,2025-08-25,Idea Backlog
+DP-362,US Partners,2025-08-25,Idea Backlog
+DP-359,US Partners,2025-08-25,Idea Backlog
+DP-359,US Partners,2025-08-25,Idea Backlog
+DP-359,US Partners,2025-08-25,Idea Backlog
+DP-359,US Partners,2025-08-25,Idea Backlog
+DP-358,US Partners,2025-08-25,Idea Backlog
+DP-358,US Partners,2025-08-25,Idea Backlog
+DP-358,US Partners,2025-08-25,Idea Backlog
+DP-358,US Partners,2025-08-25,Idea Backlog
+DP-357,US Partners,2025-08-25,Idea Backlog
+DP-357,US Partners,2025-08-25,Idea Backlog
+DP-357,US Partners,2025-08-25,Idea Backlog
+DP-357,US Partners,2025-08-25,Idea Backlog
+DP-355,US Partners,2025-08-25,Idea Backlog
+DP-355,US Partners,2025-08-25,Idea Backlog
+DP-354,US Partners,2025-08-25,Idea Backlog
+DP-354,US Partners,2025-08-25,Idea Backlog
+DP-354,US Partners,2025-08-25,Idea Backlog
+DP-354,US Partners,2025-08-25,Idea Backlog
+DP-354,US Partners,2025-08-25,Idea Backlog
+DP-354,US Partners,2025-08-25,Idea Backlog
+DP-354,US Partners,2025-08-25,Idea Backlog
+DP-336,UK Support & Growth,2025-08-21,To Do
+DP-335,UK Support & Growth,2025-08-21,To Do
+DP-334,UK Support & Growth,2025-08-21,To Do
+DP-333,UK Support & Growth,2025-08-21,To Do
+DP-330,UK Support & Growth,2025-08-21,Idea Design & Solutioning
+DP-330,UK Support & Growth,2025-08-21,Idea Design & Solutioning
+DP-330,UK Support & Growth,2025-08-21,Idea Design & Solutioning
+DP-330,UK Support & Growth,2025-08-21,Idea Design & Solutioning
+DP-330,UK Support & Growth,2025-08-21,Idea Design & Solutioning
+DP-328,UK IP Offering,2025-08-21,Idea Backlog
+DP-328,UK IP Offering,2025-08-21,Idea Backlog
+DP-328,UK IP Offering,2025-08-21,Idea Backlog
+DP-328,UK IP Offering,2025-08-21,Idea Backlog
+DP-328,UK IP Offering,2025-08-21,Idea Backlog
+DP-328,UK IP Offering,2025-08-21,Idea Backlog
+DP-327,UK IP Offering,2025-08-21,Assessing Viability & Value
+DP-327,UK IP Offering,2025-08-21,Assessing Viability & Value
+DP-327,UK IP Offering,2025-08-21,Assessing Viability & Value
+DP-327,UK IP Offering,2025-08-21,Assessing Viability & Value
+DP-327,UK IP Offering,2025-08-21,Assessing Viability & Value
+DP-327,UK IP Offering,2025-08-21,Assessing Viability & Value
+DP-327,UK IP Offering,2025-08-21,Assessing Viability & Value
+DP-327,UK IP Offering,2025-08-21,Assessing Viability & Value
+DP-327,UK IP Offering,2025-08-21,Assessing Viability & Value
+DP-326,UK IP Offering,2025-08-21,Idea Backlog
+DP-326,UK IP Offering,2025-08-21,Idea Backlog
+DP-326,UK IP Offering,2025-08-21,Idea Backlog
+DP-326,UK IP Offering,2025-08-21,Idea Backlog
+DP-326,UK IP Offering,2025-08-21,Idea Backlog
+DP-326,UK IP Offering,2025-08-21,Idea Backlog
+DP-326,UK IP Offering,2025-08-21,Idea Backlog
+DP-325,UK Support & Growth,2025-08-21,To Do
+DP-324,UK Support & Growth,2025-08-21,Assessing Viability & Value
+DP-324,UK Support & Growth,2025-08-21,Assessing Viability & Value
+DP-324,UK Support & Growth,2025-08-21,Assessing Viability & Value
+DP-323,UK IP Offering,2025-08-21,Idea Backlog
+DP-323,UK IP Offering,2025-08-21,Idea Backlog
+DP-323,UK IP Offering,2025-08-21,Idea Backlog
+DP-323,UK IP Offering,2025-08-21,Idea Backlog
+DP-323,UK IP Offering,2025-08-21,Idea Backlog
+DP-323,UK IP Offering,2025-08-21,Idea Backlog
+DP-323,UK IP Offering,2025-08-21,Idea Backlog
+DP-323,UK IP Offering,2025-08-21,Idea Backlog
+DP-320,US Research Ins Advisor,2025-08-20,Idea Backlog
+DP-320,US Research Ins Advisor,2025-08-20,Idea Backlog
+DP-319,US Research Ins Advisor,2025-08-20,Idea Backlog
+DP-319,US Research Ins Advisor,2025-08-20,Idea Backlog
+DP-318,US Research Ins Advisor,2025-08-20,Idea Backlog
+DP-318,US Research Ins Advisor,2025-08-20,Idea Backlog
+DP-317,US Research Ins Advisor,2025-08-20,Idea Backlog
+DP-317,US Research Ins Advisor,2025-08-20,Idea Backlog
+DP-316,US Research Ins Advisor,2025-08-20,Idea Backlog
+DP-316,US Research Ins Advisor,2025-08-20,Idea Backlog
+DP-316,US Research Ins Advisor,2025-08-20,Idea Backlog
+DP-316,US Research Ins Advisor,2025-08-20,Idea Backlog
+DP-316,US Research Ins Advisor,2025-08-20,Idea Backlog
+DP-316,US Research Ins Advisor,2025-08-20,Idea Backlog
+DP-315,US Research Ins Advisor,2025-08-20,To Do Ideas
+DP-315,US Research Ins Advisor,2025-08-20,To Do Ideas
+DP-315,US Research Ins Advisor,2025-08-20,To Do Ideas
+DP-315,US Research Ins Advisor,2025-08-20,To Do Ideas
+DP-315,US Research Ins Advisor,2025-08-20,To Do Ideas
+DP-314,US Research Ins Advisor,2025-08-20,Idea Backlog
+DP-314,US Research Ins Advisor,2025-08-20,Idea Backlog
+DP-312,UK IP Offering,2025-08-20,To Do
+DP-311,UK IP Offering,2025-08-20,To Do
+DP-310,UK IP Offering,2025-08-20,To Do
+DP-309,UK IP Offering,2025-08-20,To Do
+DP-308,UK IP Offering,2025-08-20,To Do
+DP-306,US IP Offering,2025-08-20,Idea Backlog
+DP-306,US IP Offering,2025-08-20,Idea Backlog
+DP-306,US IP Offering,2025-08-20,Idea Backlog
+DP-306,US IP Offering,2025-08-20,Idea Backlog
+DP-306,US IP Offering,2025-08-20,Idea Backlog
+DP-306,US IP Offering,2025-08-20,Idea Backlog
+DP-305,US IP Offering,2025-08-20,To Do
+DP-297,UK Buy,2025-08-20,To Do
+DP-296,UK Buy,2025-08-20,Idea Backlog
+DP-296,UK Buy,2025-08-20,Idea Backlog
+DP-296,UK Buy,2025-08-20,Idea Backlog
+DP-294,UK Buy,2025-08-20,To Do
+DP-293,UK Research,2025-08-20,To Do
+DP-292,UK Buy,2025-08-20,To Do
+DP-291,UK Research,2025-08-20,To Do
+DP-289,UK IP Offering,2025-08-19,Idea Backlog
+DP-289,UK IP Offering,2025-08-19,Idea Backlog
+DP-289,UK IP Offering,2025-08-19,Idea Backlog
+DP-288,UK Research,2025-08-19,To Do
+DP-287,UK Buy,2025-08-19,To Do
+DP-286,UK Buy,2025-08-19,Idea Backlog
+DP-286,UK Buy,2025-08-19,Idea Backlog
+DP-286,UK Buy,2025-08-19,Idea Backlog
+DP-286,UK Buy,2025-08-19,Idea Backlog
+DP-286,UK Buy,2025-08-19,Idea Backlog
+DP-284,UK Buy,2025-08-19,Idea Backlog
+DP-284,UK Buy,2025-08-19,Idea Backlog
+DP-284,UK Buy,2025-08-19,Idea Backlog
+DP-281,US Support & Growth,2025-08-18,Idea Backlog
+DP-281,US Support & Growth,2025-08-18,Idea Backlog
+DP-281,US Support & Growth,2025-08-18,Idea Backlog
+DP-281,US Support & Growth,2025-08-18,Idea Backlog
+DP-277,US IP Offering,2025-08-18,Idea Backlog
+DP-277,US IP Offering,2025-08-18,Idea Backlog
+DP-277,US IP Offering,2025-08-18,Idea Backlog
+DP-270,UK IP Ecosystems Dev,2025-08-18,Idea Backlog
+DP-270,UK IP Ecosystems Dev,2025-08-18,Idea Backlog
+DP-267,UK Support & Growth,2025-08-15,To Do
+DP-265,UK Support & Growth,2025-08-15,To Do
+DP-264,UK Support & Growth,2025-08-15,To Do
+DP-263,UK Support & Growth,2025-08-15,To Do
+DP-262,UK Support & Growth,2025-08-15,To Do
+DP-261,UK Support & Growth,2025-08-15,To Do
+DP-260,UK Support & Growth,2025-08-15,To Do
+DP-259,UK Support & Growth,2025-08-15,To Do
+DP-258,UK Support & Growth,2025-08-15,To Do
+DP-257,UK Support & Growth,2025-08-15,To Do
+DP-251,UK Support & Growth,2025-08-14,Idea Backlog
+DP-251,UK Support & Growth,2025-08-14,Idea Backlog
+DP-249,UK Buy,2025-08-14,Idea Backlog
+DP-249,UK Buy,2025-08-14,Idea Backlog
+DP-249,UK Buy,2025-08-14,Idea Backlog
+DP-249,UK Buy,2025-08-14,Idea Backlog
+DP-249,UK Buy,2025-08-14,Idea Backlog
+DP-248,UK Research,2025-08-14,Idea Backlog
+DP-248,UK Research,2025-08-14,Idea Backlog
+DP-248,UK Research,2025-08-14,Idea Backlog
+DP-247,UK Buy,2025-08-14,Idea Backlog
+DP-247,UK Buy,2025-08-14,Idea Backlog
+DP-247,UK Buy,2025-08-14,Idea Backlog
+DP-246,UK Research,2025-08-14,Idea Backlog
+DP-246,UK Research,2025-08-14,Idea Backlog
+DP-246,UK Research,2025-08-14,Idea Backlog
+DP-244,UK Buy,2025-08-14,Idea Backlog
+DP-244,UK Buy,2025-08-14,Idea Backlog
+DP-244,UK Buy,2025-08-14,Idea Backlog
+DP-241,UK Buy,2025-08-14,Idea Backlog
+DP-241,UK Buy,2025-08-14,Idea Backlog
+DP-241,UK Buy,2025-08-14,Idea Backlog
+DP-241,UK Buy,2025-08-14,Idea Backlog
+DP-241,UK Buy,2025-08-14,Idea Backlog
+DP-241,UK Buy,2025-08-14,Idea Backlog
+DP-241,UK Buy,2025-08-14,Idea Backlog
+DP-241,UK Buy,2025-08-14,Idea Backlog
+DP-240,UK IP Offering,2025-08-14,Idea Backlog
+DP-240,UK IP Offering,2025-08-14,Idea Backlog
+DP-240,UK IP Offering,2025-08-14,Idea Backlog
+DP-234,UK IP Offering,2025-04-29,In Build
+DP-234,UK IP Offering,2025-04-29,In Build
+DP-234,UK IP Offering,2025-04-29,In Build
+DP-234,UK IP Offering,2025-04-29,In Build
+DP-233,UK IP Offering,2025-08-13,Idea Design & Solutioning
+DP-233,UK IP Offering,2025-08-13,Idea Design & Solutioning
+DP-233,UK IP Offering,2025-08-13,Idea Design & Solutioning
+DP-233,UK IP Offering,2025-08-13,Idea Design & Solutioning
+DP-233,UK IP Offering,2025-08-13,Idea Design & Solutioning
+DP-230,UK IP Offering,2025-08-12,Idea Backlog
+DP-230,UK IP Offering,2025-08-12,Idea Backlog
+DP-230,UK IP Offering,2025-08-12,Idea Backlog
+DP-229,US Research Brand & Experiments,2025-08-12,Idea Backlog
+DP-229,US Research Brand & Experiments,2025-08-12,Idea Backlog
+DP-228,US Research Brand & Experiments,2025-08-12,Idea Backlog
+DP-228,US Research Brand & Experiments,2025-08-12,Idea Backlog
+DP-227,UK Support & Growth,2025-08-12,Idea Backlog
+DP-227,UK Support & Growth,2025-08-12,Idea Backlog
+DP-227,UK Support & Growth,2025-08-12,Idea Backlog
+DP-224,UK Support & Growth,2025-08-12,Idea Backlog
+DP-224,UK Support & Growth,2025-08-12,Idea Backlog
+DP-219,UK Support & Growth,2025-08-11,Idea Backlog
+DP-219,UK Support & Growth,2025-08-11,Idea Backlog
+DP-218,US Research Ins Advisor,2025-08-11,Idea Backlog
+DP-218,US Research Ins Advisor,2025-08-11,Idea Backlog
+DP-218,US Research Ins Advisor,2025-08-11,Idea Backlog
+DP-218,US Research Ins Advisor,2025-08-11,Idea Backlog
+DP-213,UK Buy,2025-08-09,To Do
+DP-212,UK Research,2025-08-09,To Do
+DP-211,UK Buy,2025-08-09,To Do
+DP-208,UK Buy,2025-08-09,To Do
+DP-206,UK Buy,2025-08-09,To Do
+DP-205,UK Buy,2025-08-09,To Do
+DP-204,UK Buy,2025-08-09,To Do
+DP-202,US Research Brand & Experiments,2025-08-08,To Do
+DP-200,US IP Offering,2025-08-08,Idea Backlog
+DP-200,US IP Offering,2025-08-08,Idea Backlog
+DP-200,US IP Offering,2025-08-08,Idea Backlog
+DP-200,US IP Offering,2025-08-08,Idea Backlog
+DP-200,US IP Offering,2025-08-08,Idea Backlog
+DP-200,US IP Offering,2025-08-08,Idea Backlog
+DP-199,US IP Offering,2025-08-08,Idea Backlog
+DP-199,US IP Offering,2025-08-08,Idea Backlog
+DP-197,UK Support & Growth,2025-08-07,Idea Backlog
+DP-197,UK Support & Growth,2025-08-07,Idea Backlog
+DP-197,UK Support & Growth,2025-08-07,Idea Backlog
+DP-195,UK Support & Growth,2025-08-07,To Do
+DP-192,US Research Brand & Experiments,2025-08-06,Idea Backlog
+DP-192,US Research Brand & Experiments,2025-08-06,Idea Backlog
+DP-189,UK IP Offering,2025-08-06,To Do
+DP-187,UK IP Offering,2024-07-23,To Do
+DP-187,UK IP Offering,2024-07-23,To Do
+DP-186,UK Support & Growth,2025-08-05,To Do
+DP-184,US Research Brand & Experiments,2025-08-04,Idea Backlog
+DP-184,US Research Brand & Experiments,2025-08-04,Idea Backlog
+DP-184,US Research Brand & Experiments,2025-08-04,Idea Backlog
+DP-184,US Research Brand & Experiments,2025-08-04,Idea Backlog
+DP-184,US Research Brand & Experiments,2025-08-04,Idea Backlog
+DP-184,US Research Brand & Experiments,2025-08-04,Idea Backlog
+DP-182,US Research Brand & Experiments,2025-08-04,Idea Backlog
+DP-182,US Research Brand & Experiments,2025-08-04,Idea Backlog
+DP-182,US Research Brand & Experiments,2025-08-04,Idea Backlog
+DP-182,US Research Brand & Experiments,2025-08-04,Idea Backlog
+DP-182,US Research Brand & Experiments,2025-08-04,Idea Backlog
+DP-182,US Research Brand & Experiments,2025-08-04,Idea Backlog
+DP-180,UK IP Offering,2025-06-26,Idea Backlog
+DP-180,UK IP Offering,2025-06-26,Idea Backlog
+DP-180,UK IP Offering,2025-06-26,Idea Backlog
+DP-178,UK IP Offering,2025-02-21,Won't Do
+DP-178,UK IP Offering,2025-02-21,Won't Do
+DP-178,UK IP Offering,2025-02-21,Won't Do
+DP-178,UK IP Offering,2025-02-21,Won't Do
+DP-178,UK IP Offering,2025-02-21,Won't Do
+DP-178,UK IP Offering,2025-02-21,Won't Do
+DP-178,UK IP Offering,2025-02-21,Won't Do
+DP-178,UK IP Offering,2025-02-21,Won't Do
+DP-172,UK IP Offering,2025-02-04,Ready for dev
+DP-172,UK IP Offering,2025-02-04,Ready for dev
+DP-172,UK IP Offering,2025-02-04,Ready for dev
+DP-172,UK IP Offering,2025-02-04,Ready for dev
+DP-172,UK IP Offering,2025-02-04,Ready for dev
+DP-172,UK IP Offering,2025-02-04,Ready for dev
+DP-169,UK IP Offering,2025-01-24,To Do
+DP-169,UK IP Offering,2025-01-24,To Do
+DP-169,UK IP Offering,2025-01-24,To Do
+DP-169,UK IP Offering,2025-01-24,To Do
+DP-169,UK IP Offering,2025-01-24,To Do
+DP-167,UK IP Offering,2024-12-30,Idea Backlog
+DP-167,UK IP Offering,2024-12-30,Idea Backlog
+DP-167,UK IP Offering,2024-12-30,Idea Backlog
+DP-164,UK IP Offering,2025-07-25,Assessing Viability & Value
+DP-164,UK IP Offering,2025-07-25,Assessing Viability & Value
+DP-162,UK IP Offering,2025-01-02,To Do
+DP-162,UK IP Offering,2025-01-02,To Do
+DP-161,UK IP Offering,2025-01-13,Pre-Refinement
+DP-161,UK IP Offering,2025-01-13,Pre-Refinement
+DP-161,UK IP Offering,2025-01-13,Pre-Refinement
+DP-161,UK IP Offering,2025-01-13,Pre-Refinement
+DP-161,UK IP Offering,2025-01-13,Pre-Refinement
+DP-158,UK IP Offering,2025-01-17,To Do
+DP-158,UK IP Offering,2025-01-17,To Do
+DP-158,UK IP Offering,2025-01-17,To Do
+DP-158,UK IP Offering,2025-01-17,To Do
+DP-158,UK IP Offering,2025-01-17,To Do
+DP-156,UK Support & Growth,2025-08-01,Idea Backlog
+DP-156,UK Support & Growth,2025-08-01,Idea Backlog
+DP-155,UK Support & Growth,2025-08-01,Idea Backlog
+DP-155,UK Support & Growth,2025-08-01,Idea Backlog
+DP-154,UK Support & Growth,2025-08-01,Idea Backlog
+DP-154,UK Support & Growth,2025-08-01,Idea Backlog
+DP-151,UK Support & Growth,2025-07-02,In Backlog
+DP-151,UK Support & Growth,2025-07-02,In Backlog
+DP-148,UK Support & Growth,2025-08-01,Idea Backlog
+DP-148,UK Support & Growth,2025-08-01,Idea Backlog
+DP-147,UK Support & Growth,2025-08-01,Idea Backlog
+DP-147,UK Support & Growth,2025-08-01,Idea Backlog
+DP-144,Customer Experience,2025-07-30,In Progress
+DP-144,Customer Experience,2025-07-30,In Progress
+DP-144,Customer Experience,2025-07-30,In Progress
+DP-140,UK Support & Growth,2025-08-01,Idea Backlog
+DP-140,UK Support & Growth,2025-08-01,Idea Backlog
+DP-140,UK Support & Growth,2025-08-01,Idea Backlog
+DP-140,UK Support & Growth,2025-08-01,Idea Backlog
+DP-138,UK Support & Growth,2025-07-31,Idea Backlog
+DP-138,UK Support & Growth,2025-07-31,Idea Backlog
+DP-135,UK IP Ecosystems Dev,2025-07-31,Idea Backlog
+DP-135,UK IP Ecosystems Dev,2025-07-31,Idea Backlog
+DP-135,UK IP Ecosystems Dev,2025-07-31,Idea Backlog
+DP-135,UK IP Ecosystems Dev,2025-07-31,Idea Backlog
+DP-131,UK IP Ecosystems Dev,2025-07-31,Design/Solution Validation
+DP-131,UK IP Ecosystems Dev,2025-07-31,Design/Solution Validation
+DP-131,UK IP Ecosystems Dev,2025-07-31,Design/Solution Validation
+DP-131,UK IP Ecosystems Dev,2025-07-31,Design/Solution Validation
+DP-122,UK IP Ecosystems Dev,2025-07-31,To Do
+DP-117,UK Support & Growth,2023-10-06,Backlog
+DP-117,UK Support & Growth,2023-10-06,Backlog
+DP-117,UK Support & Growth,2023-10-06,Backlog
+DP-117,UK Support & Growth,2023-10-06,Backlog
+DP-113,UK Support & Growth,2025-04-16,Backlog
+DP-113,UK Support & Growth,2025-04-16,Backlog
+DP-113,UK Support & Growth,2025-04-16,Backlog
+DP-113,UK Support & Growth,2025-04-16,Backlog
+DP-113,UK Support & Growth,2025-04-16,Backlog
+DP-112,UK Support & Growth,2024-09-10,Backlog
+DP-112,UK Support & Growth,2024-09-10,Backlog
+DP-112,UK Support & Growth,2024-09-10,Backlog
+DP-111,UK Support & Growth,2024-09-10,Backlog
+DP-111,UK Support & Growth,2024-09-10,Backlog
+DP-111,UK Support & Growth,2024-09-10,Backlog
+DP-110,UK Support & Growth,2025-01-09,Backlog
+DP-110,UK Support & Growth,2025-01-09,Backlog
+DP-110,UK Support & Growth,2025-01-09,Backlog
+DP-107,UK Support & Growth,2025-07-31,Idea Backlog
+DP-107,UK Support & Growth,2025-07-31,Idea Backlog
+DP-107,UK Support & Growth,2025-07-31,Idea Backlog
+DP-107,UK Support & Growth,2025-07-31,Idea Backlog
+DP-107,UK Support & Growth,2025-07-31,Idea Backlog
+DP-106,UK Support & Growth,2025-07-31,Idea Backlog
+DP-106,UK Support & Growth,2025-07-31,Idea Backlog
+DP-105,UK Support & Growth,2025-07-31,Idea Backlog
+DP-105,UK Support & Growth,2025-07-31,Idea Backlog
+DP-100,UK Support & Growth,2025-07-29,Idea Backlog
+DP-100,UK Support & Growth,2025-07-29,Idea Backlog
+DP-99,UK Support & Growth,2025-07-24,Idea Backlog
+DP-99,UK Support & Growth,2025-07-24,Idea Backlog
+DP-98,UK Support & Growth,2025-07-24,Idea Backlog
+DP-98,UK Support & Growth,2025-07-24,Idea Backlog
+DP-97,UK Support & Growth,2025-07-24,Idea Backlog
+DP-97,UK Support & Growth,2025-07-24,Idea Backlog
+DP-96,UK Support & Growth,2025-07-24,Idea Backlog
+DP-96,UK Support & Growth,2025-07-24,Idea Backlog
+DP-94,UK Support & Growth,2025-07-23,Idea Backlog
+DP-94,UK Support & Growth,2025-07-23,Idea Backlog
+DP-93,UK Support & Growth,2025-07-23,Idea Backlog
+DP-93,UK Support & Growth,2025-07-23,Idea Backlog
+DP-89,UK Support & Growth,2025-07-22,To Do
+DP-88,UK Support & Growth,2025-07-22,Idea Backlog
+DP-88,UK Support & Growth,2025-07-22,Idea Backlog
+DP-87,UK Support & Growth,2025-07-22,Idea Backlog
+DP-87,UK Support & Growth,2025-07-22,Idea Backlog
+DP-86,UK Support & Growth,2025-07-22,Idea Backlog
+DP-86,UK Support & Growth,2025-07-22,Idea Backlog
+DP-85,UK Support & Growth,2025-07-22,Idea Backlog
+DP-85,UK Support & Growth,2025-07-22,Idea Backlog
+DP-82,UK Support & Growth,2025-07-22,Idea Backlog
+DP-82,UK Support & Growth,2025-07-22,Idea Backlog
+DP-82,UK Support & Growth,2025-07-22,Idea Backlog
+DP-82,UK Support & Growth,2025-07-22,Idea Backlog
+DP-82,UK Support & Growth,2025-07-22,Idea Backlog
+DP-82,UK Support & Growth,2025-07-22,Idea Backlog
+DP-82,UK Support & Growth,2025-07-22,Idea Backlog
+DP-81,UK Support & Growth,2025-07-22,Idea Backlog
+DP-81,UK Support & Growth,2025-07-22,Idea Backlog
+DP-81,UK Support & Growth,2025-07-22,Idea Backlog
+DP-81,UK Support & Growth,2025-07-22,Idea Backlog
+DP-80,US Support & Growth,2025-07-21,Assessing Viability & Value
+DP-80,US Support & Growth,2025-07-21,Assessing Viability & Value
+DP-80,US Support & Growth,2025-07-21,Assessing Viability & Value
+DP-80,US Support & Growth,2025-07-21,Assessing Viability & Value
+DP-80,US Support & Growth,2025-07-21,Assessing Viability & Value
+DP-77,UK Support & Growth,2025-07-17,To Do
+DP-75,UK Support & Growth,2025-07-17,Idea Backlog
+DP-75,UK Support & Growth,2025-07-17,Idea Backlog
+DP-74,UK Support & Growth,2025-07-17,Idea Backlog
+DP-74,UK Support & Growth,2025-07-17,Idea Backlog
+DP-74,UK Support & Growth,2025-07-17,Idea Backlog
+DP-72,UK Support & Growth,2025-07-17,Idea Backlog
+DP-72,UK Support & Growth,2025-07-17,Idea Backlog
+DP-71,UK Support & Growth,2025-07-17,Idea Backlog
+DP-71,UK Support & Growth,2025-07-17,Idea Backlog
+DP-70,UK Support & Growth,2025-07-17,Idea Backlog
+DP-70,UK Support & Growth,2025-07-17,Idea Backlog
+DP-69,UK Support & Growth,2025-07-17,Idea Backlog
+DP-69,UK Support & Growth,2025-07-17,Idea Backlog
+DP-68,UK Support & Growth,2025-07-17,Idea Backlog
+DP-68,UK Support & Growth,2025-07-17,Idea Backlog
+DP-68,UK Support & Growth,2025-07-17,Idea Backlog
+DP-68,UK Support & Growth,2025-07-17,Idea Backlog
+DP-59,UK Support & Growth,2025-07-11,Idea Backlog
+DP-59,UK Support & Growth,2025-07-11,Idea Backlog
+DP-55,UK Buy,2025-07-10,To Do
+DP-54,UK Support & Growth,2025-07-10,Assessing Viability & Value
+DP-54,UK Support & Growth,2025-07-10,Assessing Viability & Value
+DP-54,UK Support & Growth,2025-07-10,Assessing Viability & Value
+DP-54,UK Support & Growth,2025-07-10,Assessing Viability & Value
+DP-54,UK Support & Growth,2025-07-10,Assessing Viability & Value
+DP-54,UK Support & Growth,2025-07-10,Assessing Viability & Value
+DP-54,UK Support & Growth,2025-07-10,Assessing Viability & Value
+DP-54,UK Support & Growth,2025-07-10,Assessing Viability & Value
+DP-54,UK Support & Growth,2025-07-10,Assessing Viability & Value
+DP-50,UK Support & Growth,2025-07-09,To Do
+DP-49,UK Support & Growth,2025-07-09,To Do
+DP-48,UK Support & Growth,2025-07-09,To Do
+DP-46,UK Support & Growth,2025-07-09,To Do
+DP-45,UK Support & Growth,2025-07-09,To Do
+DP-44,UK Support & Growth,2025-07-09,To Do
+DP-43,UK Support & Growth,2025-07-09,To Do
+DP-42,UK Support & Growth,2025-07-09,Idea Backlog
+DP-42,UK Support & Growth,2025-07-09,Idea Backlog
+DP-42,UK Support & Growth,2025-07-09,Idea Backlog
+DP-42,UK Support & Growth,2025-07-09,Idea Backlog
+DP-39,UK Support & Growth,2025-07-09,To Do
+DP-38,UK Support & Growth,2025-07-09,Idea Backlog
+DP-38,UK Support & Growth,2025-07-09,Idea Backlog
+DP-38,UK Support & Growth,2025-07-09,Idea Backlog
+DP-36,UK Support & Growth,2025-07-09,To Do
+DP-35,UK Support & Growth,2025-07-09,Idea Backlog
+DP-35,UK Support & Growth,2025-07-09,Idea Backlog
+DP-35,UK Support & Growth,2025-07-09,Idea Backlog
+DP-34,UK Support & Growth,2025-07-09,To Do
+DP-33,UK Support & Growth,2025-07-09,To Do
+DP-28,US Support & Growth,2025-06-30,To Do
+DP-27,US Support & Growth,2025-06-30,To Do
+DP-25,US Support & Growth,2025-06-30,To Do
+DP-24,US Support & Growth,2025-06-30,To Do
+DP-22,US Support & Growth,2025-06-30,To Do
+DP-21,US Support & Growth,2025-06-30,Idea Backlog
+DP-21,US Support & Growth,2025-06-30,Idea Backlog
+DP-21,US Support & Growth,2025-06-30,Idea Backlog
+DP-21,US Support & Growth,2025-06-30,Idea Backlog
+DP-21,US Support & Growth,2025-06-30,Idea Backlog
+DP-12,UK Support & Growth,2025-06-25,To Do

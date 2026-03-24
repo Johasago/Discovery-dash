@@ -9,103 +9,90 @@ JIRA_URL = os.environ.get("JIRA_URL")
 JIRA_EMAIL = os.environ.get("JIRA_EMAIL")
 JIRA_API_TOKEN = os.environ.get("JIRA_API_TOKEN")
 
-if not all([JIRA_URL, JIRA_EMAIL, JIRA_API_TOKEN]):
-    raise ValueError("Missing Jira credentials!")
-
-# ⚠️ Check this! Is "PLD" the right project? If it should be "DISC", change it here!
-JQL_QUERY = 'project = "PLD" AND statusCategory != Done' 
-
-def fetch_jira_issues():
-    url = f"{JIRA_URL}/rest/api/3/search/jql" 
+def extract_wip_data():
+    print("🔄 Fetching Active WIP Data...")
+    url = f"{JIRA_URL}/rest/api/3/search/jql"
     auth = HTTPBasicAuth(JIRA_EMAIL, JIRA_API_TOKEN)
     headers = {"Accept": "application/json"}
     
-    query = {
-        'jql': JQL_QUERY,
-        'maxResults': 100, 
-        'expand': 'changelog', 
-        # Aligned these IDs so they perfectly match the extraction loop below
-        'fields': 'summary,status,created,customfield_13923,customfield_10001,customfield_13924'
-    }
-
-    response = requests.get(url, headers=headers, params=query, auth=auth)
-
-    if response.status_code != 200:
-        print(f"🚨 JIRA API ERROR: {response.status_code}", flush=True)
-        print(response.text, flush=True)
-        exit(1) 
-
-    jira_data = response.json()
-    print(f"🎯 JIRA SAYS IT FOUND: {jira_data.get('total', 'UNKNOWN')} tickets!", flush=True)
+    all_issues = []
+    next_page_token = None
     
-    return jira_data.get('issues', [])
-
-def extract_field_value(raw_data, target_key='value'):
-    if not raw_data: return 'Unassigned'
-    if isinstance(raw_data, list) and len(raw_data) > 0:
-        return ", ".join([item.get(target_key, str(item)) for item in raw_data if isinstance(item, dict)])
-    if isinstance(raw_data, dict):
-        return raw_data.get(target_key, 'Unassigned')
-    return str(raw_data)
-
-def process_issues_to_dataframe(issues):
-    data = []
-    now = datetime.now(timezone.utc)
-
-    for issue in issues:
-        key = issue['key']
-        summary = issue['fields']['summary']
-        current_status = issue['fields']['status']['name']
-        
-        # 'Problem to Address' needs 'value'
-        problem_val = extract_field_value(issue['fields'].get('customfield_13923'), 'value')
-        
-        # 'Team' needs 'name'
-        vs_val = extract_field_value(issue['fields'].get('customfield_10001'), 'name')
-        
-        # 'Roadmap' usually uses 'value' (Change to 'name' if it outputs a dictionary too!)
-        roadmap_val = extract_field_value(issue['fields'].get('customfield_13924'), 'value')
-
-        status_start_date_str = issue['fields'].get('created')
-        changelog = issue.get('changelog', {}).get('histories', [])
-        for history in sorted(changelog, key=lambda x: x['created'], reverse=True):
-            for item in history['items']:
-                if item['field'] == 'status' and item['toString'] == current_status:
-                    status_start_date_str = history['created']
-                    break 
-            else: continue
+    while True:
+        payload = {
+            "jql": JQL_QUERY,
+            "maxResults": 100,
+            # Make sure these are the EXACT IDs you found earlier
+            "fields": [
+                "summary", "status", "statuscategorychangedate", 
+                "customfield_13924", "customfield_13668" 
+            ]
+        }
+        if next_page_token:
+            payload['nextPageToken'] = next_page_token
+            
+        response = requests.post(url, headers=headers, json=payload, auth=auth)
+        if response.status_code != 200:
+            print(f"🚨 API ERROR: {response.text}")
             break
-
-        status_start_date = pd.to_datetime(status_start_date_str, utc=True)
+            
+        data = response.json()
+        issues = data.get('issues', [])
+        if not issues: break
         
-        if pd.isna(status_start_date):
-            status_start_date = now
-            days_in_status = 0
-        else:
-            days_in_status = (now - status_start_date).days
+        all_issues.extend(issues)
+        next_page_token = data.get('nextPageToken')
+        if not next_page_token: break
 
-        data.append({
-            "Ticket ID": key,
-            "Summary": summary,
-            "Current Status": current_status,
-            "Date Entered Status": status_start_date.strftime('%Y-%m-%d'),
-            "Days in Current Status": days_in_status,
-            "Problem to Address": problem_val,
-            "Team": vs_val,
-            "Roadmap": roadmap_val
+    print(f"📥 Total tickets fetched: {len(all_issues)}")
+
+    # ==========================================
+    # 🚨 THE TRUTH SERUM: Print the raw data for Ticket #1
+    # ==========================================
+    if all_issues:
+        first_ticket = all_issues[0]
+        print(f"\n--- RAW DATA FOR {first_ticket['key']} ---")
+        for field_key, field_value in first_ticket['fields'].items():
+            if "customfield" in field_key or field_key == "summary":
+                print(f"{field_key}: {field_value}")
+        print("--------------------------------------\n")
+    # ==========================================
+
+    records = []
+    for issue in all_issues:
+        fields = issue['fields']
+        key = issue['key']
+        summary = fields.get('summary', 'Unknown')
+        status = fields.get('status', {}).get('name', 'Unknown')
+        
+        status_date_str = fields.get('statuscategorychangedate')
+        if status_date_str:
+            status_date = pd.to_datetime(status_date_str).tz_convert(None)
+            days_in_status = (pd.Timestamp.now() - status_date).days
+        else:
+            status_date, days_in_status = None, 0
+
+        # Safely parse Roadmap
+        roadmap_field = fields.get('customfield_13924') or fields.get('customfield_13668')
+        if isinstance(roadmap_field, dict):
+            roadmap = roadmap_field.get('value', 'Unassigned')
+        elif isinstance(roadmap_field, list) and len(roadmap_field) > 0:
+            roadmap = roadmap_field[0].get('value', 'Unassigned')
+        elif isinstance(roadmap_field, str):
+            roadmap = roadmap_field
+        else:
+            roadmap = 'Unassigned'
+
+        records.append({
+            'Ticket ID': key, 'Summary': summary, 'Current Status': status,
+            'Days in Current Status': max(0, days_in_status),
+            'Date Entered Status': status_date,
+            'Roadmap': roadmap
         })
 
-    return pd.DataFrame(data)
+    df = pd.DataFrame(records)
+    df.to_csv("jira_discovery_data.csv", index=False)
+    print(f"✅ Success! Saved {len(df)} WIP tickets.")
 
 if __name__ == "__main__":
-    print("Fetching data from Jira...", flush=True)
-    raw_issues = fetch_jira_issues()
-    
-    if raw_issues:
-        print(f"Found {len(raw_issues)} issues. Processing data...", flush=True)
-        df = process_issues_to_dataframe(raw_issues)
-        
-        df.to_csv("jira_discovery_data.csv", index=False)
-        print("\n✅ Saved to jira_discovery_data.csv!", flush=True)
-    else:
-        print("⚠️ WARNING: 0 issues were found! The CSV will NOT be updated.", flush=True)
+    extract_wip_data()

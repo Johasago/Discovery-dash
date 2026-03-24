@@ -1,37 +1,194 @@
-Ticket ID,Summary,Date Completed,Lead Time (Days),Problem to Address,Team,Roadmap
-PLD-109,Add Design to MultiQuote in US journeys,2026-03-16,10.0,Quoting,Mind The Gap,Insurance Product Management
-PLD-107,add version checks to start_with_local_rater,2026-03-23,10.0,I want a better developer experience,Vivace,Developer Experience
-PLD-105,Chopin Dev Tools environment status,2026-02-20,8.0,I want a better developer experience,Vivace,Developer Experience
-PLD-103,Env Up script,2026-02-24,11.0,I want a better developer experience,Vivace,Developer Experience
-PLD-101,LLM Mapping from Carrier to SB,2026-03-09,17.0,Quoting,Mind The Gap,Insurance Product Management
-PLD-97,Supported Trades UI (Hiscox Business),2026-02-26,20.0,Quoting,Mind The Gap,Insurance Product Management
-PLD-79,Can we streamline rater testing with integration deployment scripts,2026-02-09,53.0,I want a better developer experience,Unassigned,Developer Experience
-PLD-77,run everything in docker?,2026-01-22,41.0,I want a better developer experience,Unassigned,Developer Experience
-PLD-64,How can we evolve our architecture to natively support multi-product customer journeys?,2026-02-27,125.0,I need the journey framework to support developing straightforward and personalised journeys,Unassigned,Journey 2.0
-PLD-62,How can we make our multi-product journeys more efficient to run and maintain?,2026-03-13,136.0,Unassigned,Unassigned,Sales Opportunity Framework
-PLD-61,How can we accelerate our time-to-market for new multi-product offerings?,2026-03-13,136.0,Unassigned,Unassigned,Sales Opportunity Framework
-PLD-60,How can we simplify the multi-product checkout to stop losing customers?,2026-03-13,136.0,Unassigned,Unassigned,Sales Opportunity Framework
-PLD-39,Can we provide a consistent way to communicate with customers across multiple channels?,2025-11-04,75.0,Omnichannel,Unassigned,Unassigned
-PLD-38,How can we manage changes in the mapped data required by templates?,2026-03-13,168.0,Omnichannel,Unassigned,Unassigned
-PLD-37,"Test data model for connected, consolidated comms",2026-02-27,158.0,Omnichannel,Unassigned,Unassigned
-PLD-36,How do we link communications to UPID and sales opportunities?,2026-03-13,168.0,Omnichannel,Unassigned,Unassigned
-PLD-35,How do we track and link to messaging on paid media channels?,2026-03-13,168.0,Omnichannel,Unassigned,Unassigned
-PLD-34,How can we support template changes without engineering support?,2026-03-13,168.0,Omnichannel,Unassigned,Unassigned
-PLD-33,"What real time data is available from our communication vendors (Salesforce, Twilio)?",2026-03-13,168.0,Omnichannel,Unassigned,Unassigned
-PLD-32,Does the PoC demonstrate the potential for connected reporting and a unified view of customer interactions for the chosen use case?,2026-03-13,168.0,Omnichannel,Unassigned,Unassigned
-PLD-31,How can we integrate necessary data sources to drive these communications?,2026-03-13,168.0,Omnichannel,Unassigned,Unassigned
-PLD-30,Can non-technical teams define communication rules and triggers?,2026-03-13,168.0,Omnichannel,Unassigned,Unassigned
-PLD-29,Customer communications are orchestrated through a centralised service,2026-02-27,158.0,Omnichannel,Unassigned,Unassigned
-PLD-28,Can we improve customer experience through a unified view of interactions with SB?,2026-02-04,143.0,Omnichannel,Unassigned,Unassigned
-PLD-27,Can we reduce the cost of communication changes by providing self-serve toolset?,2025-11-04,77.0,Omnichannel,Unassigned,Unassigned
-PLD-26,"Can we determine the ""journey"" next best step at run time for every step by splitting out the decision making from Journey DSL?",2025-09-17,43.0,I need the journey framework to support developing straightforward and personalised journeys,Unassigned,Journey 2.0
-PLD-15,Use S3 Kafka connectors for record verification,2026-03-13,191.0,Unassigned,Unassigned,Unassigned
-PLD-21,Migrating legacy customer account,2026-03-13,207.0,Unassigned,Unassigned,Unassigned
-PLD-5,Omnichannel: Consolidated Comms Architecture,2025-11-10,119.0,Unassigned,Unassigned,Unassigned
-PLD-10,Risk Fields builder and question bank,2026-03-13,208.0,Unassigned,Unassigned,Unassigned
-PLD-17,Platform Investment Case: Flexible Policy Structure,2026-03-13,211.0,Unassigned,Unassigned,Unassigned
-PLD-7,Webhook,2026-03-13,213.0,Unassigned,Unassigned,Unassigned
-PLD-13,Journey Framework 2.0,2026-03-13,213.0,Unassigned,Unassigned,Unassigned
-PLD-18,External APIs,2026-03-13,214.0,Unassigned,Unassigned,Unassigned
-PLD-3,Platform Investment Case: Rater DSL is AI Friendly,2026-02-04,188.0,Unassigned,Unassigned,Unassigned
-PLD-14,Platform Investment Case Template,2026-03-13,225.0,Unassigned,Unassigned,Unassigned
+Ticket ID,Summary,Date Created,Date Completed,Lead Time (Days),Roadmap
+DP-1177,Test,2026-03-20 13:08:15.368,2026-03-20 13:09:37.792,1,Unassigned
+DP-1162,Launch trustpilot banner on the Business vertical,2026-03-16 09:24:14.582,2026-03-23 14:52:54.911,5,UK Buy
+DP-1160, Streamline Legal Agreement for all GL panel ,2026-03-13 12:46:36.200,2026-03-18 20:57:36.737,3,US IP Offering
+DP-1159,"Copy of BOP - (good, better,best) Multiple Coterie Quotes on QCP  ",2026-03-13 12:46:10.514,2026-03-16 10:53:28.720,1,US IP Offering
+DP-1147,Optimize Ineligible Ops General Liability Application Questions - Housekeeping,2026-03-10 02:30:38.361,2026-03-10 17:01:58.136,1,US Buy
+DP-1137,Renewal Notice: Cheaper than last year,2026-03-06 13:30:32.195,2026-03-16 15:08:49.845,6,UK Support & Growth
+DP-1135,Learn how many customers refer by choice vs circumstance,2026-03-06 09:24:33.229,2026-03-18 19:58:47.329,8,UK IP Offering
+DP-1121,Replace Opt Out Phone number with account link,2026-03-04 13:45:01.437,2026-03-16 15:08:53.396,8,UK Support & Growth
+DP-1104,Ingest Ivans & Create Shell Policies for Coterie,2026-02-27 17:31:16.199,2026-03-17 13:29:33.526,12,US Support & Growth
+DP-1101,Demand Test Rebrokering (email),2026-02-26 18:19:38.188,2026-03-11 18:08:19.935,9,US Support & Growth
+DP-1095,Reciprocal Strategy: Demand test Customer Account engagement for partner perks ,2026-02-25 19:51:02.257,2026-03-20 18:38:42.328,17,US Partners
+DP-1088,AI Trade Assistant: Predefined Help Pills to help customers select trade,2026-02-24 15:42:35.394,2026-02-27 10:04:22.161,3,UK Research
+DP-1085,Re-run Landlord contact details test for higher intent customers,2026-02-24 12:01:34.648,2026-03-02 16:11:11.804,4,UK Buy
+DP-1078,test for IA to make sure JPD is working,2026-02-20 17:38:29.391,2026-02-20 17:38:50.563,1,US Research Ins Advisor
+DP-1076,Reordering Opt Out Reasons in Back Office,2026-02-20 10:32:56.459,2026-02-23 17:54:10.132,1,UK Support & Growth
+DP-1075,BOP Streamline Legal Agreements,2026-02-19 16:31:35.394,2026-03-18 23:32:55.853,19,US IP Offering
+DP-1074,Additional Insurance Product Mapping for Zurich Analysis,2026-02-19 11:55:08.599,2026-02-19 11:55:19.470,1,UK IP Ecosystems Dev
+DP-1073,Tactical Rerating Scripts to Validate Rating and Quotability of Zurich book,2026-02-19 11:53:06.925,2026-02-19 11:53:25.739,1,UK IP Ecosystems Dev
+DP-1072,Update Agent Portal Design Layout,2026-02-19 01:16:58.205,2026-03-09 14:44:34.054,12,US Partners
+DP-1071,Primary Trade Callout Removal A/B test,2026-02-18 14:51:54.041,2026-02-27 18:26:48.773,7,US Buy
+DP-1068,Quick to Rebroke: Transition to Journey,2026-02-17 13:21:25.888,2026-03-11 15:34:42.796,16,UK Support & Growth
+DP-1067,Quick to Rebroke: Shorter QDP,2026-02-17 13:19:56.387,2026-03-11 15:34:18.388,16,UK Support & Growth
+DP-1066,Quick to Rebroke: Support Prompts,2026-02-17 12:44:42.991,2026-02-25 21:53:54.863,6,UK Support & Growth
+DP-1065,Quick to Rebroke: Review your details,2026-02-17 12:19:49.843,2026-03-11 15:34:23.144,16,UK Support & Growth
+DP-1063,Send PocketProof to customers after purchase via SMS ,2024-06-10 21:10:59.502,2026-02-26 16:15:30.592,448,US Support & Growth
+DP-1055,Move Secondary Trade Question A/B Test (Application Page 1 Friction Reduction),2026-02-13 13:58:01.987,2026-02-19 06:55:05.784,4,US Buy
+DP-1050,Social Proof Feature for Trust on Zip Code,2026-02-12 13:27:16.362,2026-03-23 15:38:27.276,27,US IP Offering
+DP-1045,£1120 premium threshold for low-quoting shop,2026-02-11 13:56:05.531,2026-03-10 13:05:15.174,19,UK IP Offering
+DP-1043,Close all Flexor opportunities when sold in Chopin,2026-02-11 13:54:11.485,2026-02-25 13:42:12.714,10,UK IP Offering
+DP-1040,Provide extra context on contact details screen for why we need these bits of information for shop and business ,2026-02-11 10:40:22.500,2026-02-12 14:27:48.923,1,UK Buy
+DP-1038,Redirect low-quoting Partner Shop customers to Shkhara,2026-02-10 12:28:10.774,2026-02-11 11:53:58.766,1,UK IP Offering
+DP-1036,SMS Renewal Reminder for soft bouncing,2026-02-09 16:19:13.722,2026-02-11 15:47:56.019,2,UK Support & Growth
+DP-1031,Failed payment alert for RBOL,2026-02-09 14:27:02.932,2026-02-09 14:27:06.426,1,UK Support & Growth
+DP-1022,Test to move correspondence address on Business,2026-02-06 14:33:57.536,2026-02-06 14:34:01.829,1,UK Buy
+DP-1021,Cross sell motor trade asset and BI cover ,2026-02-06 11:53:32.965,2026-03-04 10:47:18.609,18,UK IP Offering
+DP-1016, Short BOP Journey value drop 2 ,2026-02-05 17:11:17.540,2026-02-05 17:11:20.911,1,US IP Offering
+DP-1015,Implement opportunity score for motor trades,2026-02-05 13:18:07.648,2026-02-06 12:21:25.320,1,UK IP Offering
+DP-1012,CSC ONLY Quote Eligibility Checker,2026-02-05 10:27:54.788,2026-03-06 11:17:28.822,21,US Partners
+DP-1009,Test Average Claim intervention based on trade within biz Q2Q,2026-02-04 15:03:52.236,2026-02-05 10:38:38.910,1,UK Buy
+DP-1006,Add PCP / CoverG to Prof Vertical ,2026-02-04 09:46:26.429,2026-02-27 15:00:16.490,17,UK Buy
+DP-1002,Launch indicative price intervention pop up via hydra on Business Q2Q,2026-02-03 13:54:51.452,2026-02-05 10:38:47.331,2,UK Buy
+DP-1000,Tailored GL Showcase pricing by revenue tier,2026-02-03 11:55:31.070,2026-02-16 09:37:54.864,9,US Research Brand & Experiments
+DP-999,Digital Cancellation for Callers,2026-02-02 17:17:38.021,2026-03-05 18:31:15.809,23,US Support & Growth
+DP-994,Test new features on the assumptions page to increase assumptions visibility and correct representation of the customer's risk,2026-02-02 10:19:29.987,2026-03-17 15:01:25.570,31,UK Buy
+DP-992,Only ask for postcode/ city rather than ask for specific address for risk address to address the large drop off,2026-02-02 10:00:53.204,2026-02-02 15:08:22.874,1,UK Buy
+DP-987,Redirect out of appetite motor trades to CBD instead of Gallaghers,2026-01-30 13:43:10.944,2026-02-10 11:47:03.043,7,UK IP Offering
+DP-986,Redirect SB direct out of appetite shop trades to Shkhara instead of Gallaghers,2026-01-30 13:42:53.146,2026-02-11 11:54:03.819,8,UK IP Offering
+DP-984,"Change how we ask assumptions on the Shop, Landlord and Profs assumption page",2026-01-29 13:13:58.902,2026-03-23 14:55:36.636,37,UK Buy
+DP-982,Limit PI cover levels to those available for each trade,2026-01-28 14:26:09.391,2026-01-30 09:28:01.449,2,UK IP Offering
+DP-981,Productionise sending emails with price and coverage recommendations in Pre-App,2026-01-27 09:52:07.228,2026-02-16 09:38:11.052,14,US Research Brand & Experiments
+DP-980,Simplifying widget journey by pre-filling revenue answer,2026-01-27 09:46:18.368,2026-01-27 16:34:10.861,1,US Research Brand & Experiments
+DP-979,Apply commission to premium calculations for Shell Policies,2026-01-27 09:02:43.939,2026-02-11 14:24:13.730,11,UK IP Ecosystems Dev
+DP-978,Calculate Net Premium for Shell Polcies,2026-01-27 08:21:47.285,2026-02-11 14:24:11.678,11,UK IP Ecosystems Dev
+DP-977,Send COI requests from the IVR to the Account if Endorsements Included in Policy,2026-01-26 19:20:43.407,2026-02-23 17:26:30.364,20,US Support & Growth
+DP-976,Digitize cancellations requests in agent portal to avoid CSC calls,2026-01-26 17:38:54.429,2026-02-04 21:41:09.199,7,US Support & Growth
+DP-974,Shop PCP CoverG ,2026-01-26 15:34:14.752,2026-01-29 16:45:05.248,3,UK Research
+DP-973,Add COI self-servicing to the agent portal,2026-01-26 14:46:42.145,2026-02-04 21:41:07.624,7,US Support & Growth
+DP-971,Embedding existing SB widgets onto Partner sites,2026-01-26 10:42:38.867,2026-02-19 16:50:55.958,18,US Partners
+DP-966,Trade-Specific Cover Availability (Contents),2026-01-22 16:19:11.178,2026-02-25 13:42:14.358,24,UK IP Offering
+DP-965,Hide buildings cover when model cannot quote postcode,2026-01-22 16:13:36.965,2026-01-30 13:01:28.687,6,UK IP Offering
+DP-959,Refer shop unquotables to CBD/Shkhara,2026-01-22 11:27:22.177,2026-01-30 14:50:17.189,6,UK IP Offering
+DP-953,Add New Business and Renewal Fees to C&N verticals and Commercial Landlord,2026-01-21 13:45:51.706,2026-03-05 13:19:01.493,31,UK IP Ecosystems Dev
+DP-952,PCP Smart Sort A/B Test ,2026-01-21 11:40:17.650,2026-02-05 14:58:51.877,11,UK Buy
+DP-950,BOP AB test Contact details move ,2026-01-21 09:46:53.726,2026-03-05 15:55:10.581,31,US IP Offering
+DP-945,"Move Phone Number field to Interstitial page with ""Take your quote with you"" framing",2026-01-16 14:05:03.524,2026-03-18 22:16:40.859,43,US Buy
+DP-944,Make help text more helpful on Trade Selector screen to help give more helpful information to customers when struggling to answer this question,2026-01-16 10:59:45.955,2026-03-09 17:59:33.351,36,UK Buy
+DP-942,"Remove/ Reword ""Select a trade"" line to reduce clutter and confusion on the first question",2026-01-16 10:52:40.205,2026-01-28 14:53:33.146,8,UK Buy
+DP-941,Reduce font size of legal text on first section of Q2Q to reduce clutter on the screen and ensure focus on the question to be answered ,2026-01-16 10:44:28.632,2026-02-26 19:34:48.262,29,UK Buy
+DP-939, Short BOP Journey HBWY,2026-01-15 17:54:48.695,2026-01-15 17:54:52.619,1,US IP Offering
+DP-936,Limit PL cover levels to those available for each trade,2026-01-14 06:26:17.283,2026-01-28 14:51:57.116,10,UK IP Offering
+DP-934,Ecos: Create Questionnaire API for Embeddable Quoting Widget: SPIKE ONLY,2026-01-13 14:41:35.665,2026-01-26 20:37:30.962,9,US Partners
+DP-932,Landlord Main selection ,2026-01-12 13:58:52.372,2026-02-27 15:00:39.322,34,UK Buy
+DP-927,Coverage Model Learning Loop (Randomised 10%),2026-01-12 11:54:09.383,2026-02-13 15:03:06.217,24,UK Buy
+DP-925,PCP Enhancement: Coverage G Model Integration,2026-01-12 11:32:51.548,2026-01-22 15:11:44.985,8,UK Research
+DP-924,AI Trade Selector - ChatGPT Proof of Concept,2026-01-12 11:19:47.483,2026-01-12 13:20:25.549,1,UK Research
+DP-923,Ask what is your first name as the first (post trade selector screen) question on shop,2026-01-09 09:23:01.202,2026-01-12 08:53:12.595,1,UK Buy
+DP-922,Disable £10m PL for certain customers,2026-01-08 17:24:11.933,2026-02-04 11:26:18.282,19,UK IP Offering
+DP-921,Decrease loading times in account but changing API calls,2026-01-08 14:45:58.742,2026-02-10 09:15:08.485,23,UK Support & Growth
+DP-914,Add Minimum Quoted Monthly Premium to Chopin Triggered Quote Email & SMS,2026-01-06 22:46:57.013,2026-01-15 15:59:43.791,7,US Buy
+DP-913,[A/B Test] Pre-Check Terrorism coverage (TRIA),2026-01-06 17:34:52.105,2026-01-15 15:59:31.913,7,US Buy
+DP-912,Test to move correspondence address on shop,2026-01-06 14:59:09.787,2026-01-12 08:52:56.436,4,UK Buy
+DP-909,Create SB Indicative Pricing GPT for OpenAI Store App,2026-01-06 11:51:35.132,2026-02-16 09:38:26.782,29,US Research Brand & Experiments
+DP-901,Enhancing Showcases - scaling to more trades & unifying naming conventions for existing,2025-12-29 17:36:43.120,2026-03-16 12:48:29.962,55,US Research Brand & Experiments
+DP-827,"Investigate which carriers require the ""Secondary Trade"" question to potentially remove it.",2025-12-24 18:58:18.439,2026-01-12 16:28:00.616,13,US Buy
+DP-824,"Highlight ""Cancel Anytime"" near quote results",2025-12-24 18:58:16.621,2026-02-05 15:00:18.256,31,US Buy
+DP-809,(Next) Personalization of Insurance Advisor quick replies (may be duplicate with DP-733),2025-12-23 20:42:14.783,2026-02-27 21:51:53.138,48,US Research Ins Advisor
+DP-808,Change Landlord USP message using Landing page hydra model to mitigate the score creation lag with the journey start hydra model,2025-12-22 10:57:38.226,2026-03-02 16:13:16.023,50,UK Buy
+DP-807,Fast track journey-  Early QCP for Coterie with an indicative price for HBWY,2025-12-19 15:14:29.538,2026-03-11 14:43:44.848,58,US IP Offering
+DP-801,"Expanding Including Waiver of subro, Addtl Insd, Primary and Non-Contributory pre-check",2025-12-17 14:36:34.090,2026-01-22 14:53:11.248,26,US Buy
+DP-798,E2E IA + Human-in-the-loop Journey Integration: QCP,2025-12-16 16:16:59.570,2026-02-10 19:00:00.353,40,US Research Ins Advisor
+DP-797,Hydra intent scoring on Tailored Coverage (single showcase) w/ IA intervention,2025-12-16 16:16:00.549,2026-03-05 15:14:47.772,57,US Research Ins Advisor
+DP-794,"[A/B Test] ""No Spam Calls"" Messaging",2025-12-16 05:50:17.090,2026-01-15 15:59:27.133,22,US Buy
+DP-792,Shortened GL Journey Phase 1: Optimize General Liability Application Questions,2025-12-16 05:35:01.986,2026-03-14 11:01:12.626,64,US Buy
+DP-791,Optimize Journey Format (Front End Framework / Q2Q),2025-12-16 05:24:03.932,2026-02-02 17:50:17.825,34,US Buy
+DP-790,Shortened GL Journey - for Coterie-only trades,2025-12-16 05:15:08.447,2026-02-09 17:36:20.009,39,US Buy
+DP-787,Show trustpilot score as a hydra intervention on first page of landlord,2025-12-15 10:58:59.902,2026-01-12 08:53:28.724,20,UK Buy
+DP-786,CLM Redesign Triggered Quote Email,2025-12-12 19:29:41.782,2026-02-04 15:19:41.327,38,US Buy
+DP-778,Adopt Contact Address Update Feature from UK,2025-12-10 20:18:29.212,2026-03-17 13:29:21.343,69,US Support & Growth
+DP-774,Add Insurance Advisor to Ecos White Label experience ,2025-12-09 17:21:40.348,2026-01-14 17:48:36.544,26,US Partners
+DP-763,Short BOP Journeys,2025-12-09 11:30:33.625,2026-03-18 16:35:38.550,71,US IP Offering
+DP-743,Offer online MPLL discounts in the QCP,2025-12-04 14:59:05.162,2026-01-29 14:53:48.118,40,UK IP Offering
+DP-742,Carry Over COI Edits to Renewal Policy,2025-12-04 14:56:08.692,2026-02-09 21:29:50.356,47,US Support & Growth
+DP-736,Connect Policy Confirmation Page to Account Sign In,2025-12-03 20:30:51.317,2026-02-09 21:29:51.314,48,US Support & Growth
+DP-733,Personalization of Insurance Advisor via meta data and proprietary data,2025-12-01 21:17:45.269,2026-01-13 17:03:28.440,31,US Research Ins Advisor
+DP-731,Top 3 Quoted GL Trades in Agent Portal,2025-11-30 18:59:33.960,2026-01-22 18:08:58.488,38,US Partners
+DP-729,Login Prompt for Failed Policy Linking (Active Policies Only),2025-11-28 18:05:32.297,2026-02-04 23:08:31.948,48,UK Support & Growth
+DP-722,Move 2xHV verticals and Commercial Landlord to new FEA,2025-11-26 11:47:48.523,2026-01-21 09:48:08.013,40,UK IP Offering
+DP-716,Optimize General Liability Default Policy Limit on QCP,2025-11-24 15:53:08.031,2026-02-18 15:22:22.828,62,US Buy
+DP-712,Offer offline MPLL discounts in the QCP,2025-11-20 16:10:25.697,2026-01-29 15:26:34.315,50,UK IP Offering
+DP-703,Enable Payment Method Update for Pending Renewal Policy,2025-11-12 19:58:26.342,2026-02-04 19:35:58.882,60,US Support & Growth
+DP-702,Embeddable GL application widget: full or partial application --Eng Discovery only at this time,2025-11-12 19:24:14.884,2026-01-13 14:32:46.848,44,US Partners
+DP-699,Reporting: Employee count not preserved when switched to HV vertical,2025-11-12 09:53:15.177,2026-01-14 14:08:37.449,45,UK IP Offering
+DP-697,Referral Likelihood: Enhanced Appetite Checker Part 2 and/or Application Rearrangement,2025-11-11 20:10:42.375,2026-01-22 18:09:26.919,52,US Partners
+DP-694,Copy relating to the risk of not being covered when cancelling online,2025-11-11 14:20:56.061,2026-02-05 22:46:09.059,62,UK Support & Growth
+DP-692,New - SMS and Email about discounts proactively,2025-11-11 14:20:54.573,2026-02-04 21:48:31.571,61,UK Support & Growth
+DP-689,Improve customer account creation for PCL customers using the confirmation,2025-11-11 14:20:52.382,2026-02-04 22:58:46.373,61,UK Support & Growth
+DP-687,Proactive campaign for customers that haven't created an account ahead of renewal,2025-11-11 14:20:51.026,2026-02-04 22:24:13.118,61,UK Support & Growth
+DP-679,Renewal Quotes for Everyone,2025-11-11 14:20:45.105,2026-02-11 15:47:45.621,66,UK Support & Growth
+DP-670,Transparency of log in failure reasons for Ops to enable us to help the customer,2025-11-11 14:20:38.584,2026-02-04 23:16:25.860,61,UK Support & Growth
+DP-668,Send expect a call SMS to Unquotables,2025-11-11 11:53:01.197,2026-01-14 14:07:57.655,46,UK IP Offering
+DP-665,Quick to Rebroke: Cover benefits prompts,2025-11-11 11:41:03.229,2026-02-05 22:39:11.754,62,UK Support & Growth
+DP-656,Move Professional to Q2Q,2025-11-06 14:34:24.810,2026-01-21 11:30:44.751,54,UK IP Offering
+DP-645,Rebroke: Allowing customers to rebroke before cancellations,2025-11-03 15:44:48.787,2026-01-14 13:50:46.596,52,UK Support & Growth
+DP-644,Rebroke Targeting: Rebroke before Opt Out Online,2025-11-03 15:31:44.147,2026-01-26 13:29:01.306,60,UK Support & Growth
+DP-639,Insurance Assistant Integration (Quick Quote PCP),2025-10-30 14:50:39.162,2026-01-16 11:45:29.759,56,UK Research
+DP-635,Verisk Data Pre-Population & Dynamic Question Set (BOP),2025-10-30 10:04:50.023,2026-02-03 16:40:59.572,68,US IP Offering
+DP-632,Payment Details Page Redesign,2025-10-28 18:21:10.804,2026-02-09 20:05:51.374,74,US Support & Growth
+DP-629,Test removal of phone number question from the Shop journey,2025-10-28 14:17:33.018,2026-01-21 14:51:32.088,61,UK Buy
+DP-610,Smart Routing for Billing in Account,2025-10-27 15:25:43.811,2026-01-20 19:25:45.380,61,US Support & Growth
+DP-609,Give customers ability to turn off auto-renew in account in Cancellation Flow,2025-10-27 15:25:16.452,2026-02-18 18:18:00.994,82,US Support & Growth
+DP-584,Rebroke: Marketing email with price heavy messaging,2025-10-20 14:08:42.744,2026-02-25 21:28:51.801,92,UK Support & Growth
+DP-582,Open Quote Notifications within the Agent Portal,2025-10-19 23:00:25.149,2026-03-19 03:35:30.728,108,US Partners
+DP-578,Journey with reworded questions,2025-10-16 09:37:35.929,2026-03-04 14:55:08.839,99,UK Buy
+DP-575,Provide a tailored experience for customers who have generated at least a RFQ in the past,2025-10-15 12:31:23.387,2026-03-02 16:14:59.478,98,UK Buy
+DP-560,3rd payment attempt at renewal (full pay),2025-10-10 09:53:33.971,2026-02-11 13:36:45.043,88,UK Support & Growth
+DP-559,Show trustpilot score as a hydra intervention after property address on shop,2025-10-10 09:45:09.151,2026-01-12 08:53:45.953,66,UK Buy
+DP-557,Smart filters QCP page ,2025-10-09 15:41:39.718,2026-02-27 15:00:18.738,101,UK Research
+DP-556,Offer online discount to returning MPLL,2025-10-09 13:38:11.593,2026-02-13 08:42:03.119,91,UK IP Offering
+DP-550,DNA: Making pricing models more informed,2025-10-08 12:37:29.811,2026-02-11 19:27:37.363,90,UK Support & Growth
+DP-540,Re-rate automatic renewal quotes for specific insurers,2025-10-06 10:40:20.998,2026-01-27 09:20:45.873,81,UK IP Ecosystems Dev
+DP-533,PARENT IDEA: Learn how to treat MPLLs better online,2025-10-01 10:35:54.713,2026-02-02 15:26:09.051,88,UK IP Offering
+DP-529,"Increased Data Sharing with Insurers (Phase 1, transactional data)",2025-09-30 09:18:04.605,2026-02-11 14:29:32.951,96,UK IP Ecosystems Dev
+DP-521,Add NPS survey to end of cancellation flow,2025-09-25 15:56:06.950,2026-02-18 18:15:45.867,104,US Support & Growth
+DP-511,"We're proposing a test to consolidate the multiple ""this provider can't quote"" messages on the QCP (Quote Comparison Page)",2025-09-24 08:04:37.890,2026-02-25 14:30:05.318,110,UK Research
+DP-504,Add Monthly Price for each ancil via prompt (Insurance Assistant),2025-09-23 15:39:10.885,2026-02-05 14:59:28.933,97,UK Research
+DP-502,Working with UK Brokers via Durell,2025-09-23 13:21:05.872,2026-02-19 11:48:56.419,107,UK IP Ecosystems Dev
+DP-497,Display Coterie payment error reasons and mitigation actions to customers on payment page,2025-09-19 14:32:17.034,2026-03-03 17:52:33.118,117,US IP Offering
+DP-485,Test disabling HV switching,2025-09-17 16:19:57.869,2026-01-14 14:08:47.479,85,UK IP Offering
+DP-482,Cap & Collar for Zurich segmentation,2025-09-16 13:29:42.025,2026-02-19 11:48:09.082,112,UK IP Ecosystems Dev
+DP-468,(Copy) Remove separate Legal Agreements page for Harborway,2025-09-15 16:58:21.426,2026-03-18 16:35:44.674,132,US IP Offering
+DP-453,Use Hydra to change the USP message on the first page of Q2Q,2025-09-10 09:36:30.286,2026-02-26 15:45:10.361,121,UK Buy
+DP-450,Ask What are you here to do today within Q2Q (no hydra),2025-09-10 09:31:05.068,2026-01-28 10:31:59.670,100,UK Buy
+DP-431,Enable permission based amend on Shell Policies,2025-09-04 15:16:35.290,2026-01-13 15:07:41.134,93,UK IP Ecosystems Dev
+DP-413,"MPLL on Account X-Sell - Advertise, Display & Apply a 10% Discount",2025-09-03 12:11:58.570,2026-03-03 14:17:34.811,129,UK Support & Growth
+DP-398,Embedding Insurance Advisor Widget in Customer Account,2025-08-29 16:02:14.621,2026-02-13 17:33:54.868,120,US Support & Growth
+DP-395,Updating phone number UI,2025-08-29 15:28:42.194,2026-02-04 12:56:03.444,113,UK Support & Growth
+DP-388,Payment Failure Email on 1st failure,2025-08-28 13:07:03.624,2026-02-10 09:55:05.853,118,UK Support & Growth
+DP-382,Removing formatting from names with autolinking,2025-08-28 09:00:02.265,2026-01-21 07:34:45.566,104,UK Support & Growth
+DP-380,Align QCP to GL-only or BOP-only showcases,2025-08-27 12:30:40.425,2026-03-18 16:32:21.687,145,US Buy
+DP-378,Combined MFA selection and password entry pages,2025-08-27 09:42:40.409,2026-01-22 15:13:41.802,106,UK Support & Growth
+DP-377,"MPLL discount in account - Advertise, Prompt to Call",2025-08-27 09:09:51.059,2026-01-22 15:22:02.031,106,UK Support & Growth
+DP-372,Removing prefixes from telephone numbers prior to autolinking or policy search,2025-08-26 14:11:20.354,2026-01-21 07:34:42.018,106,UK Support & Growth
+DP-369,Update policy search when 'I' and '1' mis-typed,2025-08-26 12:09:10.293,2026-02-04 13:08:50.908,116,UK Support & Growth
+DP-352,Distribution Partner Portal View,2025-08-25 14:30:20.698,2026-03-09 14:51:54.779,140,US Partners
+DP-332,Transactional Account Prompt: Signing PCL Agreements,2025-08-21 10:32:05.038,2026-02-05 10:45:58.670,120,UK Support & Growth
+DP-331,Transactional Prompt: Failed Card Payment at Renewal,2025-08-21 10:27:51.517,2026-02-04 23:24:01.735,119,UK Support & Growth
+DP-329,Clear Business - add a piece of java script to the CB White label site to let them capture some risk information which will help improve marketing,2025-08-21 09:19:32.181,2026-01-13 16:26:14.188,103,UK IP Ecosystems Dev
+DP-250,Offer customers rebroke if we see additional RFQs at renewal,2025-08-14 14:38:08.612,2026-02-04 14:19:04.099,124,UK Support & Growth
+DP-242,CoverG: Introduce product descriptions on cover options page  AB Test ,2025-08-14 12:46:18.672,2026-02-27 15:00:34.370,141,UK Buy
+DP-223,Enable PCL customers to use new cards at MTA,2025-08-12 10:30:52.159,2026-02-04 14:12:37.789,126,UK Support & Growth
+DP-220,Resending renewal mailers,2025-08-11 15:26:40.794,2026-02-04 21:34:49.974,127,UK Support & Growth
+DP-198,Cognito reset password email branding,2025-03-07 15:44:11.211,2026-02-04 22:48:15.319,238,UK Support & Growth
+DP-166,"Partner placement on extranets, via shell policies",2024-10-17 15:05:44.629,2026-01-28 12:17:14.494,334,UK IP Offering
+DP-153,Present card payment failure reason at MTA,2025-08-01 15:39:03.161,2026-02-24 12:10:42.646,147,UK Support & Growth
+DP-150,MFA: Use auth app,2025-08-01 15:26:46.620,2026-02-05 21:51:45.857,134,UK Support & Growth
+DP-149,Remove Covid-19 variations from cancellation email,2025-08-01 15:07:02.417,2026-02-04 22:52:21.588,133,UK Support & Growth
+DP-116,Stripe automatic payments at manual renewal,2025-07-31 12:48:44.342,2026-01-12 16:20:07.412,117,UK Support & Growth
+DP-115,Reinstating pcl agreement for customers,2025-07-31 12:47:29.172,2026-02-05 10:36:43.411,135,UK Support & Growth
+DP-109,Rebroke Email Targeting: Manual Renewal Customers,2025-07-31 12:23:29.400,2026-02-25 21:34:22.091,149,UK Support & Growth
+DP-108,MFA: Customers can select different auth options in the account,2025-03-04 09:35:55.101,2026-02-05 21:53:23.286,242,UK Support & Growth
+DP-101,enable customers to take payment from account,2025-07-29 11:29:43.236,2026-01-30 17:27:16.364,133,UK Support & Growth
+DP-91,Show GL if no active policy on account homepage ,2025-07-22 12:26:06.748,2026-01-20 21:31:37.978,130,US Support & Growth
+DP-84,Update Renewal Quote Manual Payment Mailer,2025-07-22 09:49:51.530,2026-03-04 11:23:25.053,161,UK Support & Growth
+DP-83,Update Renewal Quote Direct Debit Mailer,2025-07-22 09:49:41.408,2026-03-04 11:22:57.497,161,UK Support & Growth
+DP-67,Start a Quote,2025-07-17 10:55:03.099,2026-03-03 14:17:27.710,163,UK Support & Growth
+DP-63,RCS Branded Messaging ,2025-07-16 17:24:18.734,2026-02-18 18:16:29.311,155,US Support & Growth
+DP-57,Enable customers with Pi cover to cancel online,2025-07-11 14:54:24.588,2026-01-21 07:34:41.265,138,UK Support & Growth
+DP-47,MFA - Remember my device,2025-07-09 10:14:20.793,2026-02-05 21:59:33.358,151,UK Support & Growth
+DP-41,RBOL journey in customer account,2025-07-09 10:04:54.110,2026-01-21 17:23:26.906,140,UK Support & Growth
+DP-37,Update card and take payment,2025-07-09 09:47:36.562,2026-01-21 07:33:43.603,140,UK Support & Growth
+DP-32,SMS Renewal Reminder for CC customers,2025-07-07 14:33:59.159,2026-02-11 15:47:58.215,157,UK Support & Growth
+DP-31,Rebroke: Send SMS,2025-07-07 14:31:04.049,2026-01-27 13:58:10.913,146,UK Support & Growth
+DP-26,Allow customers to move their monthly installment date,2025-06-30 20:53:09.825,2026-02-13 21:29:34.552,164,US Support & Growth

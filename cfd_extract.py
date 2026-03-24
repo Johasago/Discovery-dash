@@ -6,6 +6,7 @@ from requests.auth import HTTPBasicAuth
 JIRA_URL = os.environ.get("JIRA_URL")
 JIRA_EMAIL = os.environ.get("JIRA_EMAIL")
 JIRA_API_TOKEN = os.environ.get("JIRA_API_TOKEN")
+JQL_QUERY = 'project in ("PLD", "DP") AND statusCategory != Done' 
 
 def extract_cfd_history():
     print("🕰️ Starting the Modernized CFD Time Machine...")
@@ -25,7 +26,7 @@ def extract_cfd_history():
             'jql': JQL_QUERY,
             'maxResults': 100,
             'expand': 'changelog', 
-            'fields': ['created', 'status', 'customfield_10012'] 
+            'fields': ['created', 'status', 'customfield_13924', 'customfield_13668'] 
         }
         
         # Add the token if we are flipping to page 2, 3, etc.
@@ -63,10 +64,11 @@ def extract_cfd_history():
     for issue in all_issues:
         key = issue['key']
         
-        # Safely grab the Team Name
-        team_field = issue['fields'].get('customfield_10012')
-        team = team_field.get('name', 'Unassigned') if isinstance(team_field, dict) else 'Unassigned'
+       # 1. Grab the Roadmap field object (checking both project IDs)
+        roadmap_field = issue['fields'].get('customfield_13924') or issue['fields'].get('customfield_13668')
         
+        # 2. Safely extract the 'value' text if it's a dropdown, otherwise default to Unassigned
+        roadmap = roadmap_field.get('value', 'Unassigned') if isinstance(roadmap_field, dict) else 'Unassigned'
         # Parse the changelog to find every status movement
         histories = issue.get('changelog', {}).get('histories', [])
         
@@ -88,11 +90,10 @@ def extract_cfd_history():
         initial_status = status_changes[0]['from'] if status_changes and status_changes[0]['from'] else "To Do"
         
         # Record the ticket's birth
-        records.append({'Ticket ID': key, 'Team': team, 'Date': created_date, 'Status': initial_status})
-        
+        records.append({'Ticket ID': key, 'Roadmap': roadmap, 'Date': created_date, 'Status': initial_status})        
         # Record every time it moved to a new column
         for change in status_changes:
-            records.append({'Ticket ID': key, 'Team': team, 'Date': change['date'], 'Status': change['to']})
+            records.append({'Ticket ID': key, 'Roadmap': roadmap, 'Date': created_date, 'Status': initial_status})
 
     # 3. Save to a new CSV file
     df = pd.DataFrame(records)

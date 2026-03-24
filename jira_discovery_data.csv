@@ -1,50 +1,757 @@
-Ticket ID,Summary,Current Status,Date Entered Status,Days in Current Status,Problem to Address,Team,Roadmap
-PLD-117,Tracking section start and completion in React Front End architecture,Assessing Viability & Value,2026-03-23,0,Frontend Vision,Unassigned,Unassigned
-PLD-116,Fully Independent Ephemeral Environments,To Do Ideas,2026-03-09,13,I want a better developer experience,Vivace,Developer Experience
-PLD-115,Visualize Rater's DSL tables via Quid UI,Idea Backlog,2026-03-03,19,Quoting,Mind The Gap,Insurance Product Management
-PLD-114,Reactified product application performance,Design/Solution Validation,2026-03-10,13,I need the journey framework to support developing straightforward and personalised journeys,Unassigned,Journey 2.0
-PLD-113,Streamlined rater local testing,Design/Solution Validation,2026-03-16,6,I want a better developer experience,Vivace,Developer Experience
-PLD-112,Should we and How can we shift left Contract Validation?,Assessing Viability & Value,2026-02-27,24,Frontend Vision,Unassigned,Frontend Architecture
-PLD-111,Synchronous Quoting won't scale with external carriers.,Idea Backlog,2026-02-23,27,Quoting,Mind The Gap,Insurance Product Management
-PLD-110,Async quoteset generation,To Do Ideas,2026-02-28,23,Quoting,Mind The Gap,Insurance Product Management
-PLD-108,Smoke test harness for Rater,Idea Backlog,2026-02-12,38,I want a better developer experience,Vivace,Developer Experience
-PLD-100,Simulation Runner/Testing,Idea Design & Solutioning,2026-03-16,7,Quoting,Unassigned,Insurance Product Management
-PLD-99,Governance & Publishing Workflow,Design/Solution Validation,2026-03-11,11,Quoting,Mind The Gap,Insurance Product Management
-PLD-98,Filter Rules (Hiscox Business),Idea Backlog,2026-02-17,33,Quoting,Mind The Gap,Insurance Product Management
-PLD-96,Quid test harness,Idea Backlog,2026-01-26,55,I want a better developer experience,Vivace,Developer Experience
-PLD-95,quid+risk_profiler co-dependency problem (i.e. merge the projects),Idea Backlog,2026-01-26,55,I want a better developer experience,Vivace,Developer Experience
-PLD-94,can we use feature flagging for non-insurer-build work,Idea Backlog,2026-01-26,55,I want a better developer experience,Vivace,Developer Experience
-PLD-93,DevContainers for consistent app environment locally,Idea Backlog,2026-02-16,34,I want a better developer experience,Vivace,Developer Experience
-PLD-92,Inflight questions/sections reordering,Idea Backlog,2026-02-18,33,I need the journey framework to support developing straightforward and personalised journeys,Unassigned,Journey 2.0
-PLD-91,Providing just in time questions / sections to FE product application,Design/Solution Validation,2026-03-10,13,I need the journey framework to support developing straightforward and personalised journeys,Unassigned,Journey 2.0
-PLD-90,Interrupt product application,Idea Backlog,2026-02-18,33,I need the journey framework to support developing straightforward and personalised journeys,Unassigned,Journey 2.0
-PLD-89,Securely resuming product application,Idea Backlog,2026-02-18,33,I need the journey framework to support developing straightforward and personalised journeys,Unassigned,Journey 2.0
-PLD-88,Consistent questions / sections ordering / wording for each individual customer,Design/Solution Validation,2026-03-10,13,I need the journey framework to support developing straightforward and personalised journeys,Unassigned,Journey 2.0
-PLD-85,How can we harden Quote Retrieval mechanism for Cross-Sell,Idea Backlog,2025-12-16,97,Quoting,Unassigned,Insurance Product Management
-PLD-82,"for coco testing, use dockerised chopin master to generate policy to be renewed",Idea Backlog,2026-01-26,55,I want a better developer experience,Vivace,Developer Experience
-PLD-81,use dotenv in coco,Idea Backlog,2025-12-11,102,I want a better developer experience,Unassigned,Developer Experience
-PLD-78,knowledgebase/wiki/shared doc/chatbot for local dev troubleshooting,Idea Backlog,2026-01-26,55,I want a better developer experience,Vivace,Developer Experience
-PLD-66,Federated Personalisation Decisioning with Centralised State (SO),Idea Backlog,2026-02-18,33,I need the journey framework to support developing straightforward and personalised journeys,Unassigned,Journey 2.0
-PLD-63,"How can we gain a complete, end-to-end view of the multi-product customer journey?",Idea Backlog,2025-09-04,200,Unassigned,Unassigned,Sales Opportunity Framework
-PLD-59,Can we have an unique sales opportunity id for the same customer until the sale is finalised,Idea Backlog,2025-08-26,209,I need the journey framework to support developing straightforward and personalised journeys,Unassigned,Journey 2.0
-PLD-58,Can a customer come back and resume the journey from where they left off?,Idea Backlog,2025-08-26,209,I need the journey framework to support developing straightforward and personalised journeys,Unassigned,Journey 2.0
-PLD-57,"Can we create a single, seamless customer journey for customers purchasing multiple products?",Idea Backlog,2025-09-17,187,I need the journey framework to support developing straightforward and personalised journeys,Unassigned,Journey 2.0
-PLD-56,How can we ensure that Models and Questionnaires are compatible?,Idea Design & Solutioning,2026-03-23,0,Quoting,Unassigned,Insurance Product Management
-PLD-55,Seamless switching between verticals,Idea Backlog,2025-08-19,216,I need the journey framework to support developing straightforward and personalised journeys,Unassigned,Journey 2.0
-PLD-54,Tailor the first question based on a data model,Idea Backlog,2025-08-19,216,I need the journey framework to support developing straightforward and personalised journeys,Unassigned,Journey 2.0
-PLD-52,Personalise copy on page rendering,Idea Backlog,2025-08-19,216,I need the journey framework to support developing straightforward and personalised journeys,Unassigned,Journey 2.0
-PLD-49,can we inject an interstitial page in between questionnaire questions by adding additional content (interstitial) in Q2Q at realtime,Idea Backlog,2025-08-04,231,I need the journey framework to support developing straightforward and personalised journeys,Unassigned,Journey 2.0
-PLD-48,can we inject an interstitial page in between questionnaire questions by breaking Q2Q in half (in realtime) insert a page and resume Q2Q,Idea Backlog,2025-08-04,231,I need the journey framework to support developing straightforward and personalised journeys,Unassigned,Journey 2.0
-PLD-47,Can we achieve consisency of sessionization between Amplitude and Looker?,Idea Backlog,2025-08-01,233,I can't track dynamic journeys,Unassigned,Sales Opportunity Framework
-PLD-46,Tracking across multiple journeys?,Idea Backlog,2026-02-18,33,I can't track dynamic journeys,Unassigned,Sales Opportunity Framework
-PLD-45,How can analysts interpret customer paths through dynamic and multi-product opportunities?,Idea Backlog,2025-08-01,233,I can't track dynamic journeys,Unassigned,Sales Opportunity Framework
-PLD-44,What data can we provide to a decision making service for the next step?,Idea Backlog,2025-08-01,233,I can't track dynamic journeys,Unassigned,Sales Opportunity Framework
-PLD-42,Can we centralise customer personalisation logic and decision,Idea Backlog,2025-07-25,240,I need the journey framework to support developing straightforward and personalised journeys,Unassigned,Journey 2.0
-PLD-41,Can we divert the journey with an interstitial page using customer's realtime interactions and recent events?,Idea Backlog,2025-09-17,187,I need the journey framework to support developing straightforward and personalised journeys,Unassigned,Journey 2.0
-PLD-40,Journey Orchestration,Idea Backlog,2025-07-23,243,I need the journey framework to support developing straightforward and personalised journeys,Unassigned,Journey 2.0
-PLD-23,Pushing Q2Q journey onto CTM,Idea Backlog,2025-08-18,217,Frontend Vision,Team A+,Frontend Architecture
-PLD-22,Add React to pages QCP to Purchase,Idea Backlog,2025-07-14,251,Frontend Vision,Unassigned,Frontend Architecture
-PLD-11,Reduce Rater CI time,Idea Backlog,2025-12-11,102,I want a better developer experience,Unassigned,Developer Experience
-PLD-9,Platform Investment Case: Coverage diagnosis,Idea Backlog,2025-08-18,217,Frontend Vision,Unassigned,Frontend Architecture
-PLD-8,Platform Investment Case: Reactify post-quote pages,Idea Backlog,2025-08-18,217,Frontend Vision,Unassigned,Frontend Architecture
-PLD-4,Sales Opportunity Data Framework,Idea Backlog,2025-07-14,251,I can't track dynamic journeys,Unassigned,Sales Opportunity Framework
+Ticket ID,Summary,Current Status,Days in Current Status,Date Entered Status,Roadmap
+PLD-118,Make Policy Renewable backoffice button,To Do Ideas,0,2026-03-23 14:48:32.386,Developer Experience
+PLD-117,Tracking section start and completion in React Front End architecture,Assessing Viability & Value,0,2026-03-23 11:39:38.022,Unassigned
+PLD-116,Fully Independent Ephemeral Environments,To Do Ideas,14,2026-03-09 13:47:16.290,Developer Experience
+PLD-115,Visualize Rater's DSL tables via Quid UI,Idea Backlog,20,2026-03-03 14:12:03.212,Insurance Product Management
+PLD-114,Reactified product application performance,Design/Solution Validation,13,2026-03-10 11:43:21.849,Journey 2.0
+PLD-113,Streamlined rater local testing,Design/Solution Validation,14,2026-03-09 15:06:14.910,Developer Experience
+PLD-112,Should we and How can we shift left Contract Validation?,Assessing Viability & Value,25,2026-02-27 11:21:12.509,Frontend Architecture
+PLD-111,Synchronous Quoting won't scale with external carriers.,Idea Backlog,28,2026-02-23 15:38:57.736,Insurance Product Management
+PLD-110,Async quoteset generation,To Do Ideas,29,2026-02-23 08:47:54.388,Insurance Product Management
+PLD-108,Smoke test harness for Rater,Idea Backlog,39,2026-02-12 16:35:14.031,Developer Experience
+PLD-100,Simulation Runner/Testing,Idea Design & Solutioning,7,2026-03-16 12:58:10.678,Insurance Product Management
+PLD-99,Governance & Publishing Workflow,Design/Solution Validation,21,2026-03-02 14:16:28.902,Insurance Product Management
+PLD-98,Filter Rules (Hiscox Business),Idea Backlog,34,2026-02-17 18:24:07.543,Insurance Product Management
+PLD-96,Quid test harness,Idea Backlog,56,2026-01-26 15:28:00.459,Developer Experience
+PLD-95,quid+risk_profiler co-dependency problem (i.e. merge the projects),Idea Backlog,56,2026-01-26 15:27:50.284,Developer Experience
+PLD-94,can we use feature flagging for non-insurer-build work,Idea Backlog,56,2026-01-26 15:09:22.920,Developer Experience
+PLD-93,DevContainers for consistent app environment locally,Idea Backlog,40,2026-02-12 11:03:16.245,Developer Experience
+PLD-92,Inflight questions/sections reordering,Idea Backlog,34,2026-02-18 11:24:42.131,Journey 2.0
+PLD-91,Providing just in time questions / sections to FE product application,Design/Solution Validation,14,2026-03-10 11:33:47.871,Journey 2.0
+PLD-90,Interrupt product application,Idea Backlog,34,2026-02-18 11:24:47.239,Journey 2.0
+PLD-89,Securely resuming product application,Idea Backlog,34,2026-02-18 11:24:43.712,Journey 2.0
+PLD-88,Consistent questions / sections ordering / wording for each individual customer,Design/Solution Validation,14,2026-03-10 10:21:23.763,Journey 2.0
+PLD-85,How can we harden Quote Retrieval mechanism for Cross-Sell,Idea Backlog,97,2025-12-16 12:39:33.433,Insurance Product Management
+PLD-82,"for coco testing, use dockerised chopin master to generate policy to be renewed",Idea Backlog,56,2026-01-26 15:09:26.601,Developer Experience
+PLD-81,use dotenv in coco,Idea Backlog,103,2025-12-11 10:47:23.359,Developer Experience
+PLD-78,knowledgebase/wiki/shared doc/chatbot for local dev troubleshooting,Idea Backlog,56,2026-01-26 15:09:25.208,Developer Experience
+PLD-66,Federated Personalisation Decisioning with Centralised State (SO),Idea Backlog,34,2026-02-18 11:24:48.848,Journey 2.0
+PLD-63,"How can we gain a complete, end-to-end view of the multi-product customer journey?",Idea Backlog,201,2025-09-04 10:50:10.997,Sales Opportunity Framework
+PLD-59,Can we have an unique sales opportunity id for the same customer until the sale is finalised,Idea Backlog,210,2025-08-26 09:16:43.389,Journey 2.0
+PLD-58,Can a customer come back and resume the journey from where they left off?,Idea Backlog,210,2025-08-26 08:46:45.881,Journey 2.0
+PLD-57,"Can we create a single, seamless customer journey for customers purchasing multiple products?",Idea Backlog,187,2025-09-17 13:07:17.730,Journey 2.0
+PLD-56,How can we ensure that Models and Questionnaires are compatible?,Idea Design & Solutioning,1,2026-03-23 10:33:14.806,Insurance Product Management
+PLD-55,Seamless switching between verticals,Idea Backlog,217,2025-08-19 10:48:46.861,Journey 2.0
+PLD-54,Tailor the first question based on a data model,Idea Backlog,217,2025-08-19 10:45:43.104,Journey 2.0
+PLD-52,Personalise copy on page rendering,Idea Backlog,217,2025-08-19 10:44:27.186,Journey 2.0
+PLD-49,can we inject an interstitial page in between questionnaire questions by adding additional content (interstitial) in Q2Q at realtime,Idea Backlog,232,2025-08-04 10:45:36.709,Journey 2.0
+PLD-48,can we inject an interstitial page in between questionnaire questions by breaking Q2Q in half (in realtime) insert a page and resume Q2Q,Idea Backlog,232,2025-08-04 10:45:32.540,Journey 2.0
+PLD-47,Can we achieve consisency of sessionization between Amplitude and Looker?,Idea Backlog,234,2025-08-01 14:49:20.019,Sales Opportunity Framework
+PLD-46,Tracking across multiple journeys?,Idea Backlog,34,2026-02-18 11:25:10.272,Sales Opportunity Framework
+PLD-45,How can analysts interpret customer paths through dynamic and multi-product opportunities?,Idea Backlog,234,2025-08-01 14:14:31.515,Sales Opportunity Framework
+PLD-44,What data can we provide to a decision making service for the next step?,Idea Backlog,234,2025-08-01 14:09:51.849,Sales Opportunity Framework
+PLD-42,Can we centralise customer personalisation logic and decision,Idea Backlog,241,2025-07-25 15:45:29.302,Journey 2.0
+PLD-41,Can we divert the journey with an interstitial page using customer's realtime interactions and recent events?,Idea Backlog,187,2025-09-17 12:44:23.397,Journey 2.0
+PLD-40,Journey Orchestration,Idea Backlog,244,2025-07-23 09:42:29.433,Journey 2.0
+PLD-23,Pushing Q2Q journey onto CTM,Idea Backlog,218,2025-08-18 10:02:24.742,Frontend Architecture
+PLD-22,Add React to pages QCP to Purchase,Idea Backlog,294,2025-06-03 09:13:53.131,Frontend Architecture
+PLD-11,Reduce Rater CI time,Idea Backlog,103,2025-12-11 10:47:27.229,Developer Experience
+PLD-9,Platform Investment Case: Coverage diagnosis,Idea Backlog,218,2025-08-18 10:02:19.849,Frontend Architecture
+PLD-8,Platform Investment Case: Reactify post-quote pages,Idea Backlog,218,2025-08-18 10:02:11.150,Frontend Architecture
+PLD-4,Sales Opportunity Data Framework,Idea Backlog,312,2025-05-15 14:18:20.066,Sales Opportunity Framework
+DP-1192,Show all Employee questions on one screen,To Do Ideas,0,2026-03-24 09:49:58.122,UK Buy
+DP-1191,Provide extra clarity on Risk Address screen for Sole Traders,To Do Ideas,0,2026-03-24 09:44:49.223,UK Buy
+DP-1190,Apply Cap n Collar approach at Manual Renewal,Idea Backlog,0,2026-03-23 15:28:06.198,UK IP Ecosystems Dev
+DP-1189,[Home page] Closed widget UI/UX iterations for brand balance,Idea Backlog,0,2026-03-23 12:32:33.857,US Research Brand & Experiments
+DP-1188,Intent-driven entry points on landing pages,Idea Backlog,0,2026-03-23 12:13:22.261,US Research Brand & Experiments
+DP-1187,Re-run the indicative price intervention for low intent customers,Ready for WSJF,0,2026-03-23 11:58:02.269,UK Buy
+DP-1186,Topic based quick replies for deeper conversations,Idea Backlog,3,2026-03-20 19:22:13.118,US Research Ins Advisor
+DP-1185,Multi-partner RFQs referred offline,To Do Ideas,3,2026-03-20 13:34:49.508,UK IP Offering
+DP-1184,Validation for disproportionate PI risk,To Do Ideas,3,2026-03-20 13:33:35.402,UK IP Offering
+DP-1183,Hide cover toggles for circumstance referrals,To Do Ideas,3,2026-03-20 13:31:24.884,UK IP Offering
+DP-1182,Dynamic cover toggles (referral -> price),To Do Ideas,3,2026-03-20 13:30:03.656,UK IP Offering
+DP-1181,Change cover toggles to ones that will make a difference,To Do Ideas,3,2026-03-20 13:29:12.134,UK IP Offering
+DP-1180,Stop customers running many pointless RFQs,To Do Ideas,3,2026-03-20 13:28:42.285,UK IP Offering
+DP-1179,Give info about next best action,To Do Ideas,3,2026-03-20 13:27:42.144,UK IP Offering
+DP-1178,Zero-Click to Quote via Business Identifier & Third-Party Data Enrichment,Idea Backlog,3,2026-03-20 13:16:27.077,US Research Brand & Experiments
+DP-1176, Data Analysis --Open Quote Behavior in Agent Portal,Assessing Viability & Value,5,2026-03-19 03:28:39.106,US Partners
+DP-1175,COI Servicing for Coterie,To Do Ideas,5,2026-03-18 16:18:31.055,US Support & Growth
+DP-1174,Update insurer logos on the 'no quotes' page,To Do Ideas,5,2026-03-18 14:03:21.213,UK IP Offering
+DP-1173,Manage My Risk Endorsement GBB view,Assessing Viability & Value,4,2026-03-19 17:04:57.759,US IP Offering
+DP-1172,Fallback quotes on QCP for lower limits when referred,Assessing Viability & Value,5,2026-03-18 12:09:34.812,UK IP Offering
+DP-1171,Shell Policies - Phase 2 Discovery,Idea Backlog,7,2026-03-17 09:23:49.839,UK IP Ecosystems Dev
+DP-1170,Agent Referral Rescue Analysis,Idea Backlog,7,2026-03-16 22:03:18.977,US Partners
+DP-1169,PL and BOP Joint Quote Analysis,Idea Backlog,7,2026-03-16 21:23:46.247,US Partners
+DP-1168,Trade Selection Support Pills & HITL Integration,Ready for WSJF,7,2026-03-17 08:59:20.655,UK Research
+DP-1167,Two new Landlord Partners - WhiteLabel with 10% Discounts,Idea Backlog,7,2026-03-16 16:17:15.977,UK IP Ecosystems Dev
+DP-1166,Add Trade Selector Descriptions To Primary Trade for Top Trades ,Assessing Viability & Value,7,2026-03-17 08:59:17.001,UK Research
+DP-1165,Retail & Shop Owner Indicative Pricing via ChatGPT,To Do Ideas,7,2026-03-16 15:02:26.301,UK Research
+DP-1164,Landlord Indicative Pricing ChatGPT,Assessing Viability & Value,7,2026-03-17 08:59:08.633,UK Research
+DP-1163,Coverage Diagnosis via ChatGPT Integration,Design/Solution Validation,6,2026-03-18 09:22:33.671,UK Research
+DP-1161,Manage My Risk- Endorsement Upsell,Assessing Viability & Value,4,2026-03-19 17:04:55.483,US IP Offering
+DP-1158,Voice-Led Quote Initiation (Alexa/Google Assistant),Idea Backlog,11,2026-03-12 12:44:35.187,US IP Offering
+DP-1157,Redesigning the summary page (edit feature / comprehension),Idea Backlog,12,2026-03-12 09:40:25.095,UK Buy
+DP-1156,Add definitions to the trade selector for certain trades (insurer signed off),Idea Backlog,12,2026-03-12 09:33:21.236,UK Research
+DP-1155,🇬🇧 Introduce signposting for Temporary + Subcontractor questions on Business Q2Q in order to increase form progression and accuracy of employee disclosure,Idea Backlog,12,2026-03-11 14:16:57.410,Customer Experience
+DP-1154,🇬🇧 Introduce signposting for secondary trades on Business Q2Q Page 1 in order to reduce drop off,Idea Backlog,12,2026-03-11 14:03:33.013,Customer Experience
+DP-1153,RLI Integration for BOP Panel,Idea Backlog,12,2026-03-11 13:34:23.851,US IP Offering
+DP-1152,High premium customers convert better with CBD team than Core offline,Design/Solution Validation,12,2026-03-11 17:24:56.144,UK IP Offering
+DP-1151,Shortened GL Journey Phase 4: Universal Q2Q Format & UX Overhaul,Assessing Viability & Value,13,2026-03-10 17:00:58.974,US Buy
+DP-1150,Shortened GL Journey Phase 3: Ineligible Ops Consolidation A/B Test,Idea Design & Solutioning,13,2026-03-10 17:00:57.212,US Buy
+DP-1149,Rerating Analysis - month of June data,To Do Ideas,13,2026-03-10 13:33:45.809,UK IP Ecosystems Dev
+DP-1148,"NB Filter Rules (Custom at Rerate, from New New Biz)",To Do Ideas,14,2026-03-10 10:21:12.531,UK IP Ecosystems Dev
+DP-1146,IA chat allows visitor to ask questions about customer reviews ,Idea Backlog,14,2026-03-09 20:25:59.665,US Research Ins Advisor
+DP-1145,Ecos Customer Landing Experience,Idea Backlog,14,2026-03-09 17:07:42.044,US Partners
+DP-1144,Standardise carrier profiles in the QDS in order to reduce research-driven exits and increase QCP-to-Legal conversion,Idea Backlog,14,2026-03-09 15:56:19.579,Customer Experience
+DP-1143,Replacing Zendesk w/ IA HITL Post QCP - Purchase ,Idea Design & Solutioning,12,2026-03-11 15:06:28.541,US Research Ins Advisor
+DP-1142,Roll out PCP onto MSM and CTM Business verticals,Idea Design & Solutioning,14,2026-03-09 15:09:41.332,UK Research
+DP-1141,Rethink Business Insurance PPC landing page (mobile vs desktop gap 2.38%),Idea Backlog,14,2026-03-09 13:11:50.591,US Research Brand & Experiments
+DP-1140,Add Coterie API carrier to the Indicative pricing service,Idea Backlog,14,2026-03-09 12:55:28.871,US Research Brand & Experiments
+DP-1139,Add an indication of time/effort to complete Q2Q journey,Idea Backlog,15,2026-03-09 10:15:28.069,UK Buy
+DP-1138,Hydra intervention on the Welcome page,Idea Backlog,17,2026-03-06 21:10:59.640,US Research Ins Advisor
+DP-1136,"Change ""Occurrence/Aggregate Limit"" in order to reduce cognitive load",Idea Backlog,17,2026-03-06 11:49:25.046,US Buy
+DP-1134,Introduce trade-specific claim scenarios,Idea Backlog,18,2026-03-05 16:21:12.277,US Research Brand & Experiments
+DP-1125,Mapping Help - Get quoted from 91% to >94% before any rerating go-live (Claims Aging inclusive),To Do Ideas,18,2026-03-05 14:36:58.037,UK IP Ecosystems Dev
+DP-1124,"Nudge QCP customers to fix PL or PI referral, when possible",Design/Solution Validation,6,2026-03-18 11:21:33.429,UK IP Offering
+DP-1123,IA on QCP - using endorsements to answer policy claim questions,Idea Backlog,19,2026-03-04 21:50:20.837,US Research Ins Advisor
+DP-1122,Introduce trade-specific claim scenarios on the Product Recommendation page in order to increase SV:AV (Showcase to Application) rate and reduce funnel drop-off,Idea Backlog,19,2026-03-04 14:23:13.166,Customer Experience
+DP-1120,Password requirements prompt,Idea Backlog,19,2026-03-04 11:52:03.160,UK Support & Growth
+DP-1119,Password Hints,Idea Backlog,19,2026-03-04 11:49:41.560,UK Support & Growth
+DP-1118,Password Validation,Idea Backlog,19,2026-03-04 11:47:08.164,UK Support & Growth
+DP-1117,Start a Trade-Selector Quote,Idea Backlog,20,2026-03-04 10:54:14.649,UK Support & Growth
+DP-1116,Demand Test Rebrokering in Customer Account,Design/Solution Validation,20,2026-03-03 15:21:35.468,US Support & Growth
+DP-1115,IA Workflow - trade selection improvements,Idea Backlog,20,2026-03-03 14:26:15.696,US Research Ins Advisor
+DP-1114,SMS Consent Language Optimization,Idea Design & Solutioning,20,2026-03-03 13:17:44.876,US Buy
+DP-1113,Multi-quote QCP for lower limits when referred,Assessing Viability & Value,4,2026-03-19 15:21:54.457,UK IP Offering
+DP-1112,🇬🇧 Replay key business facts at QCP to influence value perception of the quotes and increase conversion,Idea Backlog,21,2026-03-02 14:58:18.285,Customer Experience
+DP-1111,Rerating script (Analysis tool for Zurich) to model 12 months,Idea Backlog,12,2026-03-11 13:43:05.972,UK IP Ecosystems Dev
+DP-1110,Rerating Script to evaluate All Panel Members moving to rerating,Idea Backlog,21,2026-03-02 14:26:30.118,UK IP Ecosystems Dev
+DP-1109,Upload your contract workflow ,Idea Backlog,21,2026-03-02 12:57:21.591,US Research Ins Advisor
+DP-1108,Add the full list of trade option to PCWs,Ready for WSJF,7,2026-03-17 09:30:01.904,UK Research
+DP-1107,LLM chat - new ways to present responses ,Idea Backlog,24,2026-02-27 21:37:53.089,US Research Ins Advisor
+DP-1106,Personalizing Engagement via Context-Aware Quick Replies  - Powered by LLM,Idea Backlog,24,2026-02-27 20:39:17.226,US Research Ins Advisor
+DP-1105,Account Portal Access for Coterie,Idea Design & Solutioning,5,2026-03-18 16:17:40.693,US Support & Growth
+DP-1103,Launch the AI trade selector within Q2Q,Ready for WSJF,23,2026-03-01 08:31:44.864,UK Research
+DP-1102,Test feefo banner on landlord rather than trustpilot,Idea Backlog,25,2026-02-27 09:12:47.808,UK Buy
+DP-1100,Highlight Pocket Proof from the Account,Idea Backlog,25,2026-02-26 16:15:38.955,US Support & Growth
+DP-1099,Agent Portal Quote Eligibility Checker,Idea Design & Solutioning,21,2026-03-03 11:23:45.044,US Partners
+DP-1098,Quick to Rebroke: Cover benefits prompts,Idea Backlog,26,2026-02-25 21:57:34.108,UK Support & Growth
+DP-1097,Quick to Rebroke: Support Prompts,Idea Backlog,26,2026-02-25 21:54:27.551,UK Support & Growth
+DP-1096,Rebroke: Targeted Cohort Invite to Rebroke Online,To Do Ideas,26,2026-02-25 21:37:14.199,UK Support & Growth
+DP-1094,ID complex customers test,To Do Ideas,26,2026-02-25 16:52:30.257,UK IP Offering
+DP-1093,Update Meta Titles for Insurance Application pages,Idea Backlog,26,2026-02-25 15:13:53.573,US Buy
+DP-1092,BOP Service Fee Implementation,Idea Backlog,26,2026-02-25 14:59:12.739,US IP Offering
+DP-1091,Landlord Wildcard PPC landing page,Assessing Viability & Value,25,2026-02-26 15:44:24.066,UK Research
+DP-1090,Filter valuable opportunities by referred premium and quoted premium,Idea Backlog,12,2026-03-11 17:24:36.111,UK IP Offering
+DP-1089,PARENT IDEA: PRIORITISE HIGH PREMIUM CUSTOMERS,Idea Backlog,27,2026-02-25 07:42:32.496,UK IP Offering
+DP-1087,Redesign Upsell in the online Account,Idea Backlog,27,2026-02-24 12:32:19.210,UK Support & Growth
+DP-1086,MTA Section within Customer Account (CA),Idea Backlog,27,2026-02-24 12:30:50.738,UK Support & Growth
+DP-1084,Landlord PCP Main selection,Idea Backlog,70,2026-01-12 14:00:36.844,UK Buy
+DP-1083,Remuneration cap (%) to de-risk exceeding caps from addition of £35 fee,Idea Backlog,28,2026-02-24 10:03:19.554,UK IP Ecosystems Dev
+DP-1082,Magic link for Auth journeys,Idea Backlog,28,2026-02-23 16:30:43.821,UK Support & Growth
+DP-1081,Authenticated journey transitions ,Idea Backlog,28,2026-02-23 16:23:39.169,UK Support & Growth
+DP-1080,COI Preview A/B Test HBWY only,Assessing Viability & Value,19,2026-03-04 14:11:43.258,US IP Offering
+DP-1079,Business Q2Q page 1 hierarchy.  ,Design/Solution Validation,21,2026-03-02 14:52:10.054,UK Research
+DP-1077,2M / 4M Limits for Coterie BOP,To Do Ideas,20,2026-03-03 18:47:53.096,US IP Offering
+DP-1070,Coterie Quick GL Quote on Landing page,Idea Backlog,33,2026-02-18 14:06:14.114,US IP Offering
+DP-1064,Quote Playback Summary / proposal ,Assessing Viability & Value,33,2026-02-18 15:10:00.892,US IP Offering
+DP-1062,"""Email COI to Client"" Button (Sends Directly to customer & agent)",Idea Backlog,36,2026-02-15 23:43:01.895,US Partners
+DP-1061,Sharable COI Self-Servicing Links,Idea Backlog,36,2026-02-15 22:24:32.522,US Partners
+DP-1060,Progress Persistence & Lead Recovery (Magic Link),Idea Backlog,38,2026-02-13 22:10:37.482,US Buy
+DP-1059,Email Marketing Consent Language Optimization,Design/Solution Validation,28,2026-02-23 17:30:29.834,US Buy
+DP-1057,Identify customers that are able to change their choices in order to get a quote (QCP),To Do Ideas,38,2026-02-13 17:07:58.244,UK IP Offering
+DP-1056,Ecos Landing Page Pricing Widget,Idea Design & Solutioning,36,2026-02-16 10:17:50.452,US Partners
+DP-1054,Enable Sale of Off Platform Carriers in the Agent Portal and D2C links: Scope and Sizing ,Idea Backlog,19,2026-03-04 13:45:52.267,US Partners
+DP-1053,PARENT IDEA: Higher-premium unconverted SMEs,To Do Ideas,39,2026-02-13 10:55:42.184,UK IP Offering
+DP-1052,Combine the primary and the secondary trade selector onto the same section,Idea Backlog,39,2026-02-12 16:57:32.502,UK Buy
+DP-1051,Expanding our Pre-Pop API to additional Eco Partners,Idea Backlog,21,2026-03-02 14:17:18.349,US Partners
+DP-1049,AI Trade Profiler for Insurance,Idea Backlog,39,2026-02-12 12:47:08.234,US IP Offering
+DP-1048,Durell Broker Opportunity - Q2 2026 Discovery ,Idea Backlog,40,2026-02-12 08:38:03.014,UK IP Ecosystems Dev
+DP-1047,Offer Quote Data through Snowflake Data Share with Insurers,Idea Backlog,40,2026-02-12 08:36:49.913,UK IP Ecosystems Dev
+DP-1046,Email Bounces,Idea Backlog,929,2023-09-07 09:18:30.287,UK Support & Growth
+DP-1044,Opportunity scoring for low quoting shop,Idea Backlog,12,2026-03-11 17:23:07.603,UK IP Offering
+DP-1041,Zero input quote ,Idea Backlog,41,2026-02-11 11:32:26.434,US IP Offering
+DP-1039,PARENT IDEA: Pick and Place,Idea Backlog,41,2026-02-11 09:45:56.037,UK IP Offering
+DP-1037,Correlate number of quotes with sales,Idea Backlog,20,2026-03-04 10:45:48.254,UK IP Offering
+DP-1035,test with everythihg,Idea Backlog,42,2026-02-09 15:02:16.357,UK IP Offering
+DP-1034,test with roadmap,Idea Backlog,42,2026-02-09 15:00:32.060,UK IP Offering
+DP-1033,test with problem to address,Idea Backlog,42,2026-02-09 14:52:37.411,Unassigned
+DP-1032,Show stop page not uncompetitive quote,Idea Backlog,12,2026-03-11 17:23:58.686,UK IP Offering
+DP-1030,Add contextual information on the quote comparison page to help SMEs understand the risk factors driving different prices,Idea Backlog,43,2026-02-09 11:34:39.128,Customer Experience
+DP-1029,🇬🇧 Introduce and AI-powered comparison context on the QCP to reduce choice paralysis and improve quote to sale conversion,Idea Backlog,43,2026-02-09 11:31:14.323,UK Buy
+DP-1028,🇬🇧Experiment: Introduce Claims Trust Data (Speed & Volume) on Quote Page to improve UV: Sale,Idea Backlog,43,2026-02-09 11:25:37.020,Customer Experience
+DP-1027,"Introduce ""Renters' Rights Act"" Compliance Transparency Badges in the quote summary in order to increase Quote-to-Buy Conversion",Idea Backlog,43,2026-02-09 11:22:30.376,Customer Experience
+DP-1026,🇬🇧 Providing real-time premium driver transparency in the landlord quote journey in order to increase completion rates by [METRIC NEEDED]% and Quote-to-Buy conversion for high-risk segments.,Idea Backlog,43,2026-02-09 11:21:38.780,Customer Experience
+DP-1025,"🇬🇧 Replay property risk data on the QCP in order to increase ""value for money"" perception of quotes and increase conversion",Idea Backlog,43,2026-02-09 11:18:50.822,Customer Experience
+DP-1024," Introduce Trade-specific peer benchmarking and ""What If"" scenarios on the QCP in order to increase Online Conversion ",Idea Backlog,43,2026-02-09 11:12:28.475,Customer Experience
+DP-1023,RESUE ME,Idea Backlog,43,2026-02-09 09:43:54.551,UK Support & Growth
+DP-1020,"HBWY BOP (good, better, best) Tiered Quotes ",Idea Backlog,20,2026-03-03 18:47:49.588,US IP Offering
+DP-1019,Copy of BOP - Multiple Coterie Quotes on QCP,Design/Solution Validation,46,2026-02-06 11:30:22.313,US IP Offering
+DP-1018,Copy of BOP - Multiple Coterie Quotes on QCP,Design/Solution Validation,46,2026-02-06 11:30:06.123,US IP Offering
+DP-1017,MFA - Passwordless Authentication,Idea Backlog,46,2026-02-05 21:52:20.156,UK Support & Growth
+DP-1014,GL Referral Likelihood: Productionise ,Idea Backlog,46,2026-02-05 11:59:53.551,US Partners
+DP-1013,Correlate quote rate and policy sales,Idea Backlog,46,2026-02-05 11:54:35.380,UK IP Offering
+DP-1011,Crossbot - Self Servicing Copilot,Idea Backlog,47,2026-02-04 19:13:45.957,US Support & Growth
+DP-1010,MTA in Account COI Wizard ,To Do Ideas,24,2026-02-27 17:35:22.586,US Support & Growth
+DP-1008,Cancel Anytime Hydra Intervention ,Idea Backlog,47,2026-02-04 14:25:09.464,UK Buy
+DP-1007,Some new idea of unsupported cover choice that has one or two referral reasons,Idea Backlog,48,2026-02-04 11:38:33.546,UK IP Offering
+DP-1005,Agency: Create Appetite Check API (FirstConnect- 1st use case),Design/Solution Validation,48,2026-02-03 19:21:59.035,US Partners
+DP-1004,Travelers.com ToFu capture design proposal ,Idea Backlog,25,2026-02-26 18:48:56.784,US Partners
+DP-1003,Intent Test on our Partner Applications,Design/Solution Validation,18,2026-03-05 14:04:06.351,US Partners
+DP-1001,Pre-App trade selector iteration - real-time search results display & mini definitions,Idea Backlog,7,2026-03-16 12:47:30.223,US Research Brand & Experiments
+DP-998,Human in the loop - schedule a call back/ticket creation,Idea Backlog,49,2026-02-02 15:29:09.635,US Research Ins Advisor
+DP-997,Replacing Zendesk w/ HITL in Coverage Diagnosis,Idea Backlog,49,2026-02-02 14:31:55.715,US Research Ins Advisor
+DP-996,Address confusing questions by providing more context in the sub text,Idea Backlog,50,2026-02-02 10:36:46.283,UK Buy
+DP-995,Update the section titles for each page in the quoting journey to be more trade specific so that we can convey we understand the customer and their business,Idea Backlog,50,2026-02-02 10:21:31.736,UK Buy
+DP-993,"Talk about customer account creation, benefits to us having certain data point, renewal prices, offers to address a lack of trust fro customers in our brand as they are progressing through the journey",Idea Backlog,50,2026-02-02 10:12:56.824,UK Buy
+DP-991,Provides customer reviews mid journey to address a lack of trust fro customers in our brand as they are progressing through the journey,Idea Backlog,50,2026-02-02 10:13:02.061,UK Buy
+DP-990,🇺🇸 Change showcase CTA to “Select & contiune” in order to increase SV:AV,Idea Backlog,52,2026-01-30 14:35:26.445,Customer Experience
+DP-989,🇺🇸 Change showcase CTA to “Continue your quote”/”Finish your quote” in order to increase SV:AV,Idea Backlog,52,2026-01-30 14:31:19.617,Customer Experience
+DP-988,Automate opportunity creation for warm transfers to Flexor,Idea Backlog,52,2026-01-30 13:43:23.377,UK IP Offering
+DP-985,Customers tell us the best time to contact them,Idea Backlog,53,2026-01-29 13:46:02.651,UK IP Offering
+DP-983,Embedded of IA Widget in Email Communications,Idea Backlog,54,2026-01-28 18:46:22.712,US Research Ins Advisor
+DP-975,Align the name of the New Business and Renewal Fee to Admin Fee,Idea Backlog,56,2026-01-26 15:52:23.444,UK IP Ecosystems Dev
+DP-972,Embedding Insurance Advisor onto white label applications - Tivly,Assessing Viability & Value,55,2026-01-27 15:36:10.633,US Partners
+DP-970,Short Journey experiment leveraging Coterie existing journey (all of BOP),Idea Backlog,40,2026-02-11 16:23:49.879,US IP Offering
+DP-969,"Rewrite, simplify, and move Email & SMS Consent in application journey",Idea Backlog,59,2026-01-23 14:39:00.138,US Buy
+DP-968,Add motor trade risk capture,Idea Backlog,60,2026-01-22 17:21:27.103,UK IP Offering
+DP-967,Dynamic Sum Insured Cover Caps for Tennant Type,Idea Backlog,25,2026-02-26 17:38:18.065,UK IP Offering
+DP-964,Create a basic journey for motor trade risk capture,Idea Backlog,60,2026-01-22 15:03:45.372,UK IP Offering
+DP-963,Add ‘we’ll email you’ to motor trade SMS messages,Idea Backlog,60,2026-01-22 15:02:07.678,UK IP Offering
+DP-962,Call motor trade customers at same time as their RFQ submitted,Idea Backlog,60,2026-01-22 14:53:59.314,UK IP Offering
+DP-961,Stop page for motor trade unquotables,Idea Backlog,60,2026-01-22 14:51:16.914,UK IP Offering
+DP-960,Referral rescubot,Idea Backlog,61,2026-01-22 11:28:25.367,UK IP Offering
+DP-958,PARENT IDEA: Signpost self-fix referral at QCP stage,To Do Ideas,61,2026-01-22 11:26:02.309,UK IP Offering
+DP-957,Speed up customer account by moving document api calls,Idea Backlog,61,2026-01-22 11:08:39.777,UK Support & Growth
+DP-956,PCL Update bank details,Idea Backlog,61,2026-01-22 11:07:36.324,UK Support & Growth
+DP-955,PCL Online Cancellation,Idea Backlog,61,2026-01-22 11:06:41.152,UK Support & Growth
+DP-954,Questemon research,Idea Backlog,61,2026-01-21 17:04:13.052,UK IP Offering
+DP-951,Stop page for £10m PL customers who have referred,Idea Backlog,62,2026-01-21 11:24:57.708,UK IP Offering
+DP-949,Personalize XSell Tiles and All Prod Page Based on Trade,Idea Backlog,62,2026-01-20 19:15:31.116,US Support & Growth
+DP-948,Contact details after QCP ,Idea Backlog,63,2026-01-19 12:14:06.925,US IP Offering
+DP-947,Add HBW GL to BOP QCP,Idea Backlog,63,2026-01-19 11:56:09.222,US IP Offering
+DP-946,Add Coterie GL to BOP QCP,Idea Design & Solutioning,6,2026-03-17 16:25:10.636,US IP Offering
+DP-943,Tailor/ reword the 1000 trades copy on the trade selector to reduce clutter on the screen and ensure focus on the question to be answered,Design/Solution Validation,67,2026-01-16 10:57:25.304,UK Research
+DP-940,Address field backend validation,Idea Backlog,67,2026-01-15 21:35:23.469,US Buy
+DP-938,Technical Discovery: D2C links and bypassing white labels ,Idea Backlog,49,2026-02-02 14:30:20.475,US Partners
+DP-937,Data Analysis for Chat in Agent Portal,Assessing Viability & Value,68,2026-01-14 13:24:09.062,US Partners
+DP-935,Copy of BOP - Multiple Coterie Quotes on QCP,Assessing Viability & Value,69,2026-01-13 15:44:44.141,US IP Offering
+DP-933,"Signpost ""Cancel Anytime"" messaging in upper funnel of application journey",Idea Backlog,70,2026-01-12 17:20:35.877,US Buy
+DP-931,In Funnel HITL Diagnostic (Demand Test),Idea Backlog,70,2026-01-12 13:00:29.861,UK Research
+DP-930,"IA Intervention on ""Problematic Questions""",Idea Design & Solutioning,70,2026-01-12 12:56:20.507,UK Research
+DP-929,Insurance Assistant Full Integration (Landing Pages),Idea Backlog,47,2026-02-04 15:39:33.435,UK Research
+DP-928,Landing Page Insurance Assistant Demand Test,Design/Solution Validation,70,2026-01-12 12:45:41.502,UK Research
+DP-926,Human in the Loop (HITL) - Engagement Optimisation QCP ,Idea Backlog,25,2026-02-27 10:00:25.797,UK Buy
+DP-920,"Removing Waiver of subro, Addtl Insured, Primary and Non-Contributory question from GL journey",Idea Backlog,67,2026-01-15 15:12:03.540,US Buy
+DP-919,Contact Details Optimization (End-of-Flow) (A/B Test),Idea Backlog,75,2026-01-07 22:45:18.165,US Buy
+DP-918,Offer to turn off auto renew to cancellation customers,Idea Backlog,75,2026-01-07 19:51:49.126,US Support & Growth
+DP-917,Rebroke Targeting: Propensity to price shop at renewal,Idea Backlog,75,2026-01-07 13:54:41.666,UK Support & Growth
+DP-916,Variable retention discounting - Offer more than 10%,Idea Backlog,75,2026-01-07 13:22:30.393,UK Support & Growth
+DP-915,Claimswise,Idea Backlog,40,2026-02-11 15:49:23.036,UK Support & Growth
+DP-911,Distribution Partner Portal View - Bulk download capability (Part 3),Ready for WSJF,76,2026-01-06 12:42:31.315,US Partners
+DP-910,Distribution Partner Portal View - Full view & Document download access (Part 2),Design/Solution Validation,76,2026-01-06 12:42:28.378,US Partners
+DP-908,Insurer led bulk testing / test modelling,Idea Backlog,77,2026-01-06 09:23:45.537,UK IP Ecosystems Dev
+DP-907,NCC Assistant,Idea Backlog,78,2026-01-05 09:57:03.610,UK Support & Growth
+DP-905,Use policy data to find questions that can be assumed for customer while quoting rather than having to ask them and risk drop off,Design/Solution Validation,83,2025-12-30 13:46:50.474,UK Buy
+DP-904,Enable Hydra scores for Landing Pages,Idea Backlog,7,2026-03-16 12:47:40.968,US Research Brand & Experiments
+DP-903,Hydra Landing Pages (IDM to 10-up),Idea Backlog,84,2025-12-30 09:51:32.554,UK Research
+DP-902,Pre-App North star + product recommendations clean up ,Idea Backlog,7,2026-03-16 12:47:31.964,US Research Brand & Experiments
+DP-900,Pre-Submission Review & Edit Screen,Idea Backlog,87,2025-12-26 17:27:15.674,US Buy
+DP-899,Industry Peer Confidence Score,Idea Backlog,87,2025-12-26 17:27:15.069,US Buy
+DP-898,Skilled Trades Appetite Expansion,Idea Backlog,87,2025-12-26 17:27:14.386,US Buy
+DP-897,Specialized Consultant Path Logic,Idea Backlog,87,2025-12-26 17:27:13.838,US Buy
+DP-896,Persistent Unique Application ID,Idea Backlog,87,2025-12-26 17:27:13.274,US Buy
+DP-895,Public Record Data Pre-fill,Idea Backlog,87,2025-12-26 17:27:12.710,US Buy
+DP-894,Simulated Quote Variety Exploration,Idea Backlog,87,2025-12-26 17:27:12.073,US Buy
+DP-893,"Seamlessly retrieve customer progress across web, SMS, email, and contact center.",Idea Backlog,89,2025-12-24 18:59:00.997,US Buy
+DP-892,"Automate ""Cart Compatibility"" to prevent product duplication or conflict during checkout.",Idea Backlog,89,2025-12-24 18:59:00.175,US Buy
+DP-891,Decide when to offer dynamic discounts based on multi-product purchases or cancel likelihood.,Idea Backlog,89,2025-12-24 18:58:59.662,US Buy
+DP-890,Continuous panel query logic to update questions based on real-time insurer appetite.,Idea Backlog,89,2025-12-24 18:58:59.080,US Buy
+DP-889,"Redistribute risk-profile questions across different steps to find the ""next best question.""",Idea Backlog,89,2025-12-24 18:58:58.493,US Buy
+DP-888,Personalize coverage offerings and upsells based on customer needs and evolving profiles.,Idea Backlog,89,2025-12-24 18:58:57.861,US Buy
+DP-887,Reorder UI elements and reorganize layouts based on previous customer actions.,Idea Backlog,89,2025-12-24 18:58:57.300,US Buy
+DP-886,Personalize UI text and images dynamically based on individual customer profiles or segments.,Idea Backlog,89,2025-12-24 18:58:56.679,US Buy
+DP-885,"Adapt the journey dynamically by presenting the ""optimal next step"" based on goal evaluation.",Idea Backlog,89,2025-12-24 18:58:55.817,US Buy
+DP-884,"Implement real-time ""Identify Customer"" logic to segment users into intent personas.",Idea Backlog,89,2025-12-24 18:58:55.108,US Buy
+DP-883,Evaluate and implement alternative payment options like Apple Pay or PayPal.,Idea Backlog,89,2025-12-24 18:58:54.454,US Buy
+DP-882,Dynamic adaptive pricing: test the optimal number of quotes to show per page.,Idea Backlog,89,2025-12-24 18:58:53.827,US Buy
+DP-881,Allow customers to speak about their business (audio) and pre-populate fields using AI transcription.,Idea Backlog,89,2025-12-24 18:58:53.031,US Buy
+DP-880,Implement a Legal Agreements checkbox instead of a separate standalone page.,Idea Backlog,89,2025-12-24 18:58:52.376,US Buy
+DP-879,"Pre-fill questions that a statistical majority (e.g., 90%+) of customers answer in the same way.",Idea Backlog,89,2025-12-24 18:58:51.782,US Buy
+DP-878,"If a carrier won't quote, remove all carrier-specific questions from the remainder of the app.",Idea Backlog,89,2025-12-24 18:58:51.174,US Buy
+DP-877,"Update carrier questions to ""layman's terms"" while maintaining filed compliance.",Idea Backlog,89,2025-12-24 18:58:50.541,US Buy
+DP-876,"Eliminate or fully automate the ""Secondary Trade"" question logic.",Idea Backlog,89,2025-12-24 18:58:49.939,US Buy
+DP-875,"Allow users to update ""unquotable"" info on the QCP and get a new quote seamlessly.",Idea Backlog,89,2025-12-24 18:58:49.265,US Buy
+DP-874,Scrape business information directly from a provided website or business profile URL.,Idea Backlog,89,2025-12-24 18:58:48.655,US Buy
+DP-873,Implement predictive intervention for customers exhibiting a high likelihood to struggle with a question.,Idea Backlog,89,2025-12-24 18:58:48.093,US Buy
+DP-872,"Test showing only 3 ""top"" quotes with others hidden beneath an accordion to reduce choice fatigue.",Idea Backlog,89,2025-12-24 18:58:47.508,US Buy
+DP-871,Divert unqualifiable users to a referral partner immediately (Don't waste time).,Idea Backlog,89,2025-12-24 18:58:46.891,US Buy
+DP-870,Provide customer-friendly context on exactly why a certain insurer declined to quote.,Idea Backlog,89,2025-12-24 18:58:46.339,US Buy
+DP-869,Clean up the list of trades to ensure at least 1 carrier will quote for every available option.,Idea Backlog,89,2025-12-24 18:58:45.532,US Buy
+DP-868,"Productionalize ""Zero-Click-To-Quote"" (ZC2Q) for customer-facing experiences.",Idea Backlog,89,2025-12-24 18:58:44.906,US Buy
+DP-867,"Group Yes/No questions into bullet points on a single question page to reduce ""clicks-to-quote"".",Idea Backlog,89,2025-12-24 18:58:44.251,US Buy
+DP-866,Implement a sliding scale UI for revenue and payroll questions to reduce typing friction.,Idea Backlog,89,2025-12-24 18:58:43.677,US Buy
+DP-865,Group common (non-carrier specific) questions together to get customers to a quote faster.,Idea Backlog,89,2025-12-24 18:58:43.047,US Buy
+DP-864,Move ancillary coverages and add-ons (AI/WOS/PNC/TRIA) to the post-quote flow.,Idea Backlog,89,2025-12-24 18:58:42.451,US Buy
+DP-863,"Clearly communicate in the UI that we do not call customers (Remove ""phone fear"").",Idea Backlog,89,2025-12-24 18:58:41.803,US Buy
+DP-862,"Only ask for contact details at the end, using the ""number of quotes received"" as a stimulus.",Idea Backlog,89,2025-12-24 18:58:41.235,US Buy
+DP-861,"Set a clear expectation of the ""time to complete"" the form on the landing page.",Idea Backlog,89,2025-12-24 18:58:40.628,US Buy
+DP-860,Target a Chat-to-sale conversion rate of 10–25% for assisted journeys.,Idea Backlog,89,2025-12-24 18:58:39.987,US Buy
+DP-859,Add secondary trade simplification (Umbrella secondary trades).,Idea Backlog,89,2025-12-24 18:58:39.403,US Buy
+DP-858,Investigate the performance of Assumptions Pages from UK learnings for US implementation.,Idea Backlog,89,2025-12-24 18:58:38.814,US Buy
+DP-857,Document the specific Benefit for Customer and Benefit for Company for every value risk assessment.,Idea Backlog,89,2025-12-24 18:58:38.186,US Buy
+DP-856,Implement mandatory financial viability checks for all new roadmap ideas.,Idea Backlog,89,2025-12-24 18:58:37.505,US Buy
+DP-855,Productionalize Coterie BOP on GL.,Idea Backlog,89,2025-12-24 18:58:36.849,US Buy
+DP-854,"Trigger a ""plain English"" coverage details explainer component in the post-quote journey.",Idea Backlog,89,2025-12-24 18:58:36.118,US Buy
+DP-853,Upgrade call and chat components on the QCP for better visibility and user access.,Idea Backlog,89,2025-12-24 18:58:35.578,US Buy
+DP-852,Calibrate coverage sets to show the lowest price on the glass and assess upsells post-QCP.,Idea Backlog,89,2025-12-24 18:58:35.005,US Buy
+DP-851,Implement Coterie GL and enhanced Coterie question sets.,Idea Backlog,89,2025-12-24 18:58:34.415,US Buy
+DP-849,Move Legal Agreements page to just before the final checkout step.,Idea Backlog,89,2025-12-24 18:58:33.183,US Buy
+DP-848,Add context about risks if the user does not purchase General Liability coverage.,Idea Backlog,89,2025-12-24 18:58:32.579,US Buy
+DP-847,Configure the Select button on QCP to skip QDS and go straight to Review/Checkout.,Idea Backlog,89,2025-12-24 18:58:31.939,US Buy
+DP-846,Upgrade UI for monthly installments to be more intuitive and transparent.,Idea Backlog,89,2025-12-24 18:58:31.285,US Buy
+DP-845,Signpost the quote with the lowest deductible clearly on the Quote Comparison Page.,Idea Backlog,89,2025-12-24 18:58:30.615,US Buy
+DP-844,Implement Quote Lifecycle Management to allow saving a quote to return to later.,Idea Backlog,89,2025-12-24 18:58:30.013,US Buy
+DP-843,Create a 1-click “Need help?” contextual CTA on high-friction pages.,Idea Backlog,89,2025-12-24 18:58:29.373,US Buy
+DP-842,Implement AI-driven conversational quote flow with instant feedback and empathetic language.,Idea Backlog,42,2026-02-09 16:58:50.239,US Buy
+DP-841,Embed voice or video advisor buttons directly within the chat interface for complex products.,Idea Backlog,89,2025-12-24 18:58:28.130,US Buy
+DP-840,"Use SMS or email follow-ups for users who leave mid-chat: ""We saved your quote.""",Idea Backlog,89,2025-12-24 18:58:27.282,US Buy
+DP-839,Implement smart escalation from AI chat to human agents for high-intent or urgent users.,Idea Backlog,89,2025-12-24 18:58:26.673,US Buy
+DP-838,"Auto-pass user context (quotes viewed, time on page) to agents when a chat begins.",Idea Backlog,89,2025-12-24 18:58:26.094,US Buy
+DP-837,Use session analytics to trigger chat based on scroll depth or hesitation signals.,Idea Backlog,89,2025-12-24 18:58:25.440,US Buy
+DP-836,"Position chat triggers at the Payment step: ""Need to talk before you pay?"".",Idea Backlog,89,2025-12-24 18:58:24.787,US Buy
+DP-835,Embed chat inline or anchored to prevent users from feeling like they are starting over.,Idea Backlog,89,2025-12-24 18:58:24.217,US Buy
+DP-834,"Apply ""Loss Aversion"" framing on exit intent (e.g., ""Leaving now could mean missing your quote"").",Idea Backlog,89,2025-12-24 18:58:23.534,US Buy
+DP-833,Use human faces or real agent names next to chat buttons to humanize support.,Idea Backlog,89,2025-12-24 18:58:22.813,US Buy
+DP-832,"Implement real-time ""Nudge Moments"" telling users carriers are ready to quote them today.",Idea Backlog,89,2025-12-24 18:58:22.115,US Buy
+DP-831,"Trigger chat/call invites based on behavioral intent (e.g., hesitating >15s on pricing).",Idea Backlog,89,2025-12-24 18:58:21.497,US Buy
+DP-830,"Create a consolidated ""major steps"" funnel dashboard by trade for leadership.",Idea Backlog,89,2025-12-24 18:58:20.910,US Buy
+DP-829,Split funnel data reporting trade-by-trade to see completion differences.,Idea Backlog,89,2025-12-24 18:58:20.335,US Buy
+DP-828,Transition Secondary Trade to a multi-select (up to 3) format.,Idea Backlog,89,2025-12-24 18:58:19.489,US Buy
+DP-826,Add prices and calls to action for Commercial Auto insurance results.,Idea Backlog,89,2025-12-24 18:58:18.235,US Buy
+DP-825,Deploy a support bot (Brie) with pre-identified questions/answers on the QCP.,Idea Backlog,89,2025-12-24 18:58:17.591,US Buy
+DP-823,Add FAQs specifically for the Quote Comparison Page.,Idea Backlog,89,2025-12-24 18:58:16.461,US Buy
+DP-822,Implement exit intent surveys on the Quote Comparison Page (QCP).,Idea Backlog,89,2025-12-24 18:58:15.828,US Buy
+DP-821,Use industry-specific copy like “Most popular for Photographers in Massachusetts” on cards.,Idea Backlog,89,2025-12-24 18:58:15.233,US Buy
+DP-820,Offer add-on policy opportunities towards the end of the application process.,Idea Backlog,89,2025-12-24 18:58:14.619,US Buy
+DP-819,Add a progress meter to encourage users to complete the application.,Idea Backlog,89,2025-12-24 18:58:13.960,US Buy
+DP-818,Redesign the processing/loading screen before the payment step.,Idea Backlog,89,2025-12-24 18:58:13.285,US Buy
+DP-817,"Display a ""Revenue at Risk"" metric to the user during the application.",Idea Backlog,89,2025-12-24 18:58:12.654,US Buy
+DP-816,Move valuable data points like Name and Revenue to earlier in the question set.,Idea Backlog,89,2025-12-24 18:58:12.078,US Buy
+DP-815,"Provide an off-ramp for users to answer questions via chatbot, FAQs, or agents.",Idea Backlog,89,2025-12-24 18:58:11.459,US Buy
+DP-814,Implement exit intent messaging to capture users before they leave the site.,Idea Backlog,89,2025-12-24 18:58:10.817,US Buy
+DP-813,Personalize the application journey using data collected at the start of the flow.,Idea Backlog,89,2025-12-24 18:58:10.231,US Buy
+DP-812,Add supportive framing/messaging to indicate progress and locked-in rates.,Idea Backlog,89,2025-12-24 18:58:09.585,US Buy
+DP-811,Audit and reduce application questions to only those serving a specific purpose.,Idea Backlog,89,2025-12-24 18:58:08.855,US Buy
+DP-810,Website scanning for personalised quote estimates and simplified journey,Design/Solution Validation,89,2025-12-24 17:59:32.363,US Research Brand & Experiments
+DP-806,Coterie BOP - Allow quoting for multiple locations,Assessing Viability & Value,62,2026-01-20 19:07:22.674,US IP Offering
+DP-805,[ Move to error message improvements project] Update Card Payment page for WC,Idea Backlog,95,2025-12-18 14:32:57.079,US IP Offering
+DP-804,"🇬🇧 Surface ""prices from"" + available cover limits on Contact details in order to reduce drop off",Idea Backlog,96,2025-12-17 20:20:46.610,Customer Experience
+DP-803,"🇬🇧 Surface ""prices from"" message on Contact Details in order to reduce drop off",Idea Backlog,96,2025-12-17 16:08:09.113,Customer Experience
+DP-799,Guide Customers to Other Product(s) After Single Product Referral,Idea Backlog,90,2025-12-23 15:45:23.713,US Buy
+DP-796,Pre-Fill Application Questions Using External Data (A/B Test),Idea Backlog,90,2025-12-23 15:48:16.620,US Buy
+DP-795,Shortened GL Journey Phase 2: Secondary Trade Simplification,Design/Solution Validation,96,2025-12-17 14:34:44.840,US Buy
+DP-793,Show Progress Meter and Time Estimate (A/B Test),Idea Backlog,42,2026-02-09 16:58:31.101,US Buy
+DP-789,Include both benefits and exclusions for ancils ,Idea Backlog,98,2025-12-15 11:55:46.676,UK Buy
+DP-788,Make all Ancils mandetory for demands and needs assessment compliance requirement,Idea Backlog,98,2025-12-15 11:52:51.649,UK Buy
+DP-785,"BOP - (good, better,best) Multiple Coterie Quotes on QCP  ",Assessing Viability & Value,102,2025-12-11 15:50:27.538,US IP Offering
+DP-784,Multiple referral triggers indicate complexity,Idea Backlog,102,2025-12-11 13:19:40.865,UK IP Offering
+DP-783,Predict high converting low quote Shop trades,Idea Backlog,52,2026-01-30 14:53:46.474,UK IP Offering
+DP-782,Business activities percentages question improvement,Idea Backlog,55,2026-01-27 13:55:16.309,UK IP Offering
+DP-781,PARENT IDEA: Validate motor trade as a growth segment,Idea Backlog,26,2026-02-25 16:48:10.634,UK IP Offering
+DP-780,Add fees for on-platform insurers,Idea Backlog,103,2025-12-10 22:43:47.804,UK IP Offering
+DP-779,Add fees for on-panel insurers,Idea Backlog,103,2025-12-10 22:41:47.543,UK IP Offering
+DP-775,🇬🇧 Introduce claims statistics to the add-on presentation in the customer account in order to increase add-on take-up rate and income per customer,Idea Backlog,103,2025-12-10 14:25:55.227,Customer Experience
+DP-773,Introduce affirmation messaging validating unique complexity in order to increase funnel progression among complex/niche business owners.,Idea Backlog,104,2025-12-09 16:41:42.723,UK IP Offering
+DP-772,Introduce Loss Aversion messaging on key friction points in order to increase funnel progression among complex/niche business owners.,Idea Backlog,104,2025-12-09 16:37:32.694,UK IP Offering
+DP-771,🇺🇸 Show claims data for GL on showcases in order to increase showcase selection,Idea Backlog,104,2025-12-09 16:03:11.421,Customer Experience
+DP-769,🇺🇸 Show claims data for GL at the product recommendation stage in order to increase selection,Idea Backlog,104,2025-12-09 14:49:34.369,Customer Experience
+DP-768,🇺🇸 Clarify the BOP 'Value of Business Property & Equipment' question in order to improve response accuracy and quotability,Idea Backlog,104,2025-12-09 14:29:33.572,Customer Experience
+DP-767,🇺🇸 Amend the 'Hot Food' question to be inclusive for non-cooking businesses in order to increase application completion,Idea Backlog,104,2025-12-09 14:00:12.900,Customer Experience
+DP-766,🇺🇸 Include Workers' Compensation (WC) in the restaurant showcase in order to increase the Showcase Selection Rate,Idea Backlog,104,2025-12-09 13:46:40.739,Customer Experience
+DP-765, 🇬🇧 Introduce a question on current business insurance ownership into the quote form in order to build a foundational behavioural data layer for segmentation,Idea Backlog,104,2025-12-09 13:33:34.231,Customer Experience
+DP-764,🇬🇧 Show messaging about SB's single-platform value prop on the Contact Details page to reduce drop off,Idea Backlog,104,2025-12-09 12:57:17.128,Customer Experience
+DP-762,Funnel rerated customers into manual renewal journey,Idea Backlog,105,2025-12-09 10:17:01.292,UK Support & Growth
+DP-761,Rerated customers to go through CoCo Rebroke,Idea Backlog,105,2025-12-09 10:16:29.862,UK Support & Growth
+DP-760,🇬🇧 Show estimated quotes on the rebroke landing page in order to increase progression through the rebroke funnel,Idea Backlog,105,2025-12-08 20:21:38.123,Customer Experience
+DP-759,🇺🇸 Pre-fill building questions in BOP in order to increase application completion and data accuracy,Idea Backlog,105,2025-12-08 15:12:47.738,Customer Experience
+DP-758,🇬🇧 Contextualise Landlord quote prices at QCP with inherent property risk data in order to increase conversion,Idea Backlog,105,2025-12-08 15:02:01.071,Customer Experience
+DP-757,🇺🇸 Change the marketing opt-in language in order to reduce drop-off right before the Quote Comparison Page,Idea Backlog,105,2025-12-08 12:37:29.154,Customer Experience
+DP-756,Compare the Rater Smoke Tests to the Validator Output,Idea Backlog,105,2025-12-08 12:32:03.966,UK IP Ecosystems Dev
+DP-755,🇺🇸 Show key information about the Harborway brand to increase hit rate when it is the sole quote on the QCP is,Idea Backlog,105,2025-12-08 12:27:59.036,Customer Experience
+DP-754,🇺🇸 Show all available coverages on the Product Recommendation page in order to increase application starts,Idea Backlog,105,2025-12-08 11:58:47.489,Customer Experience
+DP-753,🇺🇸 Show state and trade-specific coverage recommendations in order to increase ACR (Application Completion Rate),Idea Backlog,106,2025-12-08 11:36:26.677,Customer Experience
+DP-752,Mapping Page 1 User Personas to Personalized Experiences,Idea Backlog,106,2025-12-08 11:29:59.602,UK Buy
+DP-751,🇺🇸 Add key carrier information to the QCP in order to increase hit rate,Idea Backlog,106,2025-12-08 11:08:21.179,Customer Experience
+DP-750,🇺🇸 Change the payroll question for owner-only businesses in order to improve data accuracy and reduce drop off,Idea Backlog,106,2025-12-08 10:56:02.599,Customer Experience
+DP-749,"🇺🇸 Show simulated ""multiple quote"" options on the QCP in order to increase conversion",Idea Backlog,106,2025-12-08 10:40:10.368,Customer Experience
+DP-748,🇺🇸 Introduce messaging about contact info on the Contact Details page in order to reduce drop-off,Idea Backlog,106,2025-12-08 10:29:37.420,Customer Experience
+DP-747,Launch indicative price intervention pop up via hydra on Shop Q2Q,Idea Backlog,104,2025-12-09 14:21:09.299,UK Buy
+DP-746,Rebroke: QrR - QCP Price Anchoring,Idea Backlog,108,2025-12-05 14:26:10.485,UK Support & Growth
+DP-741,Policy Covers - Gapbot Demand,Idea Backlog,36,2026-02-16 10:17:54.220,UK Support & Growth
+DP-740,News & Knowledge articles,Idea Backlog,110,2025-12-04 10:28:48.550,UK Support & Growth
+DP-739,Serving our inactive customers,Idea Backlog,110,2025-12-04 10:27:39.180,UK Support & Growth
+DP-738,Offer customers £25 off when they come back to SB,Idea Backlog,110,2025-12-04 10:27:13.946,UK Support & Growth
+DP-737,Rebroker Pilot via Cancellation Modal,Idea Backlog,110,2025-12-03 20:33:52.617,US Support & Growth
+DP-735,Reuse me,Idea Backlog,97,2025-12-16 15:28:44.283,UK Support & Growth
+DP-734,🇬🇧 Display a multi-property value proposition in the customer account in order to increase conversion of additional properties,Idea Backlog,111,2025-12-02 13:14:22.978,Customer Experience
+DP-732,Experimentation of Insurance Advisor introduction and trade workflow on product pages,Design/Solution Validation,112,2025-12-01 20:46:37.169,US Research Brand & Experiments
+DP-730,Optimising Policy Search Result & Confirmation UX,Idea Backlog,115,2025-11-28 18:09:43.132,UK Support & Growth
+DP-728,Proactive Pre-Renewal Account Linking Nudge,Idea Backlog,115,2025-11-28 17:50:47.256,UK Support & Growth
+DP-727,Rebroke:  Email Variant for Unlinked Accounts,Idea Backlog,115,2025-11-28 17:49:19.565,UK Support & Growth
+DP-726,Rebroke: Suppression of Emails for Unlinked Accounts ,Idea Backlog,115,2025-11-28 17:47:26.786,UK Support & Growth
+DP-725,🇬🇧 Feature landlord news and updates more prominently in the customer account to increase account engagement and exposure to landlord-targeted tests,Idea Backlog,115,2025-11-28 12:12:25.596,Customer Experience
+DP-724,🇬🇧 Improve add-on presentation in the customer account in order to increase take-up rate and income per customer,Idea Backlog,116,2025-11-28 10:37:39.657,Customer Experience
+DP-723,🇬🇧 Display pricing information for add-ons offered in the customer account in order to increase take-up rate and income per customer,Idea Backlog,116,2025-11-28 10:18:15.272,Customer Experience
+DP-721,Moving CBD telephony capability to idiophone,Idea Backlog,68,2026-01-14 12:46:18.996,UK IP Offering
+DP-720,Automate Smoke Tests,Idea Backlog,118,2025-11-26 08:43:44.249,UK IP Ecosystems Dev
+DP-719,Renewal testing ability for insurers,Idea Backlog,118,2025-11-26 08:35:28.499,UK IP Ecosystems Dev
+DP-718,Question set 2.0 (Using question guidelines to allow AI to generate insurer compliant question wording),Idea Design & Solutioning,118,2025-11-26 09:49:18.385,UK Buy
+DP-714,High hit rate for single-quote customers,Idea Backlog,122,2025-11-21 13:47:16.383,UK IP Offering
+DP-713,Offer offline MPLL discounts in the journey pre-QCP,Idea Backlog,109,2025-12-05 10:20:31.441,UK IP Offering
+DP-709,Display Cyber as 3rd Option ,Idea Backlog,124,2025-11-19 13:41:39.934,UK Buy
+DP-708,Onboarding insurers cannot easily be accelerated,Idea Backlog,125,2025-11-19 11:25:20.551,UK IP Offering
+DP-706,Redesign the commercial_insurance_transfer_consent page when no quote is available,Idea Backlog,126,2025-11-17 21:35:05.552,US Buy
+DP-705,JPD - test [not for use],Idea Backlog,129,2025-11-14 14:38:41.927,UK IP Offering
+DP-704,Create SEO page for unquotables,Idea Backlog,130,2025-11-13 13:25:03.070,UK IP Offering
+DP-701,Newity x SB integration ,Idea Backlog,131,2025-11-12 15:24:01.745,US Partners
+DP-700,Employers liability is not included by default in CmC office or professional,Idea Backlog,132,2025-11-12 11:05:45.222,UK IP Offering
+DP-698,Automatically email partner a copy of insured's custom COI,Idea Backlog,132,2025-11-11 20:25:24.595,US Partners
+DP-695,Test calling the discount a 'loyalty discount' to see if it changes the customer sentiment,Idea Backlog,132,2025-11-11 14:20:57.324,UK Support & Growth
+DP-693,"We believe we can improve our retention rate by x% by developing a score of how worthwhile it is to try and save a customer (e.g. margin, other policies held, etc) so online and offline interventions can be targeted",Idea Backlog,132,2025-11-11 14:20:55.859,UK Support & Growth
+DP-691,Re-rate policy based on new RFQs being created,Idea Backlog,132,2025-11-11 14:20:54.352,UK Support & Growth
+DP-690,Make opt-out email include a mention of 10% dicsount or price,Idea Backlog,132,2025-11-11 14:20:53.642,UK Support & Growth
+DP-688,Remove the confirmation page and go straight to account,Idea Backlog,132,2025-11-11 14:20:52.173,UK Support & Growth
+DP-686,Increasing the value of SBs offering through support,Idea Backlog,132,2025-11-11 14:20:50.844,UK Support & Growth
+DP-685,Send our 21 day mailer earlier,Idea Backlog,132,2025-11-11 14:20:50.103,UK Support & Growth
+DP-684,Chatbot Renewal,Idea Backlog,132,2025-11-11 14:20:49.317,UK Support & Growth
+DP-683,Longer window between payment attempts,Idea Backlog,42,2026-02-09 21:46:47.715,UK Support & Growth
+DP-682,Offer free ancillary covers out of SB commission,Idea Backlog,132,2025-11-11 14:20:47.908,UK Support & Growth
+DP-681,X/Upsell - customer 'what if' scenarios' in the Account,Idea Backlog,132,2025-11-11 14:20:47.074,UK Support & Growth
+DP-680,Quick to quote journey: RBOL,Idea Backlog,132,2025-11-11 14:20:46.246,UK Support & Growth
+DP-678,Chatbot MTA,Idea Backlog,132,2025-11-11 14:20:44.824,UK Support & Growth
+DP-677,Chatbot support from event data,Idea Backlog,132,2025-11-11 14:20:44.045,UK Support & Growth
+DP-676,Reuse me,Idea Backlog,132,2025-11-11 14:20:43.221,UK Support & Growth
+DP-675,New opt out option thats not lifetime but used before day 30 so more customers can get a quote?,Idea Backlog,132,2025-11-11 14:20:42.551,UK Support & Growth
+DP-674,18-24 month policies,Idea Backlog,132,2025-11-11 14:20:41.779,UK Support & Growth
+DP-673,Chatbot Opt Out,Idea Backlog,132,2025-11-11 14:20:41.084,UK Support & Growth
+DP-672,Ai Renewal agents (outbound calls),Idea Backlog,132,2025-11-11 14:20:40.391,UK Support & Growth
+DP-671,Variable retention discounts - Reducing %,Idea Backlog,132,2025-11-11 14:20:39.735,UK Support & Growth
+DP-669,We stop offering discounts to 'costly returners',Idea Backlog,132,2025-11-11 14:20:38.327,UK Support & Growth
+DP-667,Chatbot: Human in the loop in Rebroke,Idea Backlog,132,2025-11-11 11:51:18.072,UK Support & Growth
+DP-666,Rebroke: Intent Questions - remove or change,Idea Backlog,132,2025-11-11 11:46:10.162,UK Support & Growth
+DP-662,Cyber Prompt ,Idea Backlog,133,2025-11-10 11:55:15.116,UK Support & Growth
+DP-661,Update unoccupied email to direct online,Idea Backlog,133,2025-11-10 11:54:52.059,UK Support & Growth
+DP-659,Schedule a callback from Core consultant,Idea Backlog,137,2025-11-06 18:18:35.831,UK IP Offering
+DP-658,Copy of Note in Chopin when customer is routed to a Flexor team,Assessing Viability & Value,137,2025-11-06 16:25:21.026,UK IP Offering
+DP-657,Send Flexor SMS to alternative numbers,Idea Backlog,137,2025-11-06 16:09:28.374,UK IP Offering
+DP-655,Use Model Versioning to better support customer MTAs,To Do Ideas,18,2026-03-05 14:28:34.016,UK IP Ecosystems Dev
+DP-653,Pre-Fill Cyber Insurance Application fields (when cross-sold),Idea Backlog,139,2025-11-04 21:36:31.443,US Buy
+DP-650,Full Panel RFQ (capability at renewal rating),To Do Ideas,139,2025-11-04 11:56:45.114,UK IP Ecosystems Dev
+DP-649,"Dynamic AI-Powered ""Comparison Utility"" for Single Quote Scenarios",Idea Backlog,140,2025-11-04 11:06:39.656,US IP Offering
+DP-647,Interventions in the questionnaire reduce accidental referrals,Idea Backlog,41,2026-02-10 13:25:49.470,UK IP Offering
+DP-646,Introducing dynamic dd scripting offline for customers for policies over £5k,Idea Backlog,140,2025-11-03 15:48:35.369,UK Support & Growth
+DP-642,🇬🇧 Show self-serve MTA messaging on the QCP in order to increase conversion,Idea Backlog,144,2025-10-30 21:08:15.978,Customer Experience
+DP-641,"🇬🇧 Show self-serve, free MTA messaging at the “Your employees” journey step to reduce drop off",Idea Backlog,144,2025-10-30 20:39:06.751,Customer Experience
+DP-640,Post QCP Drop Off ,Assessing Viability & Value,144,2025-10-30 14:56:20.364,UK Research
+DP-638,Use UK TechTeam approach with delegated authority for Harborway,Idea Backlog,101,2025-12-12 14:50:43.531,US IP Offering
+DP-637,Cross-Product 3rd Party Data Landscape & Opportunity Assessment,Idea Backlog,145,2025-10-30 10:53:08.097,US IP Offering
+DP-636,Explore new 3rd party data sources beyond Verisk for all journeys,Idea Backlog,145,2025-10-30 10:48:34.861,US IP Offering
+DP-634,Traveler's BOP Indicative Quote Integration,Idea Backlog,40,2026-02-11 16:24:02.877,US IP Offering
+DP-633,🇺🇸 Let customers clarify their business' activities/services at the point of trade selection in order to decrease drop off,Idea Backlog,146,2025-10-29 10:49:18.181,Customer Experience
+DP-631,🇬🇧 Start the journey with a personalised covers page for users who enter the form from a landing page trade selector in order to decrease drop off,Idea Backlog,146,2025-10-28 16:15:43.542,Customer Experience
+DP-626,PCL: Offer repayments over 11 months ,Idea Backlog,147,2025-10-28 10:29:07.334,UK Support & Growth
+DP-625,CashbackRemove Cheques: Make customers aware that payment is upcoming,Idea Backlog,147,2025-10-28 10:28:27.647,UK Support & Growth
+DP-624,Change Full Pay Payment Attempt Date,Idea Backlog,147,2025-10-28 10:27:37.955,UK Support & Growth
+DP-623,Remove Cashback Cheques: Stop sending them for retention,Idea Backlog,147,2025-10-28 10:25:36.745,UK Support & Growth
+DP-622,Remove Cashback Cheques: Stop discounting Post Purchase,Idea Backlog,147,2025-10-28 10:24:31.599,UK Support & Growth
+DP-621,Remove Cashback Cheques: Test Vouchers ,Idea Backlog,147,2025-10-28 10:23:18.612,UK Support & Growth
+DP-620,Free Add Ons at Renewal,Idea Backlog,147,2025-10-28 10:16:30.347,UK Support & Growth
+DP-618,Discounts: MultiProperty discount at rebroke,Idea Backlog,147,2025-10-28 10:13:36.682,UK Support & Growth
+DP-617,Discounts: MultiPolicy,Idea Backlog,147,2025-10-28 10:12:43.068,UK Support & Growth
+DP-616,Discounts: £500+,Idea Backlog,147,2025-10-28 10:12:19.071,UK Support & Growth
+DP-612,Hybrid solution for restaurant quotes from Liberty Mutual,To Do Ideas,40,2026-02-11 16:24:05.102,US IP Offering
+DP-611,Updating Renewal SMS Copy,Idea Backlog,147,2025-10-27 15:38:15.476,UK Support & Growth
+DP-605,Off ramp customers as soon as we know they'll probably refer,Idea Backlog,151,2025-10-24 08:24:01.979,UK IP Offering
+DP-602,Add carrier information to Policy page in CA,Idea Design & Solutioning,26,2026-02-25 21:23:08.030,US Support & Growth
+DP-601,Analysis of Pre-population Capabilities,Assessing Viability & Value,35,2026-02-16 16:47:45.272,US Partners
+DP-600,Cross-sell:bundling cyber at end of GL & PL,Idea Backlog,133,2025-11-10 20:22:12.888,US Partners
+DP-597,Add SMS for CB and CBD renewals,Idea Backlog,138,2025-11-05 16:27:15.584,UK IP Offering
+DP-596,ID C&N customers with HydraGPT,Idea Backlog,131,2025-11-13 10:04:16.442,UK IP Offering
+DP-594,Could we sell to customers that Gallaghers can't?,Idea Backlog,153,2025-10-22 09:24:04.511,UK IP Offering
+DP-593,New Positioning of Insurance Advisor 🤓 embedded in Prod Rec,Idea Backlog,109,2025-12-04 13:39:05.903,US Research Ins Advisor
+DP-592,Copy of Application Handover from Insurance Advisor Chat (bundles out of scope),Ready for WSJF,153,2025-10-21 17:17:43.738,US Research Ins Advisor
+DP-590,Let Business Address Updates Happen via Self Service,Idea Backlog,153,2025-10-21 15:44:01.404,US Support & Growth
+DP-587,CLM Triggered Quote Email make authorable,Idea Backlog,105,2025-12-08 16:10:08.863,US Buy
+DP-586,Hybrid Journey Explore,Idea Backlog,154,2025-10-20 14:55:00.549,US IP Offering
+DP-585,Rebroke: Offer Rebroke via Cody,Idea Backlog,154,2025-10-20 14:41:48.286,UK Support & Growth
+DP-580,Rebroke: Account Prompt Messaging,Idea Backlog,158,2025-10-17 11:33:19.641,UK Support & Growth
+DP-577,Mid-term check in email for customer engagement and value,Idea Backlog,159,2025-10-16 09:02:35.735,UK Support & Growth
+DP-576,Top of the funnel question,Idea Backlog,21,2026-03-02 14:56:10.058,UK Research
+DP-572,Highlight Top Product on All Product Page,Idea Backlog,160,2025-10-14 18:31:07.819,US Support & Growth
+DP-571,Organize All Prod Page by Recommendation Order,Idea Backlog,160,2025-10-14 18:30:46.694,US Support & Growth
+DP-570,Presale quote schedules are a hygiene factor for High Value customers,Idea Backlog,140,2025-11-03 20:14:21.890,UK IP Offering
+DP-569,Improve Flexor's notes capability,Idea Backlog,140,2025-11-03 20:25:51.799,UK IP Offering
+DP-567,Improve tooling to support 70% retention,Idea Backlog,161,2025-10-14 08:19:05.818,UK IP Offering
+DP-566,Optimise renewals tooling for 70% retention,Idea Backlog,138,2025-11-05 16:26:57.927,UK IP Offering
+DP-564,Partner Lead Routing,Idea Backlog,118,2025-11-25 15:14:46.861,UK IP Ecosystems Dev
+DP-563,Build frontend prototypes for HV Q2Q journeys,Idea Backlog,132,2025-11-11 13:14:30.204,UK IP Offering
+DP-561,Net Rate Discounts for MPL,Idea Backlog,165,2025-10-10 10:06:14.077,UK Support & Growth
+DP-558,E2E IA + Human-in-the-loop Journey Integration: Sales funnel,Idea Backlog,165,2025-10-09 20:45:59.447,US Research Ins Advisor
+DP-554,Reuse me,Idea Backlog,165,2025-10-09 12:43:52.106,UK Support & Growth
+DP-553,Agreement Defaults,Idea Backlog,165,2025-10-09 12:41:00.085,UK Support & Growth
+DP-552,Improve offline customer transfers to and from C&N,Idea Backlog,125,2025-11-19 11:35:11.057,UK IP Offering
+DP-547,LBG Request For Proposal Final (RFP),Idea Backlog,118,2025-11-26 11:20:06.345,UK IP Ecosystems Dev
+DP-546,Supercharge our lead routing capability,Idea Backlog,123,2025-11-20 12:58:59.957,UK IP Offering
+DP-543,Pre-Fill WC Application with GL Answers,Idea Backlog,168,2025-10-06 15:08:52.043,US Buy
+DP-542,Trade Selector Workflow,Assessing Viability & Value,168,2025-10-06 13:36:52.930,US Research Ins Advisor
+DP-538,BOP - Replace GL/IM Showcase with BOP Showcase,Idea Backlog,172,2025-10-02 19:56:02.037,US Research Brand & Experiments
+DP-536,Update IVR COI Chatbot SMS Consent Copy,Idea Backlog,130,2025-11-13 16:19:54.952,US Support & Growth
+DP-534,Improve offline conversion for C&N customers,Idea Backlog,173,2025-10-01 11:53:30.893,UK IP Offering
+DP-530,Add 'Customer Account' as a distribution channel,Idea Backlog,175,2025-09-30 09:23:39.705,UK Support & Growth
+DP-528,Insurance Jargon Assistance Tool,Idea Backlog,175,2025-09-29 14:32:40.887,US Research Brand & Experiments
+DP-527,QCP - Enable editing of customer details,Assessing Viability & Value,175,2025-09-29 13:45:08.892,UK Research
+DP-526,Launch a hydra intervention that highlights that personal insurance doesnt cover you for business activities,Idea Backlog,175,2025-09-29 12:52:15.398,UK Buy
+DP-525,LL Q2Q: Assumptions: Make HMO question a question not an assumption,Idea Backlog,178,2025-09-26 12:58:44.320,UK Buy
+DP-524,LL Q2Q: Correspondence Address: Remove the secondary text on AND add more vague secondary text the remove correspondence same as risk address copy,Idea Backlog,178,2025-09-26 12:57:33.975,UK Buy
+DP-523,LL Q2Q: Contact Details: Say why we need this info (for TPD) and whats the benefit,Idea Backlog,178,2025-09-26 12:56:06.879,UK Buy
+DP-522,Improve trade selection for multi-services businesses,Idea Backlog,130,2025-11-13 16:24:09.095,US Research Brand & Experiments
+DP-520,AI trade selector: Provide landlord route to start a quote in order to increase landlord SVs,Idea Backlog,179,2025-09-25 14:12:07.860,UK Buy
+DP-518,Remove High Value switching and just use routing,Idea Backlog,180,2025-09-24 16:30:55.277,UK IP Offering
+DP-517,"How might we advertise coverage options (Cyber, Bonds) upfront",Idea Backlog,180,2025-09-24 12:12:13.360,US Research Brand & Experiments
+DP-516,[Diversify entry points] Ask when do you want to start your policy on the landing page to highlight SB benefit of instant binding,Idea Backlog,181,2025-09-24 10:14:49.860,US Research Brand & Experiments
+DP-515,[Diversify entry points] Intent asked on the landing page leading to different journeys,Idea Backlog,181,2025-09-24 10:07:53.605,US Research Brand & Experiments
+DP-514,HMW showcase our recommendation when it's not a 100% fit?,Idea Backlog,181,2025-09-24 10:00:12.755,US Research Brand & Experiments
+DP-512,Create an embeddable AI trade selector,Idea Backlog,80,2026-01-02 15:22:11.724,US Research Brand & Experiments
+DP-510,Customers can change their own name in account,Idea Backlog,181,2025-09-23 17:47:23.120,UK Support & Growth
+DP-508,Test removing duplicated information - Ancils ,Idea Backlog,181,2025-09-23 15:56:15.224,UK Buy
+DP-507,Re Test Yes/no buttons but with Yes on the right - Ancils ,Idea Backlog,181,2025-09-23 15:53:43.022,UK Research
+DP-506,Ancil AI Chatbot Upsell ,Idea Backlog,181,2025-09-23 15:48:16.288,UK Research
+DP-505,Ancils: Result of Clicking ''No'' ,Idea Backlog,181,2025-09-23 15:45:13.165,UK Buy
+DP-503,Add Product Descriptions to the Ancillaries ,Idea Backlog,181,2025-09-23 15:24:30.209,UK Research
+DP-495,Test idea,Idea Backlog,185,2025-09-19 13:03:48.868,US Research Brand & Experiments
+DP-493,(TO FILL OUT) Using Human in the loop in IA to replace Zendesk widget,Idea Backlog,97,2025-12-16 16:20:59.506,US Research Ins Advisor
+DP-487,"Development of knowledge base for new products that are only xsell - RLI PL, Cyber, Surety Bonds ",Idea Backlog,187,2025-09-17 17:28:39.784,US Research Ins Advisor
+DP-486,Continuous Quick Replies: CSC Interview for High Impact Questions (KB Update),Idea Backlog,171,2025-10-03 19:08:52.513,US Research Ins Advisor
+DP-484,Application Handover from Insurance Advisor Chat (bundles out of scope),Ready for WSJF,187,2025-09-17 15:13:18.828,US Research Ins Advisor
+DP-483,Confirmation Page Redesign AB test ,Idea Backlog,165,2025-10-09 15:44:06.936,UK Research
+DP-481,Routing of Renewals,Idea Backlog,188,2025-09-16 13:28:58.393,UK IP Ecosystems Dev
+DP-479,Rerating at renewal,Design/Solution Validation,172,2025-10-02 12:21:40.270,UK IP Ecosystems Dev
+DP-477,Support the ability to Bulk Test rating and underwriting models. ,Idea Backlog,188,2025-09-16 13:21:59.264,UK IP Ecosystems Dev
+DP-476,Enable Renewal Testing Capability for GSD,Idea Backlog,76,2026-01-06 15:25:45.157,UK IP Ecosystems Dev
+DP-475,Support easier creation of Platform Instances,Idea Backlog,188,2025-09-16 13:19:34.312,UK IP Ecosystems Dev
+DP-474,Validator Scripting for Product Specs,To Do Ideas,18,2026-03-05 14:28:20.664,UK IP Ecosystems Dev
+DP-473,Download Master Spec from Our System,Design/Solution Validation,111,2025-12-03 10:24:25.403,UK IP Ecosystems Dev
+DP-472,Show differences in quotes beyond price ,Idea Backlog,189,2025-09-16 08:59:13.939,UK Buy
+DP-471,Make the policy documents more prominent by utilising a slider on QCP ,Idea Backlog,189,2025-09-16 08:55:59.822,UK Research
+DP-470,Communicate clearly that quotes stay the same for 30 days,Idea Backlog,189,2025-09-16 08:43:56.056,UK Buy
+DP-469,Allow returning customers  (that have created an RFQ in the last 30 days) to get directly to quotes,Idea Backlog,189,2025-09-16 08:33:55.766,UK Buy
+DP-467,Reuse me,Idea Backlog,119,2025-11-24 16:21:43.278,UK Support & Growth
+DP-465,Rebroke: AutoRebroke Price sensitive customers,Idea Backlog,194,2025-09-10 17:09:44.369,UK Support & Growth
+DP-464,Rebroke & Renewal: SMS at day 15 ,Idea Backlog,194,2025-09-10 17:06:42.122,UK Support & Growth
+DP-463,Rebroke: Market Update,Idea Backlog,194,2025-09-10 17:03:04.544,UK Support & Growth
+DP-458,Learn why we transfer to Gallaghers without an RFQ,Idea Backlog,140,2025-11-03 20:03:42.807,UK IP Offering
+DP-457,Rebroke: Social Proof,Idea Backlog,195,2025-09-10 10:48:41.417,UK Support & Growth
+DP-456,Rebroke: Policy Health Check,Idea Backlog,195,2025-09-10 10:42:07.868,UK Support & Growth
+DP-455,Quick to Rebroke: Skip to Price,Idea Design & Solutioning,35,2026-02-17 11:18:59.246,UK Support & Growth
+DP-454,Ask level of experience at the start of the journey,Idea Backlog,195,2025-09-10 09:40:07.278,UK Research
+DP-452,Use Hydra to start journey with coverage diagnosis ,Idea Backlog,195,2025-09-10 09:35:14.292,UK Buy
+DP-451,Use Hydra to start the journey with Indicative Price questions rather than first normal question journey,Idea Backlog,195,2025-09-10 09:34:24.163,UK Buy
+DP-449,Use hydra to ask whether the customer is a returning customer,Idea Backlog,195,2025-09-10 09:29:44.425,UK Buy
+DP-448,"Use Hydra to ask ""What are you here to do today?"" in Q2Q and have specific journeys firing after ",Idea Backlog,195,2025-09-10 09:26:34.262,UK Buy
+DP-446,Review Future of Agent Portal Architecture (sales + service in mind),Idea Backlog,195,2025-09-09 14:46:09.968,US Partners
+DP-445,Quick to Rebroke: Cheapest Quote Email,Design/Solution Validation,34,2026-02-17 11:41:04.943,UK Support & Growth
+DP-441,Hydra placeholder,Idea Backlog,196,2025-09-08 17:02:35.922,US Buy
+DP-438,Increase share of MPLL portfolios,Idea Backlog,140,2025-11-03 20:00:42.113,UK IP Offering
+DP-437,Have a Cover Product Description on Page and re-test IA ,Idea Backlog,200,2025-09-05 09:10:14.567,UK Research
+DP-436,Personalising Prompt messages by Trade,Idea Backlog,200,2025-09-05 09:06:14.566,UK Research
+DP-435,Order Prompts by most used by Segments - Trade/Customer Intent/Age of Business,Idea Backlog,200,2025-09-05 08:59:40.308,UK Research
+DP-432,Update post-cancellation COI document with cancellation date in customer account,Idea Backlog,200,2025-09-04 15:58:03.504,US Support & Growth
+DP-430,Allow Extranet Policy search in BO,Idea Backlog,200,2025-09-04 15:11:31.188,UK IP Ecosystems Dev
+DP-428,Test new payment methods on SB direct (Mat/Barrie) ,Idea Backlog,200,2025-09-04 13:51:23.521,UK Buy
+DP-427,"QCP Demand test ""save"" tell that an email has been sent",Idea Backlog,200,2025-09-04 13:44:46.163,UK Research
+DP-426,QCP Review and the user is able to edit (CP) ,Assessing Viability & Value,189,2025-09-16 10:23:20.764,UK Research
+DP-425,Demand test quarterly and bi-annual installment payment plans,Idea Backlog,200,2025-09-04 13:09:43.648,US Support & Growth
+DP-423,Creating new trade for Cleaning services to consolidate Maid services and Housekeeping trades,Idea Backlog,200,2025-09-04 12:08:21.897,US Research Brand & Experiments
+DP-420,Insurance Advisor - Embedding Quick Replies (Value Drop 3 - Bundles),Idea Backlog,187,2025-09-17 15:33:04.919,US Research Ins Advisor
+DP-418,"For products we do not sell, handover to partner ",Idea Backlog,201,2025-09-03 20:11:31.048,US Research Ins Advisor
+DP-416,Account Policy Card - Claims dropdown shows specific carrier information,Idea Backlog,173,2025-10-01 18:20:17.230,US Support & Growth
+DP-414,"Automating TB task - delete agent phone number, update agent information",Idea Backlog,201,2025-09-03 13:00:02.137,US Partners
+DP-411,Enable customers to track claims via the account ,Idea Backlog,202,2025-09-03 10:17:06.717,UK Support & Growth
+DP-409,Finance SIAA Day 2 Needs,Design/Solution Validation,174,2025-09-30 13:31:25.878,US Partners
+DP-408,Simplify cover selection Q2Q landlords,Design/Solution Validation,201,2025-09-04 09:18:11.394,UK Research
+DP-405,Persisting discounts at renewal,Idea Backlog,203,2025-09-01 14:34:27.312,UK Support & Growth
+DP-404,Rebroke: new commission model,Idea Backlog,203,2025-09-01 14:26:13.386,UK Support & Growth
+DP-403,Use loqate for phone number validation,Idea Backlog,203,2025-09-01 14:17:21.262,UK Support & Growth
+DP-402,PARENT IDEA: Send uncompetitively quoted customers to extranets ,Idea Backlog,124,2025-11-20 10:44:45.565,UK IP Offering
+DP-400,Embed Insurance Advisor widget with Ecosystems,Idea Backlog,206,2025-08-29 16:46:40.746,US Research Ins Advisor
+DP-399,Exploring different ways to display longer content,Idea Backlog,206,2025-08-29 16:40:20.048,US Research Ins Advisor
+DP-392,"IA to use trade specific examples for ""what does this cover"" as a follow up prompt",Idea Backlog,165,2025-10-09 15:32:34.278,UK Buy
+DP-390,Minimise FWC question set impact ,Idea Backlog,186,2025-09-19 09:45:17.606,US IP Offering
+DP-389,Licence-Pro: what mandatory coverage do I need to operate in my state?,Idea Backlog,122,2025-11-21 14:21:02.889,US Research Brand & Experiments
+DP-386,Update of question/supporting text for complex questions. ,Idea Backlog,208,2025-08-28 10:39:50.019,UK Research
+DP-385,Enable BOP + PL combo (signposting),Idea Backlog,208,2025-08-28 10:00:22.381,US IP Offering
+DP-384,PCL automatic payments at manual renewal,Idea Design & Solutioning,19,2026-03-04 12:18:02.287,UK Support & Growth
+DP-381,Insurance Advisor - Embed as Nav Bar at top of pages,Idea Backlog,208,2025-08-27 13:28:40.985,US Research Ins Advisor
+DP-370,QCP revamp placeholder,Idea Backlog,209,2025-08-26 13:39:23.121,US Buy
+DP-368,Embedded insurance journeys,Idea Backlog,210,2025-08-25 15:18:22.329,US Partners
+DP-367,Agent Portal integration with AMS platforms (pre-pop SB journey with partner data),Idea Backlog,210,2025-08-25 15:17:51.383,US Partners
+DP-366,Add Service Request Module in Agent Portal,Idea Backlog,206,2025-08-29 16:00:06.715,US Partners
+DP-365,Reporting and Analytics in Agent Portal - Dashboard (Policy level and Commission level),Idea Backlog,210,2025-08-25 15:16:38.298,US Partners
+DP-363,Day 2 Agent Assist Connect Books,Idea Backlog,210,2025-08-25 14:47:35.474,US Partners
+DP-362,SSO - Agentero Agent Partner Launch,Idea Backlog,210,2025-08-25 14:46:48.572,US Partners
+DP-359,[Post IVANS] Enable non HBW BOP for Agents,Idea Backlog,147,2025-10-27 12:57:07.994,US Partners
+DP-358,[Post IVANS] Enable WC for Agents,Idea Backlog,200,2025-09-04 18:36:31.525,US Partners
+DP-357,[Tivly] Pre-pop SMS journey links,Design/Solution Validation,201,2025-09-03 17:44:04.463,US Partners
+DP-355,[Nantucket Lighthouse] Enable ACORD Forms in Agent Portal ,Idea Backlog,210,2025-08-25 14:32:29.769,US Partners
+DP-354,Full capability COI Chat Bot (Agent)--dependent on chat service build,Idea Backlog,158,2025-10-16 18:08:47.673,US Partners
+DP-336,Transactional Account Prompts: Remind Customers to update contact details,Idea Backlog,215,2025-08-21 10:54:56.059,UK Support & Growth
+DP-335,Transactional Account Prompts: Increasing Covers,Idea Backlog,215,2025-08-21 10:49:49.802,UK Support & Growth
+DP-334,Transactional Account Prompt: Unoccupied Properties,Idea Backlog,215,2025-08-21 10:45:16.884,UK Support & Growth
+DP-333,Transactional Account Prompts: Review policy docs,Idea Backlog,215,2025-08-21 10:41:23.367,UK Support & Growth
+DP-330,Enable customers to update their authorised contact in the online account,Idea Backlog,168,2025-10-06 14:04:05.282,UK Support & Growth
+DP-328,Note in Chopin when customer is routed to a Flexor team,Assessing Viability & Value,153,2025-10-21 14:53:00.872,UK IP Offering
+DP-327,Clear Business - stop page for certain customers to direct to Shkhara,Idea Backlog,137,2025-11-06 16:18:49.273,UK IP Offering
+DP-326,Clear Business - change the Transfer to Third Party Broker button in backoffice to route certain customers to the CB Team,Idea Backlog,139,2025-11-04 14:17:58.293,UK IP Offering
+DP-325,Cancel & Replace ,Idea Backlog,215,2025-08-21 09:11:30.487,UK Support & Growth
+DP-324,Enable Multi Distribution parter quoting buttons,Idea Backlog,215,2025-08-21 09:08:37.360,UK Support & Growth
+DP-323,Add a missed call manual SMS to flexor for NB calls,Idea Backlog,137,2025-11-06 16:24:06.092,UK IP Offering
+DP-320,(LATER) Insurance Advisor - Product Rec Workflow FrontEnd Experience,Idea Backlog,215,2025-08-20 20:31:59.957,US Research Ins Advisor
+DP-319,Insurance Advisor - AI generated videos to describe products,Idea Backlog,215,2025-08-20 20:29:01.586,US Research Ins Advisor
+DP-318,Insurance Advisor - Embedded in online application,Idea Backlog,215,2025-08-20 20:28:35.073,US Research Ins Advisor
+DP-317,Insurance Advisor - Using hydra to highlight when interaction with IA may be helpful,Idea Backlog,215,2025-08-20 20:28:00.709,US Research Ins Advisor
+DP-316,Insurance Advisor - A single chat window for bundles,Assessing Viability & Value,153,2025-10-21 14:52:03.331,US Research Ins Advisor
+DP-315,Insurance Advisor - Enabling visitor to ask questions via voice  ,Assessing Viability & Value,13,2026-03-10 18:45:32.797,US Research Ins Advisor
+DP-314,Insurance Advisor - Renaming the Experience,Idea Backlog,215,2025-08-20 20:14:07.606,US Research Ins Advisor
+DP-312,Add javascript to the CB White label site to let them capture some risk information which will help improve marketing,Idea Backlog,215,2025-08-20 17:01:07.564,UK IP Offering
+DP-311,Add a note to Chopin when a customer is routed into Flexor via OkaaS for visibility,Idea Backlog,215,2025-08-20 17:00:52.594,UK IP Offering
+DP-310,Change the design on the referral page for certain customers to direct to the CB Team,Idea Backlog,215,2025-08-20 16:59:36.215,UK IP Offering
+DP-309,Change the Transfer to Third Party Broker button in backoffice to route certain customers to the CB Team,Idea Backlog,215,2025-08-20 16:59:02.166,UK IP Offering
+DP-308,Add a new manual SMS to Flexor for CB NB calls,Idea Backlog,215,2025-08-20 16:58:35.947,UK IP Offering
+DP-306,Offer BOP-referred customers a route to GL (full panel),Idea Backlog,33,2026-02-18 14:35:02.015,US IP Offering
+DP-305,Offer route to GL application for BOP referrals ,Idea Backlog,215,2025-08-20 15:41:13.802,US IP Offering
+DP-297,A/B Test: Re-order covers page to place optional covers first,Idea Backlog,215,2025-08-20 12:27:38.273,UK Buy
+DP-296,Social Proof: Test adding a customer testimonial to the covers page (for top trades),Idea Backlog,165,2025-10-09 15:37:51.711,UK Buy
+DP-294,"Test showing all covers by default for customers who selected ""I dont know what insurance I need"" ",Idea Backlog,215,2025-08-20 12:13:15.686,UK Buy
+DP-293,"Test loss-aversion framing for optional cover descriptions (""protect your..."" language to increase add-on attach rates)",Idea Backlog,215,2025-08-20 12:09:40.338,UK Research
+DP-292,"Replace optional cover toggles with explicit ""Add/Remove"" buttons",Idea Backlog,215,2025-08-20 12:05:47.456,UK Buy
+DP-291,Show trade-specific attach rates for optional covers,Idea Backlog,215,2025-08-20 12:02:15.107,UK Research
+DP-289,ML complex risk placement model,Idea Backlog,168,2025-10-07 09:50:39.067,UK IP Offering
+DP-288,AI Assistant: Implement proactive in-journey assistant to reduce friction,Idea Backlog,216,2025-08-19 15:19:05.436,UK Research
+DP-287,"Introduce a ""Coverage Confidence Score"" on covers & quotes page",Idea Backlog,216,2025-08-19 15:13:09.812,UK Buy
+DP-286,"Test a ""Compare"" feature to reduce user confusion on the QCP",Idea Backlog,71,2026-01-12 11:20:09.550,UK Buy
+DP-284,Social Proof: Display count of businesses insured by trade on the QCP (trade monthly volumes),Idea Backlog,169,2025-10-06 08:40:15.061,UK Buy
+DP-281,Enable customers on installment payment plans to pay down remaining balance mid-term,Idea Backlog,146,2025-10-28 18:32:15.200,US Support & Growth
+DP-277,BOP on GL/IM,Idea Backlog,203,2025-09-01 16:20:11.379,US IP Offering
+DP-270,Offline Test for New Business Fees,Idea Backlog,217,2025-08-18 11:58:19.263,UK IP Ecosystems Dev
+DP-267,Pass customers straight into their account after purchase,Idea Backlog,221,2025-08-15 11:00:31.865,UK Support & Growth
+DP-265,Chatbot deep link journey: Email updates,Idea Backlog,221,2025-08-15 09:43:28.997,UK Support & Growth
+DP-264,Chatbot deep link journey: Card payment updates,Idea Backlog,221,2025-08-15 09:43:17.203,UK Support & Growth
+DP-263,Chatbot deep link journey: Phone number updates,Idea Backlog,221,2025-08-15 09:43:03.062,UK Support & Growth
+DP-262,Chatbot deep link journey: Address updates,Idea Backlog,221,2025-08-15 09:42:52.322,UK Support & Growth
+DP-261,Create customer account transaction channel,Idea Backlog,221,2025-08-15 09:28:03.628,UK Support & Growth
+DP-260,Hydra opt out predictor,Idea Backlog,221,2025-08-15 09:22:34.922,UK Support & Growth
+DP-259,AutoRenewal: Provide more visible opt out route from your online account,Idea Backlog,221,2025-08-15 09:21:48.268,UK Support & Growth
+DP-258,AutoRenewal: Make auto renewal more visible in the pre-purchase journey,Idea Backlog,221,2025-08-15 09:21:16.662,UK Support & Growth
+DP-257,Add payment reminder at renewal to account,Idea Backlog,221,2025-08-15 09:19:37.189,UK Support & Growth
+DP-251,Use Hydra to identify potential low survival rate so we can provide appropriate intervention,Idea Backlog,221,2025-08-14 14:38:58.910,UK Support & Growth
+DP-249,Dynamic Basket Summary to Improve Tangibility and Confidence,Idea Backlog,216,2025-08-19 14:24:16.776,UK Buy
+DP-248,Priming Questions AB Test ,Idea Backlog,74,2026-01-08 15:16:43.627,UK Research
+DP-247,Indicative Pricing on Covers or QCP Page AB Test ,Idea Backlog,216,2025-08-19 14:24:20.864,UK Buy
+DP-246,Gamified Micro-interactions to Enhance Form Completion & Improve Form Accuracy Experience AB test ,Idea Backlog,165,2025-10-09 15:40:46.481,UK Research
+DP-244, Display Employers' Liability by Default on Covers Page if applicable,Idea Backlog,189,2025-09-16 10:24:38.015,UK Buy
+DP-241,CoverG: Update page hierarchy to all fall under one heading / blurb AB Test,Idea Backlog,70,2026-01-12 13:18:42.028,UK Buy
+DP-240,CBD Service using G-sheet with renewals,Idea Backlog,141,2025-11-03 10:58:16.599,UK IP Offering
+DP-234,Move SoF questions to the start of the questionnaire to ID complex customers,Idea Backlog,188,2025-09-16 13:32:47.320,UK IP Offering
+DP-233,Deduplicate p1 of Business to High Value,Idea Backlog,123,2025-11-20 13:07:35.757,UK IP Offering
+DP-230,Customers completing a B-ref journey have not answered enough questions to get a CC quote or extranet quote,Idea Backlog,159,2025-10-15 16:37:08.505,UK IP Offering
+DP-229,Insurance Advisor - Handover into Product Application,Design/Solution Validation,223,2025-08-12 13:37:10.194,US Research Brand & Experiments
+DP-228,Insurance Advisor - Exposing Quick Replies on Prod Rec Page,Design/Solution Validation,223,2025-08-12 13:36:10.585,US Research Brand & Experiments
+DP-227,Removing Cashback Cheques: Enabling post-purchase discounts,Idea Backlog,125,2025-11-18 12:33:44.600,UK Support & Growth
+DP-224,Policy covers icon,Idea Backlog,224,2025-08-12 10:38:39.723,UK Support & Growth
+DP-219,Revise post purchase welcome email,Idea Backlog,224,2025-08-11 14:28:06.711,UK Support & Growth
+DP-218,Insurance Advisor - Customer Account,Idea Backlog,206,2025-08-29 15:31:21.934,US Research Ins Advisor
+DP-213,Landlord Q2Q: Show a tailored review based on what that customer is interested in,Idea Backlog,226,2025-08-09 23:21:22.553,UK Buy
+DP-212,"Landlord Q2Q: Add ""I don't own a property yet"" option to Years owned. Need to figure out what this does",Idea Backlog,226,2025-08-09 23:21:06.803,UK Research
+DP-211,Landlord Q2Q: Add unsure as an answer option,Idea Backlog,226,2025-08-09 23:20:44.506,UK Buy
+DP-208,Landlord Q2Q: Utilise Hydra pop up to deter wariness (correspondence address),Idea Backlog,226,2025-08-09 23:19:26.747,UK Buy
+DP-206,Landlord Q2Q: Add Navigation theme and contact details theme bullet points to section (contact details page),Idea Backlog,226,2025-08-09 21:56:03.816,UK Buy
+DP-205,Landlord Q2Q: Show google map of risk address,Idea Backlog,226,2025-08-09 21:55:26.608,UK Buy
+DP-204,Landlord Q2Q: Test Alex's messages using Consumer Intelligence on first screen,Idea Backlog,226,2025-08-09 21:54:41.662,UK Buy
+DP-202,Cross-sell BOP from WC confirmation page for customers who Own/Rent,Idea Backlog,227,2025-08-08 13:44:59.838,US Research Brand & Experiments
+DP-200,Offer BOP to eCommerce trade ,Idea Backlog,186,2025-09-19 07:51:58.500,US IP Offering
+DP-199,Improve copy GL and BOP product presentation in pre-app and landing pages,Idea Backlog,227,2025-08-08 13:14:53.034,US IP Offering
+DP-197,Policy Expiring Icon,Idea Backlog,194,2025-09-10 17:15:37.081,UK Support & Growth
+DP-195,Payment Optimisation - Retry Logic in Payments App,Idea Backlog,228,2025-08-07 13:50:54.035,UK Support & Growth
+DP-192,How might we simplify the display of lengthy content within Insurance Advisor?,Idea Design & Solutioning,229,2025-08-06 18:22:29.412,US Research Brand & Experiments
+DP-189,Suppress the QCP for certain customers to give a better UX,Idea Backlog,230,2025-08-06 10:13:24.644,UK IP Offering
+DP-187,Use Idiophone for Flexor's telephony,Idea Backlog,609,2024-07-23 11:05:03.742,UK IP Offering
+DP-186,advertise multiprop discount in account,Idea Backlog,231,2025-08-05 08:37:05.401,UK Support & Growth
+DP-184,Risk assessment tool - mapping your trade risks to coverage options,Idea Backlog,122,2025-11-21 14:21:04.667,US Research Brand & Experiments
+DP-182,Chatbot creation in Meta,Idea Backlog,154,2025-10-21 10:38:42.340,US Research Brand & Experiments
+DP-180,Stop small producers trading as manufacturers,Idea Backlog,202,2025-09-03 10:52:39.126,UK IP Offering
+DP-178,Demand test a PI product for HV customers,Idea Backlog,125,2025-11-18 22:44:36.359,UK IP Offering
+DP-172,Extend or reduce online journey according to placement,Idea Backlog,195,2025-09-09 14:44:31.588,UK IP Offering
+DP-169,Adjust the offline Gallagher transfers filters to bring more customers to High Value for their off-platform MGAs,Idea Backlog,374,2025-03-14 15:26:09.324,UK IP Offering
+DP-167,Simplify trade selection for Manufacturers and Wholesalers,Idea Backlog,180,2025-09-24 16:52:43.919,UK IP Offering
+DP-164,Question set alignment,Idea Backlog,125,2025-11-18 22:40:56.911,UK IP Offering
+DP-162,Q2Q for Contractors & Commercial Combined,Idea Backlog,446,2025-01-02 10:20:38.037,UK IP Offering
+DP-161,Dynamic questionnaires solve the pains of off-platform and verticals,Idea Backlog,195,2025-09-09 14:44:00.207,UK IP Offering
+DP-158,ML opportunity scoring model,Idea Backlog,168,2025-10-07 09:50:40.776,UK IP Offering
+DP-156,Chatbot can update customers phone number,Idea Backlog,234,2025-08-01 15:53:53.185,UK Support & Growth
+DP-155,Chatbot: Customer can update their email,Idea Backlog,234,2025-08-01 15:53:39.400,UK Support & Growth
+DP-154,Allow PCL customers to update bank accounts online,Idea Backlog,234,2025-08-01 15:51:33.217,UK Support & Growth
+DP-151,Send out CocoManualPayment Renewal Mailer,Idea Backlog,264,2025-07-02 11:53:06.596,UK Support & Growth
+DP-148,MFA: Provide text to speech for landline,Idea Backlog,234,2025-08-01 15:03:12.592,UK Support & Growth
+DP-147,Update account creation reminder email,Idea Backlog,234,2025-08-01 15:01:57.395,UK Support & Growth
+DP-144,Test impact of SMS marketing consent on email consent,Idea Backlog,111,2025-12-02 13:13:31.008,Customer Experience
+DP-140,Pending status on policy cancellation card,Idea Backlog,194,2025-09-10 17:15:35.984,UK Support & Growth
+DP-138,Create consistent data formatting for account data fields,Idea Backlog,235,2025-07-31 15:51:27.573,UK Support & Growth
+DP-135,Screwfix Partnership,Idea Backlog,229,2025-08-07 10:18:19.034,UK IP Ecosystems Dev
+DP-131,Insurer Proposition - Insurers using live rates at renewal,Idea Design & Solutioning,160,2025-10-14 13:21:14.074,UK IP Ecosystems Dev
+DP-122,HSBC - Whitelabel ,Idea Backlog,235,2025-07-31 14:53:18.080,UK IP Ecosystems Dev
+DP-117,Updating policy information displayed in the account (Fixtures and Fittings),Idea Backlog,900,2023-10-06 10:33:28.896,UK Support & Growth
+DP-113,Clearer instructions on the RBOL failure page,Idea Backlog,293,2025-06-04 08:41:19.245,UK Support & Growth
+DP-112,New Customer Account Quotes Page,Idea Backlog,545,2024-09-25 09:34:29.666,UK Support & Growth
+DP-111,New Customer Account Documents Page,Idea Backlog,545,2024-09-25 09:34:29.666,UK Support & Growth
+DP-110,Customers views their renewal quote in Customer Account rather than in their email,Idea Backlog,439,2025-01-09 11:29:22.377,UK Support & Growth
+DP-107,Payment Links,Design/Solution Validation,19,2026-03-04 12:20:48.449,UK Support & Growth
+DP-106,Personalisation in account - personas,Idea Backlog,235,2025-07-31 12:17:17.084,UK Support & Growth
+DP-105,Transactional emails in account,Idea Backlog,235,2025-07-31 12:07:53.027,UK Support & Growth
+DP-100,Reordering the policy cards at renewal,Idea Backlog,238,2025-07-29 11:20:03.328,UK Support & Growth
+DP-99,Chatbot: Send me my policy documents,Idea Backlog,242,2025-07-24 17:00:19.423,UK Support & Growth
+DP-98,Chatbot: update my email address,Idea Backlog,242,2025-07-24 17:00:10.593,UK Support & Growth
+DP-97,Reuse me,Idea Backlog,242,2025-07-24 17:00:03.614,UK Support & Growth
+DP-96,Chatbot: Update my address,Idea Backlog,242,2025-07-24 16:59:56.998,UK Support & Growth
+DP-94,Improving cancellations through MTA reducing covers,Idea Backlog,244,2025-07-23 10:22:57.639,UK Support & Growth
+DP-93,Adding indicative pricing to upsell buttons,Idea Backlog,244,2025-07-23 10:21:34.319,UK Support & Growth
+DP-89,Update Sent To Lead Management Mailer,Idea Backlog,245,2025-07-22 10:02:24.658,UK Support & Growth
+DP-88,Update Renewal Purchase Mailer,Idea Backlog,245,2025-07-22 09:51:15.325,UK Support & Growth
+DP-87,Update Previous Purchase Mailer,Idea Backlog,245,2025-07-22 09:50:47.358,UK Support & Growth
+DP-86,Update Direct Debit Payment Failed Mailer,Idea Backlog,245,2025-07-22 09:50:18.539,UK Support & Growth
+DP-85,Update Credit Card Payment Failed Mailer,Idea Backlog,245,2025-07-22 09:50:05.737,UK Support & Growth
+DP-82,Update Renewal Quote Emails (all),Idea Design & Solutioning,19,2026-03-04 12:19:38.980,UK Support & Growth
+DP-81,Update removed_from_process_mailer,Idea Backlog,208,2025-08-28 09:25:20.513,UK Support & Growth
+DP-80,Business Risk Assessment Tool-MVP,Idea Backlog,153,2025-10-21 14:49:08.672,US Support & Growth
+DP-77,Purchase Page leads to CA Sign In,Idea Backlog,249,2025-07-17 18:38:51.042,UK Support & Growth
+DP-75,Reatlime email check,Idea Backlog,250,2025-07-17 11:23:35.599,UK Support & Growth
+DP-74,Redesigning Opt Out,To Do Ideas,250,2025-07-17 11:19:06.304,UK Support & Growth
+DP-72,Payment hold prior to payment date,Idea Backlog,250,2025-07-17 11:01:16.081,UK Support & Growth
+DP-71,Smart Retries for payments,Idea Backlog,250,2025-07-17 11:00:57.346,UK Support & Growth
+DP-70,Improve deliverability of emails by moving them into ET,Idea Backlog,250,2025-07-17 10:57:26.468,UK Support & Growth
+DP-69,Additional reminder email,Idea Backlog,250,2025-07-17 10:56:49.070,UK Support & Growth
+DP-68,Reuse me,Idea Backlog,194,2025-09-10 17:14:55.694,UK Support & Growth
+DP-59,Updating policy number fonts,Idea Backlog,255,2025-07-11 15:10:26.925,UK Support & Growth
+DP-55,"""Self-serve, no-cost"" MTA message on Employees page",Idea Backlog,256,2025-07-10 12:15:30.051,UK Buy
+DP-54,Gapbot - Interactive chatbot in the account,Idea Backlog,97,2025-12-16 15:39:44.854,UK Support & Growth
+DP-50,Using incentives at cancellation,Idea Backlog,258,2025-07-09 11:18:13.515,UK Support & Growth
+DP-49,Pre-App for customer account,Idea Backlog,258,2025-07-09 11:15:30.122,UK Support & Growth
+DP-48,Enable customers to generate renewal discount in the account,Idea Backlog,258,2025-07-09 11:14:57.253,UK Support & Growth
+DP-46,Enable customers to sign PCL agreement in account,Idea Backlog,258,2025-07-09 10:12:09.529,UK Support & Growth
+DP-45,Preventing cancelled direct debits,Idea Backlog,258,2025-07-09 10:10:58.835,UK Support & Growth
+DP-44,Dynamic covers display in account,Idea Backlog,258,2025-07-09 10:10:03.316,UK Support & Growth
+DP-43,Enabling in browser policy doc views,Idea Backlog,258,2025-07-09 10:08:01.791,UK Support & Growth
+DP-42,Dynamic Opt out status in account,Idea Backlog,97,2025-12-16 15:28:39.483,UK Support & Growth
+DP-39,Reuse me,Idea Backlog,258,2025-07-09 09:52:08.022,UK Support & Growth
+DP-38,Allow payment methods to be updated in backoffice,Idea Backlog,119,2025-11-24 16:08:28.728,UK Support & Growth
+DP-36,Pre-pop Account NB quoting,Idea Backlog,258,2025-07-09 09:35:48.457,UK Support & Growth
+DP-35,Customer rewards/Offers page,Idea Backlog,235,2025-07-31 12:12:52.048,UK Support & Growth
+DP-34,Customer account tour,Idea Backlog,258,2025-07-09 09:32:27.495,UK Support & Growth
+DP-33,Allow customers to add policies with different email addresses,Idea Backlog,258,2025-07-09 09:32:10.184,UK Support & Growth
+DP-28,Renewal Price Comparison Engine in CA,Idea Backlog,266,2025-06-30 20:54:15.193,US Support & Growth
+DP-27,Customer Account Pizza Tracker - Renewal & Payment Timeline,Idea Backlog,266,2025-06-30 20:53:40.522,US Support & Growth
+DP-25,Renewal Info Refresh - Automated Annual Business Review,Idea Backlog,266,2025-06-30 20:52:04.623,US Support & Growth
+DP-24,Customer Account Notifications,Idea Backlog,266,2025-06-30 20:51:19.588,US Support & Growth
+DP-22,Gamify Renewal - Business & Policy Milestones,Idea Backlog,266,2025-06-30 20:49:01.978,US Support & Growth
+DP-21,Digital Rebrokering: Automated Panel Quoting for High Price Increase at Renewal,Idea Backlog,25,2026-02-26 19:01:34.196,US Support & Growth
+DP-12,Quick to Quote MTA: Add Covers,Idea Backlog,271,2025-06-25 13:27:18.523,UK Support & Growth
