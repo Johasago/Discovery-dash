@@ -214,24 +214,28 @@ if view_mode == "🔄 Current Active WIP":
         with col2:
             st.subheader("⚠️ Aging WIP (Danger Zone)")
             
-            # --- 🤖 SMART NARRATIVE: AGING WIP ---
+            # --- 🤖 SMART NARRATIVE & TICKET LIST: AGING WIP ---
             if not df_lead.empty:
                 danger_line = round(df_lead['Lead Time (Days)'].quantile(0.85))
-                at_risk = len(wip_filtered[wip_filtered['Days in Current Status'] > danger_line])
+                
+                # 1. Filter the dataframe to ONLY include the danger tickets
+                danger_tickets = wip_filtered[wip_filtered['Days in Current Status'] > danger_line]
+                at_risk = len(danger_tickets)
                 
                 if at_risk > 0:
                     st.error(f"🚨 **Action Required:** You have **{at_risk} active tickets** sitting above your 85th percentile lead time ({danger_line} days). These are actively bottlenecked and should be discussed in standup immediately.")
+                    
+                    # 2. Draw a clean, interactive table of the exact tickets
+                    with st.expander("🔍 View Bottlenecked Tickets", expanded=True):
+                        # Clean up the dataframe so it only shows what the team needs to see
+                        display_df = danger_tickets[['Ticket ID', 'Summary', 'Current Status', 'Days in Current Status', 'Roadmap']]
+                        # Sort it so the oldest, most dangerous tickets are at the top!
+                        display_df = display_df.sort_values(by='Days in Current Status', ascending=False)
+                        
+                        st.dataframe(display_df, hide_index=True, use_container_width=True)
                 else:
                     st.success(f"✅ **Flow is healthy:** Zero active tickets have crossed your {danger_line}-day danger line.")
             # --------------------------------------
-
-            fig_aging = px.strip(wip_filtered, x='Current Status', y='Days in Current Status', color='Roadmap', hover_data=['Ticket ID', 'Summary'])
-            fig_aging.update_traces(marker=dict(size=12, opacity=0.8, line=dict(width=1, color='DarkSlateGrey')))
-            if not df_lead.empty:
-                fig_aging.add_hline(y=danger_line, line_dash="dash", line_color="red", annotation_text=f"85th Percentile ({danger_line}d)")
-            st.plotly_chart(fig_aging, use_container_width=True)
-    else:
-        st.info("No active tickets match the current filters.")
 
 # --- 5. HISTORICAL LEAD TIME DASHBOARD ---
 elif view_mode == "📈 Historical Trends":
