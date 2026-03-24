@@ -54,12 +54,19 @@ if df_wip.empty and df_lead.empty:
     st.warning("⚠️ No data found. Please run the Python extraction scripts first.")
     st.stop()
 
-# Safety net: Ensure missing custom fields are labeled "Unassigned"
+# Safety net: Ensure missing custom fields are labeled "Unassigned" and map Projects
 for df in [df_wip, df_lead, df_cfd]:
     if not df.empty:
-        # Now we only check for Roadmap!
         if 'Roadmap' in df.columns:
             df['Roadmap'] = df['Roadmap'].fillna('Unassigned')
+            
+        # Extract the project prefix (e.g., "PLD" from "PLD-123") and map it to a friendly name
+        if 'Ticket ID' in df.columns:
+            df['Project Category'] = df['Ticket ID'].apply(lambda x: str(x).split('-')[0])
+            df['Project Category'] = df['Project Category'].map({
+                'PLD': 'All Platform (PLD)', 
+                'DP': 'All Discovery (DP)'
+            }).fillna(df['Project Category']) # Keeps any other prefixes intact just in case
 
 # --- 2. SIDEBAR FILTERS ---
 st.sidebar.header("Filter Data")
@@ -79,7 +86,8 @@ def get_unique_options(col_name):
         opts.update(df_lead[col_name].dropna().unique())
     return ["All"] + sorted(list(opts))
 
-# We only have the Roadmap dropdown now!
+# Add the new Project Category filter!
+selected_project = st.sidebar.selectbox("Project Category", get_unique_options("Project Category"))
 selected_roadmap = st.sidebar.selectbox("Roadmap", get_unique_options("Roadmap"))
 
 st.sidebar.divider()
@@ -94,17 +102,20 @@ period2 = st.sidebar.date_input("Comparison Period (P2)", value=p2_default)
 def apply_filters(df):
     if df.empty: return df
     filtered = df.copy()
+    
+    # Filter by Project Category
+    if selected_project != "All" and "Project Category" in filtered.columns:
+        filtered = filtered[filtered["Project Category"] == selected_project]
+        
+    # Filter by Roadmap
     if selected_roadmap != "All" and "Roadmap" in filtered.columns:
         filtered = filtered[filtered["Roadmap"] == selected_roadmap]
+        
     return filtered
 
 wip_filtered = apply_filters(df_wip)
 lead_filtered = apply_filters(df_lead)
-
-# Filter CFD by Roadmap
-cfd_filtered = df_cfd.copy()
-if selected_roadmap != "All" and not cfd_filtered.empty and "Roadmap" in cfd_filtered.columns:
-    cfd_filtered = cfd_filtered[cfd_filtered['Roadmap'] == selected_roadmap]
+cfd_filtered = apply_filters(df_cfd)
 
 # --- DYNAMIC PERIOD COMPARISON ---
 if not lead_filtered.empty:
@@ -128,10 +139,27 @@ if not lead_filtered.empty:
     p1_85th = p1_df['Lead Time (Days)'].quantile(0.85) if not p1_df.empty else 0
     p2_85th = p2_df['Lead Time (Days)'].quantile(0.85) if not p2_df.empty else 0
     
+    # 4. Draw the UI Cards Side-by-Side
     c1, c2, c3 = st.columns(3)
-    c1.metric(label="🚀 Throughput (Tickets)", value=p1_throughput, delta=int(p1_throughput - p2_throughput))
-    c2.metric(label="📊 Avg Lead Time", value=f"{p1_avg:.1f}d", delta=f"{p1_avg - p2_avg:.1f}d", delta_color="inverse")
-    c3.metric(label="🔥 85th Percentile", value=f"{p1_85th:.1f}d", delta=f"{p1_85th - p2_85th:.1f}d", delta_color="inverse")
+    
+    with c1:
+        st.markdown("**🚀 Throughput (Tickets)**")
+        sc1, sc2 = st.columns(2)
+        sc1.metric("Primary (P1)", p1_throughput)
+        sc2.metric("Comparison (P2)", p2_throughput, delta=int(p1_throughput - p2_throughput))
+        
+    with c2:
+        st.markdown("**📊 Avg Lead Time**")
+        sc1, sc2 = st.columns(2)
+        sc1.metric("Primary (P1)", f"{p1_avg:.1f}d")
+        sc2.metric("Comparison (P2)", f"{p2_avg:.1f}d", delta=f"{p1_avg - p2_avg:.1f}d", delta_color="inverse")
+        
+    with c3:
+        st.markdown("**🔥 85th Percentile**")
+        sc1, sc2 = st.columns(2)
+        sc1.metric("Primary (P1)", f"{p1_85th:.1f}d")
+        sc2.metric("Comparison (P2)", f"{p2_85th:.1f}d", delta=f"{p1_85th - p2_85th:.1f}d", delta_color="inverse")
+        
     st.divider()
 
 # --- 4. ACTIVE WIP DASHBOARD ---

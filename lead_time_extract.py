@@ -1,15 +1,17 @@
 import os
 import requests
 import pandas as pd
-import numpy as np   # <-- ADD THIS NEW IMPORT
+import numpy as np
 from requests.auth import HTTPBasicAuth
-from datetime import timezone, datetime
 
 # --- CONFIGURATION ---
 JIRA_URL = os.environ.get("JIRA_URL")
 JIRA_EMAIL = os.environ.get("JIRA_EMAIL")
 JIRA_API_TOKEN = os.environ.get("JIRA_API_TOKEN")
-JQL_QUERY = 'project in ("PLD", "DP") AND statusCategory = Done'
+
+# 🚨 THE FIX: Explicitly forcing both projects, and ONLY pulling completed tickets!
+JQL_QUERY = 'project in ("DP", "PLD") AND statusCategory = Done'
+
 
 def extract_lead_time_data():
     print("🚀 Fetching Historical Lead Time Data...")
@@ -25,8 +27,8 @@ def extract_lead_time_data():
             "jql": JQL_QUERY,
             "maxResults": 100,
             "fields": [
-                "summary", "status", "created", "resolutiondate", 
-                "customfield_13924", "customfield_13668" 
+                "summary", "status", "created", "resolutiondate", "statuscategorychangedate", 
+                "customfield_13924", "customfield_13668"  # Your Roadmap IDs
             ]
         }
         if next_page_token:
@@ -51,16 +53,22 @@ def extract_lead_time_data():
         key = issue['key']
         summary = fields.get('summary', 'Unknown')
         
-        # Calculate Lead Time (Excluding Weekends!)
+       # Calculate Lead Time (Excluding Weekends!)
         created = pd.to_datetime(fields.get('created')).tz_convert(None)
+        
+        # 🚨 THE FIX: Try Resolution Date first. If blank, use Status Change Date!
         resolved_str = fields.get('resolutiondate')
+        if not resolved_str:
+            resolved_str = fields.get('statuscategorychangedate')
+            
         if resolved_str:
             resolved = pd.to_datetime(resolved_str).tz_convert(None)
+            # numpy calculates business days between two dates
             lead_time = np.busday_count(created.date(), resolved.date())
         else:
-            continue # Skip tickets without a resolution date
+            continue # Only skip if BOTH dates are completely missing
         
-        # Roadmap Parse
+        # Safely parse Roadmap
         roadmap_field = fields.get('customfield_13924') or fields.get('customfield_13668')
         if isinstance(roadmap_field, dict):
             roadmap = roadmap_field.get('value', 'Unassigned')
@@ -72,8 +80,10 @@ def extract_lead_time_data():
             roadmap = 'Unassigned'
 
         records.append({
-            'Ticket ID': key, 'Summary': summary, 
-            'Date Created': created, 'Date Completed': resolved,
+            'Ticket ID': key, 
+            'Summary': summary, 
+            'Date Created': created, 
+            'Date Completed': resolved,
             'Lead Time (Days)': max(1, lead_time), # Minimum 1 day
             'Roadmap': roadmap
         })
