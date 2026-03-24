@@ -177,6 +177,25 @@ if not lead_filtered.empty:
         
     st.divider()
 
+    # 5. AUTOMATED EXECUTIVE NARRATIVE
+    st.markdown("##### 🤖 Automated Insights")
+    
+    # Calculate the deltas
+    throughput_diff = p1_throughput - p2_throughput
+    lead_time_diff = p1_avg - p2_avg
+    
+    # Logic Engine: What story do the numbers tell?
+    if p1_throughput == 0:
+        st.info("No tickets were completed in the Primary Period. Check the Active WIP to see what's currently in flight.")
+    elif lead_time_diff <= 0 and throughput_diff >= 0:
+        st.success(f"**🟢 High Performing:** The team is accelerating! You delivered more tickets (or the same amount) while successfully cutting average lead time by {abs(lead_time_diff):.1f} days.")
+    elif lead_time_diff > 0 and throughput_diff > 0:
+        st.warning(f"**🟡 Expanding Capacity:** Throughput is up by {throughput_diff} tickets, but average lead time has increased by {abs(lead_time_diff):.1f} days. The team is doing more, but it is taking longer. Watch for WIP limits.")
+    elif lead_time_diff <= 0 and throughput_diff < 0:
+        st.info(f"**🔵 Highly Efficient:** Throughput dropped slightly, but the team is closing tickets {abs(lead_time_diff):.1f} days faster than the previous period. Focus is high.")
+    elif lead_time_diff > 0 and throughput_diff < 0:
+        st.error(f"**🔴 Delivery Warning:** The team delivered {abs(throughput_diff)} fewer tickets, and lead time increased by {abs(lead_time_diff):.1f} days. Check the Aging WIP chart below for immediate blockers.")
+
 # --- 4. ACTIVE WIP DASHBOARD ---
 st.header("🔄 Active Work In Progress")
 if not wip_filtered.empty:
