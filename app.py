@@ -78,17 +78,32 @@ try:
 except FileNotFoundError:
     st.sidebar.caption("🕒 **Last Data Refresh:** Unknown")
 
-def get_unique_options(col_name):
+# 1. Grab Project Options
+def get_project_options():
     opts = set()
-    if not df_wip.empty and col_name in df_wip.columns:
-        opts.update(df_wip[col_name].dropna().unique())
-    if not df_lead.empty and col_name in df_lead.columns:
-        opts.update(df_lead[col_name].dropna().unique())
+    for df in [df_wip, df_lead]:
+        if not df.empty and "Project Category" in df.columns:
+            opts.update(df["Project Category"].dropna().unique())
     return ["All"] + sorted(list(opts))
 
-# Add the new Project Category filter!
-selected_project = st.sidebar.selectbox("Project Category", get_unique_options("Project Category"))
-selected_roadmap = st.sidebar.selectbox("Roadmap", get_unique_options("Roadmap"))
+selected_project = st.sidebar.selectbox("Project Category", get_project_options())
+
+# 2. 🚨 THE FIX: Dynamic Cascading Roadmap Options
+# This looks at what Project you just selected, and ONLY returns Roadmaps for that Project!
+def get_roadmap_options(project_filter):
+    opts = set()
+    for df in [df_wip, df_lead]:
+        if not df.empty and "Roadmap" in df.columns:
+            temp_df = df.copy()
+            # If a specific project is selected, filter the temporary dataframe first
+            if project_filter != "All" and "Project Category" in temp_df.columns:
+                temp_df = temp_df[temp_df["Project Category"] == project_filter]
+            
+            # Now grab whatever Roadmaps are left
+            opts.update(temp_df["Roadmap"].dropna().unique())
+    return ["All"] + sorted(list(opts))
+
+selected_roadmap = st.sidebar.selectbox("Roadmap", get_roadmap_options(selected_project))
 
 st.sidebar.divider()
 st.sidebar.header("⚖️ Compare Periods")
