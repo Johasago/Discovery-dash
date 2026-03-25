@@ -204,56 +204,79 @@ if view_mode == "🔄 Current Active WIP":
     st.header("🔄 Active Work In Progress")
     
     if not wip_filtered.empty:
-        col1, col2 = st.columns(2)
-        with col1:
-            status_counts = wip_filtered['Current Status'].value_counts().reset_index()
-            status_counts.columns = ['Status', 'Count']
-            fig_status = px.bar(status_counts, x='Status', y='Count', text_auto=True, color='Status', title="Tickets by Status")
-            st.plotly_chart(fig_status, use_container_width=True)
-            
-        with col2:
-            st.subheader("⚠️ Aging WIP (Danger Zone)")
-            
-            # --- 🤖 SMART NARRATIVE & TICKET LIST: AGING WIP ---
-            if not df_lead.empty:
-                danger_line = round(df_lead['Lead Time (Days)'].quantile(0.85))
+        # 1. Split the data: Separate Backlog from True Active Work
+        # NOTE: If your Jira status is just "Backlog", change 'Idea Backlog' below to match exactly!
+        active_wip = wip_filtered[wip_filtered['Current Status'] != 'Idea Backlog']
+        backlog_wip = wip_filtered[wip_filtered['Current Status'] == 'Idea Backlog']
+        
+        # 2. Add a quick summary metric at the top
+        st.markdown(f"**Total Items:** {len(wip_filtered)} | **🔥 Active:** {len(active_wip)} | **💡 Idea Backlog:** {len(backlog_wip)}")
+        st.divider()
+
+        if not active_wip.empty:
+            col1, col2 = st.columns(2)
+            with col1:
+                # Update chart to use active_wip
+                status_counts = active_wip['Current Status'].value_counts().reset_index()
+                status_counts.columns = ['Status', 'Count']
+                fig_status = px.bar(status_counts, x='Status', y='Count', text_auto=True, color='Status', title="Active Tickets by Status")
+                st.plotly_chart(fig_status, use_container_width=True)
                 
-                # 1. Filter the dataframe to ONLY include the danger tickets
-                danger_tickets = wip_filtered[wip_filtered['Days in Current Status'] > danger_line]
-                at_risk = len(danger_tickets)
+            with col2:
+                st.subheader("⚠️ Aging WIP (Danger Zone)")
                 
-                if at_risk > 0:
-                    st.error(f"🚨 **Action Required:** You have **{at_risk} active tickets** sitting above your 85th percentile lead time ({danger_line} days). These are actively bottlenecked and should be discussed in standup immediately.")
+                # --- 🤖 SMART NARRATIVE & TICKET LIST: AGING WIP ---
+                if not df_lead.empty:
+                    danger_line = round(df_lead['Lead Time (Days)'].quantile(0.85))
                     
-                    # 2. Draw a clean, interactive table of the exact tickets
-                    with st.expander("🔍 View Bottlenecked Tickets", expanded=True):
-                        display_df = danger_tickets.copy()
+                    # Update filter to use active_wip
+                    danger_tickets = active_wip[active_wip['Days in Current Status'] > danger_line]
+                    at_risk = len(danger_tickets)
+                    
+                    if at_risk > 0:
+                        st.error(f"🚨 **Action Required:** You have **{at_risk} active tickets** sitting above your 85th percentile lead time ({danger_line} days).")
                         
-                        # Create the full Jira URL for each ticket
-                        # 🚨 UPDATE THIS URL TO MATCH YOUR COMPANY'S JIRA DOMAIN:
-                        jira_base_url = "https://simplybusiness.atlassian.net/browse/"
-                        display_df['Jira Link'] = jira_base_url + display_df['Ticket ID']
-                        
-                        # Select only the columns we want to show
-                        display_df = display_df[['Jira Link', 'Summary', 'Current Status', 'Days in Current Status', 'Roadmap']]
-                        display_df = display_df.sort_values(by='Days in Current Status', ascending=False)
-                        
-                        # 3. Use Streamlit's column_config to format the hyperlink beautifully
-                        st.dataframe(
-                            display_df, 
-                            hide_index=True, 
-                            use_container_width=True,
-                            column_config={
-                                "Jira Link": st.column_config.LinkColumn(
-                                    "Ticket ID", # The column header
-                                    # This Regex hides the URL and only shows the ticket number!
-                                    display_text=f"{jira_base_url}(.*)" 
-                                )
-                            }
-                        )
-                else:
-                    st.success(f"✅ **Flow is healthy:** Zero active tickets have crossed your {danger_line}-day danger line.")
-            # --------------------------------------
+                        with st.expander("🔍 View Bottlenecked Tickets", expanded=True):
+                            display_df = danger_tickets.copy()
+                            
+                            # 🚨 REMEMBER TO UPDATE THIS TO YOUR JIRA DOMAIN:
+                            jira_base_url = "https://yourcompany.atlassian.net/browse/"
+                            display_df['Jira Link'] = jira_base_url + display_df['Ticket ID']
+                            
+                            display_df = display_df[['Jira Link', 'Summary', 'Current Status', 'Days in Current Status', 'Roadmap']]
+                            display_df = display_df.sort_values(by='Days in Current Status', ascending=False)
+                            
+                            st.dataframe(
+                                display_df, 
+                                hide_index=True, 
+                                use_container_width=True,
+                                column_config={
+                                    "Jira Link": st.column_config.LinkColumn(
+                                        "Ticket ID", display_text=f"{jira_base_url}(.*)" 
+                                    )
+                                }
+                            )
+                    else:
+                        st.success(f"✅ **Flow is healthy:** Zero active tickets have crossed your {danger_line}-day danger line.")
+                # --------------------------------------
+
+                # Update strip chart to use active_wip
+                fig_aging = px.strip(active_wip, x='Current Status', y='Days in Current Status', color='Roadmap', hover_data=['Ticket ID', 'Summary'])
+                fig_aging.update_traces(marker=dict(size=12, opacity=0.8, line=dict(width=1, color='DarkSlateGrey')))
+                if not df_lead.empty:
+                    fig_aging.add_hline(y=danger_line, line_dash="dash", line_color="red", annotation_text=f"85th Percentile ({danger_line}d)")
+                st.plotly_chart(fig_aging, use_container_width=True)
+        else:
+            st.info("There are no active tickets (everything is currently sitting in the Idea Backlog).")
+            
+        # 3. Give them a clean way to still view the Backlog if they want to!
+        if not backlog_wip.empty:
+            st.divider()
+            with st.expander(f"💡 View Idea Backlog ({len(backlog_wip)} items)"):
+                st.dataframe(backlog_wip[['Ticket ID', 'Summary', 'Days in Current Status', 'Roadmap']], hide_index=True, use_container_width=True)
+
+    else:
+        st.info("No active tickets match the current filters.")
 
 # --- 5. HISTORICAL LEAD TIME DASHBOARD ---
 elif view_mode == "📈 Historical Trends":
