@@ -55,14 +55,22 @@ if df_wip.empty and df_lead.empty:
     st.stop()
 
 # Safety net: Ensure missing custom fields are labeled "Unassigned" and map Projects
+# Safety net: Ensure missing custom fields are labeled "Unassigned" and map Projects
 for df in [df_wip, df_lead, df_cfd]:
     if not df.empty:
         if 'Roadmap' in df.columns:
             df['Roadmap'] = df['Roadmap'].fillna('Unassigned')
             
-        # Extract the project prefix (e.g., "PLD" from "PLD-123") and map it to a friendly name
-        if 'Ticket ID' in df.columns:
-            df['Project Category'] = df['Ticket ID'].apply(lambda x: str(x).split('-')[0])
+        # 🚨 THE FIX: dynamically find whatever the Ticket ID column is named!
+        ticket_col = None
+        for col_name in ['Ticket ID', 'Issue key', 'Key', 'Issue Key']:
+            if col_name in df.columns:
+                ticket_col = col_name
+                break # We found it, stop looking!
+                
+        # Extract the project prefix using the correct column name
+        if ticket_col:
+            df['Project Category'] = df[ticket_col].apply(lambda x: str(x).split('-')[0])
             df['Project Category'] = df['Project Category'].map({
                 'PLD': 'All Platform (PLD)', 
                 'DP': 'All Discovery (DP)'
@@ -239,8 +247,7 @@ if view_mode == "🔄 Current Active WIP":
                         with st.expander("🔍 View Bottlenecked Tickets", expanded=True):
                             display_df = danger_tickets.copy()
                             
-                            # 🚨 REMEMBER TO UPDATE THIS TO YOUR JIRA DOMAIN:
-                            jira_base_url = "https://yourcompany.atlassian.net/browse/"
+                            jira_base_url = "https://simplybusiness.atlassian.net/browse/"
                             display_df['Jira Link'] = jira_base_url + display_df['Ticket ID']
                             
                             display_df = display_df[['Jira Link', 'Summary', 'Current Status', 'Days in Current Status', 'Roadmap']]
