@@ -55,7 +55,6 @@ if df_wip.empty and df_lead.empty:
     st.stop()
 
 # Safety net: Ensure missing custom fields are labeled "Unassigned" and map Projects
-# Safety net: Ensure missing custom fields are labeled "Unassigned" and map Projects
 for df in [df_wip, df_lead, df_cfd]:
     if not df.empty:
         if 'Roadmap' in df.columns:
@@ -277,13 +276,32 @@ if view_mode == "🔄 Current Active WIP":
             st.info("There are no active tickets (everything is currently sitting in the Idea Backlog).")
             
         # 3. Give them a clean way to still view the Backlog if they want to!
+        # 3. Give them a clean way to still view the Backlog if they want to!
         if not backlog_wip.empty:
             st.divider()
             with st.expander(f"💡 View Idea Backlog ({len(backlog_wip)} items)"):
-                st.dataframe(backlog_wip[['Ticket ID', 'Summary', 'Days in Current Status', 'Roadmap']], hide_index=True, use_container_width=True)
-
-    else:
-        st.info("No active tickets match the current filters.")
+                backlog_display = backlog_wip.copy()
+                
+                jira_base_url = "https://simplybusiness.atlassian.net/browse/"
+                
+                # Generate the clickable links
+                backlog_display['Jira Link'] = jira_base_url + backlog_display['Ticket ID'].astype(str)
+                
+                # Select the columns and sort by oldest ideas first
+                backlog_display = backlog_display[['Jira Link', 'Summary', 'Days in Current Status', 'Roadmap']]
+                backlog_display = backlog_display.sort_values(by='Days in Current Status', ascending=False)
+                
+                # Draw the table with the Regex link formatter
+                st.dataframe(
+                    backlog_display, 
+                    hide_index=True, 
+                    use_container_width=True,
+                    column_config={
+                        "Jira Link": st.column_config.LinkColumn(
+                            "Ticket ID", display_text=f"{jira_base_url}(.*)" 
+                        )
+                    }
+                )
 
 # --- 5. HISTORICAL LEAD TIME DASHBOARD ---
 elif view_mode == "📈 Historical Trends":
