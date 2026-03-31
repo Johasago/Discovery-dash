@@ -1,13 +1,15 @@
 Ticket ID,Roadmap,Date,Status
+PLD-120,Developer Experience,2026-03-31,In Build
+PLD-120,Developer Experience,2026-03-31,In Build
+PLD-120,Developer Experience,2026-03-31,In Build
 PLD-118,Developer Experience,2026-03-23,Idea Backlog
 PLD-118,Developer Experience,2026-03-23,Idea Backlog
+PLD-118,Developer Experience,2026-03-23,Idea Backlog
 PLD-117,Frontend Architecture,2026-03-23,Idea Backlog
 PLD-117,Frontend Architecture,2026-03-23,Idea Backlog
 PLD-117,Frontend Architecture,2026-03-23,Idea Backlog
 PLD-117,Frontend Architecture,2026-03-23,Idea Backlog
-PLD-116,Developer Experience,2026-03-09,Idea Backlog
-PLD-116,Developer Experience,2026-03-09,Idea Backlog
-PLD-116,Developer Experience,2026-03-09,Idea Backlog
+PLD-117,Frontend Architecture,2026-03-23,Idea Backlog
 PLD-115,Insurance Product Management,2026-03-03,To Do
 PLD-114,Journey 2.0,2026-03-03,Idea Backlog
 PLD-114,Journey 2.0,2026-03-03,Idea Backlog
@@ -188,6 +190,11 @@ PLD-8,Frontend Architecture,2025-05-21,Backlog
 PLD-8,Frontend Architecture,2025-05-21,Backlog
 PLD-4,Sales Opportunity Framework,2025-05-15,Backlog
 PLD-4,Sales Opportunity Framework,2025-05-15,Backlog
+DP-1205,UK Support & Growth,2026-03-31,To Do
+DP-1204,US Research Ins Advisor,2026-03-30,Idea Backlog
+DP-1204,US Research Ins Advisor,2026-03-30,Idea Backlog
+DP-1203,UK Research,2026-03-30,To Do
+DP-1201,UK Support & Growth,2026-03-30,To Do
 DP-1200,UK IP Offering,2026-03-26,Idea Backlog
 DP-1200,UK IP Offering,2026-03-26,Idea Backlog
 DP-1199,UK Research,2026-03-26,Idea Backlog
@@ -305,6 +312,7 @@ DP-1145,US Partners,2026-03-09,Idea Design & Solutioning
 DP-1145,US Partners,2026-03-09,Idea Design & Solutioning
 DP-1145,US Partners,2026-03-09,Idea Design & Solutioning
 DP-1144,Customer Experience,2026-03-09,To Do
+DP-1143,US Research Ins Advisor,2026-03-09,Idea Backlog
 DP-1143,US Research Ins Advisor,2026-03-09,Idea Backlog
 DP-1143,US Research Ins Advisor,2026-03-09,Idea Backlog
 DP-1143,US Research Ins Advisor,2026-03-09,Idea Backlog
@@ -500,7 +508,6 @@ DP-1037,UK IP Offering,2026-02-10,Idea Design & Solutioning
 DP-1037,UK IP Offering,2026-02-10,Idea Design & Solutioning
 DP-1035,UK IP Offering,2026-02-09,To Do
 DP-1034,UK IP Offering,2026-02-09,To Do
-DP-1033,Unassigned,2026-02-09,To Do
 DP-1032,UK IP Offering,2026-02-09,Idea Backlog
 DP-1032,UK IP Offering,2026-02-09,Idea Backlog
 DP-1032,UK IP Offering,2026-02-09,Idea Backlog
@@ -560,6 +567,7 @@ DP-998,US Research Ins Advisor,2026-02-02,Idea Backlog
 DP-997,US Research Ins Advisor,2026-02-02,Idea Backlog
 DP-997,US Research Ins Advisor,2026-02-02,Idea Backlog
 DP-997,US Research Ins Advisor,2026-02-02,Idea Backlog
+DP-997,US Research Ins Advisor,2026-02-02,Idea Backlog
 DP-996,UK Buy,2026-02-02,To Do
 DP-995,UK Buy,2026-02-02,To Do
 DP-993,UK Buy,2026-02-02,Assessing Viability & Value
@@ -575,6 +583,7 @@ DP-985,UK IP Offering,2026-01-29,To Do
 DP-983,US Research Ins Advisor,2026-01-28,Idea Backlog
 DP-983,US Research Ins Advisor,2026-01-28,Idea Backlog
 DP-975,UK IP Ecosystems Dev,2026-01-26,To Do
+DP-972,US Partners,2026-01-26,Idea Backlog
 DP-972,US Partners,2026-01-26,Idea Backlog
 DP-972,US Partners,2026-01-26,Idea Backlog
 DP-970,US IP Offering,2026-01-23,Ready for Test/Build
@@ -618,19 +627,6 @@ DP-949,US Support & Growth,2026-01-20,To Do
 DP-948,US IP Offering,2026-01-19,To Do
 DP-947,US IP Offering,2026-01-19,Idea Backlog
 DP-947,US IP Offering,2026-01-19,Idea Backlog
-DP-946,US IP Offering,2026-01-19,Assessing Viability & Value
-DP-946,US IP Offering,2026-01-19,Assessing Viability & Value
-DP-946,US IP Offering,2026-01-19,Assessing Viability & Value
-DP-946,US IP Offering,2026-01-19,Assessing Viability & Value
-DP-946,US IP Offering,2026-01-19,Assessing Viability & Value
-DP-946,US IP Offering,2026-01-19,Assessing Viability & Value
-DP-946,US IP Offering,2026-01-19,Assessing Viability & Value
-DP-946,US IP Offering,2026-01-19,Assessing Viability & Value
-DP-946,US IP Offering,2026-01-19,Assessing Viability & Value
-DP-946,US IP Offering,2026-01-19,Assessing Viability & Value
-DP-946,US IP Offering,2026-01-19,Assessing Viability & Value
-DP-946,US IP Offering,2026-01-19,Assessing Viability & Value
-DP-946,US IP Offering,2026-01-19,Assessing Viability & Value
 DP-943,UK Research,2026-01-16,Idea Backlog
 DP-943,UK Research,2026-01-16,Idea Backlog
 DP-943,UK Research,2026-01-16,Idea Backlog
@@ -653,12 +649,6 @@ DP-930,UK Research,2026-01-12,Idea Backlog
 DP-929,UK Research,2026-01-12,Idea Backlog
 DP-929,UK Research,2026-01-12,Idea Backlog
 DP-929,UK Research,2026-01-12,Idea Backlog
-DP-928,UK Research,2026-01-12,Idea Backlog
-DP-928,UK Research,2026-01-12,Idea Backlog
-DP-928,UK Research,2026-01-12,Idea Backlog
-DP-928,UK Research,2026-01-12,Idea Backlog
-DP-928,UK Research,2026-01-12,Idea Backlog
-DP-928,UK Research,2026-01-12,Idea Backlog
 DP-926,UK Buy,2026-01-12,Idea Backlog
 DP-926,UK Buy,2026-01-12,Idea Backlog
 DP-926,UK Buy,2026-01-12,Idea Backlog
@@ -914,15 +904,6 @@ DP-793,US Buy,2025-12-16,Idea Backlog
 DP-793,US Buy,2025-12-16,Idea Backlog
 DP-789,UK Buy,2025-12-15,To Do
 DP-788,UK Buy,2025-12-15,To Do
-DP-785,US IP Offering,2025-12-11,Assessing Viability & Value
-DP-785,US IP Offering,2025-12-11,Assessing Viability & Value
-DP-785,US IP Offering,2025-12-11,Assessing Viability & Value
-DP-785,US IP Offering,2025-12-11,Assessing Viability & Value
-DP-785,US IP Offering,2025-12-11,Assessing Viability & Value
-DP-785,US IP Offering,2025-12-11,Assessing Viability & Value
-DP-785,US IP Offering,2025-12-11,Assessing Viability & Value
-DP-785,US IP Offering,2025-12-11,Assessing Viability & Value
-DP-785,US IP Offering,2025-12-11,Assessing Viability & Value
 DP-784,UK IP Offering,2025-12-11,Idea Backlog
 DP-784,UK IP Offering,2025-12-11,Idea Backlog
 DP-783,UK IP Offering,2025-12-11,Idea Backlog
@@ -1732,6 +1713,7 @@ DP-93,UK Support & Growth,2025-07-23,Idea Backlog
 DP-89,UK Support & Growth,2025-07-22,To Do
 DP-88,UK Support & Growth,2025-07-22,Idea Backlog
 DP-88,UK Support & Growth,2025-07-22,Idea Backlog
+DP-88,UK Support & Growth,2025-07-22,Idea Backlog
 DP-87,UK Support & Growth,2025-07-22,Idea Backlog
 DP-87,UK Support & Growth,2025-07-22,Idea Backlog
 DP-86,UK Support & Growth,2025-07-22,Idea Backlog
@@ -1757,6 +1739,7 @@ DP-80,US Support & Growth,2025-07-21,Assessing Viability & Value
 DP-77,UK Support & Growth,2025-07-17,To Do
 DP-75,UK Support & Growth,2025-07-17,Idea Backlog
 DP-75,UK Support & Growth,2025-07-17,Idea Backlog
+DP-74,UK Support & Growth,2025-07-17,Idea Backlog
 DP-74,UK Support & Growth,2025-07-17,Idea Backlog
 DP-74,UK Support & Growth,2025-07-17,Idea Backlog
 DP-74,UK Support & Growth,2025-07-17,Idea Backlog

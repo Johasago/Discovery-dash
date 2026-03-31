@@ -1,4 +1,5 @@
 Ticket ID,Summary,Date Created,Date Completed,Lead Time (Days),Roadmap
+PLD-116,Fully Independent Ephemeral Environments,2026-03-09 13:47:15.984,2026-03-30 12:50:56.431,15,Developer Experience
 PLD-109,Add Design to MultiQuote in US journeys,2026-02-18 21:47:17.497,2026-03-16 12:57:57.787,18,Insurance Product Management
 PLD-107,add version checks to start_with_local_rater,2026-02-11 16:53:37.598,2026-03-16 15:08:11.995,23,Developer Experience
 PLD-106,chopin development environment container for consistent app environment locally,2026-02-11 09:22:49.806,2026-02-17 10:50:59.815,4,Developer Experience
@@ -53,8 +54,8 @@ PLD-6, Platform Investment Case: Blueprint v2,2025-05-27 20:51:18.192,2025-07-21
 PLD-5,Omnichannel: Consolidated Comms Architecture,2025-05-27 21:16:58.183,2025-11-10 10:39:05.782,119,Unassigned
 PLD-3,Platform Investment Case: Rater DSL is AI Friendly,2025-05-16 15:36:35.510,2026-02-04 14:58:10.727,188,Unassigned
 PLD-2,Update CDC Pipeline to Enable Use with Active Record / Postgres,2025-06-02 15:07:13.149,2025-08-18 09:55:46.575,55,Unassigned
+DP-1202,PCL Backoffice Cancellations,2026-03-30 11:00:10.950,2026-03-30 11:13:04.927,1,UK Support & Growth
 DP-1190,Apply Cap n Collar approach at Manual Renewal,2026-03-23 15:28:05.719,2026-03-24 18:19:50.565,1,UK IP Ecosystems Dev
-DP-1177,Test,2026-03-20 13:08:15.368,2026-03-20 13:09:37.792,1,Unassigned
 DP-1162,Launch trustpilot banner on the Business vertical,2026-03-16 09:24:14.582,2026-03-23 14:52:54.911,5,UK Buy
 DP-1160, Streamline Legal Agreement for all GL panel ,2026-03-13 12:46:36.200,2026-03-18 20:57:36.737,3,US IP Offering
 DP-1159,"Copy of BOP - (good, better,best) Multiple Coterie Quotes on QCP  ",2026-03-13 12:46:10.514,2026-03-16 10:53:28.720,1,US IP Offering
@@ -124,6 +125,7 @@ DP-959,Refer shop unquotables to CBD/Shkhara,2026-01-22 11:27:22.177,2026-01-30 
 DP-953,Add New Business and Renewal Fees to C&N verticals and Commercial Landlord,2026-01-21 13:45:51.706,2026-03-05 13:19:01.493,31,UK IP Ecosystems Dev
 DP-952,PCP Smart Sort A/B Test ,2026-01-21 11:40:17.650,2026-02-05 14:58:51.877,11,UK Buy
 DP-950,BOP AB test Contact details move ,2026-01-21 09:46:53.726,2026-03-05 15:55:10.581,31,US IP Offering
+DP-946,Add Coterie GL to BOP QCP,2026-01-19 11:21:35.137,2026-02-12 17:18:16.407,18,US IP Offering
 DP-945,"Move Phone Number field to Interstitial page with ""Take your quote with you"" framing",2026-01-16 14:05:03.524,2026-03-18 22:16:40.859,43,US Buy
 DP-944,Make help text more helpful on Trade Selector screen to help give more helpful information to customers when struggling to answer this question,2026-01-16 10:59:45.955,2026-03-09 17:59:33.351,36,UK Buy
 DP-942,"Remove/ Reword ""Select a trade"" line to reduce clutter and confusion on the first question",2026-01-16 10:52:40.205,2026-01-28 14:53:33.146,8,UK Buy
@@ -132,6 +134,7 @@ DP-939, Short BOP Journey HBWY,2026-01-15 17:54:48.695,2026-01-15 17:54:52.619,1
 DP-936,Limit PL cover levels to those available for each trade,2026-01-14 06:26:17.283,2026-01-28 14:51:57.116,10,UK IP Offering
 DP-934,Ecos: Create Questionnaire API for Embeddable Quoting Widget: SPIKE ONLY,2026-01-13 14:41:35.665,2026-01-26 20:37:30.962,9,US Partners
 DP-932,Landlord Main selection ,2026-01-12 13:58:52.372,2026-02-27 15:00:39.322,34,UK Buy
+DP-928,Landing Page Insurance Assistant Demand Test,2026-01-12 12:45:17.658,2026-03-30 12:48:50.686,55,UK Research
 DP-927,Coverage Model Learning Loop (Randomised 10%),2026-01-12 11:54:09.383,2026-02-13 15:03:06.217,24,UK Buy
 DP-925,PCP Enhancement: Coverage G Model Integration,2026-01-12 11:32:51.548,2026-01-22 15:11:44.985,8,UK Research
 DP-924,AI Trade Selector - ChatGPT Proof of Concept,2026-01-12 11:19:47.483,2026-01-12 13:20:25.549,1,UK Research
@@ -161,6 +164,7 @@ DP-791,Optimize Journey Format (Front End Framework / Q2Q),2025-12-16 05:24:03.9
 DP-790,Shortened GL Journey - for Coterie-only trades,2025-12-16 05:15:08.447,2026-02-09 17:36:20.009,39,US Buy
 DP-787,Show trustpilot score as a hydra intervention on first page of landlord,2025-12-15 10:58:59.902,2026-01-12 08:53:28.724,20,UK Buy
 DP-786,CLM Redesign Triggered Quote Email,2025-12-12 19:29:41.782,2026-02-04 15:19:41.327,38,US Buy
+DP-785,"BOP - (good, better,best) Multiple Coterie Quotes on QCP  ",2025-12-11 15:47:45.498,2026-03-30 13:53:04.521,77,US IP Offering
 DP-778,Adopt Contact Address Update Feature from UK,2025-12-10 20:18:29.212,2026-03-17 13:29:21.343,69,US Support & Growth
 DP-777,Explore All Products Btn links to Showcase instead of CA Page,2025-12-10 20:05:33.229,2025-12-16 17:04:15.352,4,US Support & Growth
 DP-776,"Remove ""Property Address"" header from risk address section",2025-12-10 15:01:13.887,2025-12-10 15:01:41.848,1,UK Buy
